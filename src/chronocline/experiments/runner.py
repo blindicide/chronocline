@@ -162,7 +162,7 @@ def _work_units(rows: list[dict[str, object]], kind: ExperimentKind) -> list[dic
         elif kind is ExperimentKind.ALPHABET_OPTIMIZATION:
             identifier = str(item.get("restart_index", 0))
         else:
-            identifier = str(item["job_id"])
+            identifier = str(item["sweep_index"])
         if identifier not in units:
             units[identifier] = {
                 "work_unit_id": identifier,

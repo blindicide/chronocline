@@ -15,6 +15,7 @@ import pytest
 from typer.testing import CliRunner
 
 from chronocline.channels import build_memoryless_channel, monte_carlo_matrix
+from chronocline.channels.matrix import ChannelMatrix
 from chronocline.cli import app
 from chronocline.config import RunConfig
 from chronocline.distributions import gaussian
@@ -24,8 +25,13 @@ from chronocline.experiments.detection import DetectionRunner
 from chronocline.information.divergence import kl_divergence
 from chronocline.optimization import best_found_alphabet
 from chronocline.quantization import UniformQuantizer
+from chronocline.quantization.batching import batch_timestamps
 from chronocline.results.validation import semantic_errors
 from chronocline.simulation import batch_observation_trace, observation_trace
+from chronocline.simulation.monte_carlo import (
+    block_mutual_information,
+    empirical_mutual_information,
+)
 
 
 def detector_config() -> RunConfig:
@@ -288,3 +294,30 @@ def test_batching_executes_replications_and_keeps_unbatched_packets_singleton(
     ]
     assert len(sizes) == 2 and all(row["metric_value"] == 1 for row in sizes)
     assert {row["replication"] for row in sizes} == {0, 1}
+
+
+def test_timestamp_batching_helper_has_distinct_start_and_ceiling_rules() -> None:
+    """Legacy vector helper remains consistent with the explicit release semantics."""
+    values = np.array([0.1, 0.9, 1.1])
+    assert np.array_equal(batch_timestamps(values, 1.0), np.array([0.0, 0.0, 1.0]))
+    assert np.array_equal(batch_timestamps(values, 1.0, ceiling=True), np.array([1.0, 1.0, 2.0]))
+    with pytest.raises(ValueError, match="positive"):
+        batch_timestamps(values, 0.0)
+
+
+def test_random_phase_input_validation_is_explicit() -> None:
+    """A misspelled phase mode does not silently select a physically different DMC."""
+    with pytest.raises(ValueError, match="unknown random phase"):
+        build_memoryless_channel(
+            [0.0, 1.0], gaussian(), UniformQuantizer(0.5), random_phase_mode="unknown"
+        )
+
+
+def test_block_information_edge_cases_and_channel_validation_are_not_silent() -> None:
+    """Mathematical edge cases raise rather than yielding unlabelled numerical output."""
+    with pytest.raises(ValueError, match="equal"):
+        empirical_mutual_information(np.array([0]), np.array([0, 1]))
+    with pytest.raises(ValueError, match="positive"):
+        block_mutual_information(np.array([0, 1]), np.array([0, 1]), 0)
+    with pytest.raises(Exception, match="sum"):
+        ChannelMatrix(np.array([0.0]), np.array([0]), np.array([[0.5]]))
