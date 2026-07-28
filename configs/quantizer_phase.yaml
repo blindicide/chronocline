@@ -1,0 +1,8 @@
+experiment: {name: quantizer_phase, seed: 20260728, output_directory: results, overwrite: false, locale: en}
+channel: {mode: absolute_delay, alphabet: {values: [0.0, 1.0], unit: normalized}, input_probabilities: null}
+jitter: {distribution: gaussian, mean: 0.0, scale: 1.0}
+quantizer: {type: uniform, step: 0.5, phase: 0.0, mode: floor, random_phase: false}
+matrix: {tail_probability: 1.0e-12, include_overflow_bins: true}
+optimization: {method: blahut_arimoto, tolerance: 1.0e-10, max_iterations: 10000}
+constraints: {max_kl_divergence: null, max_mean_delay: null}
+sweep: {parameters: {quantizer.step: [0.5]}}
