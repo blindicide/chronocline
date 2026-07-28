@@ -1,0 +1,35 @@
+{
+  "allow_dirty_override": false,
+  "completed_at": "2026-07-28T09:54:02.252064+00:00",
+  "completed_jobs": 1,
+  "completion_status": "complete",
+  "config_hash": "71a205b0b2824ce2a7b160b0f2a1013df0a2e66323fda4fca245780102838c25",
+  "expected_jobs": 1,
+  "expected_metrics": [
+    "best_found_capacity",
+    "optimization_label",
+    "optimized_alphabet"
+  ],
+  "experiment_kind": "alphabet_optimization",
+  "experiment_name": "alphabet_optimization_binary",
+  "generated_files": {
+    "config.original.yaml": "4bb8b5b29caf23020129e91a22141bcf9960bd3dc3fabef8ffd9b885d76ba0b4",
+    "config.resolved.yaml": "b3aea5296094768abae83e6c98cb2be16ee7cd46275508ac4e727793231e3422",
+    "diagnostics.json": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "environment.json": "5437c5a13c0814ea737adc0d901fc36142eccc98a1416e0bed386efdf794520b",
+    "results.csv": "f19dbff40fe5a70941470cd27e3f9e93f88923989fb0409c5f267e6b4b09d8dd"
+  },
+  "locale": "en",
+  "package_version": "0.6.0",
+  "project": "Project Chronocline",
+  "result_schema_version": "2.0",
+  "run_id": "55f18fdf0de90540",
+  "runner_name": "AlphabetRunner",
+  "runner_version": "2.0",
+  "semantic_validation_errors": [],
+  "semantic_validation_status": "passed",
+  "source_commit": "c708483683ba7ad5feafdfc9a40eb89871051252",
+  "source_dirty": false,
+  "started_at": "2026-07-28T09:54:02.180529+00:00",
+  "workers": 1
+}

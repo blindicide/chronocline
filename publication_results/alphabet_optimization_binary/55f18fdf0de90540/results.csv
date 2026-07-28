@@ -1,0 +1,7 @@
+experiment_name,experiment_kind,job_id,sweep_index,replication,metric_name,metric_value,units,estimator,status,warning_code,confidence_interval_lower,confidence_interval_upper,symbol_index,label
+alphabet_optimization_binary,alphabet_optimization,c9075616f511,0,,best_found_capacity,0.7533574888927808,bits_per_symbol,grid_search,complete,,,,,
+alphabet_optimization_binary,alphabet_optimization,d46af1100050,0,,optimal_input_probability,0.5,probability,exact,complete,,,,0.0,
+alphabet_optimization_binary,alphabet_optimization,d15e9d5242bc,0,,optimal_input_probability,0.5,probability,exact,complete,,,,1.0,
+alphabet_optimization_binary,alphabet_optimization,79ef847b2d34,0,,optimization_label,1.0,code,exact,complete,,,,,exact_grid_optimum
+alphabet_optimization_binary,alphabet_optimization,d46af1100050,0,,optimized_alphabet,0.0,normalized_time,exact,complete,,,,0.0,
+alphabet_optimization_binary,alphabet_optimization,d15e9d5242bc,0,,optimized_alphabet,3.0,normalized_time,exact,complete,,,,1.0,

@@ -1,0 +1,55 @@
+experiment_name,experiment_kind,job_id,sweep_index,replication,metric_name,metric_value,units,estimator,status,quantizer_step,quantizer_phase,jitter_distribution,jitter_scale,alphabet,symbol_index
+capacity_surface,capacity_surface,bb814dbfae54,0,,mutual_information,0.011169468327300047,bits_per_symbol,exact,complete,0.125,0.0,gaussian,1.0,"[0.0, 0.25]",
+capacity_surface,capacity_surface,ed6df9c20375,0,,capacity_bits_per_symbol,0.011169468327300047,bits_per_symbol,blahut_arimoto,complete,0.125,0.0,gaussian,1.0,"[0.0, 0.25]",
+capacity_surface,capacity_surface,ed6df9c20375,0,,capacity_residual,1.734723475976807e-18,bits_per_symbol,blahut_arimoto,complete,0.125,0.0,gaussian,1.0,"[0.0, 0.25]",
+capacity_surface,capacity_surface,bb814dbfae54,0,,matrix_row_sum_error,0.0,probability,exact,complete,0.125,0.0,gaussian,1.0,"[0.0, 0.25]",
+capacity_surface,capacity_surface,ef0da8338a50,0,,optimal_input_probability,0.5,probability,exact,complete,,,,,,0.0
+capacity_surface,capacity_surface,70f02efdcb12,0,,optimal_input_probability,0.5,probability,exact,complete,,,,,,1.0
+capacity_surface,capacity_surface,2764b2c55a6b,1,,mutual_information,0.011126395940094586,bits_per_symbol,exact,complete,0.25,0.0,gaussian,1.0,"[0.0, 0.25]",
+capacity_surface,capacity_surface,fd1dccbbd185,1,,capacity_bits_per_symbol,0.011126395940094586,bits_per_symbol,blahut_arimoto,complete,0.25,0.0,gaussian,1.0,"[0.0, 0.25]",
+capacity_surface,capacity_surface,fd1dccbbd185,1,,capacity_residual,4.163336342344337e-17,bits_per_symbol,blahut_arimoto,complete,0.25,0.0,gaussian,1.0,"[0.0, 0.25]",
+capacity_surface,capacity_surface,2764b2c55a6b,1,,matrix_row_sum_error,0.0,probability,exact,complete,0.25,0.0,gaussian,1.0,"[0.0, 0.25]",
+capacity_surface,capacity_surface,7f4d6a0c91ba,1,,optimal_input_probability,0.5,probability,exact,complete,,,,,,0.0
+capacity_surface,capacity_surface,a31307b88b68,1,,optimal_input_probability,0.5,probability,exact,complete,,,,,,1.0
+capacity_surface,capacity_surface,31ab04fc93fa,2,,mutual_information,0.010957369171482947,bits_per_symbol,exact,complete,0.5,0.0,gaussian,1.0,"[0.0, 0.25]",
+capacity_surface,capacity_surface,502c32577f2a,2,,capacity_bits_per_symbol,0.010957369171482947,bits_per_symbol,blahut_arimoto,complete,0.5,0.0,gaussian,1.0,"[0.0, 0.25]",
+capacity_surface,capacity_surface,502c32577f2a,2,,capacity_residual,1.3877787807814457e-17,bits_per_symbol,blahut_arimoto,complete,0.5,0.0,gaussian,1.0,"[0.0, 0.25]",
+capacity_surface,capacity_surface,31ab04fc93fa,2,,matrix_row_sum_error,0.0,probability,exact,complete,0.5,0.0,gaussian,1.0,"[0.0, 0.25]",
+capacity_surface,capacity_surface,0f80acb7b6e5,2,,optimal_input_probability,0.5,probability,exact,complete,,,,,,0.0
+capacity_surface,capacity_surface,915040821e17,2,,optimal_input_probability,0.5,probability,exact,complete,,,,,,1.0
+capacity_surface,capacity_surface,14c3b4209e34,3,,mutual_information,0.043674788824438635,bits_per_symbol,exact,complete,0.125,0.0,gaussian,1.0,"[0.0, 0.5]",
+capacity_surface,capacity_surface,43b23220f73b,3,,capacity_bits_per_symbol,0.043674788824438635,bits_per_symbol,blahut_arimoto,complete,0.125,0.0,gaussian,1.0,"[0.0, 0.5]",
+capacity_surface,capacity_surface,43b23220f73b,3,,capacity_residual,8.326672684688674e-17,bits_per_symbol,blahut_arimoto,complete,0.125,0.0,gaussian,1.0,"[0.0, 0.5]",
+capacity_surface,capacity_surface,14c3b4209e34,3,,matrix_row_sum_error,0.0,probability,exact,complete,0.125,0.0,gaussian,1.0,"[0.0, 0.5]",
+capacity_surface,capacity_surface,cf8894919e4b,3,,optimal_input_probability,0.5,probability,exact,complete,,,,,,0.0
+capacity_surface,capacity_surface,e9149a274ca8,3,,optimal_input_probability,0.5,probability,exact,complete,,,,,,1.0
+capacity_surface,capacity_surface,e8a0f54f8d99,4,,mutual_information,0.043510089976606485,bits_per_symbol,exact,complete,0.25,0.0,gaussian,1.0,"[0.0, 0.5]",
+capacity_surface,capacity_surface,31faf68cc57d,4,,capacity_bits_per_symbol,0.04351008997660649,bits_per_symbol,blahut_arimoto,complete,0.25,0.0,gaussian,1.0,"[0.0, 0.5]",
+capacity_surface,capacity_surface,31faf68cc57d,4,,capacity_residual,6.938893903907228e-18,bits_per_symbol,blahut_arimoto,complete,0.25,0.0,gaussian,1.0,"[0.0, 0.5]",
+capacity_surface,capacity_surface,e8a0f54f8d99,4,,matrix_row_sum_error,0.0,probability,exact,complete,0.25,0.0,gaussian,1.0,"[0.0, 0.5]",
+capacity_surface,capacity_surface,fe3e93261b9a,4,,optimal_input_probability,0.5,probability,exact,complete,,,,,,0.0
+capacity_surface,capacity_surface,b880feecd34d,4,,optimal_input_probability,0.5,probability,exact,complete,,,,,,1.0
+capacity_surface,capacity_surface,cc7d47f1d22f,5,,mutual_information,0.04286341103461777,bits_per_symbol,exact,complete,0.5,0.0,gaussian,1.0,"[0.0, 0.5]",
+capacity_surface,capacity_surface,8df822d53b94,5,,capacity_bits_per_symbol,0.04286341103461778,bits_per_symbol,blahut_arimoto,complete,0.5,0.0,gaussian,1.0,"[0.0, 0.5]",
+capacity_surface,capacity_surface,8df822d53b94,5,,capacity_residual,1.3877787807814457e-17,bits_per_symbol,blahut_arimoto,complete,0.5,0.0,gaussian,1.0,"[0.0, 0.5]",
+capacity_surface,capacity_surface,cc7d47f1d22f,5,,matrix_row_sum_error,0.0,probability,exact,complete,0.5,0.0,gaussian,1.0,"[0.0, 0.5]",
+capacity_surface,capacity_surface,5fd09e9a2580,5,,optimal_input_probability,0.5,probability,exact,complete,,,,,,0.0
+capacity_surface,capacity_surface,b8acf9e5d552,5,,optimal_input_probability,0.5,probability,exact,complete,,,,,,1.0
+capacity_surface,capacity_surface,a8a7affa6112,6,,mutual_information,0.16056053147302046,bits_per_symbol,exact,complete,0.125,0.0,gaussian,1.0,"[0.0, 1.0]",
+capacity_surface,capacity_surface,dde149bb04a3,6,,capacity_bits_per_symbol,0.16056053147302046,bits_per_symbol,blahut_arimoto,complete,0.125,0.0,gaussian,1.0,"[0.0, 1.0]",
+capacity_surface,capacity_surface,dde149bb04a3,6,,capacity_residual,2.7755575615628914e-17,bits_per_symbol,blahut_arimoto,complete,0.125,0.0,gaussian,1.0,"[0.0, 1.0]",
+capacity_surface,capacity_surface,a8a7affa6112,6,,matrix_row_sum_error,0.0,probability,exact,complete,0.125,0.0,gaussian,1.0,"[0.0, 1.0]",
+capacity_surface,capacity_surface,d8af7e8fa533,6,,optimal_input_probability,0.5,probability,exact,complete,,,,,,0.0
+capacity_surface,capacity_surface,87ca3f34fb34,6,,optimal_input_probability,0.5,probability,exact,complete,,,,,,1.0
+capacity_surface,capacity_surface,2c65149b669b,7,,mutual_information,0.16000298287040332,bits_per_symbol,exact,complete,0.25,0.0,gaussian,1.0,"[0.0, 1.0]",
+capacity_surface,capacity_surface,749c308b28ac,7,,capacity_bits_per_symbol,0.16000298287040332,bits_per_symbol,blahut_arimoto,complete,0.25,0.0,gaussian,1.0,"[0.0, 1.0]",
+capacity_surface,capacity_surface,749c308b28ac,7,,capacity_residual,2.7755575615628914e-17,bits_per_symbol,blahut_arimoto,complete,0.25,0.0,gaussian,1.0,"[0.0, 1.0]",
+capacity_surface,capacity_surface,2c65149b669b,7,,matrix_row_sum_error,0.0,probability,exact,complete,0.25,0.0,gaussian,1.0,"[0.0, 1.0]",
+capacity_surface,capacity_surface,d8363a7315e4,7,,optimal_input_probability,0.5,probability,exact,complete,,,,,,0.0
+capacity_surface,capacity_surface,94538af1adfb,7,,optimal_input_probability,0.5,probability,exact,complete,,,,,,1.0
+capacity_surface,capacity_surface,bb9a3b2bff33,8,,mutual_information,0.1578098993297024,bits_per_symbol,exact,complete,0.5,0.0,gaussian,1.0,"[0.0, 1.0]",
+capacity_surface,capacity_surface,837fac97a093,8,,capacity_bits_per_symbol,0.15780989932970238,bits_per_symbol,blahut_arimoto,complete,0.5,0.0,gaussian,1.0,"[0.0, 1.0]",
+capacity_surface,capacity_surface,837fac97a093,8,,capacity_residual,5.551115123125783e-17,bits_per_symbol,blahut_arimoto,complete,0.5,0.0,gaussian,1.0,"[0.0, 1.0]",
+capacity_surface,capacity_surface,bb9a3b2bff33,8,,matrix_row_sum_error,0.0,probability,exact,complete,0.5,0.0,gaussian,1.0,"[0.0, 1.0]",
+capacity_surface,capacity_surface,3f521710fc81,8,,optimal_input_probability,0.5,probability,exact,complete,,,,,,0.0
+capacity_surface,capacity_surface,f5803dcc7c0c,8,,optimal_input_probability,0.5,probability,exact,complete,,,,,,1.0

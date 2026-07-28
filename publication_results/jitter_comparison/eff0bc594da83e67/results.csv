@@ -1,0 +1,19 @@
+experiment_name,experiment_kind,job_id,sweep_index,replication,metric_name,metric_value,units,estimator,status,warning_code,confidence_interval_lower,confidence_interval_upper,quantizer_step,quantizer_phase,jitter_distribution,jitter_scale,alphabet,symbol_index
+jitter_comparison,jitter_comparison,1e5b28ddeb00,0,,capacity_bits_per_symbol,0.16000298287040332,bits_per_symbol,blahut_arimoto,complete,,,,0.25,0.0,gaussian,1.0,"[0.0, 1.0]",
+jitter_comparison,jitter_comparison,1e5b28ddeb00,0,,capacity_residual,2.7755575615628914e-17,bits_per_symbol,blahut_arimoto,complete,,,,0.25,0.0,gaussian,1.0,"[0.0, 1.0]",
+jitter_comparison,jitter_comparison,0c5e2d020d48,0,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.25,0.0,gaussian,1.0,"[0.0, 1.0]",
+jitter_comparison,jitter_comparison,0c5e2d020d48,0,,mutual_information,0.16000298287040332,bits_per_symbol,exact,complete,,,,0.25,0.0,gaussian,1.0,"[0.0, 1.0]",
+jitter_comparison,jitter_comparison,19388d840e02,0,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,0.0
+jitter_comparison,jitter_comparison,030014c2474f,0,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0
+jitter_comparison,jitter_comparison,991f0dbd8d33,1,,capacity_bits_per_symbol,0.15780989932970238,bits_per_symbol,blahut_arimoto,complete,,,,0.5,0.0,gaussian,1.0,"[0.0, 1.0]",
+jitter_comparison,jitter_comparison,991f0dbd8d33,1,,capacity_residual,5.551115123125783e-17,bits_per_symbol,blahut_arimoto,complete,,,,0.5,0.0,gaussian,1.0,"[0.0, 1.0]",
+jitter_comparison,jitter_comparison,5917c5f898f2,1,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.5,0.0,gaussian,1.0,"[0.0, 1.0]",
+jitter_comparison,jitter_comparison,5917c5f898f2,1,,mutual_information,0.1578098993297024,bits_per_symbol,exact,complete,,,,0.5,0.0,gaussian,1.0,"[0.0, 1.0]",
+jitter_comparison,jitter_comparison,fc1a377045ac,1,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,0.0
+jitter_comparison,jitter_comparison,eab1065e6dfa,1,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0
+jitter_comparison,jitter_comparison,407d7c17a812,2,,capacity_bits_per_symbol,0.14959422631881047,bits_per_symbol,blahut_arimoto,complete,,,,1.0,0.0,gaussian,1.0,"[0.0, 1.0]",
+jitter_comparison,jitter_comparison,407d7c17a812,2,,capacity_residual,1.3877787807814457e-16,bits_per_symbol,blahut_arimoto,complete,,,,1.0,0.0,gaussian,1.0,"[0.0, 1.0]",
+jitter_comparison,jitter_comparison,1abc6880fcbb,2,,matrix_row_sum_error,0.0,probability,exact,complete,,,,1.0,0.0,gaussian,1.0,"[0.0, 1.0]",
+jitter_comparison,jitter_comparison,1abc6880fcbb,2,,mutual_information,0.14959422631881045,bits_per_symbol,exact,complete,,,,1.0,0.0,gaussian,1.0,"[0.0, 1.0]",
+jitter_comparison,jitter_comparison,2ee6039dfa0c,2,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,0.0
+jitter_comparison,jitter_comparison,54fe16a7f9eb,2,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0

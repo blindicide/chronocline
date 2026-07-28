@@ -1,0 +1,41 @@
+{
+  "allow_dirty_override": false,
+  "completed_at": "2026-07-28T09:54:06.280448+00:00",
+  "completed_jobs": 6,
+  "completion_status": "complete",
+  "config_hash": "85f123ac8f8a20b90b594c0b518302ee980f38c07ae8923ddd9235ed16e68de4",
+  "expected_jobs": 6,
+  "expected_metrics": [
+    "capacity_bits_per_symbol",
+    "matrix_row_sum_error"
+  ],
+  "experiment_kind": "capacity_curve",
+  "experiment_name": "capacity_curve",
+  "generated_files": {
+    "config.original.yaml": "321f5e77adc70cdee24e26e67d076d119d430c7b4a7b2c47ad9601dee193d73a",
+    "config.resolved.yaml": "ed550bca753306bac42c5141543695816dff07348aedcafd542734bb5ba0ee89",
+    "diagnostics.json": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "environment.json": "5437c5a13c0814ea737adc0d901fc36142eccc98a1416e0bed386efdf794520b",
+    "matrices/channel_0.npz": "6bc249dc5282586746e35484673e95ce46be492d959384dba73167da3e78fd37",
+    "matrices/channel_1.npz": "23be4fb43a6b40e6bc08608424e0cfcc63048eb90ff8915f2f6f93335eb14495",
+    "matrices/channel_2.npz": "e5b3287b0fa97e68ceb1f6faeea575bed8df195cf5e650182895b03061455596",
+    "matrices/channel_3.npz": "b6ec45659d7d50ca86ae0343eb4658259623947d39ba024aa09ed90d10695959",
+    "matrices/channel_4.npz": "afaf8bd459fce4e69385e63e7ffb0101e41fb9a39216da5bc03cc5b3945e04c1",
+    "matrices/channel_5.npz": "ee8015a0d19b261ea78114b0d18323fa50d43e182a285770dec1f34620fa7ce6",
+    "results.csv": "d21d3a8081cc43771f2d646880062b542a1efba179f61c063f0ad336175fdf17",
+    "tables/figure_memoryless_source.csv": "19bad624b01e9a6ef507ec4be95a836d0b5e2a43f454b6bac7e166bd1a8a0607"
+  },
+  "locale": "en",
+  "package_version": "0.6.0",
+  "project": "Project Chronocline",
+  "result_schema_version": "2.0",
+  "run_id": "96c034be994919d6",
+  "runner_name": "MemorylessRunner",
+  "runner_version": "2.0",
+  "semantic_validation_errors": [],
+  "semantic_validation_status": "passed",
+  "source_commit": "c708483683ba7ad5feafdfc9a40eb89871051252",
+  "source_dirty": false,
+  "started_at": "2026-07-28T09:54:06.235861+00:00",
+  "workers": 1
+}
