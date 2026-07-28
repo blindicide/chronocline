@@ -109,6 +109,21 @@ def test_detector_work_units_count_sample_sizes_and_hypothesis_pairs(tmp_path: P
     assert plan.jobs == len(config.detection.sample_sizes) * 2
 
 
+def test_detector_emits_a_null_control_with_chance_level_auc(tmp_path: Path) -> None:
+    """A baseline-vs-baseline detector is a true null experiment, not omitted metadata."""
+    config = detector_config()
+    output = DetectionRunner().execute(
+        ExperimentContext(config, tmp_path, np.random.SeedSequence(19), "test", False),
+        [(0, config)],
+    )
+    null_auc = [
+        row["metric_value"]
+        for row in output.rows
+        if row["metric_name"] == "auc" and row["hypothesis_pair"] == "baseline_vs_baseline"
+    ]
+    assert null_auc and np.allclose(null_auc, 0.5)
+
+
 def test_ternary_search_can_leave_unused_upper_range_slack() -> None:
     """A ternary optimizer must not force the final symbol to the configured maximum."""
     result = best_found_alphabet(
