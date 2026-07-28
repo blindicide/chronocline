@@ -5,12 +5,11 @@ from __future__ import annotations
 import json
 from pathlib import Path
 
-import pandas as pd
 import typer
 
 from .config import ExperimentKind, load_config
 from .experiments import run
-from .plotting import plot_capacity
+from .plotting import plot_result_directory
 from .results import validate_result_directory
 from .results.manifest import finalize_manifest
 
@@ -76,12 +75,12 @@ def validate_results(path: Path) -> None:
 @app.command()
 def plot(path: Path, locale: str = "en") -> None:
     """Regenerate plots from stored CSV data only."""
-    plot_capacity(pd.read_csv(path / "results.csv"), path / "figures", locale)
+    result = plot_result_directory(path, locale)
     manifest_path = path / "manifest.json"
     if manifest_path.exists():
         manifest = json.loads(manifest_path.read_text())
         finalize_manifest(path, manifest, int(manifest.get("completed_jobs", 0)), [])
-    typer.echo(path / "figures")
+    typer.echo(result)
 
 
 @app.command("run-suite")
