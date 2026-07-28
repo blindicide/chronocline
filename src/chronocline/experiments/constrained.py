@@ -6,7 +6,9 @@ import numpy as np
 
 from ..channels import build_memoryless_channel
 from ..config import RunConfig
+from ..information import mutual_information
 from ..information.constrained import constrained_capacity
+from ..information.divergence import kl_divergence
 from ..quantization import UniformQuantizer
 from .base import ExperimentContext, ExperimentOutput, ExperimentPlan
 from .memoryless import make_jitter, row
@@ -60,9 +62,10 @@ class ConstrainedRunner:
                 matrix.probabilities,
                 matrix.inputs,
                 baseline,
-                max_kl=config.constraints.max_kl_bits,
+                max_kl_bits=config.constraints.max_kl_bits,
                 max_mean_delay=config.constraints.max_mean_delay,
                 tolerance=config.optimization.tolerance,
+                max_iterations=config.optimization.max_iterations,
                 starts=16,
                 seed=config.experiment.seed + index,
             )
@@ -75,6 +78,22 @@ class ConstrainedRunner:
                 "max_kl_bits": config.constraints.max_kl_bits,
                 "baseline_mode": config.baseline.mode,
             }
+            grid = np.linspace(0.0, 1.0, 1001)
+            grid_feasible: list[float] = []
+            for first_probability in grid:
+                probabilities = np.array([first_probability, 1 - first_probability])
+                output = probabilities @ matrix.probabilities
+                if (
+                    config.constraints.max_kl_bits is None
+                    or kl_divergence(output, baseline)
+                    <= config.constraints.max_kl_bits + config.optimization.tolerance
+                ) and (
+                    config.constraints.max_mean_delay is None
+                    or probabilities @ matrix.inputs
+                    <= config.constraints.max_mean_delay + config.optimization.tolerance
+                ):
+                    grid_feasible.append(mutual_information(probabilities, matrix.probabilities))
+            grid_best = max(grid_feasible, default=float("nan"))
             rows.extend(
                 [
                     row(
@@ -127,6 +146,26 @@ class ConstrainedRunner:
                         "optimizer_iterations",
                         float(result.iterations),
                         "iterations",
+                        **params,
+                    ),
+                    row(
+                        config,
+                        index,
+                        "grid_best_capacity",
+                        grid_best,
+                        "bits_per_symbol",
+                        estimator="binary_grid_validation",
+                        grid_resolution=1001,
+                        **params,
+                    ),
+                    row(
+                        config,
+                        index,
+                        "optimizer_grid_difference",
+                        abs(result.capacity_bits - grid_best),
+                        "bits_per_symbol",
+                        estimator="binary_grid_validation",
+                        grid_resolution=1001,
                         **params,
                     ),
                 ]

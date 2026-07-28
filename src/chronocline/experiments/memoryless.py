@@ -174,26 +174,75 @@ class MemorylessRunner:
     ) -> ExperimentOutput:
         rows: list[dict[str, object]] = []
         for index, config in jobs:
-            job_rows, optimum = evaluate_memoryless(
-                config,
-                index,
-                context.directory,
-                monte_carlo=config.experiment.kind
-                in {ExperimentKind.SMOKE, ExperimentKind.MEMORYLESS_BASELINE},
-            )
-            rows.extend(job_rows)
-            for symbol, probability in enumerate(optimum):
-                rows.append(
-                    row(
-                        config,
-                        index,
-                        "optimal_input_probability",
-                        float(probability),
-                        "probability",
-                        symbol_index=symbol,
-                    )
+            variants = [config]
+            if config.experiment.kind is ExperimentKind.JITTER_COMPARISON:
+                variants = _matched_variance_jitter_variants(config)
+            for variant_index, variant in enumerate(variants):
+                job_index = index * len(variants) + variant_index
+                job_rows, optimum = evaluate_memoryless(
+                    variant,
+                    job_index,
+                    context.directory,
+                    monte_carlo=variant.experiment.kind
+                    in {ExperimentKind.SMOKE, ExperimentKind.MEMORYLESS_BASELINE},
                 )
+                variance = make_jitter(variant).variance()
+                for entry in job_rows:
+                    entry["jitter_variance"] = variance
+                rows.extend(job_rows)
+                if variant.experiment.kind is ExperimentKind.JITTER_COMPARISON:
+                    rows.append(
+                        row(
+                            variant,
+                            job_index,
+                            "jitter_variance",
+                            variance,
+                            "normalized_time_squared",
+                            estimator="analytic",
+                            jitter_distribution=variant.jitter.distribution,
+                            quantizer_step=variant.quantizer.step,
+                        )
+                    )
+                for symbol, probability in enumerate(optimum):
+                    rows.append(
+                        row(
+                            variant,
+                            job_index,
+                            "optimal_input_probability",
+                            float(probability),
+                            "probability",
+                            symbol_index=symbol,
+                            jitter_variance=variance,
+                        )
+                    )
         frame = pd.DataFrame(rows)
         (context.directory / "tables").mkdir(exist_ok=True)
         frame.to_csv(context.directory / "tables" / "figure_memoryless_source.csv", index=False)
         return ExperimentOutput(rows=rows, artifacts=[Path("tables/figure_memoryless_source.csv")])
+
+
+def _matched_variance_jitter_variants(config: RunConfig) -> list[RunConfig]:
+    """Return Gaussian, Laplace, t, and mixture laws with unit variance."""
+    t_degrees = 5.0
+    mixture_mean = 0.5
+    mixture_scale = float(np.sqrt(1 - mixture_mean**2))
+    specifications = [
+        {"distribution": "gaussian", "scale": 1.0},
+        {"distribution": "laplace", "scale": 1 / np.sqrt(2)},
+        {
+            "distribution": "student_t",
+            "scale": np.sqrt((t_degrees - 2) / t_degrees),
+            "degrees_of_freedom": t_degrees,
+        },
+        {
+            "distribution": "gaussian_mixture",
+            "scale": 1.0,
+            "weights": [0.5, 0.5],
+            "means": [-mixture_mean, mixture_mean],
+            "scales": [mixture_scale, mixture_scale],
+        },
+    ]
+    return [
+        config.model_copy(update={"jitter": config.jitter.model_copy(update=specification)})
+        for specification in specifications
+    ]

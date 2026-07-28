@@ -49,10 +49,19 @@ class GaussianMixture:
         q_arr = np.asarray(q, dtype=float)
         if np.any((q_arr < 0) | (q_arr > 1)):
             raise ValueError("quantiles must be in [0, 1]")
-        lo, hi = self.support()
-        values = [
-            brentq(lambda z, target=v: float(self.cdf(z) - target), lo, hi) for v in q_arr.ravel()
-        ]
+        spread = max(float(np.max(self.scales)), 1.0)
+        lo = float(np.min(self.means) - 12 * spread)
+        hi = float(np.max(self.means) + 12 * spread)
+        values = []
+        for target in q_arr.ravel():
+            if target == 0:
+                values.append(-np.inf)
+            elif target == 1:
+                values.append(np.inf)
+            else:
+                values.append(
+                    brentq(lambda z, value=target: float(self.cdf(z) - value), lo, hi)
+                )
         return np.asarray(values).reshape(q_arr.shape)
 
     def sample(self, size: int | tuple[int, ...], rng: np.random.Generator) -> NDArray[np.float64]:

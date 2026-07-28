@@ -3,6 +3,9 @@ __pycache__/
 *.py[cod]
 .pytest_cache/
 .coverage
+INSTRUCTION.md
+CORRECTIVE_MANDATE.md
+/publication_results/*/*
 .mypy_cache/
 .ruff_cache/
 /results/

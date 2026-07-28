@@ -10,6 +10,7 @@ from typing import Any
 import numpy as np
 import pandas as pd
 
+from ..constants import SCHEMA_VERSION
 from .schema import METRIC_UNITS
 
 REQUIRED = {
@@ -44,6 +45,7 @@ REQUIRED = {
         "memoryless_approximation_error",
         "plugin_block_mutual_information",
     },
+    "jitter_comparison": {"capacity_bits_per_symbol", "jitter_variance"},
 }
 
 
@@ -88,6 +90,12 @@ def semantic_errors(
         if METRIC_UNITS.get(metric) != unit:
             errors.append(f"wrong or unknown unit for {metric}")
     kind = str(manifest.get("experiment_kind", ""))
+    if strict and manifest.get("completion_status") not in {None, "complete"}:
+        errors.append("manifest is not complete")
+    if manifest.get("result_schema_version") not in {None, SCHEMA_VERSION}:
+        errors.append("unsupported result schema version")
+    if not manifest.get("config_hash"):
+        errors.append("missing configuration hash")
     required = REQUIRED.get(kind, {"capacity_bits_per_symbol"})
     if not required.issubset(set(frame.get("metric_name", []))):
         errors.append(f"missing required metrics for {kind}")
@@ -111,6 +119,34 @@ def semantic_errors(
         errors.append("phase campaign lacks phase variation")
     if kind == "finite_sample_detection" and not list((directory / "tables").glob("roc_n_*.csv")):
         errors.append("detection campaign lacks ROC artifacts")
+    if kind == "finite_sample_detection" and (
+        frame.loc[frame.metric_name == "auc", "sample_size"].nunique() < 2
+    ):
+        errors.append("detection campaign lacks multiple sample sizes")
+    if kind == "detectability_frontier":
+        budgets = frame.get("max_kl_bits", pd.Series())
+        if budgets.nunique() < 2:
+            errors.append("detectability frontier lacks multiple budgets")
+        feasibility = frame.loc[frame.metric_name == "optimizer_feasible", "metric_value"]
+        if not feasibility.empty and np.any(feasibility < 0.5):
+            errors.append("detectability frontier contains infeasible optimizer output")
+        capacities = frame.loc[
+            frame.metric_name == "constrained_capacity_bits_per_symbol",
+            ["max_kl_bits", "metric_value"],
+        ].sort_values("max_kl_bits")
+        if len(capacities) > 1 and np.any(np.diff(capacities.metric_value) < -1e-7):
+            errors.append("detectability frontier violates capacity monotonicity")
+    if kind == "batching_comparison":
+        variations = frame.get("batching_mode", pd.Series()).nunique()
+        variations = max(variations, frame.get("batching_window", pd.Series()).nunique())
+        if variations < 2:
+            errors.append("batching campaign lacks multiple configurations")
+    if kind == "alphabet_optimization":
+        alphabet = frame.loc[frame.metric_name == "optimized_alphabet"].sort_values("symbol_index")
+        if len(alphabet) < 2 or np.any(np.diff(alphabet.metric_value) <= 0):
+            errors.append("alphabet optimisation result is not strictly ordered")
+    if kind == "jitter_comparison" and frame.get("jitter_distribution", pd.Series()).nunique() < 2:
+        errors.append("jitter comparison lacks multiple distribution families")
     if strict and manifest_path.exists():
         for name, expected in manifest.get("generated_files", {}).items():
             file = directory / name

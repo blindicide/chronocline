@@ -1,8 +1,6 @@
-experiment: {name: finite_sample_detection, seed: 20260728, output_directory: results, overwrite: false, locale: en}
-channel: {mode: absolute_delay, alphabet: {values: [0.0, 1.0], unit: normalized}, input_probabilities: null}
-jitter: {distribution: gaussian, mean: 0.0, scale: 1.0}
-quantizer: {type: uniform, step: 0.5, phase: 0.0, mode: floor, random_phase: false}
-matrix: {tail_probability: 1.0e-12, include_overflow_bins: true}
-optimization: {method: blahut_arimoto, tolerance: 1.0e-10, max_iterations: 10000}
-constraints: {max_kl_divergence: null, max_mean_delay: null}
-sweep: {parameters: {}}
+experiment: {kind: finite_sample_detection, name: finite_sample_detection, seed: 20260728, output_directory: results, require_clean_git: false}
+channel: {alphabet: {values: [0.0, 1.0]}, input_probabilities: [0.2, 0.8]}
+jitter: {distribution: gaussian, scale: 1.0}
+quantizer: {step: 0.5}
+baseline: {mode: channel_symbol, symbol_index: 0}
+detection: {sample_sizes: [10, 25, 50, 100], trials: 200, bootstrap_repetitions: 20, target_false_positive_rates: [0.05]}

@@ -1,7 +1,7 @@
-experiment: {kind: detectability_frontier, name: detectability_frontier, seed: 20260728, output_directory: publication_results, require_clean_git: true}
+experiment: {kind: detectability_frontier, name: detectability_frontier, seed: 20260728, output_directory: publication_results, workers: 2, require_clean_git: true}
 channel: {alphabet: {values: [0.0, 1.0]}}
 jitter: {distribution: gaussian, scale: 1.0}
 quantizer: {step: 0.5}
 baseline: {mode: channel_symbol, symbol_index: 0}
 constraints: {max_kl_bits: 0.001}
-sweep: {parameters: {constraints.max_kl_bits: [0.001, 0.005, 0.01, 0.02, 0.05, 0.1]}}
+sweep: {parameters: {constraints.max_kl_bits: [0.0001, 0.0002, 0.0005, 0.001, 0.002, 0.005, 0.01, 0.02, 0.05, 0.1, 0.15, 0.2, 0.3, 0.4, 0.5, 0.6, 0.75, 0.9, 1.1, 1.5]}}

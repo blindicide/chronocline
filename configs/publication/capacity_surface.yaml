@@ -1,5 +1,5 @@
-experiment: {kind: capacity_surface, name: capacity_surface, seed: 20260728, output_directory: publication_results, require_clean_git: true}
+experiment: {kind: capacity_surface, name: capacity_surface, seed: 20260728, output_directory: publication_results, workers: 2, require_clean_git: true}
 channel: {alphabet: {values: [0.0, 0.25]}}
 jitter: {distribution: gaussian, scale: 1.0}
 quantizer: {step: 0.125}
-sweep: {parameters: {quantizer.step: [0.125, 0.25, 0.5], channel.alphabet.values: [[0.0, 0.25], [0.0, 0.5], [0.0, 1.0]]}}
+sweep: {parameters: {quantizer.step: [0.125, 0.15625, 0.1953125, 0.244140625, 0.30517578125, 0.3814697265625, 0.476837158203125, 0.5960464477539062, 0.7450580596923828, 0.9313225746154785, 1.1641532182693481, 1.4551915228366852], channel.alphabet.values: [[0.0, 0.125], [0.0, 0.15625], [0.0, 0.1953125], [0.0, 0.244140625], [0.0, 0.30517578125], [0.0, 0.3814697265625], [0.0, 0.476837158203125], [0.0, 0.5960464477539062], [0.0, 0.7450580596923828], [0.0, 0.9313225746154785], [0.0, 1.1641532182693481], [0.0, 1.4551915228366852]]}}

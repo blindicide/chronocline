@@ -17,8 +17,14 @@ from .memoryless import make_jitter, row
 
 
 def _scores(
-    p1: np.ndarray, p0: np.ndarray, n: int, trials: int, rng: np.random.Generator
+    p1: np.ndarray,
+    p0: np.ndarray,
+    n: int,
+    trials: int,
+    batch_size: int,
+    rng: np.random.Generator,
 ) -> tuple[np.ndarray, np.ndarray]:
+    """Draw deterministic score batches without a maximum-size trial array."""
     log_ratio = np.full(len(p0), np.nan)
     both = (p1 > 0) & (p0 > 0)
     log_ratio[both] = np.log(p1[both] / p0[both])
@@ -26,16 +32,51 @@ def _scores(
     log_ratio[(p1 == 0) & (p0 > 0)] = -np.inf
     if np.any(np.isnan(log_ratio)):
         log_ratio[np.isnan(log_ratio)] = 0.0
-    baseline = rng.choice(len(p0), size=(trials, n), p=p0)
-    active = rng.choice(len(p1), size=(trials, n), p=p1)
-    return log_ratio[baseline].sum(axis=1), log_ratio[active].sum(axis=1)
+    baseline_scores: list[np.ndarray] = []
+    active_scores: list[np.ndarray] = []
+    for start in range(0, trials, batch_size):
+        count = min(batch_size, trials - start)
+        baseline = rng.choice(len(p0), size=(count, n), p=p0)
+        active = rng.choice(len(p1), size=(count, n), p=p1)
+        baseline_scores.append(log_ratio[baseline].sum(axis=1))
+        active_scores.append(log_ratio[active].sum(axis=1))
+    return np.concatenate(baseline_scores), np.concatenate(active_scores)
 
 
 def _roc(scores0: np.ndarray, scores1: np.ndarray) -> tuple[np.ndarray, np.ndarray, float]:
+    """Compute ROC endpoints by sorted-score ranks rather than quadratic scans."""
     thresholds = np.r_[np.inf, np.unique(np.r_[scores0, scores1])[::-1], -np.inf]
-    fpr = np.array([(scores0 >= t).mean() for t in thresholds])
-    tpr = np.array([(scores1 >= t).mean() for t in thresholds])
+    fpr = np.asarray(
+        (len(scores0) - np.searchsorted(np.sort(scores0), thresholds, side="left")) / len(scores0)
+    )
+    tpr = np.asarray(
+        (len(scores1) - np.searchsorted(np.sort(scores1), thresholds, side="left")) / len(scores1)
+    )
     return fpr, tpr, float(np.trapezoid(tpr, fpr))
+
+
+def _bootstrap_metrics(
+    scores0: np.ndarray,
+    scores1: np.ndarray,
+    repetitions: int,
+    target_fprs: list[float],
+    rng: np.random.Generator,
+) -> dict[str, tuple[float, float]]:
+    """Return percentile intervals for detector summaries using independent resamples."""
+    samples: dict[str, list[float]] = {"auc": [], "minimum_equal_prior_error": []}
+    samples.update({f"tpr_at_fpr_{rate:g}": [] for rate in target_fprs})
+    for _ in range(repetitions):
+        first = rng.choice(scores0, len(scores0), replace=True)
+        second = rng.choice(scores1, len(scores1), replace=True)
+        fpr, tpr, auc = _roc(first, second)
+        samples["auc"].append(auc)
+        samples["minimum_equal_prior_error"].append(float(np.min((fpr + (1 - tpr)) / 2)))
+        for rate in target_fprs:
+            samples[f"tpr_at_fpr_{rate:g}"].append(float(np.max(tpr[fpr <= rate])))
+    return {
+        name: tuple(np.quantile(values, [0.025, 0.975]))  # type: ignore[return-value]
+        for name, values in samples.items()
+    }
 
 
 class DetectionRunner:
@@ -87,10 +128,18 @@ class DetectionRunner:
                 baseline,
                 n,
                 config.detection.trials,
+                config.detection.batch_size,
                 np.random.default_rng(root.integers(2**32)),
             )
             fpr, tpr, auc = _roc(scores0, scores1)
             error = float(np.min((fpr + (1 - tpr)) / 2))
+            intervals = _bootstrap_metrics(
+                scores0,
+                scores1,
+                config.detection.bootstrap_repetitions,
+                config.detection.target_false_positive_rates,
+                np.random.default_rng(root.integers(2**32)),
+            )
             roc_path = tables / f"roc_n_{n}.csv"
             pd.DataFrame({"false_positive_rate": fpr, "true_positive_rate": tpr}).to_csv(
                 roc_path, index=False
@@ -108,6 +157,8 @@ class DetectionRunner:
                         auc,
                         "dimensionless",
                         estimator="likelihood_ratio",
+                        confidence_interval_lower=intervals["auc"][0],
+                        confidence_interval_upper=intervals["auc"][1],
                         **params,
                     ),
                     row(
@@ -117,6 +168,8 @@ class DetectionRunner:
                         error,
                         "probability",
                         estimator="likelihood_ratio",
+                        confidence_interval_lower=intervals["minimum_equal_prior_error"][0],
+                        confidence_interval_upper=intervals["minimum_equal_prior_error"][1],
                         **params,
                     ),
                     row(
@@ -129,6 +182,22 @@ class DetectionRunner:
                     ),
                 ]
             )
+            for target in config.detection.target_false_positive_rates:
+                name = f"tpr_at_fpr_{target:g}"
+                rows.append(
+                    row(
+                        config,
+                        index,
+                        "tpr_at_fpr",
+                        float(np.max(tpr[fpr <= target])),
+                        "probability",
+                        estimator="likelihood_ratio",
+                        target_false_positive_rate=target,
+                        confidence_interval_lower=intervals[name][0],
+                        confidence_interval_upper=intervals[name][1],
+                        **params,
+                    )
+                )
             for target in config.detection.target_false_positive_rates:
                 admissible = tpr[fpr <= target]
                 rows.append(
