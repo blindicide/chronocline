@@ -1,0 +1,5 @@
+experiment: {kind: phase_sensitivity, name: ci_phase_sensitivity, seed: 7, output_directory: results, require_clean_git: false}
+channel: {alphabet: {values: [0.0, 1.0]}}
+jitter: {distribution: gaussian, scale: 1.0}
+quantizer: {step: 0.5}
+sweep: {parameters: {quantizer.phase: [0.0, 0.25]}}

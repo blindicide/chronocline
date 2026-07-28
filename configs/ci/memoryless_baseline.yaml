@@ -1,0 +1,4 @@
+experiment: {kind: memoryless_baseline, name: ci_memoryless_baseline, seed: 7, output_directory: results, require_clean_git: false}
+channel: {alphabet: {values: [0.0, 1.0]}}
+jitter: {distribution: gaussian, scale: 1.0}
+quantizer: {step: 0.5}

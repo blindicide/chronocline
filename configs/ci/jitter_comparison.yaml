@@ -1,0 +1,5 @@
+experiment: {kind: jitter_comparison, name: ci_jitter_comparison, seed: 7, output_directory: results, require_clean_git: false}
+channel: {alphabet: {values: [0.0, 1.0]}}
+jitter: {distribution: gaussian, scale: 1.0}
+quantizer: {step: 0.25}
+sweep: {parameters: {quantizer.step: [0.25, 0.5]}}

@@ -1,0 +1,5 @@
+experiment: {kind: capacity_surface, name: ci_capacity_surface, seed: 7, output_directory: results, require_clean_git: false}
+channel: {alphabet: {values: [0.0, 0.5]}}
+jitter: {distribution: gaussian, scale: 1.0}
+quantizer: {step: 0.25}
+sweep: {parameters: {quantizer.step: [0.25, 0.5], channel.alphabet.values: [[0.0, 0.5], [0.0, 1.0]]}}

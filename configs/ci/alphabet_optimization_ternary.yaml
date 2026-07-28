@@ -1,0 +1,5 @@
+experiment: {kind: alphabet_optimization, name: ci_alphabet_ternary, seed: 7, output_directory: results, require_clean_git: false}
+channel: {alphabet: {values: [0.0, 1.0, 2.0]}}
+jitter: {distribution: gaussian, scale: 1.0}
+quantizer: {step: 0.5}
+alphabet_search: {symbols: 3, minimum: 0.0, maximum: 2.0, minimum_spacing: 0.1, binary_grid_points: 9}

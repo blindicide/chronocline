@@ -1,0 +1,26 @@
+name: scientific-ci
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python: ["3.11", "3.12"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - run: python -m pip install -e '.[dev]'
+      - run: ruff check .
+      - run: mypy src/chronocline
+      - run: pytest --cov=chronocline --cov-report=term-missing --cov-fail-under=85
+      - run: |
+          for config in configs/ci/*.yaml; do
+            chronocline experiment "$config"
+            chronocline validate-results "results/$(python -c "import yaml; print(yaml.safe_load(open('$config'))['experiment']['name'])")"
+          done
