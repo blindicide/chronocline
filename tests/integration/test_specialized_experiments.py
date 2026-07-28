@@ -36,6 +36,10 @@ def make_config(kind: ExperimentKind) -> RunConfig:
     if kind is ExperimentKind.DETECTABILITY_FRONTIER:
         data["sweep"] = {"parameters": {"constraints.max_kl_bits": [0.01, 0.1]}}
         data["constraints"] = {"max_kl_bits": 0.01}
+        data["baseline"] = {
+            "mode": "input_distribution",
+            "input_probabilities": [0.99, 0.01],
+        }
     if kind is ExperimentKind.BATCHING_COMPARISON:
         data["simulation"] = {
             "trace_length": 80,

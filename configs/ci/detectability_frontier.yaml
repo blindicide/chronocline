@@ -2,6 +2,6 @@ experiment: {kind: detectability_frontier, name: ci_detectability_frontier, seed
 channel: {alphabet: {values: [0.0, 1.0]}}
 jitter: {distribution: gaussian, scale: 1.0}
 quantizer: {step: 0.5}
-baseline: {mode: channel_symbol, symbol_index: 0}
+baseline: {mode: input_distribution, input_probabilities: [0.99, 0.01]}
 constraints: {max_kl_bits: 0.01}
 sweep: {parameters: {constraints.max_kl_bits: [0.01, 0.1]}}

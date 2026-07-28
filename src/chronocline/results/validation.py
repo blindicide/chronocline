@@ -136,6 +136,9 @@ def semantic_errors(
         ].sort_values("max_kl_bits")
         if len(capacities) > 1 and np.any(np.diff(capacities.metric_value) < -1e-7):
             errors.append("detectability frontier violates capacity monotonicity")
+        achieved = frame.loc[frame.metric_name == "achieved_kl_bits", "metric_value"]
+        if not achieved.empty and np.all(np.isclose(achieved, 0.0)):
+            errors.append("detectability frontier has only zero KL divergence")
     if kind == "batching_comparison":
         variations = frame.get("batching_mode", pd.Series()).nunique()
         variations = max(variations, frame.get("batching_window", pd.Series()).nunique())
