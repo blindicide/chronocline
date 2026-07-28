@@ -20,10 +20,10 @@ def cumulative_timestamp_observations(
     memory. ``preserve_order`` uses a cumulative maximum to avoid reordering.
     """
     delays, jitter = np.asarray(delays, float), np.asarray(jitter, float)
-    if len(delays) != len(jitter) or np.any(delays < 0):
-        raise ValueError("delays must be non-negative and match jitter length")
-    arrivals = np.cumsum(delays) + jitter
+    if len(jitter) != len(delays) + 1 or np.any(delays < 0):
+        raise ValueError("timestamp jitter must contain n + 1 values for n non-negative delays")
+    arrivals = np.r_[0.0, np.cumsum(delays)] + jitter
     if preserve_order:
         arrivals = np.maximum.accumulate(arrivals)
     timestamps = quantizer.quantize(arrivals)
-    return timestamps, np.diff(np.r_[0.0, timestamps])
+    return timestamps[1:], np.diff(timestamps)

@@ -1,71 +1,108 @@
-"""Deterministic, resumable experiment execution."""
+"""Typed experiment dispatch, clean provenance, and schema-2 storage."""
 
 from __future__ import annotations
 
-import hashlib
-import itertools
 import json
 from pathlib import Path
 
 import numpy as np
 import yaml
 
-from ..channels import build_memoryless_channel, monte_carlo_matrix
-from ..config import RunConfig
-from ..distributions import GaussianMixture, gaussian, laplace, student_t, uniform
-from ..distributions.base import JitterDistribution
-from ..information import blahut_arimoto, mutual_information
-from ..information.divergence import kl_divergence
-from ..quantization import UniformQuantizer
-from ..results.manifest import create_manifest, finalize_manifest
+from ..config import ExperimentKind, RunConfig
+from ..results.manifest import (
+    configuration_hash,
+    create_manifest,
+    finalize_manifest,
+    git_state,
+    run_identifier,
+    write_environment,
+)
 from ..results.storage import write_results
+from ..results.validation import semantic_errors
+from .alphabet import AlphabetRunner
+from .base import ExperimentContext, ExperimentPlan, ExperimentRunner
+from .batching import BatchingRunner
+from .constrained import ConstrainedRunner
+from .detection import DetectionRunner
+from .memoryless import MemorylessRunner
+from .phase import PhaseRunner
+from .sweep import resolve_sweep
+
+RUNNERS: dict[ExperimentKind, ExperimentRunner] = {
+    ExperimentKind.SMOKE: MemorylessRunner(),
+    ExperimentKind.MEMORYLESS_BASELINE: MemorylessRunner(),
+    ExperimentKind.CAPACITY_CURVE: MemorylessRunner(),
+    ExperimentKind.CAPACITY_SURFACE: MemorylessRunner(),
+    ExperimentKind.JITTER_COMPARISON: MemorylessRunner(),
+    ExperimentKind.PHASE_SENSITIVITY: PhaseRunner(),
+    ExperimentKind.DETECTABILITY_FRONTIER: ConstrainedRunner(),
+    ExperimentKind.FINITE_SAMPLE_DETECTION: DetectionRunner(),
+    ExperimentKind.BATCHING_COMPARISON: BatchingRunner(),
+    ExperimentKind.ALPHABET_OPTIMIZATION: AlphabetRunner(),
+}
+
+ALLOWED_SWEEPS = {
+    ExperimentKind.SMOKE: {"quantizer.step"},
+    ExperimentKind.MEMORYLESS_BASELINE: {"quantizer.step"},
+    ExperimentKind.CAPACITY_CURVE: {"quantizer.step"},
+    ExperimentKind.CAPACITY_SURFACE: {"quantizer.step", "channel.alphabet.values"},
+    ExperimentKind.JITTER_COMPARISON: {"quantizer.step", "jitter.distribution", "jitter.scale"},
+    ExperimentKind.PHASE_SENSITIVITY: {"quantizer.phase"},
+    ExperimentKind.DETECTABILITY_FRONTIER: {"constraints.max_kl_bits"},
+    ExperimentKind.FINITE_SAMPLE_DETECTION: set(),
+    ExperimentKind.BATCHING_COMPARISON: set(),
+    ExperimentKind.ALPHABET_OPTIMIZATION: set(),
+}
 
 
-def make_jitter(config: RunConfig) -> JitterDistribution:
-    """Build a configured independent jitter distribution."""
-    j = config.jitter
-    if j.distribution == "gaussian":
-        return gaussian(j.mean, j.scale)
-    if j.distribution == "laplace":
-        return laplace(j.mean, j.scale)
-    if j.distribution == "uniform":
-        assert j.lower is not None and j.upper is not None
-        return uniform(j.lower, j.upper)
-    if j.distribution == "student_t":
-        assert j.degrees_of_freedom is not None
-        return student_t(j.degrees_of_freedom, j.mean, j.scale)
-    return GaussianMixture(j.weights or [], j.means or [], j.scales or [])
+def plan(config: RunConfig) -> ExperimentPlan:
+    """Resolve runner planning without generating output."""
+    root = Path(config.experiment.output_directory) / config.experiment.name
+    return RUNNERS[config.experiment.kind].plan(config, root)
 
 
-def sweep_combinations(config: RunConfig) -> list[dict[str, object]]:
-    """Resolve cartesian sweep parameters deterministically."""
-    keys = sorted(config.sweep.parameters)
-    return [
-        dict(zip(keys, values, strict=True))
-        for values in itertools.product(*(config.sweep.parameters[k] for k in keys))
-    ] or [{}]
-
-
-def run(config: RunConfig, *, dry_run: bool = False) -> Path | dict[str, object]:
-    """Run memoryless sweeps, saving an atomic traceable result bundle."""
-    combinations = sweep_combinations(config)
-    base = Path(config.experiment.output_directory) / config.experiment.name
-    canonical = json.dumps(config.model_dump(mode="json"), sort_keys=True)
-    run_id = hashlib.sha256(canonical.encode()).hexdigest()[:12]
-    directory = base / run_id
+def run(
+    config: RunConfig, *, dry_run: bool = False, allow_dirty: bool = False
+) -> Path | dict[str, object]:
+    """Execute the runner matching ``experiment.kind`` and validate its output."""
+    source_commit, source_dirty = git_state()
+    if config.experiment.require_clean_git and source_dirty and not allow_dirty:
+        raise RuntimeError(
+            "publication experiment requires a clean Git source tree; "
+            "use --allow-dirty only for development"
+        )
+    resolved = resolve_sweep(config, ALLOWED_SWEEPS[config.experiment.kind])
+    config_hash = configuration_hash(config.model_dump(mode="json"))
+    run_id = run_identifier(config_hash, source_commit, config.experiment.kind)
+    directory = Path(config.experiment.output_directory) / config.experiment.name / run_id
+    runner = RUNNERS[config.experiment.kind]
+    experiment_plan = runner.plan(config, directory)
     if dry_run:
         return {
-            "jobs": len(combinations),
-            "expected_rows": len(combinations) * 4,
+            "kind": config.experiment.kind,
+            "jobs": len(resolved),
+            "expected_metrics": sorted(experiment_plan.expected_metrics),
             "output_directory": str(directory),
             "workers": config.experiment.workers,
         }
-    if (
-        directory.exists()
-        and (directory / "manifest.json").exists()
-        and not config.experiment.overwrite
-    ):
-        return directory
+    if directory.exists() and not config.experiment.overwrite:
+        errors = semantic_errors(directory, strict=True)
+        if not errors:
+            return directory
+    manifest = create_manifest(
+        run_id=run_id,
+        config_hash=config_hash,
+        experiment_name=config.experiment.name,
+        experiment_kind=config.experiment.kind,
+        runner_name=type(runner).__name__,
+        source_commit=source_commit,
+        source_dirty=source_dirty,
+        allow_dirty_override=allow_dirty or not config.experiment.require_clean_git,
+        workers=config.experiment.workers,
+        expected_jobs=len(resolved),
+        expected_metrics=sorted(experiment_plan.expected_metrics),
+        locale=config.experiment.locale,
+    )
     directory.mkdir(parents=True, exist_ok=True)
     (directory / "config.original.yaml").write_text(
         yaml.safe_dump(config.model_dump(mode="json"), sort_keys=False)
@@ -73,96 +110,22 @@ def run(config: RunConfig, *, dry_run: bool = False) -> Path | dict[str, object]
     (directory / "config.resolved.yaml").write_text(
         yaml.safe_dump(config.model_dump(mode="json"), sort_keys=True)
     )
-    manifest = create_manifest(
-        hashlib.sha256(canonical.encode()).hexdigest(),
-        config.experiment.name,
-        config.experiment.seed,
-        config.experiment.workers,
-        config.experiment.locale,
+    write_environment(directory, manifest)
+    context = ExperimentContext(
+        config,
+        directory,
+        np.random.SeedSequence(config.experiment.seed),
+        source_commit,
+        source_dirty,
     )
-    rows: list[dict[str, object]] = []
-    for stream, overrides in enumerate(combinations):
-        step_value = overrides.get("quantizer.step", config.quantizer.step)
-        if not isinstance(step_value, (int, float)):
-            raise ValueError("quantizer.step sweep values must be numeric")
-        step = float(step_value)
-        q = UniformQuantizer(step, config.quantizer.phase, config.quantizer.mode)
-        channel = build_memoryless_channel(
-            config.channel.alphabet.values,
-            make_jitter(config),
-            q,
-            tail_probability=config.matrix.tail_probability,
-            include_overflow_bins=config.matrix.include_overflow_bins,
-        )
-        p = np.asarray(
-            config.channel.input_probabilities
-            or np.full(len(channel.inputs), 1 / len(channel.inputs))
-        )
-        capacity = blahut_arimoto(
-            channel.probabilities,
-            tolerance=config.optimization.tolerance,
-            max_iterations=config.optimization.max_iterations,
-        )
-        output = p @ channel.probabilities
-        shared = {
-            "experiment": config.experiment.name,
-            "replication": stream,
-            "units": "bits_per_symbol",
-            "estimator": "exact_cdf_difference",
-            "status": "complete",
-            **overrides,
-        }
-        rows.extend(
-            [
-                {
-                    **shared,
-                    "metric_name": "mutual_information",
-                    "metric_value": mutual_information(p, channel.probabilities),
-                },
-                {
-                    **shared,
-                    "metric_name": "capacity_bits_per_symbol",
-                    "metric_value": capacity.capacity_bits,
-                },
-                {**shared, "metric_name": "capacity_residual", "metric_value": capacity.residual},
-                {
-                    **shared,
-                    "metric_name": "matrix_row_sum_error",
-                    "metric_value": channel.row_sum_error,
-                },
-            ]
-        )
-        np.savez_compressed(
-            directory / f"matrix_{stream}.npz",
-            probabilities=channel.probabilities,
-            inputs=channel.inputs,
-            outputs=channel.outputs,
-        )
-        if config.experiment.name in {"smoke", "memoryless_baseline"}:
-            empirical = monte_carlo_matrix(
-                channel,
-                make_jitter(config),
-                q,
-                20_000,
-                np.random.default_rng(
-                    np.random.SeedSequence(config.experiment.seed, spawn_key=(stream,))
-                ),
-            )
-            rows.append(
-                {
-                    **shared,
-                    "metric_name": "monte_carlo_max_absolute_error",
-                    "metric_value": float(np.max(np.abs(empirical - channel.probabilities))),
-                }
-            )
-        if config.constraints.max_kl_divergence is not None:
-            rows.append(
-                {
-                    **shared,
-                    "metric_name": "active_output_kl_bits",
-                    "metric_value": kl_divergence(output, output),
-                }
-            )
-    write_results(directory, rows)
-    finalize_manifest(directory, manifest)
+    output = runner.execute(context, [(index, job) for index, job, _ in resolved])
+    write_results(directory, output.rows)
+    (directory / "diagnostics.json").write_text(
+        json.dumps(output.diagnostics, indent=2, default=str)
+    )
+    errors = semantic_errors(directory, manifest=manifest, strict=False)
+    finalize_manifest(directory, manifest, len(resolved), errors)
+    if errors:
+        raise RuntimeError("semantic validation failed: " + "; ".join(errors))
+    (directory.parent / "LATEST").write_text(run_id, encoding="utf-8")
     return directory

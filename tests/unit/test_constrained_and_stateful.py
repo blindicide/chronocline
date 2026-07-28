@@ -17,7 +17,7 @@ def test_constrained_capacity_is_feasible() -> None:
 
 def test_timestamp_preserve_order_and_empirical_mi() -> None:
     timestamps, delays = cumulative_timestamp_observations(
-        np.array([1.0, 1.0]), np.array([0.2, -0.8]), UniformQuantizer(0.5)
+        np.array([1.0, 1.0]), np.array([0.0, 0.2, -0.8]), UniformQuantizer(0.5)
     )
     assert np.all(np.diff(timestamps) >= 0)
     assert np.all(delays >= 0)

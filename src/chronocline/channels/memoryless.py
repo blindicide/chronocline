@@ -36,6 +36,7 @@ def build_memoryless_channel(
     inputs = np.asarray(alphabet, dtype=float)
     if inputs.ndim != 1 or len(inputs) == 0 or np.any(np.diff(inputs) <= 0):
         raise ValueError("alphabet must be a non-empty strictly ordered vector")
+    configured_metadata = quantizer.metadata()
     if quantizer.mode != "floor":
         # Nearest bins have the same CDF intervals after a half-step phase shift.
         quantizer = UniformQuantizer(quantizer.step, quantizer.phase - quantizer.step / 2, "floor")
@@ -47,6 +48,7 @@ def build_memoryless_channel(
         lower[None, :] - inputs[:, None]
     )
     interior = np.maximum(interior, 0.0)
+    omitted_mass = 1 - interior.sum(axis=1)
     if include_overflow_bins:
         low_tail = jitter.cdf(lower[0] - inputs)[:, None]
         high_tail = (1 - jitter.cdf(upper[-1] - inputs))[:, None]
@@ -59,20 +61,25 @@ def build_memoryless_channel(
             ]
         )
     else:
-        matrix = interior
+        retained = interior.sum(axis=1, keepdims=True)
+        if np.any(retained <= 0):
+            raise RuntimeError("conditional truncation retained zero probability mass")
+        matrix = interior / retained
         outputs = indexes.astype(object)
     residual = 1 - matrix.sum(axis=1)
     if np.max(np.abs(residual)) > 1e-10:
         raise RuntimeError("CDF calculation did not preserve channel mass")
-    matrix[:, -1] += residual
+    if include_overflow_bins:
+        matrix[:, -1] += residual
     return ChannelMatrix(
         inputs,
         outputs,
         matrix,
         {
             "tail_probability": tail_probability,
-            "overflow_bins": include_overflow_bins,
-            "quantizer": quantizer.metadata(),
+            "tail_mode": "overflow_bins" if include_overflow_bins else "conditional_truncation",
+            "omitted_mass_per_row": omitted_mass.tolist(),
+            "quantizer": configured_metadata,
             "construction": "exact_cdf_difference",
         },
     )

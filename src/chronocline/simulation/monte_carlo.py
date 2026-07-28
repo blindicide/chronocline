@@ -27,10 +27,9 @@ def block_mutual_information(x: np.ndarray, y: np.ndarray, block: int) -> dict[s
     n = len(x) // block
     xb = np.asarray(x)[: n * block].reshape(n, block)
     yb = np.asarray(y)[: n * block].reshape(n, block)
-    value = empirical_mutual_information(
-        np.asarray([tuple(v) for v in xb], dtype=object),
-        np.asarray([tuple(v) for v in yb], dtype=object),
-    )
+    _, x_codes = np.unique(xb, axis=0, return_inverse=True)
+    _, y_codes = np.unique(yb, axis=0, return_inverse=True)
+    value = empirical_mutual_information(x_codes, y_codes)
     return {
         "block_length": block,
         "block_mutual_information_estimate": value,
