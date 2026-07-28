@@ -20,7 +20,7 @@ def save_figure(figure: plt.Figure, directory: Path, name: str, source: pd.DataF
     table_directory = directory.parent / "tables"
     table_directory.mkdir(exist_ok=True)
     source.to_csv(table_directory / f"figure_{name}.csv", index=False)
-    for suffix in ("png", "pdf", "svg"):
+    for suffix in ("png", "pdf"):
         figure.savefig(directory / f"{name}.{suffix}", dpi=300 if suffix == "png" else None)
     plt.close(figure)
     return directory / f"{name}.png"
