@@ -1,0 +1,5 @@
+experiment: {kind: alphabet_optimization, name: alphabet_optimization_binary, seed: 20260728, output_directory: publication_results, require_clean_git: true}
+channel: {alphabet: {values: [0.0, 1.0]}}
+jitter: {distribution: gaussian, scale: 1.0}
+quantizer: {step: 0.5}
+alphabet_search: {symbols: 2, minimum: 0.0, maximum: 3.0, minimum_spacing: 0.05, binary_grid_points: 61}

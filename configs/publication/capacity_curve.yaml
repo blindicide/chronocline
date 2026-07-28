@@ -1,0 +1,5 @@
+experiment: {kind: capacity_curve, name: capacity_curve, seed: 20260728, output_directory: publication_results, require_clean_git: true}
+channel: {alphabet: {values: [0.0, 1.0]}}
+jitter: {distribution: gaussian, scale: 1.0}
+quantizer: {step: 0.125}
+sweep: {parameters: {quantizer.step: [0.125, 0.25, 0.5, 1.0, 2.0, 4.0]}}

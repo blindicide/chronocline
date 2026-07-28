@@ -1,0 +1,6 @@
+experiment: {kind: finite_sample_detection, name: finite_sample_detection, seed: 20260728, output_directory: publication_results, require_clean_git: true}
+channel: {alphabet: {values: [0.0, 1.0]}, input_probabilities: [0.2, 0.8]}
+jitter: {distribution: gaussian, scale: 1.0}
+quantizer: {step: 0.5}
+baseline: {mode: channel_symbol, symbol_index: 0}
+detection: {sample_sizes: [10, 25, 50, 100], trials: 200, bootstrap_repetitions: 20, target_false_positive_rates: [0.05]}
