@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import json
 import logging
 from pathlib import Path
 
@@ -196,3 +197,28 @@ def test_cli_dispatch_validation_and_logging(
     monkeypatch.setattr(logging, "basicConfig", lambda **kwargs: captured.update(kwargs))
     configure_logging(verbose=True)
     assert captured["level"] == logging.DEBUG
+
+
+def test_cli_plot_resolves_latest_before_refreshing_manifest(tmp_path: Path) -> None:
+    """Plotting an experiment directory updates the concrete run manifest checksums."""
+    run = tmp_path / "run"
+    run.mkdir()
+    (tmp_path / "LATEST").write_text("run")
+    pd.DataFrame(
+        [
+            {
+                "metric_name": "capacity_bits_per_symbol",
+                "metric_value": 0.2,
+                "quantizer_step": 0.25,
+            },
+            {"metric_name": "capacity_bits_per_symbol", "metric_value": 0.4, "quantizer_step": 0.5},
+        ]
+    ).to_csv(run / "results.csv", index=False)
+    (run / "manifest.json").write_text(
+        '{"experiment_kind": "capacity_curve", "completed_jobs": 2, "generated_files": {}}'
+    )
+    result = CliRunner().invoke(app, ["plot", str(tmp_path)])
+    assert result.exit_code == 0
+    manifest = json.loads((run / "manifest.json").read_text())
+    assert manifest["completion_status"] == "complete"
+    assert "figures/capacity_vs_quantizer_step.png" in manifest["generated_files"]

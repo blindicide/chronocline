@@ -76,10 +76,11 @@ def validate_results(path: Path) -> None:
 def plot(path: Path, locale: str = "en") -> None:
     """Regenerate plots from stored CSV data only."""
     result = plot_result_directory(path, locale)
-    manifest_path = path / "manifest.json"
+    directory = path / (path / "LATEST").read_text().strip() if (path / "LATEST").exists() else path
+    manifest_path = directory / "manifest.json"
     if manifest_path.exists():
         manifest = json.loads(manifest_path.read_text())
-        finalize_manifest(path, manifest, int(manifest.get("completed_jobs", 0)), [])
+        finalize_manifest(directory, manifest, int(manifest.get("completed_jobs", 0)), [])
     typer.echo(result)
 
 
