@@ -98,6 +98,11 @@ def finalize_manifest(
             "completed_at": datetime.now(UTC).isoformat(),
             "completion_status": "complete" if not semantic_errors else "failed",
             "completed_jobs": completed_jobs,
+            "failed_jobs": (
+                0
+                if not semantic_errors
+                else max(0, int(manifest.get("expected_jobs", 0)) - completed_jobs)
+            ),
             "semantic_validation_status": "passed" if not semantic_errors else "failed",
             "semantic_validation_errors": semantic_errors,
             "generated_files": checksums,

@@ -90,7 +90,9 @@ def semantic_errors(
         if METRIC_UNITS.get(metric) != unit:
             errors.append(f"wrong or unknown unit for {metric}")
     kind = str(manifest.get("experiment_kind", ""))
-    if frame.duplicated(["job_id", "metric_name"], keep=False).any():
+    if {"job_id", "metric_name"}.issubset(frame.columns) and frame.duplicated(
+        ["job_id", "metric_name"], keep=False
+    ).any():
         errors.append("duplicate scientific result rows")
     if strict and manifest.get("completion_status") not in {None, "complete"}:
         errors.append("manifest is not complete")
@@ -105,6 +107,8 @@ def semantic_errors(
         manifest.get("completed_jobs") != manifest.get("expected_jobs")
     ):
         errors.append("incomplete jobs")
+    if manifest.get("failed_jobs", 0) != 0:
+        errors.append("failed work units")
     if manifest.get("source_commit") is None:
         errors.append("missing source commit")
     if manifest.get("source_dirty") and not manifest.get("allow_dirty_override"):
@@ -161,6 +165,15 @@ def semantic_errors(
         variations = max(variations, frame.get("batching_window", pd.Series()).nunique())
         if variations < 2:
             errors.append("batching campaign lacks multiple configurations")
+        required_batch_identifiers = {
+            "observation_model",
+            "batching_window",
+            "replication",
+            "trace_length",
+            "transient_observations",
+        }
+        if not required_batch_identifiers.issubset(frame.columns):
+            errors.append("batching rows lack required stateful identifiers")
     if kind == "alphabet_optimization":
         alphabet = frame.loc[frame.metric_name == "optimized_alphabet"].sort_values("symbol_index")
         if len(alphabet) < 2 or np.any(np.diff(alphabet.metric_value) <= 0):

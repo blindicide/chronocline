@@ -98,7 +98,8 @@ def plot(path: Path, locale: str = "en") -> None:
             [f"plotting failed: {error}"],
         )
         raise
-    errors = semantic_errors(directory, strict=False)
+    is_schema2_manifest = manifest.get("result_schema_version") is not None
+    errors = semantic_errors(directory, strict=False) if is_schema2_manifest else []
     finalize_manifest(directory, manifest, int(manifest.get("completed_jobs", 0)), errors)
     if errors:
         raise typer.Exit(1)

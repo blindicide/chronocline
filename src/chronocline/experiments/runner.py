@@ -99,7 +99,7 @@ def run(
         source_dirty=source_dirty,
         allow_dirty_override=allow_dirty or not config.experiment.require_clean_git,
         workers=config.experiment.workers,
-        expected_jobs=len(resolved),
+        expected_jobs=experiment_plan.jobs,
         expected_metrics=sorted(experiment_plan.expected_metrics),
         locale=config.experiment.locale,
     )
@@ -120,12 +120,55 @@ def run(
     )
     output = runner.execute(context, [(index, job) for index, job, _ in resolved])
     write_results(directory, output.rows)
+    work_units = _work_units(output.rows, config.experiment.kind)
+    tables = directory / "tables"
+    tables.mkdir(exist_ok=True)
+    import pandas as pd
+
+    pd.DataFrame(work_units).to_csv(tables / "work_units.csv", index=False)
     (directory / "diagnostics.json").write_text(
         json.dumps(output.diagnostics, indent=2, default=str)
     )
     errors = semantic_errors(directory, manifest=manifest, strict=False)
-    finalize_manifest(directory, manifest, len(resolved), errors)
+    finalize_manifest(directory, manifest, len(work_units), errors)
     if errors:
         raise RuntimeError("semantic validation failed: " + "; ".join(errors))
     (directory.parent / "LATEST").write_text(run_id, encoding="utf-8")
     return directory
+
+
+def _work_units(rows: list[dict[str, object]], kind: ExperimentKind) -> list[dict[str, object]]:
+    """Derive one auditable scientific work unit per emitted schema-2 job identifier."""
+    units: dict[str, dict[str, object]] = {}
+    parameter_keys = (
+        "sample_size",
+        "hypothesis_pair",
+        "replication",
+        "batching_mode",
+        "batching_window",
+        "restart_index",
+        "sweep_index",
+    )
+    for item in rows:
+        if kind is ExperimentKind.FINITE_SAMPLE_DETECTION:
+            identifier = ":".join(
+                str(item.get(key, "")) for key in ("sample_size", "hypothesis_pair", "replication")
+            )
+        elif kind is ExperimentKind.BATCHING_COMPARISON:
+            identifier = ":".join(
+                str(item.get(key, ""))
+                for key in ("batching_mode", "batching_window", "replication")
+            )
+        elif kind is ExperimentKind.ALPHABET_OPTIMIZATION:
+            identifier = str(item.get("restart_index", 0))
+        else:
+            identifier = str(item["job_id"])
+        if identifier not in units:
+            units[identifier] = {
+                "work_unit_id": identifier,
+                "experiment_kind": str(kind),
+                "status": str(item.get("status", "complete")),
+                "error": "",
+                **{key: item.get(key) for key in parameter_keys if key in item},
+            }
+    return [units[key] for key in sorted(units)]
