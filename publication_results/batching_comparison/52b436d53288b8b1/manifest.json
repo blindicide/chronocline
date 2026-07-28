@@ -1,0 +1,40 @@
+{
+  "allow_dirty_override": false,
+  "completed_at": "2026-07-28T10:31:26.530201+00:00",
+  "completed_jobs": 1,
+  "completion_status": "complete",
+  "config_hash": "ef1721bb1b9cbbaff39209e27ba773eafd8ba6dbfbf7e70c910c85cce500e59b",
+  "expected_jobs": 1,
+  "expected_metrics": [
+    "batch_size_mean",
+    "memoryless_approximation_error",
+    "plugin_block_mutual_information",
+    "symbol_mutual_information",
+    "zero_delay_probability"
+  ],
+  "experiment_kind": "batching_comparison",
+  "experiment_name": "batching_comparison",
+  "generated_files": {
+    "config.original.yaml": "be33c44508fb7024b82ab160b100af5e5c5e89dd1fbd0501e5644337d6c144d4",
+    "config.resolved.yaml": "03359f3419fcad7fb83659117015f737e280c7bfd69e0dade80a6d75fd6103cb",
+    "diagnostics.json": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "environment.json": "7f77dd98eb92ea9ff1c652cf80b3cb359aed7a214cfec6e305a751eb4ca67cf2",
+    "figures/batching_information_comparison.pdf": "34d0600a9e9131149e587b6764150fa8ceef0dd16ac48fff2af8c0d68f660833",
+    "figures/batching_information_comparison.png": "1aa4c80d2ecdab56592b90b65dbd657bf802c44f0ed5c447109a0223c13c1242",
+    "results.csv": "3e0a9b565387c36e0cd3c3a3718fb31893770745e2a7084287f9af7568ce638a",
+    "tables/figure_batching_information_comparison.csv": "bca8db73081248db48e340d8f57d9c0897a64769984d69d2849f4858965f297f"
+  },
+  "locale": "en",
+  "package_version": "0.6.0",
+  "project": "Project Chronocline",
+  "result_schema_version": "2.0",
+  "run_id": "52b436d53288b8b1",
+  "runner_name": "BatchingRunner",
+  "runner_version": "2.0",
+  "semantic_validation_errors": [],
+  "semantic_validation_status": "passed",
+  "source_commit": "80149ae57edc91369e4edfc7f0ff7980129b6bac",
+  "source_dirty": false,
+  "started_at": "2026-07-28T10:30:52.721233+00:00",
+  "workers": 1
+}

@@ -1,0 +1,13 @@
+experiment_name,experiment_kind,job_id,sweep_index,replication,metric_name,metric_value,units,estimator,status,warning_code,confidence_interval_lower,confidence_interval_upper,batching_mode,batching_window,block_length
+batching_comparison,batching_comparison,ad1ec352cc37,0,,symbol_mutual_information,0.0615995935118855,bits_per_symbol,empirical_stateful,complete,,,,no_batching,0.25,
+batching_comparison,batching_comparison,589231c4db5a,1,,symbol_mutual_information,0.0615995935118855,bits_per_symbol,empirical_stateful,complete,,,,no_batching,0.5,
+batching_comparison,batching_comparison,3d580cea2b7e,2,,symbol_mutual_information,0.0615995935118855,bits_per_symbol,empirical_stateful,complete,,,,no_batching,1.0,
+batching_comparison,batching_comparison,958631638c74,3,,symbol_mutual_information,0.0615995935118855,bits_per_symbol,empirical_stateful,complete,,,,timestamp_quantization,0.25,
+batching_comparison,batching_comparison,7c63230490b0,4,,symbol_mutual_information,0.0615995935118855,bits_per_symbol,empirical_stateful,complete,,,,timestamp_quantization,0.5,
+batching_comparison,batching_comparison,bed8cc728950,5,,symbol_mutual_information,0.0615995935118855,bits_per_symbol,empirical_stateful,complete,,,,timestamp_quantization,1.0,
+batching_comparison,batching_comparison,eb71c72f2ee3,6,,symbol_mutual_information,0.0615995935118855,bits_per_symbol,empirical_stateful,complete,,,,fixed_window_observation,0.25,
+batching_comparison,batching_comparison,0fd681f9c49c,7,,symbol_mutual_information,0.0615995935118855,bits_per_symbol,empirical_stateful,complete,,,,fixed_window_observation,0.5,
+batching_comparison,batching_comparison,64c7106588d2,8,,symbol_mutual_information,0.0533327561114651,bits_per_symbol,empirical_stateful,complete,,,,fixed_window_observation,1.0,
+batching_comparison,batching_comparison,492e1f8a4e0c,9,,symbol_mutual_information,0.0615995935118855,bits_per_symbol,empirical_stateful,complete,,,,ceiling_release,0.25,
+batching_comparison,batching_comparison,523e80135b4e,10,,symbol_mutual_information,0.0615995935118855,bits_per_symbol,empirical_stateful,complete,,,,ceiling_release,0.5,
+batching_comparison,batching_comparison,ec8a871acdbe,11,,symbol_mutual_information,0.0555905738659553,bits_per_symbol,empirical_stateful,complete,,,,ceiling_release,1.0,

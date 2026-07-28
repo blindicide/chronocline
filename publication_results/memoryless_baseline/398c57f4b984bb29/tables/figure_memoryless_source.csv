@@ -1,0 +1,8 @@
+experiment_name,experiment_kind,job_id,sweep_index,replication,metric_name,metric_value,units,estimator,status,quantizer_step,quantizer_phase,jitter_distribution,jitter_scale,alphabet,jitter_variance,symbol_index
+memoryless_baseline,memoryless_baseline,075baecf1428,0,,mutual_information,0.1578098993297024,bits_per_symbol,exact,complete,0.5,0.0,gaussian,1.0,"[0.0, 1.0]",1.0,
+memoryless_baseline,memoryless_baseline,6495f5937918,0,,capacity_bits_per_symbol,0.15780989932970238,bits_per_symbol,blahut_arimoto,complete,0.5,0.0,gaussian,1.0,"[0.0, 1.0]",1.0,
+memoryless_baseline,memoryless_baseline,6495f5937918,0,,capacity_residual,5.551115123125783e-17,bits_per_symbol,blahut_arimoto,complete,0.5,0.0,gaussian,1.0,"[0.0, 1.0]",1.0,
+memoryless_baseline,memoryless_baseline,075baecf1428,0,,matrix_row_sum_error,0.0,probability,exact,complete,0.5,0.0,gaussian,1.0,"[0.0, 1.0]",1.0,
+memoryless_baseline,memoryless_baseline,7e11020a5af3,0,,monte_carlo_max_absolute_error,0.004182284794529811,probability,monte_carlo,complete,0.5,0.0,gaussian,1.0,"[0.0, 1.0]",1.0,
+memoryless_baseline,memoryless_baseline,a0dccdfdc844,0,,optimal_input_probability,0.5,probability,exact,complete,,,,,,1.0,0.0
+memoryless_baseline,memoryless_baseline,427f01859994,0,,optimal_input_probability,0.5,probability,exact,complete,,,,,,1.0,1.0

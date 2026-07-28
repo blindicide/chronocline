@@ -1,0 +1,4 @@
+experiment_name,experiment_kind,job_id,sweep_index,replication,metric_name,metric_value,units,estimator,status,warning_code,confidence_interval_lower,confidence_interval_upper,symbol_index,label
+alphabet_optimization_ternary,alphabet_optimization,d46af1100050,0,,optimized_alphabet,0.0,normalized_time,exact,complete,,,,0.0,
+alphabet_optimization_ternary,alphabet_optimization,d15e9d5242bc,0,,optimized_alphabet,2.783618706727735,normalized_time,exact,complete,,,,1.0,
+alphabet_optimization_ternary,alphabet_optimization,2a0ebb5ff631,0,,optimized_alphabet,2.999999999999999,normalized_time,exact,complete,,,,2.0,

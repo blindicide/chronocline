@@ -1,0 +1,865 @@
+experiment_name,experiment_kind,job_id,sweep_index,replication,metric_name,metric_value,units,estimator,status,warning_code,confidence_interval_lower,confidence_interval_upper,quantizer_step,quantizer_phase,jitter_distribution,jitter_scale,alphabet,jitter_variance,symbol_index
+capacity_surface,capacity_surface,bc98d6d5d1fa,0,,capacity_bits_per_symbol,0.0028086246220551036,bits_per_symbol,blahut_arimoto,complete,,,,0.125,0.0,gaussian,1.0,"[0.0, 0.125]",1.0,
+capacity_surface,capacity_surface,bc98d6d5d1fa,0,,capacity_residual,1.3877787807814457e-17,bits_per_symbol,blahut_arimoto,complete,,,,0.125,0.0,gaussian,1.0,"[0.0, 0.125]",1.0,
+capacity_surface,capacity_surface,b2fd9c6ed366,0,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.125,0.0,gaussian,1.0,"[0.0, 0.125]",1.0,
+capacity_surface,capacity_surface,b2fd9c6ed366,0,,mutual_information,0.0028086246220551036,bits_per_symbol,exact,complete,,,,0.125,0.0,gaussian,1.0,"[0.0, 0.125]",1.0,
+capacity_surface,capacity_surface,1b1a8b9fb62c,0,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_surface,capacity_surface,199ff79e0e4a,0,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_surface,capacity_surface,eb1d934f632a,1,,capacity_bits_per_symbol,0.00280657568396117,bits_per_symbol,blahut_arimoto,complete,,,,0.15625,0.0,gaussian,1.0,"[0.0, 0.125]",1.0,
+capacity_surface,capacity_surface,eb1d934f632a,1,,capacity_residual,7.806255641895632e-17,bits_per_symbol,blahut_arimoto,complete,,,,0.15625,0.0,gaussian,1.0,"[0.0, 0.125]",1.0,
+capacity_surface,capacity_surface,37765a3248fb,1,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.15625,0.0,gaussian,1.0,"[0.0, 0.125]",1.0,
+capacity_surface,capacity_surface,37765a3248fb,1,,mutual_information,0.0028065756839611693,bits_per_symbol,exact,complete,,,,0.15625,0.0,gaussian,1.0,"[0.0, 0.125]",1.0,
+capacity_surface,capacity_surface,b8b502a1ac61,1,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_surface,capacity_surface,88229501c211,1,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_surface,capacity_surface,0bee961edfbb,2,,capacity_bits_per_symbol,0.00280338019163288,bits_per_symbol,blahut_arimoto,complete,,,,0.1953125,0.0,gaussian,1.0,"[0.0, 0.125]",1.0,
+capacity_surface,capacity_surface,0bee961edfbb,2,,capacity_residual,3.903127820947816e-18,bits_per_symbol,blahut_arimoto,complete,,,,0.1953125,0.0,gaussian,1.0,"[0.0, 0.125]",1.0,
+capacity_surface,capacity_surface,85060c23c781,2,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.1953125,0.0,gaussian,1.0,"[0.0, 0.125]",1.0,
+capacity_surface,capacity_surface,85060c23c781,2,,mutual_information,0.0028033801916328804,bits_per_symbol,exact,complete,,,,0.1953125,0.0,gaussian,1.0,"[0.0, 0.125]",1.0,
+capacity_surface,capacity_surface,e587d6cb5f15,2,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_surface,capacity_surface,7c734233cb24,2,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_surface,capacity_surface,8af1a646e153,3,,capacity_bits_per_symbol,0.0027984017656532386,bits_per_symbol,blahut_arimoto,complete,,,,0.244140625,0.0,gaussian,1.0,"[0.0, 0.125]",1.0,
+capacity_surface,capacity_surface,8af1a646e153,3,,capacity_residual,1.734723475976807e-18,bits_per_symbol,blahut_arimoto,complete,,,,0.244140625,0.0,gaussian,1.0,"[0.0, 0.125]",1.0,
+capacity_surface,capacity_surface,67c953fc7b08,3,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.244140625,0.0,gaussian,1.0,"[0.0, 0.125]",1.0,
+capacity_surface,capacity_surface,67c953fc7b08,3,,mutual_information,0.002798401765653238,bits_per_symbol,exact,complete,,,,0.244140625,0.0,gaussian,1.0,"[0.0, 0.125]",1.0,
+capacity_surface,capacity_surface,a00d7237e051,3,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_surface,capacity_surface,131dfa0bbb1f,3,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_surface,capacity_surface,53947e47eede,4,,capacity_bits_per_symbol,0.00279065825069081,bits_per_symbol,blahut_arimoto,complete,,,,0.30517578125,0.0,gaussian,1.0,"[0.0, 0.125]",1.0,
+capacity_surface,capacity_surface,53947e47eede,4,,capacity_residual,1.7780915628762273e-17,bits_per_symbol,blahut_arimoto,complete,,,,0.30517578125,0.0,gaussian,1.0,"[0.0, 0.125]",1.0,
+capacity_surface,capacity_surface,dc3db95278e5,4,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.30517578125,0.0,gaussian,1.0,"[0.0, 0.125]",1.0,
+capacity_surface,capacity_surface,dc3db95278e5,4,,mutual_information,0.0027906582506908094,bits_per_symbol,exact,complete,,,,0.30517578125,0.0,gaussian,1.0,"[0.0, 0.125]",1.0,
+capacity_surface,capacity_surface,252322ffc71d,4,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_surface,capacity_surface,fbbc52225741,4,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_surface,capacity_surface,f55bf5ad8e2f,5,,capacity_bits_per_symbol,0.0027786443772988044,bits_per_symbol,blahut_arimoto,complete,,,,0.3814697265625,0.0,gaussian,1.0,"[0.0, 0.125]",1.0,
+capacity_surface,capacity_surface,f55bf5ad8e2f,5,,capacity_residual,7.37257477290143e-18,bits_per_symbol,blahut_arimoto,complete,,,,0.3814697265625,0.0,gaussian,1.0,"[0.0, 0.125]",1.0,
+capacity_surface,capacity_surface,caf34c131678,5,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.3814697265625,0.0,gaussian,1.0,"[0.0, 0.125]",1.0,
+capacity_surface,capacity_surface,caf34c131678,5,,mutual_information,0.0027786443772988044,bits_per_symbol,exact,complete,,,,0.3814697265625,0.0,gaussian,1.0,"[0.0, 0.125]",1.0,
+capacity_surface,capacity_surface,d913941c5dbe,5,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_surface,capacity_surface,45911fa3fadc,5,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_surface,capacity_surface,5723b5085e07,6,,capacity_bits_per_symbol,0.0027600782991911224,bits_per_symbol,blahut_arimoto,complete,,,,0.476837158203125,0.0,gaussian,1.0,"[0.0, 0.125]",1.0,
+capacity_surface,capacity_surface,5723b5085e07,6,,capacity_residual,1.3444106938820255e-17,bits_per_symbol,blahut_arimoto,complete,,,,0.476837158203125,0.0,gaussian,1.0,"[0.0, 0.125]",1.0,
+capacity_surface,capacity_surface,58c1c9dc7bd6,6,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.476837158203125,0.0,gaussian,1.0,"[0.0, 0.125]",1.0,
+capacity_surface,capacity_surface,58c1c9dc7bd6,6,,mutual_information,0.0027600782991911246,bits_per_symbol,exact,complete,,,,0.476837158203125,0.0,gaussian,1.0,"[0.0, 0.125]",1.0,
+capacity_surface,capacity_surface,8d8b4b1bec77,6,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_surface,capacity_surface,29206cfbafd7,6,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_surface,capacity_surface,27c1d76fc2cb,7,,capacity_bits_per_symbol,0.002731560297308488,bits_per_symbol,blahut_arimoto,complete,,,,0.5960464477539062,0.0,gaussian,1.0,"[0.0, 0.125]",1.0,
+capacity_surface,capacity_surface,27c1d76fc2cb,7,,capacity_residual,1.214306433183765e-17,bits_per_symbol,blahut_arimoto,complete,,,,0.5960464477539062,0.0,gaussian,1.0,"[0.0, 0.125]",1.0,
+capacity_surface,capacity_surface,00488493248e,7,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.5960464477539062,0.0,gaussian,1.0,"[0.0, 0.125]",1.0,
+capacity_surface,capacity_surface,00488493248e,7,,mutual_information,0.0027315602973084904,bits_per_symbol,exact,complete,,,,0.5960464477539062,0.0,gaussian,1.0,"[0.0, 0.125]",1.0,
+capacity_surface,capacity_surface,9422af9b6779,7,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_surface,capacity_surface,6b4fc52ce7e7,7,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_surface,capacity_surface,12bee541959f,8,,capacity_bits_per_symbol,0.0026881626740455763,bits_per_symbol,blahut_arimoto,complete,,,,0.7450580596923828,0.0,gaussian,1.0,"[0.0, 0.125]",1.0,
+capacity_surface,capacity_surface,12bee541959f,8,,capacity_residual,1.9949319973733282e-17,bits_per_symbol,blahut_arimoto,complete,,,,0.7450580596923828,0.0,gaussian,1.0,"[0.0, 0.125]",1.0,
+capacity_surface,capacity_surface,71d922b69ad9,8,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.7450580596923828,0.0,gaussian,1.0,"[0.0, 0.125]",1.0,
+capacity_surface,capacity_surface,71d922b69ad9,8,,mutual_information,0.0026881626740455746,bits_per_symbol,exact,complete,,,,0.7450580596923828,0.0,gaussian,1.0,"[0.0, 0.125]",1.0,
+capacity_surface,capacity_surface,d5e8f3eab48c,8,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_surface,capacity_surface,8269c40f0284,8,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_surface,capacity_surface,b9c264cb64ea,9,,capacity_bits_per_symbol,0.0026230537502993077,bits_per_symbol,blahut_arimoto,complete,,,,0.9313225746154785,0.0,gaussian,1.0,"[0.0, 0.125]",1.0,
+capacity_surface,capacity_surface,b9c264cb64ea,9,,capacity_residual,2.062716317197122e-14,bits_per_symbol,blahut_arimoto,complete,,,,0.9313225746154785,0.0,gaussian,1.0,"[0.0, 0.125]",1.0,
+capacity_surface,capacity_surface,0fe5aee14ef3,9,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.9313225746154785,0.0,gaussian,1.0,"[0.0, 0.125]",1.0,
+capacity_surface,capacity_surface,0fe5aee14ef3,9,,mutual_information,0.0026230537502993103,bits_per_symbol,exact,complete,,,,0.9313225746154785,0.0,gaussian,1.0,"[0.0, 0.125]",1.0,
+capacity_surface,capacity_surface,a9f4fa5b73f7,9,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_surface,capacity_surface,60fb91f8fd45,9,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_surface,capacity_surface,ffa06cedbe8a,10,,capacity_bits_per_symbol,0.0025274403375211488,bits_per_symbol,blahut_arimoto,complete,,,,1.1641532182693481,0.0,gaussian,1.0,"[0.0, 0.125]",1.0,
+capacity_surface,capacity_surface,ffa06cedbe8a,10,,capacity_residual,5.337800340621257e-11,bits_per_symbol,blahut_arimoto,complete,,,,1.1641532182693481,0.0,gaussian,1.0,"[0.0, 0.125]",1.0,
+capacity_surface,capacity_surface,8cde91d89a6c,10,,matrix_row_sum_error,0.0,probability,exact,complete,,,,1.1641532182693481,0.0,gaussian,1.0,"[0.0, 0.125]",1.0,
+capacity_surface,capacity_surface,8cde91d89a6c,10,,mutual_information,0.002527440337521146,bits_per_symbol,exact,complete,,,,1.1641532182693481,0.0,gaussian,1.0,"[0.0, 0.125]",1.0,
+capacity_surface,capacity_surface,aaf772f29256,10,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_surface,capacity_surface,1ecd20cbfd52,10,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_surface,capacity_surface,b535e03095d3,11,,capacity_bits_per_symbol,0.0023915351308031606,bits_per_symbol,blahut_arimoto,complete,,,,1.4551915228366852,0.0,gaussian,1.0,"[0.0, 0.125]",1.0,
+capacity_surface,capacity_surface,b535e03095d3,11,,capacity_residual,9.988564099103203e-11,bits_per_symbol,blahut_arimoto,complete,,,,1.4551915228366852,0.0,gaussian,1.0,"[0.0, 0.125]",1.0,
+capacity_surface,capacity_surface,a0ccab25d618,11,,matrix_row_sum_error,0.0,probability,exact,complete,,,,1.4551915228366852,0.0,gaussian,1.0,"[0.0, 0.125]",1.0,
+capacity_surface,capacity_surface,a0ccab25d618,11,,mutual_information,0.0023915351307978137,bits_per_symbol,exact,complete,,,,1.4551915228366852,0.0,gaussian,1.0,"[0.0, 0.125]",1.0,
+capacity_surface,capacity_surface,3ed5c7398573,11,,optimal_input_probability,0.49999926483675683,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_surface,capacity_surface,6037829d27c8,11,,optimal_input_probability,0.5000007351632432,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_surface,capacity_surface,22e483bf627d,12,,capacity_bits_per_symbol,0.00438368337919973,bits_per_symbol,blahut_arimoto,complete,,,,0.125,0.0,gaussian,1.0,"[0.0, 0.15625]",1.0,
+capacity_surface,capacity_surface,22e483bf627d,12,,capacity_residual,3.903127820947816e-17,bits_per_symbol,blahut_arimoto,complete,,,,0.125,0.0,gaussian,1.0,"[0.0, 0.15625]",1.0,
+capacity_surface,capacity_surface,81aaa84fc7f0,12,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.125,0.0,gaussian,1.0,"[0.0, 0.15625]",1.0,
+capacity_surface,capacity_surface,81aaa84fc7f0,12,,mutual_information,0.004383683379199728,bits_per_symbol,exact,complete,,,,0.125,0.0,gaussian,1.0,"[0.0, 0.15625]",1.0,
+capacity_surface,capacity_surface,11f794449e96,12,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_surface,capacity_surface,e967700e28b8,12,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_surface,capacity_surface,c648905284d4,13,,capacity_bits_per_symbol,0.004380488889480543,bits_per_symbol,blahut_arimoto,complete,,,,0.15625,0.0,gaussian,1.0,"[0.0, 0.15625]",1.0,
+capacity_surface,capacity_surface,c648905284d4,13,,capacity_residual,7.806255641895632e-18,bits_per_symbol,blahut_arimoto,complete,,,,0.15625,0.0,gaussian,1.0,"[0.0, 0.15625]",1.0,
+capacity_surface,capacity_surface,e5dcf5b67581,13,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.15625,0.0,gaussian,1.0,"[0.0, 0.15625]",1.0,
+capacity_surface,capacity_surface,e5dcf5b67581,13,,mutual_information,0.004380488889480543,bits_per_symbol,exact,complete,,,,0.15625,0.0,gaussian,1.0,"[0.0, 0.15625]",1.0,
+capacity_surface,capacity_surface,778c8f7cba0a,13,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_surface,capacity_surface,15972f0f82ea,13,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_surface,capacity_surface,7bdbedf84e0c,14,,capacity_bits_per_symbol,0.004375506798413875,bits_per_symbol,blahut_arimoto,complete,,,,0.1953125,0.0,gaussian,1.0,"[0.0, 0.15625]",1.0,
+capacity_surface,capacity_surface,7bdbedf84e0c,14,,capacity_residual,6.938893903907228e-18,bits_per_symbol,blahut_arimoto,complete,,,,0.1953125,0.0,gaussian,1.0,"[0.0, 0.15625]",1.0,
+capacity_surface,capacity_surface,6eabf8b5e23c,14,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.1953125,0.0,gaussian,1.0,"[0.0, 0.15625]",1.0,
+capacity_surface,capacity_surface,6eabf8b5e23c,14,,mutual_information,0.0043755067984138744,bits_per_symbol,exact,complete,,,,0.1953125,0.0,gaussian,1.0,"[0.0, 0.15625]",1.0,
+capacity_surface,capacity_surface,f278b8f0d9ef,14,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_surface,capacity_surface,6be1eab96896,14,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_surface,capacity_surface,133f94b443d6,15,,capacity_bits_per_symbol,0.004367744902017409,bits_per_symbol,blahut_arimoto,complete,,,,0.244140625,0.0,gaussian,1.0,"[0.0, 0.15625]",1.0,
+capacity_surface,capacity_surface,133f94b443d6,15,,capacity_residual,7.45931094670027e-17,bits_per_symbol,blahut_arimoto,complete,,,,0.244140625,0.0,gaussian,1.0,"[0.0, 0.15625]",1.0,
+capacity_surface,capacity_surface,a9daf66dc8b7,15,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.244140625,0.0,gaussian,1.0,"[0.0, 0.15625]",1.0,
+capacity_surface,capacity_surface,a9daf66dc8b7,15,,mutual_information,0.00436774490201741,bits_per_symbol,exact,complete,,,,0.244140625,0.0,gaussian,1.0,"[0.0, 0.15625]",1.0,
+capacity_surface,capacity_surface,4e41502c7c05,15,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_surface,capacity_surface,b1d636afd2df,15,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_surface,capacity_surface,ebd717ae6517,16,,capacity_bits_per_symbol,0.004355671855194877,bits_per_symbol,blahut_arimoto,complete,,,,0.30517578125,0.0,gaussian,1.0,"[0.0, 0.15625]",1.0,
+capacity_surface,capacity_surface,ebd717ae6517,16,,capacity_residual,2.168404344971009e-17,bits_per_symbol,blahut_arimoto,complete,,,,0.30517578125,0.0,gaussian,1.0,"[0.0, 0.15625]",1.0,
+capacity_surface,capacity_surface,290464ade1ad,16,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.30517578125,0.0,gaussian,1.0,"[0.0, 0.15625]",1.0,
+capacity_surface,capacity_surface,290464ade1ad,16,,mutual_information,0.004355671855194876,bits_per_symbol,exact,complete,,,,0.30517578125,0.0,gaussian,1.0,"[0.0, 0.15625]",1.0,
+capacity_surface,capacity_surface,a17f317c3e77,16,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_surface,capacity_surface,2c716910253b,16,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_surface,capacity_surface,ea4fc60725d7,17,,capacity_bits_per_symbol,0.004336940622317611,bits_per_symbol,blahut_arimoto,complete,,,,0.3814697265625,0.0,gaussian,1.0,"[0.0, 0.15625]",1.0,
+capacity_surface,capacity_surface,ea4fc60725d7,17,,capacity_residual,1.214306433183765e-17,bits_per_symbol,blahut_arimoto,complete,,,,0.3814697265625,0.0,gaussian,1.0,"[0.0, 0.15625]",1.0,
+capacity_surface,capacity_surface,43ebd0416d67,17,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.3814697265625,0.0,gaussian,1.0,"[0.0, 0.15625]",1.0,
+capacity_surface,capacity_surface,43ebd0416d67,17,,mutual_information,0.004336940622317613,bits_per_symbol,exact,complete,,,,0.3814697265625,0.0,gaussian,1.0,"[0.0, 0.15625]",1.0,
+capacity_surface,capacity_surface,abb3a188bdcf,17,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_surface,capacity_surface,1fe5cc416936,17,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_surface,capacity_surface,4206b5ee6aa0,18,,capacity_bits_per_symbol,0.004307993159203871,bits_per_symbol,blahut_arimoto,complete,,,,0.476837158203125,0.0,gaussian,1.0,"[0.0, 0.15625]",1.0,
+capacity_surface,capacity_surface,4206b5ee6aa0,18,,capacity_residual,1.0408340855860843e-17,bits_per_symbol,blahut_arimoto,complete,,,,0.476837158203125,0.0,gaussian,1.0,"[0.0, 0.15625]",1.0,
+capacity_surface,capacity_surface,e6727604f004,18,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.476837158203125,0.0,gaussian,1.0,"[0.0, 0.15625]",1.0,
+capacity_surface,capacity_surface,e6727604f004,18,,mutual_information,0.004307993159203874,bits_per_symbol,exact,complete,,,,0.476837158203125,0.0,gaussian,1.0,"[0.0, 0.15625]",1.0,
+capacity_surface,capacity_surface,506b76c1e0e9,18,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_surface,capacity_surface,6ea6efd5b7d7,18,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_surface,capacity_surface,fe8308ca62a4,19,,capacity_bits_per_symbol,0.004263527971131734,bits_per_symbol,blahut_arimoto,complete,,,,0.5960464477539062,0.0,gaussian,1.0,"[0.0, 0.15625]",1.0,
+capacity_surface,capacity_surface,fe8308ca62a4,19,,capacity_residual,1.8214596497756474e-17,bits_per_symbol,blahut_arimoto,complete,,,,0.5960464477539062,0.0,gaussian,1.0,"[0.0, 0.15625]",1.0,
+capacity_surface,capacity_surface,d40ebc6d9766,19,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.5960464477539062,0.0,gaussian,1.0,"[0.0, 0.15625]",1.0,
+capacity_surface,capacity_surface,d40ebc6d9766,19,,mutual_information,0.004263527971131731,bits_per_symbol,exact,complete,,,,0.5960464477539062,0.0,gaussian,1.0,"[0.0, 0.15625]",1.0,
+capacity_surface,capacity_surface,374745ff5d91,19,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_surface,capacity_surface,1eb86843d9e1,19,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_surface,capacity_surface,c7201f91b404,20,,capacity_bits_per_symbol,0.0041958600090260725,bits_per_symbol,blahut_arimoto,complete,,,,0.7450580596923828,0.0,gaussian,1.0,"[0.0, 0.15625]",1.0,
+capacity_surface,capacity_surface,c7201f91b404,20,,capacity_residual,7.719519468096792e-17,bits_per_symbol,blahut_arimoto,complete,,,,0.7450580596923828,0.0,gaussian,1.0,"[0.0, 0.15625]",1.0,
+capacity_surface,capacity_surface,dd0fae878ad1,20,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.7450580596923828,0.0,gaussian,1.0,"[0.0, 0.15625]",1.0,
+capacity_surface,capacity_surface,dd0fae878ad1,20,,mutual_information,0.004195860009026074,bits_per_symbol,exact,complete,,,,0.7450580596923828,0.0,gaussian,1.0,"[0.0, 0.15625]",1.0,
+capacity_surface,capacity_surface,0bc1b501de49,20,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_surface,capacity_surface,aacd5b7b834d,20,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_surface,capacity_surface,c2bdc8025570,21,,capacity_bits_per_symbol,0.004094333022625287,bits_per_symbol,blahut_arimoto,complete,,,,0.9313225746154785,0.0,gaussian,1.0,"[0.0, 0.15625]",1.0,
+capacity_surface,capacity_surface,c2bdc8025570,21,,capacity_residual,5.26557963898e-14,bits_per_symbol,blahut_arimoto,complete,,,,0.9313225746154785,0.0,gaussian,1.0,"[0.0, 0.15625]",1.0,
+capacity_surface,capacity_surface,6e5f35ac6b81,21,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.9313225746154785,0.0,gaussian,1.0,"[0.0, 0.15625]",1.0,
+capacity_surface,capacity_surface,6e5f35ac6b81,21,,mutual_information,0.004094333022625292,bits_per_symbol,exact,complete,,,,0.9313225746154785,0.0,gaussian,1.0,"[0.0, 0.15625]",1.0,
+capacity_surface,capacity_surface,0ef922f7469f,21,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_surface,capacity_surface,5c2a57a56b07,21,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_surface,capacity_surface,7a114d4f710b,22,,capacity_bits_per_symbol,0.003945227330201488,bits_per_symbol,blahut_arimoto,complete,,,,1.1641532182693481,0.0,gaussian,1.0,"[0.0, 0.15625]",1.0,
+capacity_surface,capacity_surface,7a114d4f710b,22,,capacity_residual,9.966026528335226e-11,bits_per_symbol,blahut_arimoto,complete,,,,1.1641532182693481,0.0,gaussian,1.0,"[0.0, 0.15625]",1.0,
+capacity_surface,capacity_surface,dd8cf16b3eeb,22,,matrix_row_sum_error,0.0,probability,exact,complete,,,,1.1641532182693481,0.0,gaussian,1.0,"[0.0, 0.15625]",1.0,
+capacity_surface,capacity_surface,dd8cf16b3eeb,22,,mutual_information,0.003945227330201513,bits_per_symbol,exact,complete,,,,1.1641532182693481,0.0,gaussian,1.0,"[0.0, 0.15625]",1.0,
+capacity_surface,capacity_surface,46a50c6b75f2,22,,optimal_input_probability,0.4999999978706671,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_surface,capacity_surface,53671e59f248,22,,optimal_input_probability,0.5000000021293329,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_surface,capacity_surface,6097657bcd8f,23,,capacity_bits_per_symbol,0.0037332629207122623,bits_per_symbol,blahut_arimoto,complete,,,,1.4551915228366852,0.0,gaussian,1.0,"[0.0, 0.15625]",1.0,
+capacity_surface,capacity_surface,6097657bcd8f,23,,capacity_residual,9.983144085706774e-11,bits_per_symbol,blahut_arimoto,complete,,,,1.4551915228366852,0.0,gaussian,1.0,"[0.0, 0.15625]",1.0,
+capacity_surface,capacity_surface,4ba544cbe80d,23,,matrix_row_sum_error,0.0,probability,exact,complete,,,,1.4551915228366852,0.0,gaussian,1.0,"[0.0, 0.15625]",1.0,
+capacity_surface,capacity_surface,4ba544cbe80d,23,,mutual_information,0.003733262920691643,bits_per_symbol,exact,complete,,,,1.4551915228366852,0.0,gaussian,1.0,"[0.0, 0.15625]",1.0,
+capacity_surface,capacity_surface,f78d22583d1c,23,,optimal_input_probability,0.49999882759608505,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_surface,capacity_surface,2a4104d66c87,23,,optimal_input_probability,0.5000011724039151,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_surface,capacity_surface,8eb567290ae5,24,,capacity_bits_per_symbol,0.006837847720638606,bits_per_symbol,blahut_arimoto,complete,,,,0.125,0.0,gaussian,1.0,"[0.0, 0.1953125]",1.0,
+capacity_surface,capacity_surface,8eb567290ae5,24,,capacity_residual,4.7704895589362195e-17,bits_per_symbol,blahut_arimoto,complete,,,,0.125,0.0,gaussian,1.0,"[0.0, 0.1953125]",1.0,
+capacity_surface,capacity_surface,7c0b553b26d0,24,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.125,0.0,gaussian,1.0,"[0.0, 0.1953125]",1.0,
+capacity_surface,capacity_surface,7c0b553b26d0,24,,mutual_information,0.006837847720638606,bits_per_symbol,exact,complete,,,,0.125,0.0,gaussian,1.0,"[0.0, 0.1953125]",1.0,
+capacity_surface,capacity_surface,23e990a17cc3,24,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_surface,capacity_surface,2d91d89b9a64,24,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_surface,capacity_surface,5cc9f24d7255,25,,capacity_bits_per_symbol,0.006832873268360696,bits_per_symbol,blahut_arimoto,complete,,,,0.15625,0.0,gaussian,1.0,"[0.0, 0.1953125]",1.0,
+capacity_surface,capacity_surface,5cc9f24d7255,25,,capacity_residual,5.4643789493269423e-17,bits_per_symbol,blahut_arimoto,complete,,,,0.15625,0.0,gaussian,1.0,"[0.0, 0.1953125]",1.0,
+capacity_surface,capacity_surface,4dd08b58e47b,25,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.15625,0.0,gaussian,1.0,"[0.0, 0.1953125]",1.0,
+capacity_surface,capacity_surface,4dd08b58e47b,25,,mutual_information,0.0068328732683606945,bits_per_symbol,exact,complete,,,,0.15625,0.0,gaussian,1.0,"[0.0, 0.1953125]",1.0,
+capacity_surface,capacity_surface,3b04a27b70f4,25,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_surface,capacity_surface,b0c08bdc5d60,25,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_surface,capacity_surface,092f41e1d2b9,26,,capacity_bits_per_symbol,0.006825115133351956,bits_per_symbol,blahut_arimoto,complete,,,,0.1953125,0.0,gaussian,1.0,"[0.0, 0.1953125]",1.0,
+capacity_surface,capacity_surface,092f41e1d2b9,26,,capacity_residual,5.204170427930421e-18,bits_per_symbol,blahut_arimoto,complete,,,,0.1953125,0.0,gaussian,1.0,"[0.0, 0.1953125]",1.0,
+capacity_surface,capacity_surface,21a377ce28f2,26,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.1953125,0.0,gaussian,1.0,"[0.0, 0.1953125]",1.0,
+capacity_surface,capacity_surface,21a377ce28f2,26,,mutual_information,0.006825115133351956,bits_per_symbol,exact,complete,,,,0.1953125,0.0,gaussian,1.0,"[0.0, 0.1953125]",1.0,
+capacity_surface,capacity_surface,7ceaaf4235e2,26,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_surface,capacity_surface,b8e898396871,26,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_surface,capacity_surface,2d1c5d625a65,27,,capacity_bits_per_symbol,0.006813028190619599,bits_per_symbol,blahut_arimoto,complete,,,,0.244140625,0.0,gaussian,1.0,"[0.0, 0.1953125]",1.0,
+capacity_surface,capacity_surface,2d1c5d625a65,27,,capacity_residual,5.204170427930421e-17,bits_per_symbol,blahut_arimoto,complete,,,,0.244140625,0.0,gaussian,1.0,"[0.0, 0.1953125]",1.0,
+capacity_surface,capacity_surface,b2c9ca565754,27,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.244140625,0.0,gaussian,1.0,"[0.0, 0.1953125]",1.0,
+capacity_surface,capacity_surface,b2c9ca565754,27,,mutual_information,0.0068130281906196,bits_per_symbol,exact,complete,,,,0.244140625,0.0,gaussian,1.0,"[0.0, 0.1953125]",1.0,
+capacity_surface,capacity_surface,495b900fe74f,27,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_surface,capacity_surface,cebbdbfd878a,27,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_surface,capacity_surface,28b4fdd624c6,28,,capacity_bits_per_symbol,0.006794227660816207,bits_per_symbol,blahut_arimoto,complete,,,,0.30517578125,0.0,gaussian,1.0,"[0.0, 0.1953125]",1.0,
+capacity_surface,capacity_surface,28b4fdd624c6,28,,capacity_residual,1.5612511283791264e-17,bits_per_symbol,blahut_arimoto,complete,,,,0.30517578125,0.0,gaussian,1.0,"[0.0, 0.1953125]",1.0,
+capacity_surface,capacity_surface,9c5a7d7dc10c,28,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.30517578125,0.0,gaussian,1.0,"[0.0, 0.1953125]",1.0,
+capacity_surface,capacity_surface,9c5a7d7dc10c,28,,mutual_information,0.006794227660816206,bits_per_symbol,exact,complete,,,,0.30517578125,0.0,gaussian,1.0,"[0.0, 0.1953125]",1.0,
+capacity_surface,capacity_surface,84ff418ca841,28,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_surface,capacity_surface,ec9d005fc607,28,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_surface,capacity_surface,dc14a1ea4ed8,29,,capacity_bits_per_symbol,0.006765058317803363,bits_per_symbol,blahut_arimoto,complete,,,,0.3814697265625,0.0,gaussian,1.0,"[0.0, 0.1953125]",1.0,
+capacity_surface,capacity_surface,dc14a1ea4ed8,29,,capacity_residual,6.938893903907228e-18,bits_per_symbol,blahut_arimoto,complete,,,,0.3814697265625,0.0,gaussian,1.0,"[0.0, 0.1953125]",1.0,
+capacity_surface,capacity_surface,8c80c2342e70,29,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.3814697265625,0.0,gaussian,1.0,"[0.0, 0.1953125]",1.0,
+capacity_surface,capacity_surface,8c80c2342e70,29,,mutual_information,0.006765058317803363,bits_per_symbol,exact,complete,,,,0.3814697265625,0.0,gaussian,1.0,"[0.0, 0.1953125]",1.0,
+capacity_surface,capacity_surface,6d048da7077c,29,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_surface,capacity_surface,ca92f043de32,29,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_surface,capacity_surface,3962a5b6289f,30,,capacity_bits_per_symbol,0.006719978549034555,bits_per_symbol,blahut_arimoto,complete,,,,0.476837158203125,0.0,gaussian,1.0,"[0.0, 0.1953125]",1.0,
+capacity_surface,capacity_surface,3962a5b6289f,30,,capacity_residual,1.6479873021779667e-17,bits_per_symbol,blahut_arimoto,complete,,,,0.476837158203125,0.0,gaussian,1.0,"[0.0, 0.1953125]",1.0,
+capacity_surface,capacity_surface,315617a5484a,30,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.476837158203125,0.0,gaussian,1.0,"[0.0, 0.1953125]",1.0,
+capacity_surface,capacity_surface,315617a5484a,30,,mutual_information,0.006719978549034563,bits_per_symbol,exact,complete,,,,0.476837158203125,0.0,gaussian,1.0,"[0.0, 0.1953125]",1.0,
+capacity_surface,capacity_surface,72fbb7820f20,30,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_surface,capacity_surface,f95f22effa0f,30,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_surface,capacity_surface,9baa340f5775,31,,capacity_bits_per_symbol,0.00665073044306865,bits_per_symbol,blahut_arimoto,complete,,,,0.5960464477539062,0.0,gaussian,1.0,"[0.0, 0.1953125]",1.0,
+capacity_surface,capacity_surface,9baa340f5775,31,,capacity_residual,1.0408340855860843e-17,bits_per_symbol,blahut_arimoto,complete,,,,0.5960464477539062,0.0,gaussian,1.0,"[0.0, 0.1953125]",1.0,
+capacity_surface,capacity_surface,59bbb1af9b9d,31,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.5960464477539062,0.0,gaussian,1.0,"[0.0, 0.1953125]",1.0,
+capacity_surface,capacity_surface,59bbb1af9b9d,31,,mutual_information,0.006650730443068643,bits_per_symbol,exact,complete,,,,0.5960464477539062,0.0,gaussian,1.0,"[0.0, 0.1953125]",1.0,
+capacity_surface,capacity_surface,3881c4bc54c7,31,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_surface,capacity_surface,da69500eb571,31,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_surface,capacity_surface,adc03ee3da2d,32,,capacity_bits_per_symbol,0.006545341305408109,bits_per_symbol,blahut_arimoto,complete,,,,0.7450580596923828,0.0,gaussian,1.0,"[0.0, 0.1953125]",1.0,
+capacity_surface,capacity_surface,adc03ee3da2d,32,,capacity_residual,5.0306980803327406e-17,bits_per_symbol,blahut_arimoto,complete,,,,0.7450580596923828,0.0,gaussian,1.0,"[0.0, 0.1953125]",1.0,
+capacity_surface,capacity_surface,5be73b65a971,32,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.7450580596923828,0.0,gaussian,1.0,"[0.0, 0.1953125]",1.0,
+capacity_surface,capacity_surface,5be73b65a971,32,,mutual_information,0.006545341305408109,bits_per_symbol,exact,complete,,,,0.7450580596923828,0.0,gaussian,1.0,"[0.0, 0.1953125]",1.0,
+capacity_surface,capacity_surface,b4d8a5746614,32,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_surface,capacity_surface,e8a1c45f2518,32,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_surface,capacity_surface,cbb927e6cf70,33,,capacity_bits_per_symbol,0.006387205134026798,bits_per_symbol,blahut_arimoto,complete,,,,0.9313225746154785,0.0,gaussian,1.0,"[0.0, 0.1953125]",1.0,
+capacity_surface,capacity_surface,cbb927e6cf70,33,,capacity_residual,1.3769194118218309e-13,bits_per_symbol,blahut_arimoto,complete,,,,0.9313225746154785,0.0,gaussian,1.0,"[0.0, 0.1953125]",1.0,
+capacity_surface,capacity_surface,3422d1d5d0eb,33,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.9313225746154785,0.0,gaussian,1.0,"[0.0, 0.1953125]",1.0,
+capacity_surface,capacity_surface,3422d1d5d0eb,33,,mutual_information,0.006387205134026801,bits_per_symbol,exact,complete,,,,0.9313225746154785,0.0,gaussian,1.0,"[0.0, 0.1953125]",1.0,
+capacity_surface,capacity_surface,8746b0fefeee,33,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_surface,capacity_surface,e132cf7c06ca,33,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_surface,capacity_surface,4b48f10ac46a,34,,capacity_bits_per_symbol,0.006154932843552884,bits_per_symbol,blahut_arimoto,complete,,,,1.1641532182693481,0.0,gaussian,1.0,"[0.0, 0.1953125]",1.0,
+capacity_surface,capacity_surface,4b48f10ac46a,34,,capacity_residual,9.932642035248573e-11,bits_per_symbol,blahut_arimoto,complete,,,,1.1641532182693481,0.0,gaussian,1.0,"[0.0, 0.1953125]",1.0,
+capacity_surface,capacity_surface,dd65d86c61ae,34,,matrix_row_sum_error,0.0,probability,exact,complete,,,,1.1641532182693481,0.0,gaussian,1.0,"[0.0, 0.1953125]",1.0,
+capacity_surface,capacity_surface,dd65d86c61ae,34,,mutual_information,0.006154932843552795,bits_per_symbol,exact,complete,,,,1.1641532182693481,0.0,gaussian,1.0,"[0.0, 0.1953125]",1.0,
+capacity_surface,capacity_surface,de0d24f8228d,34,,optimal_input_probability,0.4999999903258377,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_surface,capacity_surface,7f2f9e7b8659,34,,optimal_input_probability,0.5000000096741622,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_surface,capacity_surface,6e02254b2eef,35,,capacity_bits_per_symbol,0.0058246802494664246,bits_per_symbol,blahut_arimoto,complete,,,,1.4551915228366852,0.0,gaussian,1.0,"[0.0, 0.1953125]",1.0,
+capacity_surface,capacity_surface,6e02254b2eef,35,,capacity_residual,9.967992663922898e-11,bits_per_symbol,blahut_arimoto,complete,,,,1.4551915228366852,0.0,gaussian,1.0,"[0.0, 0.1953125]",1.0,
+capacity_surface,capacity_surface,d1fae553d7be,35,,matrix_row_sum_error,0.0,probability,exact,complete,,,,1.4551915228366852,0.0,gaussian,1.0,"[0.0, 0.1953125]",1.0,
+capacity_surface,capacity_surface,d1fae553d7be,35,,mutual_information,0.005824680249384653,bits_per_symbol,exact,complete,,,,1.4551915228366852,0.0,gaussian,1.0,"[0.0, 0.1953125]",1.0,
+capacity_surface,capacity_surface,08f225d6c29d,35,,optimal_input_probability,0.4999981270550173,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_surface,capacity_surface,9b6735d87bb6,35,,optimal_input_probability,0.5000018729449828,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_surface,capacity_surface,e47abe4cee4b,36,,capacity_bits_per_symbol,0.010655838507052116,bits_per_symbol,blahut_arimoto,complete,,,,0.125,0.0,gaussian,1.0,"[0.0, 0.244140625]",1.0,
+capacity_surface,capacity_surface,e47abe4cee4b,36,,capacity_residual,1.214306433183765e-17,bits_per_symbol,blahut_arimoto,complete,,,,0.125,0.0,gaussian,1.0,"[0.0, 0.244140625]",1.0,
+capacity_surface,capacity_surface,99e8cd08ed01,36,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.125,0.0,gaussian,1.0,"[0.0, 0.244140625]",1.0,
+capacity_surface,capacity_surface,99e8cd08ed01,36,,mutual_information,0.010655838507052115,bits_per_symbol,exact,complete,,,,0.125,0.0,gaussian,1.0,"[0.0, 0.244140625]",1.0,
+capacity_surface,capacity_surface,21b943dc7cfb,36,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_surface,capacity_surface,ab340c0990c2,36,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_surface,capacity_surface,378fac22da34,37,,capacity_bits_per_symbol,0.010648106927285966,bits_per_symbol,blahut_arimoto,complete,,,,0.15625,0.0,gaussian,1.0,"[0.0, 0.244140625]",1.0,
+capacity_surface,capacity_surface,378fac22da34,37,,capacity_residual,2.6020852139652106e-17,bits_per_symbol,blahut_arimoto,complete,,,,0.15625,0.0,gaussian,1.0,"[0.0, 0.244140625]",1.0,
+capacity_surface,capacity_surface,9c2517226edc,37,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.15625,0.0,gaussian,1.0,"[0.0, 0.244140625]",1.0,
+capacity_surface,capacity_surface,9c2517226edc,37,,mutual_information,0.010648106927285966,bits_per_symbol,exact,complete,,,,0.15625,0.0,gaussian,1.0,"[0.0, 0.244140625]",1.0,
+capacity_surface,capacity_surface,98c7a7167910,37,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_surface,capacity_surface,d93951c7227d,37,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_surface,capacity_surface,f75822e33d9d,38,,capacity_bits_per_symbol,0.01063604870650106,bits_per_symbol,blahut_arimoto,complete,,,,0.1953125,0.0,gaussian,1.0,"[0.0, 0.244140625]",1.0,
+capacity_surface,capacity_surface,f75822e33d9d,38,,capacity_residual,8.673617379884035e-18,bits_per_symbol,blahut_arimoto,complete,,,,0.1953125,0.0,gaussian,1.0,"[0.0, 0.244140625]",1.0,
+capacity_surface,capacity_surface,b3214b55c52d,38,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.1953125,0.0,gaussian,1.0,"[0.0, 0.244140625]",1.0,
+capacity_surface,capacity_surface,b3214b55c52d,38,,mutual_information,0.010636048706501061,bits_per_symbol,exact,complete,,,,0.1953125,0.0,gaussian,1.0,"[0.0, 0.244140625]",1.0,
+capacity_surface,capacity_surface,227ac82624d8,38,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_surface,capacity_surface,64fffa0892dc,38,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_surface,capacity_surface,a39f49ee26fa,39,,capacity_bits_per_symbol,0.010617262161562897,bits_per_symbol,blahut_arimoto,complete,,,,0.244140625,0.0,gaussian,1.0,"[0.0, 0.244140625]",1.0,
+capacity_surface,capacity_surface,a39f49ee26fa,39,,capacity_residual,3.469446951953614e-18,bits_per_symbol,blahut_arimoto,complete,,,,0.244140625,0.0,gaussian,1.0,"[0.0, 0.244140625]",1.0,
+capacity_surface,capacity_surface,d23b6dbc43e6,39,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.244140625,0.0,gaussian,1.0,"[0.0, 0.244140625]",1.0,
+capacity_surface,capacity_surface,d23b6dbc43e6,39,,mutual_information,0.010617262161562897,bits_per_symbol,exact,complete,,,,0.244140625,0.0,gaussian,1.0,"[0.0, 0.244140625]",1.0,
+capacity_surface,capacity_surface,115ccc405f8d,39,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_surface,capacity_surface,9c72d6badd89,39,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_surface,capacity_surface,a99ef9181089,40,,capacity_bits_per_symbol,0.010588040318427031,bits_per_symbol,blahut_arimoto,complete,,,,0.30517578125,0.0,gaussian,1.0,"[0.0, 0.244140625]",1.0,
+capacity_surface,capacity_surface,a99ef9181089,40,,capacity_residual,7.45931094670027e-17,bits_per_symbol,blahut_arimoto,complete,,,,0.30517578125,0.0,gaussian,1.0,"[0.0, 0.244140625]",1.0,
+capacity_surface,capacity_surface,dc4d2b2768e4,40,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.30517578125,0.0,gaussian,1.0,"[0.0, 0.244140625]",1.0,
+capacity_surface,capacity_surface,dc4d2b2768e4,40,,mutual_information,0.010588040318427033,bits_per_symbol,exact,complete,,,,0.30517578125,0.0,gaussian,1.0,"[0.0, 0.244140625]",1.0,
+capacity_surface,capacity_surface,796fa46d9834,40,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_surface,capacity_surface,f9fb7af2b67b,40,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_surface,capacity_surface,21e2b19ed126,41,,capacity_bits_per_symbol,0.010542700989189854,bits_per_symbol,blahut_arimoto,complete,,,,0.3814697265625,0.0,gaussian,1.0,"[0.0, 0.244140625]",1.0,
+capacity_surface,capacity_surface,21e2b19ed126,41,,capacity_residual,1.9081958235744878e-17,bits_per_symbol,blahut_arimoto,complete,,,,0.3814697265625,0.0,gaussian,1.0,"[0.0, 0.244140625]",1.0,
+capacity_surface,capacity_surface,7d4a7e984c7e,41,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.3814697265625,0.0,gaussian,1.0,"[0.0, 0.244140625]",1.0,
+capacity_surface,capacity_surface,7d4a7e984c7e,41,,mutual_information,0.010542700989189857,bits_per_symbol,exact,complete,,,,0.3814697265625,0.0,gaussian,1.0,"[0.0, 0.244140625]",1.0,
+capacity_surface,capacity_surface,64af6a268dc8,41,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_surface,capacity_surface,3a7001945cd6,41,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_surface,capacity_surface,02f70b1071c1,42,,capacity_bits_per_symbol,0.010472628600194416,bits_per_symbol,blahut_arimoto,complete,,,,0.476837158203125,0.0,gaussian,1.0,"[0.0, 0.244140625]",1.0,
+capacity_surface,capacity_surface,02f70b1071c1,42,,capacity_residual,1.0408340855860843e-17,bits_per_symbol,blahut_arimoto,complete,,,,0.476837158203125,0.0,gaussian,1.0,"[0.0, 0.244140625]",1.0,
+capacity_surface,capacity_surface,0246324d7009,42,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.476837158203125,0.0,gaussian,1.0,"[0.0, 0.244140625]",1.0,
+capacity_surface,capacity_surface,0246324d7009,42,,mutual_information,0.010472628600194411,bits_per_symbol,exact,complete,,,,0.476837158203125,0.0,gaussian,1.0,"[0.0, 0.244140625]",1.0,
+capacity_surface,capacity_surface,b6810e47edc5,42,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_surface,capacity_surface,c127c881ba2c,42,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_surface,capacity_surface,ce946f960b02,43,,capacity_bits_per_symbol,0.010364982384818784,bits_per_symbol,blahut_arimoto,complete,,,,0.5960464477539062,0.0,gaussian,1.0,"[0.0, 0.244140625]",1.0,
+capacity_surface,capacity_surface,ce946f960b02,43,,capacity_residual,1.5612511283791264e-17,bits_per_symbol,blahut_arimoto,complete,,,,0.5960464477539062,0.0,gaussian,1.0,"[0.0, 0.244140625]",1.0,
+capacity_surface,capacity_surface,226123fc0945,43,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.5960464477539062,0.0,gaussian,1.0,"[0.0, 0.244140625]",1.0,
+capacity_surface,capacity_surface,226123fc0945,43,,mutual_information,0.010364982384818772,bits_per_symbol,exact,complete,,,,0.5960464477539062,0.0,gaussian,1.0,"[0.0, 0.244140625]",1.0,
+capacity_surface,capacity_surface,54fe52d506b0,43,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_surface,capacity_surface,b87ea183a11b,43,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_surface,capacity_surface,04c5a3f6533d,44,,capacity_bits_per_symbol,0.010201140356131694,bits_per_symbol,blahut_arimoto,complete,,,,0.7450580596923828,0.0,gaussian,1.0,"[0.0, 0.244140625]",1.0,
+capacity_surface,capacity_surface,04c5a3f6533d,44,,capacity_residual,6.591949208711867e-17,bits_per_symbol,blahut_arimoto,complete,,,,0.7450580596923828,0.0,gaussian,1.0,"[0.0, 0.244140625]",1.0,
+capacity_surface,capacity_surface,aaabd75bb751,44,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.7450580596923828,0.0,gaussian,1.0,"[0.0, 0.244140625]",1.0,
+capacity_surface,capacity_surface,aaabd75bb751,44,,mutual_information,0.010201140356131691,bits_per_symbol,exact,complete,,,,0.7450580596923828,0.0,gaussian,1.0,"[0.0, 0.244140625]",1.0,
+capacity_surface,capacity_surface,3de63499a080,44,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_surface,capacity_surface,e87e2743a0b1,44,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_surface,capacity_surface,5357bbc6f3fe,45,,capacity_bits_per_symbol,0.009955263393463821,bits_per_symbol,blahut_arimoto,complete,,,,0.9313225746154785,0.0,gaussian,1.0,"[0.0, 0.244140625]",1.0,
+capacity_surface,capacity_surface,5357bbc6f3fe,45,,capacity_residual,3.76147030189955e-13,bits_per_symbol,blahut_arimoto,complete,,,,0.9313225746154785,0.0,gaussian,1.0,"[0.0, 0.244140625]",1.0,
+capacity_surface,capacity_surface,3016ecec54b1,45,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.9313225746154785,0.0,gaussian,1.0,"[0.0, 0.244140625]",1.0,
+capacity_surface,capacity_surface,3016ecec54b1,45,,mutual_information,0.009955263393463823,bits_per_symbol,exact,complete,,,,0.9313225746154785,0.0,gaussian,1.0,"[0.0, 0.244140625]",1.0,
+capacity_surface,capacity_surface,e2464a012bc9,45,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_surface,capacity_surface,2bde02f5cd67,45,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_surface,capacity_surface,ea1e5fb3343b,46,,capacity_bits_per_symbol,0.00959404758594019,bits_per_symbol,blahut_arimoto,complete,,,,1.1641532182693481,0.0,gaussian,1.0,"[0.0, 0.244140625]",1.0,
+capacity_surface,capacity_surface,ea1e5fb3343b,46,,capacity_residual,9.928506974898887e-11,bits_per_symbol,blahut_arimoto,complete,,,,1.1641532182693481,0.0,gaussian,1.0,"[0.0, 0.244140625]",1.0,
+capacity_surface,capacity_surface,f248b93f1dc6,46,,matrix_row_sum_error,0.0,probability,exact,complete,,,,1.1641532182693481,0.0,gaussian,1.0,"[0.0, 0.244140625]",1.0,
+capacity_surface,capacity_surface,f248b93f1dc6,46,,mutual_information,0.009594047585940239,bits_per_symbol,exact,complete,,,,1.1641532182693481,0.0,gaussian,1.0,"[0.0, 0.244140625]",1.0,
+capacity_surface,capacity_surface,471268f73c5b,46,,optimal_input_probability,0.4999999798405148,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_surface,capacity_surface,d7cac7613c86,46,,optimal_input_probability,0.5000000201594852,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_surface,capacity_surface,ef70d2e41a49,47,,capacity_bits_per_symbol,0.009080311424650997,bits_per_symbol,blahut_arimoto,complete,,,,1.4551915228366852,0.0,gaussian,1.0,"[0.0, 0.244140625]",1.0,
+capacity_surface,capacity_surface,ef70d2e41a49,47,,capacity_residual,9.954913976484292e-11,bits_per_symbol,blahut_arimoto,complete,,,,1.4551915228366852,0.0,gaussian,1.0,"[0.0, 0.244140625]",1.0,
+capacity_surface,capacity_surface,edfa10bef2c4,47,,matrix_row_sum_error,0.0,probability,exact,complete,,,,1.4551915228366852,0.0,gaussian,1.0,"[0.0, 0.244140625]",1.0,
+capacity_surface,capacity_surface,edfa10bef2c4,47,,mutual_information,0.009080311424321624,bits_per_symbol,exact,complete,,,,1.4551915228366852,0.0,gaussian,1.0,"[0.0, 0.244140625]",1.0,
+capacity_surface,capacity_surface,e97a7044e0ba,47,,optimal_input_probability,0.4999969824122595,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_surface,capacity_surface,4118b30afc31,47,,optimal_input_probability,0.5000030175877405,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_surface,capacity_surface,8226240497c2,48,,capacity_bits_per_symbol,0.01658126606900564,bits_per_symbol,blahut_arimoto,complete,,,,0.125,0.0,gaussian,1.0,"[0.0, 0.30517578125]",1.0,
+capacity_surface,capacity_surface,8226240497c2,48,,capacity_residual,2.0816681711721685e-17,bits_per_symbol,blahut_arimoto,complete,,,,0.125,0.0,gaussian,1.0,"[0.0, 0.30517578125]",1.0,
+capacity_surface,capacity_surface,cc6ab91bd55c,48,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.125,0.0,gaussian,1.0,"[0.0, 0.30517578125]",1.0,
+capacity_surface,capacity_surface,cc6ab91bd55c,48,,mutual_information,0.01658126606900564,bits_per_symbol,exact,complete,,,,0.125,0.0,gaussian,1.0,"[0.0, 0.30517578125]",1.0,
+capacity_surface,capacity_surface,85a614a36119,48,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_surface,capacity_surface,121eb065f406,48,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_surface,capacity_surface,265a1e829c9b,49,,capacity_bits_per_symbol,0.016569284276363252,bits_per_symbol,blahut_arimoto,complete,,,,0.15625,0.0,gaussian,1.0,"[0.0, 0.30517578125]",1.0,
+capacity_surface,capacity_surface,265a1e829c9b,49,,capacity_residual,1.734723475976807e-17,bits_per_symbol,blahut_arimoto,complete,,,,0.15625,0.0,gaussian,1.0,"[0.0, 0.30517578125]",1.0,
+capacity_surface,capacity_surface,12de96f8eafe,49,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.15625,0.0,gaussian,1.0,"[0.0, 0.30517578125]",1.0,
+capacity_surface,capacity_surface,12de96f8eafe,49,,mutual_information,0.016569284276363252,bits_per_symbol,exact,complete,,,,0.15625,0.0,gaussian,1.0,"[0.0, 0.30517578125]",1.0,
+capacity_surface,capacity_surface,3a37a01d671a,49,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_surface,capacity_surface,b646f53c5448,49,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_surface,capacity_surface,acdbe23cc7db,50,,capacity_bits_per_symbol,0.01655059720371274,bits_per_symbol,blahut_arimoto,complete,,,,0.1953125,0.0,gaussian,1.0,"[0.0, 0.30517578125]",1.0,
+capacity_surface,capacity_surface,acdbe23cc7db,50,,capacity_residual,6.938893903907228e-18,bits_per_symbol,blahut_arimoto,complete,,,,0.1953125,0.0,gaussian,1.0,"[0.0, 0.30517578125]",1.0,
+capacity_surface,capacity_surface,f2116c4e4a11,50,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.1953125,0.0,gaussian,1.0,"[0.0, 0.30517578125]",1.0,
+capacity_surface,capacity_surface,f2116c4e4a11,50,,mutual_information,0.01655059720371275,bits_per_symbol,exact,complete,,,,0.1953125,0.0,gaussian,1.0,"[0.0, 0.30517578125]",1.0,
+capacity_surface,capacity_surface,ff93db23e89e,50,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_surface,capacity_surface,88c0709dd047,50,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_surface,capacity_surface,37b2c1061bb5,51,,capacity_bits_per_symbol,0.01652148252950373,bits_per_symbol,blahut_arimoto,complete,,,,0.244140625,0.0,gaussian,1.0,"[0.0, 0.30517578125]",1.0,
+capacity_surface,capacity_surface,37b2c1061bb5,51,,capacity_residual,1.3877787807814457e-17,bits_per_symbol,blahut_arimoto,complete,,,,0.244140625,0.0,gaussian,1.0,"[0.0, 0.30517578125]",1.0,
+capacity_surface,capacity_surface,ddee7005fabe,51,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.244140625,0.0,gaussian,1.0,"[0.0, 0.30517578125]",1.0,
+capacity_surface,capacity_surface,ddee7005fabe,51,,mutual_information,0.016521482529503733,bits_per_symbol,exact,complete,,,,0.244140625,0.0,gaussian,1.0,"[0.0, 0.30517578125]",1.0,
+capacity_surface,capacity_surface,98bce9ae0083,51,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_surface,capacity_surface,26a394a61222,51,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_surface,capacity_surface,4820457d9e94,52,,capacity_bits_per_symbol,0.0164761944970137,bits_per_symbol,blahut_arimoto,complete,,,,0.30517578125,0.0,gaussian,1.0,"[0.0, 0.30517578125]",1.0,
+capacity_surface,capacity_surface,4820457d9e94,52,,capacity_residual,3.469446951953614e-18,bits_per_symbol,blahut_arimoto,complete,,,,0.30517578125,0.0,gaussian,1.0,"[0.0, 0.30517578125]",1.0,
+capacity_surface,capacity_surface,ee6a3666db0e,52,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.30517578125,0.0,gaussian,1.0,"[0.0, 0.30517578125]",1.0,
+capacity_surface,capacity_surface,ee6a3666db0e,52,,mutual_information,0.0164761944970137,bits_per_symbol,exact,complete,,,,0.30517578125,0.0,gaussian,1.0,"[0.0, 0.30517578125]",1.0,
+capacity_surface,capacity_surface,06ba3c6cfb7f,52,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_surface,capacity_surface,e952d7c7a848,52,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_surface,capacity_surface,7062874ff99b,53,,capacity_bits_per_symbol,0.0164059248634859,bits_per_symbol,blahut_arimoto,complete,,,,0.3814697265625,0.0,gaussian,1.0,"[0.0, 0.30517578125]",1.0,
+capacity_surface,capacity_surface,7062874ff99b,53,,capacity_residual,6.938893903907228e-18,bits_per_symbol,blahut_arimoto,complete,,,,0.3814697265625,0.0,gaussian,1.0,"[0.0, 0.30517578125]",1.0,
+capacity_surface,capacity_surface,46bfcd0670e2,53,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.3814697265625,0.0,gaussian,1.0,"[0.0, 0.30517578125]",1.0,
+capacity_surface,capacity_surface,46bfcd0670e2,53,,mutual_information,0.016405924863485903,bits_per_symbol,exact,complete,,,,0.3814697265625,0.0,gaussian,1.0,"[0.0, 0.30517578125]",1.0,
+capacity_surface,capacity_surface,d7b06bd66e20,53,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_surface,capacity_surface,b74b0987cf24,53,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_surface,capacity_surface,9eab89f9cdf4,54,,capacity_bits_per_symbol,0.016297315995352175,bits_per_symbol,blahut_arimoto,complete,,,,0.476837158203125,0.0,gaussian,1.0,"[0.0, 0.30517578125]",1.0,
+capacity_surface,capacity_surface,9eab89f9cdf4,54,,capacity_residual,2.7755575615628914e-17,bits_per_symbol,blahut_arimoto,complete,,,,0.476837158203125,0.0,gaussian,1.0,"[0.0, 0.30517578125]",1.0,
+capacity_surface,capacity_surface,bca048606e0c,54,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.476837158203125,0.0,gaussian,1.0,"[0.0, 0.30517578125]",1.0,
+capacity_surface,capacity_surface,bca048606e0c,54,,mutual_information,0.01629731599535218,bits_per_symbol,exact,complete,,,,0.476837158203125,0.0,gaussian,1.0,"[0.0, 0.30517578125]",1.0,
+capacity_surface,capacity_surface,db34381b6c03,54,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_surface,capacity_surface,8bd2783b14ce,54,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_surface,capacity_surface,74023100d678,55,,capacity_bits_per_symbol,0.016130454380351128,bits_per_symbol,blahut_arimoto,complete,,,,0.5960464477539062,0.0,gaussian,1.0,"[0.0, 0.30517578125]",1.0,
+capacity_surface,capacity_surface,74023100d678,55,,capacity_residual,3.469446951953614e-18,bits_per_symbol,blahut_arimoto,complete,,,,0.5960464477539062,0.0,gaussian,1.0,"[0.0, 0.30517578125]",1.0,
+capacity_surface,capacity_surface,3c3db8adc6a2,55,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.5960464477539062,0.0,gaussian,1.0,"[0.0, 0.30517578125]",1.0,
+capacity_surface,capacity_surface,3c3db8adc6a2,55,,mutual_information,0.016130454380351128,bits_per_symbol,exact,complete,,,,0.5960464477539062,0.0,gaussian,1.0,"[0.0, 0.30517578125]",1.0,
+capacity_surface,capacity_surface,19ca0f545bbc,55,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_surface,capacity_surface,96b32b4e711e,55,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_surface,capacity_surface,7b134a15578f,56,,capacity_bits_per_symbol,0.0158764493787171,bits_per_symbol,blahut_arimoto,complete,,,,0.7450580596923828,0.0,gaussian,1.0,"[0.0, 0.30517578125]",1.0,
+capacity_surface,capacity_surface,7b134a15578f,56,,capacity_residual,2.0816681711721685e-17,bits_per_symbol,blahut_arimoto,complete,,,,0.7450580596923828,0.0,gaussian,1.0,"[0.0, 0.30517578125]",1.0,
+capacity_surface,capacity_surface,e7c4011a7ee3,56,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.7450580596923828,0.0,gaussian,1.0,"[0.0, 0.30517578125]",1.0,
+capacity_surface,capacity_surface,e7c4011a7ee3,56,,mutual_information,0.015876449378717104,bits_per_symbol,exact,complete,,,,0.7450580596923828,0.0,gaussian,1.0,"[0.0, 0.30517578125]",1.0,
+capacity_surface,capacity_surface,7592cf65d735,56,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_surface,capacity_surface,4370b13ea8be,56,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_surface,capacity_surface,a59b5a3bbfb7,57,,capacity_bits_per_symbol,0.015495188137471107,bits_per_symbol,blahut_arimoto,complete,,,,0.9313225746154785,0.0,gaussian,1.0,"[0.0, 0.30517578125]",1.0,
+capacity_surface,capacity_surface,a59b5a3bbfb7,57,,capacity_residual,1.111839786904767e-12,bits_per_symbol,blahut_arimoto,complete,,,,0.9313225746154785,0.0,gaussian,1.0,"[0.0, 0.30517578125]",1.0,
+capacity_surface,capacity_surface,6f8253d73591,57,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.9313225746154785,0.0,gaussian,1.0,"[0.0, 0.30517578125]",1.0,
+capacity_surface,capacity_surface,6f8253d73591,57,,mutual_information,0.015495188137471106,bits_per_symbol,exact,complete,,,,0.9313225746154785,0.0,gaussian,1.0,"[0.0, 0.30517578125]",1.0,
+capacity_surface,capacity_surface,e68281a9d57f,57,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_surface,capacity_surface,3e5f57185fc9,57,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_surface,capacity_surface,a304504469bf,58,,capacity_bits_per_symbol,0.014934916089581973,bits_per_symbol,blahut_arimoto,complete,,,,1.1641532182693481,0.0,gaussian,1.0,"[0.0, 0.30517578125]",1.0,
+capacity_surface,capacity_surface,a304504469bf,58,,capacity_residual,9.942731360457202e-11,bits_per_symbol,blahut_arimoto,complete,,,,1.1641532182693481,0.0,gaussian,1.0,"[0.0, 0.30517578125]",1.0,
+capacity_surface,capacity_surface,562ba4d478ea,58,,matrix_row_sum_error,0.0,probability,exact,complete,,,,1.1641532182693481,0.0,gaussian,1.0,"[0.0, 0.30517578125]",1.0,
+capacity_surface,capacity_surface,562ba4d478ea,58,,mutual_information,0.01493491608958183,bits_per_symbol,exact,complete,,,,1.1641532182693481,0.0,gaussian,1.0,"[0.0, 0.30517578125]",1.0,
+capacity_surface,capacity_surface,0c11e2475988,58,,optimal_input_probability,0.4999999625417343,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_surface,capacity_surface,8bb979350b60,58,,optimal_input_probability,0.5000000374582657,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_surface,capacity_surface,27375ca76427,59,,capacity_bits_per_symbol,0.01413771922234017,bits_per_symbol,blahut_arimoto,complete,,,,1.4551915228366852,0.0,gaussian,1.0,"[0.0, 0.30517578125]",1.0,
+capacity_surface,capacity_surface,27375ca76427,59,,capacity_residual,9.875837474193627e-11,bits_per_symbol,blahut_arimoto,complete,,,,1.4551915228366852,0.0,gaussian,1.0,"[0.0, 0.30517578125]",1.0,
+capacity_surface,capacity_surface,b82943783a1f,59,,matrix_row_sum_error,0.0,probability,exact,complete,,,,1.4551915228366852,0.0,gaussian,1.0,"[0.0, 0.30517578125]",1.0,
+capacity_surface,capacity_surface,b82943783a1f,59,,mutual_information,0.014137719220974022,bits_per_symbol,exact,complete,,,,1.4551915228366852,0.0,gaussian,1.0,"[0.0, 0.30517578125]",1.0,
+capacity_surface,capacity_surface,a8b0c3fa1dcc,59,,optimal_input_probability,0.49999506243397357,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_surface,capacity_surface,6f06e95c94c0,59,,optimal_input_probability,0.5000049375660265,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_surface,capacity_surface,2b1fad6c00e1,60,,capacity_bits_per_symbol,0.02574328135852543,bits_per_symbol,blahut_arimoto,complete,,,,0.125,0.0,gaussian,1.0,"[0.0, 0.3814697265625]",1.0,
+capacity_surface,capacity_surface,2b1fad6c00e1,60,,capacity_residual,2.0816681711721685e-17,bits_per_symbol,blahut_arimoto,complete,,,,0.125,0.0,gaussian,1.0,"[0.0, 0.3814697265625]",1.0,
+capacity_surface,capacity_surface,49c10e4420ed,60,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.125,0.0,gaussian,1.0,"[0.0, 0.3814697265625]",1.0,
+capacity_surface,capacity_surface,49c10e4420ed,60,,mutual_information,0.02574328135852543,bits_per_symbol,exact,complete,,,,0.125,0.0,gaussian,1.0,"[0.0, 0.3814697265625]",1.0,
+capacity_surface,capacity_surface,ad27ea29f2b1,60,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_surface,capacity_surface,5d0f117c92ed,60,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_surface,capacity_surface,8dcb8f4bcd05,61,,capacity_bits_per_symbol,0.02572479625005935,bits_per_symbol,blahut_arimoto,complete,,,,0.15625,0.0,gaussian,1.0,"[0.0, 0.3814697265625]",1.0,
+capacity_surface,capacity_surface,8dcb8f4bcd05,61,,capacity_residual,2.42861286636753e-17,bits_per_symbol,blahut_arimoto,complete,,,,0.15625,0.0,gaussian,1.0,"[0.0, 0.3814697265625]",1.0,
+capacity_surface,capacity_surface,66b2bc313e3d,61,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.15625,0.0,gaussian,1.0,"[0.0, 0.3814697265625]",1.0,
+capacity_surface,capacity_surface,66b2bc313e3d,61,,mutual_information,0.02572479625005935,bits_per_symbol,exact,complete,,,,0.15625,0.0,gaussian,1.0,"[0.0, 0.3814697265625]",1.0,
+capacity_surface,capacity_surface,a648fc1641c4,61,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_surface,capacity_surface,7e3dfed7bb94,61,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_surface,capacity_surface,7eb2ca4cbcba,62,,capacity_bits_per_symbol,0.025695966008423964,bits_per_symbol,blahut_arimoto,complete,,,,0.1953125,0.0,gaussian,1.0,"[0.0, 0.3814697265625]",1.0,
+capacity_surface,capacity_surface,7eb2ca4cbcba,62,,capacity_residual,2.0816681711721685e-17,bits_per_symbol,blahut_arimoto,complete,,,,0.1953125,0.0,gaussian,1.0,"[0.0, 0.3814697265625]",1.0,
+capacity_surface,capacity_surface,2563c815e440,62,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.1953125,0.0,gaussian,1.0,"[0.0, 0.3814697265625]",1.0,
+capacity_surface,capacity_surface,2563c815e440,62,,mutual_information,0.025695966008423964,bits_per_symbol,exact,complete,,,,0.1953125,0.0,gaussian,1.0,"[0.0, 0.3814697265625]",1.0,
+capacity_surface,capacity_surface,26350004521d,62,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_surface,capacity_surface,d0edf54142c6,62,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_surface,capacity_surface,1ad53a4e64c9,63,,capacity_bits_per_symbol,0.02565104706506941,bits_per_symbol,blahut_arimoto,complete,,,,0.244140625,0.0,gaussian,1.0,"[0.0, 0.3814697265625]",1.0,
+capacity_surface,capacity_surface,1ad53a4e64c9,63,,capacity_residual,1.0408340855860843e-17,bits_per_symbol,blahut_arimoto,complete,,,,0.244140625,0.0,gaussian,1.0,"[0.0, 0.3814697265625]",1.0,
+capacity_surface,capacity_surface,01773b456c61,63,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.244140625,0.0,gaussian,1.0,"[0.0, 0.3814697265625]",1.0,
+capacity_surface,capacity_surface,01773b456c61,63,,mutual_information,0.02565104706506941,bits_per_symbol,exact,complete,,,,0.244140625,0.0,gaussian,1.0,"[0.0, 0.3814697265625]",1.0,
+capacity_surface,capacity_surface,0fccc9298bc6,63,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_surface,capacity_surface,b1fa886d79f6,63,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_surface,capacity_surface,02e6fc591899,64,,capacity_bits_per_symbol,0.025581172761852518,bits_per_symbol,blahut_arimoto,complete,,,,0.30517578125,0.0,gaussian,1.0,"[0.0, 0.3814697265625]",1.0,
+capacity_surface,capacity_surface,02e6fc591899,64,,capacity_residual,5.551115123125783e-17,bits_per_symbol,blahut_arimoto,complete,,,,0.30517578125,0.0,gaussian,1.0,"[0.0, 0.3814697265625]",1.0,
+capacity_surface,capacity_surface,33217b44c3a0,64,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.30517578125,0.0,gaussian,1.0,"[0.0, 0.3814697265625]",1.0,
+capacity_surface,capacity_surface,33217b44c3a0,64,,mutual_information,0.025581172761852525,bits_per_symbol,exact,complete,,,,0.30517578125,0.0,gaussian,1.0,"[0.0, 0.3814697265625]",1.0,
+capacity_surface,capacity_surface,d7f433d90324,64,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_surface,capacity_surface,077565557123,64,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_surface,capacity_surface,cd322d1e921c,65,,capacity_bits_per_symbol,0.02547274832837171,bits_per_symbol,blahut_arimoto,complete,,,,0.3814697265625,0.0,gaussian,1.0,"[0.0, 0.3814697265625]",1.0,
+capacity_surface,capacity_surface,cd322d1e921c,65,,capacity_residual,4.5102810375396984e-17,bits_per_symbol,blahut_arimoto,complete,,,,0.3814697265625,0.0,gaussian,1.0,"[0.0, 0.3814697265625]",1.0,
+capacity_surface,capacity_surface,5a59dc7225bb,65,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.3814697265625,0.0,gaussian,1.0,"[0.0, 0.3814697265625]",1.0,
+capacity_surface,capacity_surface,5a59dc7225bb,65,,mutual_information,0.025472748328371715,bits_per_symbol,exact,complete,,,,0.3814697265625,0.0,gaussian,1.0,"[0.0, 0.3814697265625]",1.0,
+capacity_surface,capacity_surface,cb105ed1d8a6,65,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_surface,capacity_surface,06fd62d209d2,65,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_surface,capacity_surface,39bacd964e2c,66,,capacity_bits_per_symbol,0.025305152227569513,bits_per_symbol,blahut_arimoto,complete,,,,0.476837158203125,0.0,gaussian,1.0,"[0.0, 0.3814697265625]",1.0,
+capacity_surface,capacity_surface,39bacd964e2c,66,,capacity_residual,3.469446951953614e-18,bits_per_symbol,blahut_arimoto,complete,,,,0.476837158203125,0.0,gaussian,1.0,"[0.0, 0.3814697265625]",1.0,
+capacity_surface,capacity_surface,cd2cf77b9eb4,66,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.476837158203125,0.0,gaussian,1.0,"[0.0, 0.3814697265625]",1.0,
+capacity_surface,capacity_surface,cd2cf77b9eb4,66,,mutual_information,0.025305152227569513,bits_per_symbol,exact,complete,,,,0.476837158203125,0.0,gaussian,1.0,"[0.0, 0.3814697265625]",1.0,
+capacity_surface,capacity_surface,247dd24f33f2,66,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_surface,capacity_surface,1b6d850f976a,66,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_surface,capacity_surface,aa5e6da50dbf,67,,capacity_bits_per_symbol,0.025047629923950022,bits_per_symbol,blahut_arimoto,complete,,,,0.5960464477539062,0.0,gaussian,1.0,"[0.0, 0.3814697265625]",1.0,
+capacity_surface,capacity_surface,aa5e6da50dbf,67,,capacity_residual,4.5102810375396984e-17,bits_per_symbol,blahut_arimoto,complete,,,,0.5960464477539062,0.0,gaussian,1.0,"[0.0, 0.3814697265625]",1.0,
+capacity_surface,capacity_surface,53948d2802b0,67,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.5960464477539062,0.0,gaussian,1.0,"[0.0, 0.3814697265625]",1.0,
+capacity_surface,capacity_surface,53948d2802b0,67,,mutual_information,0.025047629923950043,bits_per_symbol,exact,complete,,,,0.5960464477539062,0.0,gaussian,1.0,"[0.0, 0.3814697265625]",1.0,
+capacity_surface,capacity_surface,86f2dd8997ab,67,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_surface,capacity_surface,c725883225c1,67,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_surface,capacity_surface,47c979187f72,68,,capacity_bits_per_symbol,0.024655535273105128,bits_per_symbol,blahut_arimoto,complete,,,,0.7450580596923828,0.0,gaussian,1.0,"[0.0, 0.3814697265625]",1.0,
+capacity_surface,capacity_surface,47c979187f72,68,,capacity_residual,1.8041124150158794e-16,bits_per_symbol,blahut_arimoto,complete,,,,0.7450580596923828,0.0,gaussian,1.0,"[0.0, 0.3814697265625]",1.0,
+capacity_surface,capacity_surface,d61505bb927b,68,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.7450580596923828,0.0,gaussian,1.0,"[0.0, 0.3814697265625]",1.0,
+capacity_surface,capacity_surface,d61505bb927b,68,,mutual_information,0.02465553527310513,bits_per_symbol,exact,complete,,,,0.7450580596923828,0.0,gaussian,1.0,"[0.0, 0.3814697265625]",1.0,
+capacity_surface,capacity_surface,e6ce99bb2491,68,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_surface,capacity_surface,d46252b29d66,68,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_surface,capacity_surface,8381c0149ef8,69,,capacity_bits_per_symbol,0.024066820001814936,bits_per_symbol,blahut_arimoto,complete,,,,0.9313225746154785,0.0,gaussian,1.0,"[0.0, 0.3814697265625]",1.0,
+capacity_surface,capacity_surface,8381c0149ef8,69,,capacity_residual,3.786904817504322e-12,bits_per_symbol,blahut_arimoto,complete,,,,0.9313225746154785,0.0,gaussian,1.0,"[0.0, 0.3814697265625]",1.0,
+capacity_surface,capacity_surface,1be4276f9a75,69,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.9313225746154785,0.0,gaussian,1.0,"[0.0, 0.3814697265625]",1.0,
+capacity_surface,capacity_surface,1be4276f9a75,69,,mutual_information,0.024066820001814933,bits_per_symbol,exact,complete,,,,0.9313225746154785,0.0,gaussian,1.0,"[0.0, 0.3814697265625]",1.0,
+capacity_surface,capacity_surface,9488adf692d9,69,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_surface,capacity_surface,448208e6e513,69,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_surface,capacity_surface,356a27f53f26,70,,capacity_bits_per_symbol,0.023201301492701172,bits_per_symbol,blahut_arimoto,complete,,,,1.1641532182693481,0.0,gaussian,1.0,"[0.0, 0.3814697265625]",1.0,
+capacity_surface,capacity_surface,356a27f53f26,70,,capacity_residual,9.944097628666881e-11,bits_per_symbol,blahut_arimoto,complete,,,,1.1641532182693481,0.0,gaussian,1.0,"[0.0, 0.3814697265625]",1.0,
+capacity_surface,capacity_surface,636b633e2d8a,70,,matrix_row_sum_error,0.0,probability,exact,complete,,,,1.1641532182693481,0.0,gaussian,1.0,"[0.0, 0.3814697265625]",1.0,
+capacity_surface,capacity_surface,636b633e2d8a,70,,mutual_information,0.02320130149270061,bits_per_symbol,exact,complete,,,,1.1641532182693481,0.0,gaussian,1.0,"[0.0, 0.3814697265625]",1.0,
+capacity_surface,capacity_surface,5934d4a7d299,70,,optimal_input_probability,0.49999992971676877,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_surface,capacity_surface,9fea717d93e3,70,,optimal_input_probability,0.5000000702832312,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_surface,capacity_surface,e9935cba1abb,71,,capacity_bits_per_symbol,0.021968928682018447,bits_per_symbol,blahut_arimoto,complete,,,,1.4551915228366852,0.0,gaussian,1.0,"[0.0, 0.3814697265625]",1.0,
+capacity_surface,capacity_surface,e9935cba1abb,71,,capacity_residual,9.825563626608691e-11,bits_per_symbol,blahut_arimoto,complete,,,,1.4551915228366852,0.0,gaussian,1.0,"[0.0, 0.3814697265625]",1.0,
+capacity_surface,capacity_surface,45b2956784e7,71,,matrix_row_sum_error,0.0,probability,exact,complete,,,,1.4551915228366852,0.0,gaussian,1.0,"[0.0, 0.3814697265625]",1.0,
+capacity_surface,capacity_surface,45b2956784e7,71,,mutual_information,0.02196892867608336,bits_per_symbol,exact,complete,,,,1.4551915228366852,0.0,gaussian,1.0,"[0.0, 0.3814697265625]",1.0,
+capacity_surface,capacity_surface,865284bec86d,71,,optimal_input_probability,0.4999917209707578,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_surface,capacity_surface,f716b34ed2d9,71,,optimal_input_probability,0.5000082790292423,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_surface,capacity_surface,0a89ad951686,72,,capacity_bits_per_symbol,0.039829354583213426,bits_per_symbol,blahut_arimoto,complete,,,,0.125,0.0,gaussian,1.0,"[0.0, 0.476837158203125]",1.0,
+capacity_surface,capacity_surface,0a89ad951686,72,,capacity_residual,2.7755575615628914e-17,bits_per_symbol,blahut_arimoto,complete,,,,0.125,0.0,gaussian,1.0,"[0.0, 0.476837158203125]",1.0,
+capacity_surface,capacity_surface,5b58d38aa53a,72,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.125,0.0,gaussian,1.0,"[0.0, 0.476837158203125]",1.0,
+capacity_surface,capacity_surface,5b58d38aa53a,72,,mutual_information,0.03982935458321342,bits_per_symbol,exact,complete,,,,0.125,0.0,gaussian,1.0,"[0.0, 0.476837158203125]",1.0,
+capacity_surface,capacity_surface,0ea221af5d02,72,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_surface,capacity_surface,bc7f2ef8147d,72,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_surface,capacity_surface,af1ef0e4a548,73,,capacity_bits_per_symbol,0.039801031705893886,bits_per_symbol,blahut_arimoto,complete,,,,0.15625,0.0,gaussian,1.0,"[0.0, 0.476837158203125]",1.0,
+capacity_surface,capacity_surface,af1ef0e4a548,73,,capacity_residual,7.632783294297951e-17,bits_per_symbol,blahut_arimoto,complete,,,,0.15625,0.0,gaussian,1.0,"[0.0, 0.476837158203125]",1.0,
+capacity_surface,capacity_surface,e874fd32a0c3,73,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.15625,0.0,gaussian,1.0,"[0.0, 0.476837158203125]",1.0,
+capacity_surface,capacity_surface,e874fd32a0c3,73,,mutual_information,0.039801031705893886,bits_per_symbol,exact,complete,,,,0.15625,0.0,gaussian,1.0,"[0.0, 0.476837158203125]",1.0,
+capacity_surface,capacity_surface,1a7cde232407,73,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_surface,capacity_surface,68fba4e021ad,73,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_surface,capacity_surface,8fee38c9b39e,74,,capacity_bits_per_symbol,0.03975685698256774,bits_per_symbol,blahut_arimoto,complete,,,,0.1953125,0.0,gaussian,1.0,"[0.0, 0.476837158203125]",1.0,
+capacity_surface,capacity_surface,8fee38c9b39e,74,,capacity_residual,1.3877787807814457e-17,bits_per_symbol,blahut_arimoto,complete,,,,0.1953125,0.0,gaussian,1.0,"[0.0, 0.476837158203125]",1.0,
+capacity_surface,capacity_surface,2e9e81b9e442,74,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.1953125,0.0,gaussian,1.0,"[0.0, 0.476837158203125]",1.0,
+capacity_surface,capacity_surface,2e9e81b9e442,74,,mutual_information,0.039756856982567736,bits_per_symbol,exact,complete,,,,0.1953125,0.0,gaussian,1.0,"[0.0, 0.476837158203125]",1.0,
+capacity_surface,capacity_surface,54f2c0093be7,74,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_surface,capacity_surface,aa0aa6bf0569,74,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_surface,capacity_surface,c1d03a72f79d,75,,capacity_bits_per_symbol,0.039688028064297734,bits_per_symbol,blahut_arimoto,complete,,,,0.244140625,0.0,gaussian,1.0,"[0.0, 0.476837158203125]",1.0,
+capacity_surface,capacity_surface,c1d03a72f79d,75,,capacity_residual,0.0,bits_per_symbol,blahut_arimoto,complete,,,,0.244140625,0.0,gaussian,1.0,"[0.0, 0.476837158203125]",1.0,
+capacity_surface,capacity_surface,9ac397270391,75,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.244140625,0.0,gaussian,1.0,"[0.0, 0.476837158203125]",1.0,
+capacity_surface,capacity_surface,9ac397270391,75,,mutual_information,0.039688028064297734,bits_per_symbol,exact,complete,,,,0.244140625,0.0,gaussian,1.0,"[0.0, 0.476837158203125]",1.0,
+capacity_surface,capacity_surface,40f795ce1978,75,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_surface,capacity_surface,7e01a9faebc4,75,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_surface,capacity_surface,5005c70fed47,76,,capacity_bits_per_symbol,0.03958095418684756,bits_per_symbol,blahut_arimoto,complete,,,,0.30517578125,0.0,gaussian,1.0,"[0.0, 0.476837158203125]",1.0,
+capacity_surface,capacity_surface,5005c70fed47,76,,capacity_residual,6.938893903907228e-18,bits_per_symbol,blahut_arimoto,complete,,,,0.30517578125,0.0,gaussian,1.0,"[0.0, 0.476837158203125]",1.0,
+capacity_surface,capacity_surface,4e6ca2335ff6,76,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.30517578125,0.0,gaussian,1.0,"[0.0, 0.476837158203125]",1.0,
+capacity_surface,capacity_surface,4e6ca2335ff6,76,,mutual_information,0.039580954186847574,bits_per_symbol,exact,complete,,,,0.30517578125,0.0,gaussian,1.0,"[0.0, 0.476837158203125]",1.0,
+capacity_surface,capacity_surface,ebed9f7bc052,76,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_surface,capacity_surface,1feabb49394e,76,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_surface,capacity_surface,b442afc7a7f9,77,,capacity_bits_per_symbol,0.039414792334490675,bits_per_symbol,blahut_arimoto,complete,,,,0.3814697265625,0.0,gaussian,1.0,"[0.0, 0.476837158203125]",1.0,
+capacity_surface,capacity_surface,b442afc7a7f9,77,,capacity_residual,0.0,bits_per_symbol,blahut_arimoto,complete,,,,0.3814697265625,0.0,gaussian,1.0,"[0.0, 0.476837158203125]",1.0,
+capacity_surface,capacity_surface,6e488329fe86,77,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.3814697265625,0.0,gaussian,1.0,"[0.0, 0.476837158203125]",1.0,
+capacity_surface,capacity_surface,6e488329fe86,77,,mutual_information,0.03941479233449068,bits_per_symbol,exact,complete,,,,0.3814697265625,0.0,gaussian,1.0,"[0.0, 0.476837158203125]",1.0,
+capacity_surface,capacity_surface,729cde79c64b,77,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_surface,capacity_surface,096f5cbc8751,77,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_surface,capacity_surface,916f9f7bfafa,78,,capacity_bits_per_symbol,0.039157914403017365,bits_per_symbol,blahut_arimoto,complete,,,,0.476837158203125,0.0,gaussian,1.0,"[0.0, 0.476837158203125]",1.0,
+capacity_surface,capacity_surface,916f9f7bfafa,78,,capacity_residual,6.938893903907228e-18,bits_per_symbol,blahut_arimoto,complete,,,,0.476837158203125,0.0,gaussian,1.0,"[0.0, 0.476837158203125]",1.0,
+capacity_surface,capacity_surface,70c5c87cccfb,78,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.476837158203125,0.0,gaussian,1.0,"[0.0, 0.476837158203125]",1.0,
+capacity_surface,capacity_surface,70c5c87cccfb,78,,mutual_information,0.03915791440301737,bits_per_symbol,exact,complete,,,,0.476837158203125,0.0,gaussian,1.0,"[0.0, 0.476837158203125]",1.0,
+capacity_surface,capacity_surface,4cadaf0e6568,78,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_surface,capacity_surface,1aa83d82cbd1,78,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_surface,capacity_surface,fa6955b07ce4,79,,capacity_bits_per_symbol,0.0387631231636816,bits_per_symbol,blahut_arimoto,complete,,,,0.5960464477539062,0.0,gaussian,1.0,"[0.0, 0.476837158203125]",1.0,
+capacity_surface,capacity_surface,fa6955b07ce4,79,,capacity_residual,0.0,bits_per_symbol,blahut_arimoto,complete,,,,0.5960464477539062,0.0,gaussian,1.0,"[0.0, 0.476837158203125]",1.0,
+capacity_surface,capacity_surface,4459086159dd,79,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.5960464477539062,0.0,gaussian,1.0,"[0.0, 0.476837158203125]",1.0,
+capacity_surface,capacity_surface,4459086159dd,79,,mutual_information,0.03876312316368161,bits_per_symbol,exact,complete,,,,0.5960464477539062,0.0,gaussian,1.0,"[0.0, 0.476837158203125]",1.0,
+capacity_surface,capacity_surface,304da631847d,79,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_surface,capacity_surface,80c06bb537a0,79,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_surface,capacity_surface,b75c61bd7451,80,,capacity_bits_per_symbol,0.038161839623552615,bits_per_symbol,blahut_arimoto,complete,,,,0.7450580596923828,0.0,gaussian,1.0,"[0.0, 0.476837158203125]",1.0,
+capacity_surface,capacity_surface,b75c61bd7451,80,,capacity_residual,5.48172618408671e-16,bits_per_symbol,blahut_arimoto,complete,,,,0.7450580596923828,0.0,gaussian,1.0,"[0.0, 0.476837158203125]",1.0,
+capacity_surface,capacity_surface,c2a742811166,80,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.7450580596923828,0.0,gaussian,1.0,"[0.0, 0.476837158203125]",1.0,
+capacity_surface,capacity_surface,c2a742811166,80,,mutual_information,0.038161839623552615,bits_per_symbol,exact,complete,,,,0.7450580596923828,0.0,gaussian,1.0,"[0.0, 0.476837158203125]",1.0,
+capacity_surface,capacity_surface,7c82eb3271d2,80,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_surface,capacity_surface,4a7aed96ec87,80,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_surface,capacity_surface,03b7c55991ec,81,,capacity_bits_per_symbol,0.03725861508501899,bits_per_symbol,blahut_arimoto,complete,,,,0.9313225746154785,0.0,gaussian,1.0,"[0.0, 0.476837158203125]",1.0,
+capacity_surface,capacity_surface,03b7c55991ec,81,,capacity_residual,1.6527237911567738e-11,bits_per_symbol,blahut_arimoto,complete,,,,0.9313225746154785,0.0,gaussian,1.0,"[0.0, 0.476837158203125]",1.0,
+capacity_surface,capacity_surface,9cdfa6015c44,81,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.9313225746154785,0.0,gaussian,1.0,"[0.0, 0.476837158203125]",1.0,
+capacity_surface,capacity_surface,9cdfa6015c44,81,,mutual_information,0.037258615085018994,bits_per_symbol,exact,complete,,,,0.9313225746154785,0.0,gaussian,1.0,"[0.0, 0.476837158203125]",1.0,
+capacity_surface,capacity_surface,9eafd6cf6cdb,81,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_surface,capacity_surface,29870d5bfbd0,81,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_surface,capacity_surface,7b3a96548170,82,,capacity_bits_per_symbol,0.035929809149215015,bits_per_symbol,blahut_arimoto,complete,,,,1.1641532182693481,0.0,gaussian,1.0,"[0.0, 0.476837158203125]",1.0,
+capacity_surface,capacity_surface,7b3a96548170,82,,capacity_residual,9.652393467840525e-11,bits_per_symbol,blahut_arimoto,complete,,,,1.1641532182693481,0.0,gaussian,1.0,"[0.0, 0.476837158203125]",1.0,
+capacity_surface,capacity_surface,7b44f88339fc,82,,matrix_row_sum_error,0.0,probability,exact,complete,,,,1.1641532182693481,0.0,gaussian,1.0,"[0.0, 0.476837158203125]",1.0,
+capacity_surface,capacity_surface,7b44f88339fc,82,,mutual_information,0.035929809149212136,bits_per_symbol,exact,complete,,,,1.1641532182693481,0.0,gaussian,1.0,"[0.0, 0.476837158203125]",1.0,
+capacity_surface,capacity_surface,993ebf1e63f1,82,,optimal_input_probability,0.49999985784513784,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_surface,capacity_surface,33e5a277033a,82,,optimal_input_probability,0.5000001421548621,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_surface,capacity_surface,d9f322535841,83,,capacity_bits_per_symbol,0.03403576616406985,bits_per_symbol,blahut_arimoto,complete,,,,1.4551915228366852,0.0,gaussian,1.0,"[0.0, 0.476837158203125]",1.0,
+capacity_surface,capacity_surface,d9f322535841,83,,capacity_residual,9.904546627304e-11,bits_per_symbol,blahut_arimoto,complete,,,,1.4551915228366852,0.0,gaussian,1.0,"[0.0, 0.476837158203125]",1.0,
+capacity_surface,capacity_surface,813e173efcd4,83,,matrix_row_sum_error,0.0,probability,exact,complete,,,,1.4551915228366852,0.0,gaussian,1.0,"[0.0, 0.476837158203125]",1.0,
+capacity_surface,capacity_surface,813e173efcd4,83,,mutual_information,0.03403576613651545,bits_per_symbol,exact,complete,,,,1.4551915228366852,0.0,gaussian,1.0,"[0.0, 0.476837158203125]",1.0,
+capacity_surface,capacity_surface,cf9ff62f7df4,83,,optimal_input_probability,0.49998561202241454,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_surface,capacity_surface,dfb4ed163975,83,,optimal_input_probability,0.5000143879775854,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_surface,capacity_surface,079e11bd01a4,84,,capacity_bits_per_symbol,0.06129936093134168,bits_per_symbol,blahut_arimoto,complete,,,,0.125,0.0,gaussian,1.0,"[0.0, 0.5960464477539062]",1.0,
+capacity_surface,capacity_surface,079e11bd01a4,84,,capacity_residual,4.163336342344337e-17,bits_per_symbol,blahut_arimoto,complete,,,,0.125,0.0,gaussian,1.0,"[0.0, 0.5960464477539062]",1.0,
+capacity_surface,capacity_surface,2c926914f426,84,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.125,0.0,gaussian,1.0,"[0.0, 0.5960464477539062]",1.0,
+capacity_surface,capacity_surface,2c926914f426,84,,mutual_information,0.061299360931341675,bits_per_symbol,exact,complete,,,,0.125,0.0,gaussian,1.0,"[0.0, 0.5960464477539062]",1.0,
+capacity_surface,capacity_surface,517039786c83,84,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_surface,capacity_surface,86706634f171,84,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_surface,capacity_surface,6083d0857779,85,,capacity_bits_per_symbol,0.061256413865208366,bits_per_symbol,blahut_arimoto,complete,,,,0.15625,0.0,gaussian,1.0,"[0.0, 0.5960464477539062]",1.0,
+capacity_surface,capacity_surface,6083d0857779,85,,capacity_residual,1.3877787807814457e-16,bits_per_symbol,blahut_arimoto,complete,,,,0.15625,0.0,gaussian,1.0,"[0.0, 0.5960464477539062]",1.0,
+capacity_surface,capacity_surface,dd9de052d4ab,85,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.15625,0.0,gaussian,1.0,"[0.0, 0.5960464477539062]",1.0,
+capacity_surface,capacity_surface,dd9de052d4ab,85,,mutual_information,0.061256413865208366,bits_per_symbol,exact,complete,,,,0.15625,0.0,gaussian,1.0,"[0.0, 0.5960464477539062]",1.0,
+capacity_surface,capacity_surface,e5c02ddd360c,85,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_surface,capacity_surface,f22b599fff16,85,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_surface,capacity_surface,68bbd3cdedd7,86,,capacity_bits_per_symbol,0.06118942772549965,bits_per_symbol,blahut_arimoto,complete,,,,0.1953125,0.0,gaussian,1.0,"[0.0, 0.5960464477539062]",1.0,
+capacity_surface,capacity_surface,68bbd3cdedd7,86,,capacity_residual,2.0816681711721685e-17,bits_per_symbol,blahut_arimoto,complete,,,,0.1953125,0.0,gaussian,1.0,"[0.0, 0.5960464477539062]",1.0,
+capacity_surface,capacity_surface,07b7a2b201b5,86,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.1953125,0.0,gaussian,1.0,"[0.0, 0.5960464477539062]",1.0,
+capacity_surface,capacity_surface,07b7a2b201b5,86,,mutual_information,0.06118942772549965,bits_per_symbol,exact,complete,,,,0.1953125,0.0,gaussian,1.0,"[0.0, 0.5960464477539062]",1.0,
+capacity_surface,capacity_surface,f6889bda285a,86,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_surface,capacity_surface,f72ccdbf1619,86,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_surface,capacity_surface,f07c133f329f,87,,capacity_bits_per_symbol,0.06108505058763414,bits_per_symbol,blahut_arimoto,complete,,,,0.244140625,0.0,gaussian,1.0,"[0.0, 0.5960464477539062]",1.0,
+capacity_surface,capacity_surface,f07c133f329f,87,,capacity_residual,0.0,bits_per_symbol,blahut_arimoto,complete,,,,0.244140625,0.0,gaussian,1.0,"[0.0, 0.5960464477539062]",1.0,
+capacity_surface,capacity_surface,39e01e7a6cf6,87,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.244140625,0.0,gaussian,1.0,"[0.0, 0.5960464477539062]",1.0,
+capacity_surface,capacity_surface,39e01e7a6cf6,87,,mutual_information,0.06108505058763414,bits_per_symbol,exact,complete,,,,0.244140625,0.0,gaussian,1.0,"[0.0, 0.5960464477539062]",1.0,
+capacity_surface,capacity_surface,d02feb826996,87,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_surface,capacity_surface,981c1304d1b9,87,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_surface,capacity_surface,96f33649a80d,88,,capacity_bits_per_symbol,0.060922662482081454,bits_per_symbol,blahut_arimoto,complete,,,,0.30517578125,0.0,gaussian,1.0,"[0.0, 0.5960464477539062]",1.0,
+capacity_surface,capacity_surface,96f33649a80d,88,,capacity_residual,1.3877787807814457e-17,bits_per_symbol,blahut_arimoto,complete,,,,0.30517578125,0.0,gaussian,1.0,"[0.0, 0.5960464477539062]",1.0,
+capacity_surface,capacity_surface,194076fecc2f,88,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.30517578125,0.0,gaussian,1.0,"[0.0, 0.5960464477539062]",1.0,
+capacity_surface,capacity_surface,194076fecc2f,88,,mutual_information,0.060922662482081454,bits_per_symbol,exact,complete,,,,0.30517578125,0.0,gaussian,1.0,"[0.0, 0.5960464477539062]",1.0,
+capacity_surface,capacity_surface,0ebef315094f,88,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_surface,capacity_surface,c9fb4550682c,88,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_surface,capacity_surface,e2ef795e82a4,89,,capacity_bits_per_symbol,0.060670629047681356,bits_per_symbol,blahut_arimoto,complete,,,,0.3814697265625,0.0,gaussian,1.0,"[0.0, 0.5960464477539062]",1.0,
+capacity_surface,capacity_surface,e2ef795e82a4,89,,capacity_residual,1.3877787807814457e-17,bits_per_symbol,blahut_arimoto,complete,,,,0.3814697265625,0.0,gaussian,1.0,"[0.0, 0.5960464477539062]",1.0,
+capacity_surface,capacity_surface,54d7aab76c28,89,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.3814697265625,0.0,gaussian,1.0,"[0.0, 0.5960464477539062]",1.0,
+capacity_surface,capacity_surface,54d7aab76c28,89,,mutual_information,0.060670629047681356,bits_per_symbol,exact,complete,,,,0.3814697265625,0.0,gaussian,1.0,"[0.0, 0.5960464477539062]",1.0,
+capacity_surface,capacity_surface,d35343028d28,89,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_surface,capacity_surface,3f3008f5ad91,89,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_surface,capacity_surface,3d6d9555847d,90,,capacity_bits_per_symbol,0.060280920257929055,bits_per_symbol,blahut_arimoto,complete,,,,0.476837158203125,0.0,gaussian,1.0,"[0.0, 0.5960464477539062]",1.0,
+capacity_surface,capacity_surface,3d6d9555847d,90,,capacity_residual,6.938893903907228e-18,bits_per_symbol,blahut_arimoto,complete,,,,0.476837158203125,0.0,gaussian,1.0,"[0.0, 0.5960464477539062]",1.0,
+capacity_surface,capacity_surface,4674578990f4,90,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.476837158203125,0.0,gaussian,1.0,"[0.0, 0.5960464477539062]",1.0,
+capacity_surface,capacity_surface,4674578990f4,90,,mutual_information,0.06028092025792907,bits_per_symbol,exact,complete,,,,0.476837158203125,0.0,gaussian,1.0,"[0.0, 0.5960464477539062]",1.0,
+capacity_surface,capacity_surface,152d57b73d73,90,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_surface,capacity_surface,2e948957ca57,90,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_surface,capacity_surface,70fc731e081f,91,,capacity_bits_per_symbol,0.05968180073461831,bits_per_symbol,blahut_arimoto,complete,,,,0.5960464477539062,0.0,gaussian,1.0,"[0.0, 0.5960464477539062]",1.0,
+capacity_surface,capacity_surface,70fc731e081f,91,,capacity_residual,4.163336342344337e-17,bits_per_symbol,blahut_arimoto,complete,,,,0.5960464477539062,0.0,gaussian,1.0,"[0.0, 0.5960464477539062]",1.0,
+capacity_surface,capacity_surface,f6e53b657df6,91,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.5960464477539062,0.0,gaussian,1.0,"[0.0, 0.5960464477539062]",1.0,
+capacity_surface,capacity_surface,f6e53b657df6,91,,mutual_information,0.059681800734618304,bits_per_symbol,exact,complete,,,,0.5960464477539062,0.0,gaussian,1.0,"[0.0, 0.5960464477539062]",1.0,
+capacity_surface,capacity_surface,faffdc483888,91,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_surface,capacity_surface,97fa13ea7c19,91,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_surface,capacity_surface,c0de8975f9ec,92,,capacity_bits_per_symbol,0.058768894499526554,bits_per_symbol,blahut_arimoto,complete,,,,0.7450580596923828,0.0,gaussian,1.0,"[0.0, 0.5960464477539062]",1.0,
+capacity_surface,capacity_surface,c0de8975f9ec,92,,capacity_residual,1.026262408387879e-14,bits_per_symbol,blahut_arimoto,complete,,,,0.7450580596923828,0.0,gaussian,1.0,"[0.0, 0.5960464477539062]",1.0,
+capacity_surface,capacity_surface,e27f67bcceee,92,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.7450580596923828,0.0,gaussian,1.0,"[0.0, 0.5960464477539062]",1.0,
+capacity_surface,capacity_surface,e27f67bcceee,92,,mutual_information,0.05876889449952655,bits_per_symbol,exact,complete,,,,0.7450580596923828,0.0,gaussian,1.0,"[0.0, 0.5960464477539062]",1.0,
+capacity_surface,capacity_surface,59a3b844a9fb,92,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_surface,capacity_surface,86b47256b59f,92,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_surface,capacity_surface,5c0f93732a09,93,,capacity_bits_per_symbol,0.057396615035239636,bits_per_symbol,blahut_arimoto,complete,,,,0.9313225746154785,0.0,gaussian,1.0,"[0.0, 0.5960464477539062]",1.0,
+capacity_surface,capacity_surface,5c0f93732a09,93,,capacity_residual,9.312335624844792e-11,bits_per_symbol,blahut_arimoto,complete,,,,0.9313225746154785,0.0,gaussian,1.0,"[0.0, 0.5960464477539062]",1.0,
+capacity_surface,capacity_surface,11f58c463219,93,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.9313225746154785,0.0,gaussian,1.0,"[0.0, 0.5960464477539062]",1.0,
+capacity_surface,capacity_surface,11f58c463219,93,,mutual_information,0.05739661503523966,bits_per_symbol,exact,complete,,,,0.9313225746154785,0.0,gaussian,1.0,"[0.0, 0.5960464477539062]",1.0,
+capacity_surface,capacity_surface,35c04d4ef4f9,93,,optimal_input_probability,0.4999999999650433,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_surface,capacity_surface,05e3d9c4b7ad,93,,optimal_input_probability,0.5000000000349567,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_surface,capacity_surface,60d1d2ca24e6,94,,capacity_bits_per_symbol,0.055375696722705176,bits_per_symbol,blahut_arimoto,complete,,,,1.1641532182693481,0.0,gaussian,1.0,"[0.0, 0.5960464477539062]",1.0,
+capacity_surface,capacity_surface,60d1d2ca24e6,94,,capacity_residual,9.998316063963841e-11,bits_per_symbol,blahut_arimoto,complete,,,,1.1641532182693481,0.0,gaussian,1.0,"[0.0, 0.5960464477539062]",1.0,
+capacity_surface,capacity_surface,83d5dceb6320,94,,matrix_row_sum_error,0.0,probability,exact,complete,,,,1.1641532182693481,0.0,gaussian,1.0,"[0.0, 0.5960464477539062]",1.0,
+capacity_surface,capacity_surface,83d5dceb6320,94,,mutual_information,0.05537569672268273,bits_per_symbol,exact,complete,,,,1.1641532182693481,0.0,gaussian,1.0,"[0.0, 0.5960464477539062]",1.0,
+capacity_surface,capacity_surface,78099b82d929,94,,optimal_input_probability,0.4999996751286943,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_surface,capacity_surface,babe7d6701ca,94,,optimal_input_probability,0.5000003248713057,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_surface,capacity_surface,cd48f0811ce8,95,,capacity_bits_per_symbol,0.05249036870219809,bits_per_symbol,blahut_arimoto,complete,,,,1.4551915228366852,0.0,gaussian,1.0,"[0.0, 0.5960464477539062]",1.0,
+capacity_surface,capacity_surface,cd48f0811ce8,95,,capacity_residual,9.416831897590683e-11,bits_per_symbol,blahut_arimoto,complete,,,,1.4551915228366852,0.0,gaussian,1.0,"[0.0, 0.5960464477539062]",1.0,
+capacity_surface,capacity_surface,bf27702bf8ca,95,,matrix_row_sum_error,0.0,probability,exact,complete,,,,1.4551915228366852,0.0,gaussian,1.0,"[0.0, 0.5960464477539062]",1.0,
+capacity_surface,capacity_surface,bf27702bf8ca,95,,mutual_information,0.05249036856307973,bits_per_symbol,exact,complete,,,,1.4551915228366852,0.0,gaussian,1.0,"[0.0, 0.5960464477539062]",1.0,
+capacity_surface,capacity_surface,cf3cd4ac2fd8,95,,optimal_input_probability,0.499973819559978,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_surface,capacity_surface,4afc0cb5dc14,95,,optimal_input_probability,0.500026180440022,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_surface,capacity_surface,51cda4e34d09,96,,capacity_bits_per_symbol,0.09360114711425878,bits_per_symbol,blahut_arimoto,complete,,,,0.125,0.0,gaussian,1.0,"[0.0, 0.7450580596923828]",1.0,
+capacity_surface,capacity_surface,51cda4e34d09,96,,capacity_residual,2.7755575615628914e-17,bits_per_symbol,blahut_arimoto,complete,,,,0.125,0.0,gaussian,1.0,"[0.0, 0.7450580596923828]",1.0,
+capacity_surface,capacity_surface,94be4fbca0b6,96,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.125,0.0,gaussian,1.0,"[0.0, 0.7450580596923828]",1.0,
+capacity_surface,capacity_surface,94be4fbca0b6,96,,mutual_information,0.09360114711425878,bits_per_symbol,exact,complete,,,,0.125,0.0,gaussian,1.0,"[0.0, 0.7450580596923828]",1.0,
+capacity_surface,capacity_surface,d3c5d1f5ddfb,96,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_surface,capacity_surface,1b87af8a60f2,96,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_surface,capacity_surface,c9627fdf7d22,97,,capacity_bits_per_symbol,0.09353703157478102,bits_per_symbol,blahut_arimoto,complete,,,,0.15625,0.0,gaussian,1.0,"[0.0, 0.7450580596923828]",1.0,
+capacity_surface,capacity_surface,c9627fdf7d22,97,,capacity_residual,2.498001805406602e-16,bits_per_symbol,blahut_arimoto,complete,,,,0.15625,0.0,gaussian,1.0,"[0.0, 0.7450580596923828]",1.0,
+capacity_surface,capacity_surface,a53cd66a7d50,97,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.15625,0.0,gaussian,1.0,"[0.0, 0.7450580596923828]",1.0,
+capacity_surface,capacity_surface,a53cd66a7d50,97,,mutual_information,0.09353703157478102,bits_per_symbol,exact,complete,,,,0.15625,0.0,gaussian,1.0,"[0.0, 0.7450580596923828]",1.0,
+capacity_surface,capacity_surface,b423a3bd312a,97,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_surface,capacity_surface,cd5bb5a08526,97,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_surface,capacity_surface,6467824eb1c5,98,,capacity_bits_per_symbol,0.09343702321561011,bits_per_symbol,blahut_arimoto,complete,,,,0.1953125,0.0,gaussian,1.0,"[0.0, 0.7450580596923828]",1.0,
+capacity_surface,capacity_surface,6467824eb1c5,98,,capacity_residual,1.3877787807814457e-17,bits_per_symbol,blahut_arimoto,complete,,,,0.1953125,0.0,gaussian,1.0,"[0.0, 0.7450580596923828]",1.0,
+capacity_surface,capacity_surface,58cefa0c66ee,98,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.1953125,0.0,gaussian,1.0,"[0.0, 0.7450580596923828]",1.0,
+capacity_surface,capacity_surface,58cefa0c66ee,98,,mutual_information,0.09343702321561011,bits_per_symbol,exact,complete,,,,0.1953125,0.0,gaussian,1.0,"[0.0, 0.7450580596923828]",1.0,
+capacity_surface,capacity_surface,c1ee07669f38,98,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_surface,capacity_surface,5a620c27016d,98,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_surface,capacity_surface,9effad7b4ff9,99,,capacity_bits_per_symbol,0.09328117913895423,bits_per_symbol,blahut_arimoto,complete,,,,0.244140625,0.0,gaussian,1.0,"[0.0, 0.7450580596923828]",1.0,
+capacity_surface,capacity_surface,9effad7b4ff9,99,,capacity_residual,0.0,bits_per_symbol,blahut_arimoto,complete,,,,0.244140625,0.0,gaussian,1.0,"[0.0, 0.7450580596923828]",1.0,
+capacity_surface,capacity_surface,46ec6534a1dc,99,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.244140625,0.0,gaussian,1.0,"[0.0, 0.7450580596923828]",1.0,
+capacity_surface,capacity_surface,46ec6534a1dc,99,,mutual_information,0.09328117913895423,bits_per_symbol,exact,complete,,,,0.244140625,0.0,gaussian,1.0,"[0.0, 0.7450580596923828]",1.0,
+capacity_surface,capacity_surface,082c194e8b6b,99,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_surface,capacity_surface,a0a5af2134f9,99,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_surface,capacity_surface,e70ed59fd4d4,100,,capacity_bits_per_symbol,0.09303869054476831,bits_per_symbol,blahut_arimoto,complete,,,,0.30517578125,0.0,gaussian,1.0,"[0.0, 0.7450580596923828]",1.0,
+capacity_surface,capacity_surface,e70ed59fd4d4,100,,capacity_residual,0.0,bits_per_symbol,blahut_arimoto,complete,,,,0.30517578125,0.0,gaussian,1.0,"[0.0, 0.7450580596923828]",1.0,
+capacity_surface,capacity_surface,252a2f00ade3,100,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.30517578125,0.0,gaussian,1.0,"[0.0, 0.7450580596923828]",1.0,
+capacity_surface,capacity_surface,252a2f00ade3,100,,mutual_information,0.09303869054476832,bits_per_symbol,exact,complete,,,,0.30517578125,0.0,gaussian,1.0,"[0.0, 0.7450580596923828]",1.0,
+capacity_surface,capacity_surface,c40fd8c8314b,100,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_surface,capacity_surface,78ddcff25e1c,100,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_surface,capacity_surface,dd40c2097b6d,101,,capacity_bits_per_symbol,0.0926622675317213,bits_per_symbol,blahut_arimoto,complete,,,,0.3814697265625,0.0,gaussian,1.0,"[0.0, 0.7450580596923828]",1.0,
+capacity_surface,capacity_surface,dd40c2097b6d,101,,capacity_residual,4.163336342344337e-17,bits_per_symbol,blahut_arimoto,complete,,,,0.3814697265625,0.0,gaussian,1.0,"[0.0, 0.7450580596923828]",1.0,
+capacity_surface,capacity_surface,875b7205fa6a,101,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.3814697265625,0.0,gaussian,1.0,"[0.0, 0.7450580596923828]",1.0,
+capacity_surface,capacity_surface,875b7205fa6a,101,,mutual_information,0.09266226753172128,bits_per_symbol,exact,complete,,,,0.3814697265625,0.0,gaussian,1.0,"[0.0, 0.7450580596923828]",1.0,
+capacity_surface,capacity_surface,0caf18ec7872,101,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_surface,capacity_surface,215b3210d8cc,101,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_surface,capacity_surface,53395ed970fe,102,,capacity_bits_per_symbol,0.09208005287818888,bits_per_symbol,blahut_arimoto,complete,,,,0.476837158203125,0.0,gaussian,1.0,"[0.0, 0.7450580596923828]",1.0,
+capacity_surface,capacity_surface,53395ed970fe,102,,capacity_residual,1.3877787807814457e-17,bits_per_symbol,blahut_arimoto,complete,,,,0.476837158203125,0.0,gaussian,1.0,"[0.0, 0.7450580596923828]",1.0,
+capacity_surface,capacity_surface,67b5c27a0df3,102,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.476837158203125,0.0,gaussian,1.0,"[0.0, 0.7450580596923828]",1.0,
+capacity_surface,capacity_surface,67b5c27a0df3,102,,mutual_information,0.09208005287818888,bits_per_symbol,exact,complete,,,,0.476837158203125,0.0,gaussian,1.0,"[0.0, 0.7450580596923828]",1.0,
+capacity_surface,capacity_surface,e8bf2a1a19a9,102,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_surface,capacity_surface,4467c01a1aa8,102,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_surface,capacity_surface,196559cde83b,103,,capacity_bits_per_symbol,0.09118458900951457,bits_per_symbol,blahut_arimoto,complete,,,,0.5960464477539062,0.0,gaussian,1.0,"[0.0, 0.7450580596923828]",1.0,
+capacity_surface,capacity_surface,196559cde83b,103,,capacity_residual,0.0,bits_per_symbol,blahut_arimoto,complete,,,,0.5960464477539062,0.0,gaussian,1.0,"[0.0, 0.7450580596923828]",1.0,
+capacity_surface,capacity_surface,552c9af7e631,103,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.5960464477539062,0.0,gaussian,1.0,"[0.0, 0.7450580596923828]",1.0,
+capacity_surface,capacity_surface,552c9af7e631,103,,mutual_information,0.09118458900951454,bits_per_symbol,exact,complete,,,,0.5960464477539062,0.0,gaussian,1.0,"[0.0, 0.7450580596923828]",1.0,
+capacity_surface,capacity_surface,da0caac76eec,103,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_surface,capacity_surface,def056b4ca06,103,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_surface,capacity_surface,234417e1b59c,104,,capacity_bits_per_symbol,0.08981921352000208,bits_per_symbol,blahut_arimoto,complete,,,,0.7450580596923828,0.0,gaussian,1.0,"[0.0, 0.7450580596923828]",1.0,
+capacity_surface,capacity_surface,234417e1b59c,104,,capacity_residual,3.0531133177191805e-16,bits_per_symbol,blahut_arimoto,complete,,,,0.7450580596923828,0.0,gaussian,1.0,"[0.0, 0.7450580596923828]",1.0,
+capacity_surface,capacity_surface,d7ec78b567b5,104,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.7450580596923828,0.0,gaussian,1.0,"[0.0, 0.7450580596923828]",1.0,
+capacity_surface,capacity_surface,d7ec78b567b5,104,,mutual_information,0.08981921352000209,bits_per_symbol,exact,complete,,,,0.7450580596923828,0.0,gaussian,1.0,"[0.0, 0.7450580596923828]",1.0,
+capacity_surface,capacity_surface,07b6494869f1,104,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_surface,capacity_surface,a19f9e0e4bac,104,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_surface,capacity_surface,be772de80385,105,,capacity_bits_per_symbol,0.08776471699436766,bits_per_symbol,blahut_arimoto,complete,,,,0.9313225746154785,0.0,gaussian,1.0,"[0.0, 0.7450580596923828]",1.0,
+capacity_surface,capacity_surface,be772de80385,105,,capacity_residual,9.906882258992056e-11,bits_per_symbol,blahut_arimoto,complete,,,,0.9313225746154785,0.0,gaussian,1.0,"[0.0, 0.7450580596923828]",1.0,
+capacity_surface,capacity_surface,ab2fccf65a96,105,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.9313225746154785,0.0,gaussian,1.0,"[0.0, 0.7450580596923828]",1.0,
+capacity_surface,capacity_surface,ab2fccf65a96,105,,mutual_information,0.0877647169943677,bits_per_symbol,exact,complete,,,,0.9313225746154785,0.0,gaussian,1.0,"[0.0, 0.7450580596923828]",1.0,
+capacity_surface,capacity_surface,c6c3a019d40c,105,,optimal_input_probability,0.4999999981812581,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_surface,capacity_surface,a9f588d4ffb5,105,,optimal_input_probability,0.5000000018187419,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_surface,capacity_surface,48f4216de4d1,106,,capacity_bits_per_symbol,0.0847345949935942,bits_per_symbol,blahut_arimoto,complete,,,,1.1641532182693481,0.0,gaussian,1.0,"[0.0, 0.7450580596923828]",1.0,
+capacity_surface,capacity_surface,48f4216de4d1,106,,capacity_residual,9.640638287677916e-11,bits_per_symbol,blahut_arimoto,complete,,,,1.1641532182693481,0.0,gaussian,1.0,"[0.0, 0.7450580596923828]",1.0,
+capacity_surface,capacity_surface,39893651431f,106,,matrix_row_sum_error,0.0,probability,exact,complete,,,,1.1641532182693481,0.0,gaussian,1.0,"[0.0, 0.7450580596923828]",1.0,
+capacity_surface,capacity_surface,39893651431f,106,,mutual_information,0.08473459499337305,bits_per_symbol,exact,complete,,,,1.1641532182693481,0.0,gaussian,1.0,"[0.0, 0.7450580596923828]",1.0,
+capacity_surface,capacity_surface,787060ea99d3,106,,optimal_input_probability,0.4999991714707651,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_surface,capacity_surface,7ad4c391aca0,106,,optimal_input_probability,0.5000008285292349,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_surface,capacity_surface,3250a9ef9cbb,107,,capacity_bits_per_symbol,0.08039706352461302,bits_per_symbol,blahut_arimoto,complete,,,,1.4551915228366852,0.0,gaussian,1.0,"[0.0, 0.7450580596923828]",1.0,
+capacity_surface,capacity_surface,3250a9ef9cbb,107,,capacity_residual,9.3678287349519e-11,bits_per_symbol,blahut_arimoto,complete,,,,1.4551915228366852,0.0,gaussian,1.0,"[0.0, 0.7450580596923828]",1.0,
+capacity_surface,capacity_surface,f583dcbef182,107,,matrix_row_sum_error,0.0,probability,exact,complete,,,,1.4551915228366852,0.0,gaussian,1.0,"[0.0, 0.7450580596923828]",1.0,
+capacity_surface,capacity_surface,f583dcbef182,107,,mutual_information,0.08039706277307565,bits_per_symbol,exact,complete,,,,1.4551915228366852,0.0,gaussian,1.0,"[0.0, 0.7450580596923828]",1.0,
+capacity_surface,capacity_surface,54217c410a5d,107,,optimal_input_probability,0.49995044029374647,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_surface,capacity_surface,52ac0fb1f3fe,107,,optimal_input_probability,0.5000495597062535,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_surface,capacity_surface,c5cd82708782,108,,capacity_bits_per_symbol,0.1412697914393885,bits_per_symbol,blahut_arimoto,complete,,,,0.125,0.0,gaussian,1.0,"[0.0, 0.9313225746154785]",1.0,
+capacity_surface,capacity_surface,c5cd82708782,108,,capacity_residual,2.7755575615628914e-17,bits_per_symbol,blahut_arimoto,complete,,,,0.125,0.0,gaussian,1.0,"[0.0, 0.9313225746154785]",1.0,
+capacity_surface,capacity_surface,224d8044f07b,108,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.125,0.0,gaussian,1.0,"[0.0, 0.9313225746154785]",1.0,
+capacity_surface,capacity_surface,224d8044f07b,108,,mutual_information,0.1412697914393885,bits_per_symbol,exact,complete,,,,0.125,0.0,gaussian,1.0,"[0.0, 0.9313225746154785]",1.0,
+capacity_surface,capacity_surface,2dd6806e1d79,108,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_surface,capacity_surface,9f3aec2165a4,108,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_surface,capacity_surface,b5aee4a48e68,109,,capacity_bits_per_symbol,0.14117625409218307,bits_per_symbol,blahut_arimoto,complete,,,,0.15625,0.0,gaussian,1.0,"[0.0, 0.9313225746154785]",1.0,
+capacity_surface,capacity_surface,b5aee4a48e68,109,,capacity_residual,3.3306690738754696e-16,bits_per_symbol,blahut_arimoto,complete,,,,0.15625,0.0,gaussian,1.0,"[0.0, 0.9313225746154785]",1.0,
+capacity_surface,capacity_surface,b2a444458350,109,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.15625,0.0,gaussian,1.0,"[0.0, 0.9313225746154785]",1.0,
+capacity_surface,capacity_surface,b2a444458350,109,,mutual_information,0.14117625409218304,bits_per_symbol,exact,complete,,,,0.15625,0.0,gaussian,1.0,"[0.0, 0.9313225746154785]",1.0,
+capacity_surface,capacity_surface,65923e817d6b,109,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_surface,capacity_surface,d5d89ab174d1,109,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_surface,capacity_surface,3b398f4488a9,110,,capacity_bits_per_symbol,0.1410303430107888,bits_per_symbol,blahut_arimoto,complete,,,,0.1953125,0.0,gaussian,1.0,"[0.0, 0.9313225746154785]",1.0,
+capacity_surface,capacity_surface,3b398f4488a9,110,,capacity_residual,2.7755575615628914e-17,bits_per_symbol,blahut_arimoto,complete,,,,0.1953125,0.0,gaussian,1.0,"[0.0, 0.9313225746154785]",1.0,
+capacity_surface,capacity_surface,a00cc9e94155,110,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.1953125,0.0,gaussian,1.0,"[0.0, 0.9313225746154785]",1.0,
+capacity_surface,capacity_surface,a00cc9e94155,110,,mutual_information,0.1410303430107888,bits_per_symbol,exact,complete,,,,0.1953125,0.0,gaussian,1.0,"[0.0, 0.9313225746154785]",1.0,
+capacity_surface,capacity_surface,091f7d3c6336,110,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_surface,capacity_surface,31603b8d6006,110,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_surface,capacity_surface,653d18b28045,111,,capacity_bits_per_symbol,0.1408029435804447,bits_per_symbol,blahut_arimoto,complete,,,,0.244140625,0.0,gaussian,1.0,"[0.0, 0.9313225746154785]",1.0,
+capacity_surface,capacity_surface,653d18b28045,111,,capacity_residual,2.7755575615628914e-17,bits_per_symbol,blahut_arimoto,complete,,,,0.244140625,0.0,gaussian,1.0,"[0.0, 0.9313225746154785]",1.0,
+capacity_surface,capacity_surface,3d69121db179,111,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.244140625,0.0,gaussian,1.0,"[0.0, 0.9313225746154785]",1.0,
+capacity_surface,capacity_surface,3d69121db179,111,,mutual_information,0.1408029435804447,bits_per_symbol,exact,complete,,,,0.244140625,0.0,gaussian,1.0,"[0.0, 0.9313225746154785]",1.0,
+capacity_surface,capacity_surface,4a14e9e173e6,111,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_surface,capacity_surface,fcadad53264c,111,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_surface,capacity_surface,039fe8c50199,112,,capacity_bits_per_symbol,0.14044905735192803,bits_per_symbol,blahut_arimoto,complete,,,,0.30517578125,0.0,gaussian,1.0,"[0.0, 0.9313225746154785]",1.0,
+capacity_surface,capacity_surface,039fe8c50199,112,,capacity_residual,2.7755575615628914e-17,bits_per_symbol,blahut_arimoto,complete,,,,0.30517578125,0.0,gaussian,1.0,"[0.0, 0.9313225746154785]",1.0,
+capacity_surface,capacity_surface,e86d6f65c228,112,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.30517578125,0.0,gaussian,1.0,"[0.0, 0.9313225746154785]",1.0,
+capacity_surface,capacity_surface,e86d6f65c228,112,,mutual_information,0.14044905735192803,bits_per_symbol,exact,complete,,,,0.30517578125,0.0,gaussian,1.0,"[0.0, 0.9313225746154785]",1.0,
+capacity_surface,capacity_surface,431496fbcb3c,112,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_surface,capacity_surface,7f6593b38634,112,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_surface,capacity_surface,5fe3f5fb3b20,113,,capacity_bits_per_symbol,0.13989956425135325,bits_per_symbol,blahut_arimoto,complete,,,,0.3814697265625,0.0,gaussian,1.0,"[0.0, 0.9313225746154785]",1.0,
+capacity_surface,capacity_surface,5fe3f5fb3b20,113,,capacity_residual,8.326672684688674e-17,bits_per_symbol,blahut_arimoto,complete,,,,0.3814697265625,0.0,gaussian,1.0,"[0.0, 0.9313225746154785]",1.0,
+capacity_surface,capacity_surface,96abf6bfa2ba,113,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.3814697265625,0.0,gaussian,1.0,"[0.0, 0.9313225746154785]",1.0,
+capacity_surface,capacity_surface,96abf6bfa2ba,113,,mutual_information,0.13989956425135333,bits_per_symbol,exact,complete,,,,0.3814697265625,0.0,gaussian,1.0,"[0.0, 0.9313225746154785]",1.0,
+capacity_surface,capacity_surface,1d25f17f8b23,113,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_surface,capacity_surface,7df59cf38e32,113,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_surface,capacity_surface,8c53f08bef28,114,,capacity_bits_per_symbol,0.139049317277332,bits_per_symbol,blahut_arimoto,complete,,,,0.476837158203125,0.0,gaussian,1.0,"[0.0, 0.9313225746154785]",1.0,
+capacity_surface,capacity_surface,8c53f08bef28,114,,capacity_residual,8.326672684688674e-17,bits_per_symbol,blahut_arimoto,complete,,,,0.476837158203125,0.0,gaussian,1.0,"[0.0, 0.9313225746154785]",1.0,
+capacity_surface,capacity_surface,a7a51f63948b,114,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.476837158203125,0.0,gaussian,1.0,"[0.0, 0.9313225746154785]",1.0,
+capacity_surface,capacity_surface,a7a51f63948b,114,,mutual_information,0.13904931727733202,bits_per_symbol,exact,complete,,,,0.476837158203125,0.0,gaussian,1.0,"[0.0, 0.9313225746154785]",1.0,
+capacity_surface,capacity_surface,08a340f72e94,114,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_surface,capacity_surface,7f48b96e2187,114,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_surface,capacity_surface,5169e5bec13f,115,,capacity_bits_per_symbol,0.13774079669821887,bits_per_symbol,blahut_arimoto,complete,,,,0.5960464477539062,0.0,gaussian,1.0,"[0.0, 0.9313225746154785]",1.0,
+capacity_surface,capacity_surface,5169e5bec13f,115,,capacity_residual,3.6165515027164474e-14,bits_per_symbol,blahut_arimoto,complete,,,,0.5960464477539062,0.0,gaussian,1.0,"[0.0, 0.9313225746154785]",1.0,
+capacity_surface,capacity_surface,eeb53a247920,115,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.5960464477539062,0.0,gaussian,1.0,"[0.0, 0.9313225746154785]",1.0,
+capacity_surface,capacity_surface,eeb53a247920,115,,mutual_information,0.13774079669821887,bits_per_symbol,exact,complete,,,,0.5960464477539062,0.0,gaussian,1.0,"[0.0, 0.9313225746154785]",1.0,
+capacity_surface,capacity_surface,5b55bc79238d,115,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_surface,capacity_surface,395376d2d7cf,115,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_surface,capacity_surface,c30ef72e1690,116,,capacity_bits_per_symbol,0.13574370820877696,bits_per_symbol,blahut_arimoto,complete,,,,0.7450580596923828,0.0,gaussian,1.0,"[0.0, 0.9313225746154785]",1.0,
+capacity_surface,capacity_surface,c30ef72e1690,116,,capacity_residual,3.58077179019034e-11,bits_per_symbol,blahut_arimoto,complete,,,,0.7450580596923828,0.0,gaussian,1.0,"[0.0, 0.9313225746154785]",1.0,
+capacity_surface,capacity_surface,52c393dfbb2b,116,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.7450580596923828,0.0,gaussian,1.0,"[0.0, 0.9313225746154785]",1.0,
+capacity_surface,capacity_surface,52c393dfbb2b,116,,mutual_information,0.13574370820877696,bits_per_symbol,exact,complete,,,,0.7450580596923828,0.0,gaussian,1.0,"[0.0, 0.9313225746154785]",1.0,
+capacity_surface,capacity_surface,ff174a0bb0f0,116,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_surface,capacity_surface,646d7ad67e34,116,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_surface,capacity_surface,82e0a0baa848,117,,capacity_bits_per_symbol,0.1327343553477356,bits_per_symbol,blahut_arimoto,complete,,,,0.9313225746154785,0.0,gaussian,1.0,"[0.0, 0.9313225746154785]",1.0,
+capacity_surface,capacity_surface,82e0a0baa848,117,,capacity_residual,1.1102230246251565e-16,bits_per_symbol,blahut_arimoto,complete,,,,0.9313225746154785,0.0,gaussian,1.0,"[0.0, 0.9313225746154785]",1.0,
+capacity_surface,capacity_surface,74f5c4152957,117,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.9313225746154785,0.0,gaussian,1.0,"[0.0, 0.9313225746154785]",1.0,
+capacity_surface,capacity_surface,74f5c4152957,117,,mutual_information,0.13273435534773562,bits_per_symbol,exact,complete,,,,0.9313225746154785,0.0,gaussian,1.0,"[0.0, 0.9313225746154785]",1.0,
+capacity_surface,capacity_surface,e987b6e95154,117,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_surface,capacity_surface,0e859b8c7bd5,117,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_surface,capacity_surface,3bf342420c3c,118,,capacity_bits_per_symbol,0.12828625307074348,bits_per_symbol,blahut_arimoto,complete,,,,1.1641532182693481,0.0,gaussian,1.0,"[0.0, 0.9313225746154785]",1.0,
+capacity_surface,capacity_surface,3bf342420c3c,118,,capacity_residual,8.988926269992703e-11,bits_per_symbol,blahut_arimoto,complete,,,,1.1641532182693481,0.0,gaussian,1.0,"[0.0, 0.9313225746154785]",1.0,
+capacity_surface,capacity_surface,7d1f3fae8de4,118,,matrix_row_sum_error,0.0,probability,exact,complete,,,,1.1641532182693481,0.0,gaussian,1.0,"[0.0, 0.9313225746154785]",1.0,
+capacity_surface,capacity_surface,7d1f3fae8de4,118,,mutual_information,0.12828625306905006,bits_per_symbol,exact,complete,,,,1.1641532182693481,0.0,gaussian,1.0,"[0.0, 0.9313225746154785]",1.0,
+capacity_surface,capacity_surface,a7c500d5db37,118,,optimal_input_probability,0.4999981155221176,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_surface,capacity_surface,a7ca554d37b5,118,,optimal_input_probability,0.5000018844778823,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_surface,capacity_surface,e896c02963bb,119,,capacity_bits_per_symbol,0.12189128397622254,bits_per_symbol,blahut_arimoto,complete,,,,1.4551915228366852,0.0,gaussian,1.0,"[0.0, 0.9313225746154785]",1.0,
+capacity_surface,capacity_surface,e896c02963bb,119,,capacity_residual,9.313386173381843e-11,bits_per_symbol,blahut_arimoto,complete,,,,1.4551915228366852,0.0,gaussian,1.0,"[0.0, 0.9313225746154785]",1.0,
+capacity_surface,capacity_surface,5768b97506eb,119,,matrix_row_sum_error,0.0,probability,exact,complete,,,,1.4551915228366852,0.0,gaussian,1.0,"[0.0, 0.9313225746154785]",1.0,
+capacity_surface,capacity_surface,5768b97506eb,119,,mutual_information,0.12189128016468846,bits_per_symbol,exact,complete,,,,1.4551915228366852,0.0,gaussian,1.0,"[0.0, 0.9313225746154785]",1.0,
+capacity_surface,capacity_surface,27fa3af6cf67,119,,optimal_input_probability,0.4999083681075464,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_surface,capacity_surface,a46c83991b30,119,,optimal_input_probability,0.5000916318924535,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_surface,capacity_surface,a4aba6905986,120,,capacity_bits_per_symbol,0.20965052495041706,bits_per_symbol,blahut_arimoto,complete,,,,0.125,0.0,gaussian,1.0,"[0.0, 1.1641532182693481]",1.0,
+capacity_surface,capacity_surface,a4aba6905986,120,,capacity_residual,0.0,bits_per_symbol,blahut_arimoto,complete,,,,0.125,0.0,gaussian,1.0,"[0.0, 1.1641532182693481]",1.0,
+capacity_surface,capacity_surface,3dec5851ce67,120,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.125,0.0,gaussian,1.0,"[0.0, 1.1641532182693481]",1.0,
+capacity_surface,capacity_surface,3dec5851ce67,120,,mutual_information,0.20965052495041703,bits_per_symbol,exact,complete,,,,0.125,0.0,gaussian,1.0,"[0.0, 1.1641532182693481]",1.0,
+capacity_surface,capacity_surface,7fce5fbcfd55,120,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_surface,capacity_surface,2ee28ca18122,120,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_surface,capacity_surface,ef7dde597cd9,121,,capacity_bits_per_symbol,0.20951858684343577,bits_per_symbol,blahut_arimoto,complete,,,,0.15625,0.0,gaussian,1.0,"[0.0, 1.1641532182693481]",1.0,
+capacity_surface,capacity_surface,ef7dde597cd9,121,,capacity_residual,4.163336342344337e-16,bits_per_symbol,blahut_arimoto,complete,,,,0.15625,0.0,gaussian,1.0,"[0.0, 1.1641532182693481]",1.0,
+capacity_surface,capacity_surface,bda119f33873,121,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.15625,0.0,gaussian,1.0,"[0.0, 1.1641532182693481]",1.0,
+capacity_surface,capacity_surface,bda119f33873,121,,mutual_information,0.20951858684343577,bits_per_symbol,exact,complete,,,,0.15625,0.0,gaussian,1.0,"[0.0, 1.1641532182693481]",1.0,
+capacity_surface,capacity_surface,47e2c9e723ed,121,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_surface,capacity_surface,a7823ee42778,121,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_surface,capacity_surface,a8c01e799f39,122,,capacity_bits_per_symbol,0.20931275393665733,bits_per_symbol,blahut_arimoto,complete,,,,0.1953125,0.0,gaussian,1.0,"[0.0, 1.1641532182693481]",1.0,
+capacity_surface,capacity_surface,a8c01e799f39,122,,capacity_residual,0.0,bits_per_symbol,blahut_arimoto,complete,,,,0.1953125,0.0,gaussian,1.0,"[0.0, 1.1641532182693481]",1.0,
+capacity_surface,capacity_surface,5973d40db161,122,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.1953125,0.0,gaussian,1.0,"[0.0, 1.1641532182693481]",1.0,
+capacity_surface,capacity_surface,5973d40db161,122,,mutual_information,0.20931275393665733,bits_per_symbol,exact,complete,,,,0.1953125,0.0,gaussian,1.0,"[0.0, 1.1641532182693481]",1.0,
+capacity_surface,capacity_surface,d0778d9c56d0,122,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_surface,capacity_surface,5d225a39b918,122,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_surface,capacity_surface,c42cb001c642,123,,capacity_bits_per_symbol,0.20899191997225353,bits_per_symbol,blahut_arimoto,complete,,,,0.244140625,0.0,gaussian,1.0,"[0.0, 1.1641532182693481]",1.0,
+capacity_surface,capacity_surface,c42cb001c642,123,,capacity_residual,2.7755575615628914e-17,bits_per_symbol,blahut_arimoto,complete,,,,0.244140625,0.0,gaussian,1.0,"[0.0, 1.1641532182693481]",1.0,
+capacity_surface,capacity_surface,aaebb3debab1,123,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.244140625,0.0,gaussian,1.0,"[0.0, 1.1641532182693481]",1.0,
+capacity_surface,capacity_surface,aaebb3debab1,123,,mutual_information,0.20899191997225353,bits_per_symbol,exact,complete,,,,0.244140625,0.0,gaussian,1.0,"[0.0, 1.1641532182693481]",1.0,
+capacity_surface,capacity_surface,45610776aed0,123,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_surface,capacity_surface,5952a5e2e709,123,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_surface,capacity_surface,ad87085426bd,124,,capacity_bits_per_symbol,0.20849251259546592,bits_per_symbol,blahut_arimoto,complete,,,,0.30517578125,0.0,gaussian,1.0,"[0.0, 1.1641532182693481]",1.0,
+capacity_surface,capacity_surface,ad87085426bd,124,,capacity_residual,5.551115123125783e-17,bits_per_symbol,blahut_arimoto,complete,,,,0.30517578125,0.0,gaussian,1.0,"[0.0, 1.1641532182693481]",1.0,
+capacity_surface,capacity_surface,10f7e6c61638,124,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.30517578125,0.0,gaussian,1.0,"[0.0, 1.1641532182693481]",1.0,
+capacity_surface,capacity_surface,10f7e6c61638,124,,mutual_information,0.20849251259546592,bits_per_symbol,exact,complete,,,,0.30517578125,0.0,gaussian,1.0,"[0.0, 1.1641532182693481]",1.0,
+capacity_surface,capacity_surface,8ed33d44a8b7,124,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_surface,capacity_surface,da83c51d83dc,124,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_surface,capacity_surface,8dc0e7345fe1,125,,capacity_bits_per_symbol,0.2077167846433789,bits_per_symbol,blahut_arimoto,complete,,,,0.3814697265625,0.0,gaussian,1.0,"[0.0, 1.1641532182693481]",1.0,
+capacity_surface,capacity_surface,8dc0e7345fe1,125,,capacity_residual,8.326672684688674e-17,bits_per_symbol,blahut_arimoto,complete,,,,0.3814697265625,0.0,gaussian,1.0,"[0.0, 1.1641532182693481]",1.0,
+capacity_surface,capacity_surface,d41f5f3492ca,125,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.3814697265625,0.0,gaussian,1.0,"[0.0, 1.1641532182693481]",1.0,
+capacity_surface,capacity_surface,d41f5f3492ca,125,,mutual_information,0.20771678464337892,bits_per_symbol,exact,complete,,,,0.3814697265625,0.0,gaussian,1.0,"[0.0, 1.1641532182693481]",1.0,
+capacity_surface,capacity_surface,c6cebbbf3bcc,125,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_surface,capacity_surface,10f443d2e818,125,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_surface,capacity_surface,e18e48f42e67,126,,capacity_bits_per_symbol,0.20651580995881122,bits_per_symbol,blahut_arimoto,complete,,,,0.476837158203125,0.0,gaussian,1.0,"[0.0, 1.1641532182693481]",1.0,
+capacity_surface,capacity_surface,e18e48f42e67,126,,capacity_residual,4.163336342344337e-15,bits_per_symbol,blahut_arimoto,complete,,,,0.476837158203125,0.0,gaussian,1.0,"[0.0, 1.1641532182693481]",1.0,
+capacity_surface,capacity_surface,ba88840b06f8,126,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.476837158203125,0.0,gaussian,1.0,"[0.0, 1.1641532182693481]",1.0,
+capacity_surface,capacity_surface,ba88840b06f8,126,,mutual_information,0.20651580995881122,bits_per_symbol,exact,complete,,,,0.476837158203125,0.0,gaussian,1.0,"[0.0, 1.1641532182693481]",1.0,
+capacity_surface,capacity_surface,81a262aec79a,126,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_surface,capacity_surface,1436d2ac8f9a,126,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_surface,capacity_surface,5988b2405bdc,127,,capacity_bits_per_symbol,0.2046659370052934,bits_per_symbol,blahut_arimoto,complete,,,,0.5960464477539062,0.0,gaussian,1.0,"[0.0, 1.1641532182693481]",1.0,
+capacity_surface,capacity_surface,5988b2405bdc,127,,capacity_residual,8.842648835383216e-13,bits_per_symbol,blahut_arimoto,complete,,,,0.5960464477539062,0.0,gaussian,1.0,"[0.0, 1.1641532182693481]",1.0,
+capacity_surface,capacity_surface,d605a5047f91,127,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.5960464477539062,0.0,gaussian,1.0,"[0.0, 1.1641532182693481]",1.0,
+capacity_surface,capacity_surface,d605a5047f91,127,,mutual_information,0.20466593700529342,bits_per_symbol,exact,complete,,,,0.5960464477539062,0.0,gaussian,1.0,"[0.0, 1.1641532182693481]",1.0,
+capacity_surface,capacity_surface,e65c198fdbbf,127,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_surface,capacity_surface,89189a0f49d0,127,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_surface,capacity_surface,2be61d006310,128,,capacity_bits_per_symbol,0.20183891330149803,bits_per_symbol,blahut_arimoto,complete,,,,0.7450580596923828,0.0,gaussian,1.0,"[0.0, 1.1641532182693481]",1.0,
+capacity_surface,capacity_surface,2be61d006310,128,,capacity_residual,8.149489416631184e-11,bits_per_symbol,blahut_arimoto,complete,,,,0.7450580596923828,0.0,gaussian,1.0,"[0.0, 1.1641532182693481]",1.0,
+capacity_surface,capacity_surface,ce8495578896,128,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.7450580596923828,0.0,gaussian,1.0,"[0.0, 1.1641532182693481]",1.0,
+capacity_surface,capacity_surface,ce8495578896,128,,mutual_information,0.20183891330149795,bits_per_symbol,exact,complete,,,,0.7450580596923828,0.0,gaussian,1.0,"[0.0, 1.1641532182693481]",1.0,
+capacity_surface,capacity_surface,fbb318fec34b,128,,optimal_input_probability,0.5000000026116642,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_surface,capacity_surface,199108503f14,128,,optimal_input_probability,0.4999999973883358,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_surface,capacity_surface,2963bec279e9,129,,capacity_bits_per_symbol,0.1975704365394162,bits_per_symbol,blahut_arimoto,complete,,,,0.9313225746154785,0.0,gaussian,1.0,"[0.0, 1.1641532182693481]",1.0,
+capacity_surface,capacity_surface,2963bec279e9,129,,capacity_residual,9.442865933628752e-11,bits_per_symbol,blahut_arimoto,complete,,,,0.9313225746154785,0.0,gaussian,1.0,"[0.0, 1.1641532182693481]",1.0,
+capacity_surface,capacity_surface,632cf178b37b,129,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.9313225746154785,0.0,gaussian,1.0,"[0.0, 1.1641532182693481]",1.0,
+capacity_surface,capacity_surface,632cf178b37b,129,,mutual_information,0.1975704365393848,bits_per_symbol,exact,complete,,,,0.9313225746154785,0.0,gaussian,1.0,"[0.0, 1.1641532182693481]",1.0,
+capacity_surface,capacity_surface,d9847d7885b8,129,,optimal_input_probability,0.5000002100026949,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_surface,capacity_surface,fa22c6ea6e99,129,,optimal_input_probability,0.49999978999730516,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_surface,capacity_surface,11682c3d2738,130,,capacity_bits_per_symbol,0.1912409271725194,bits_per_symbol,blahut_arimoto,complete,,,,1.1641532182693481,0.0,gaussian,1.0,"[0.0, 1.1641532182693481]",1.0,
+capacity_surface,capacity_surface,11682c3d2738,130,,capacity_residual,0.0,bits_per_symbol,blahut_arimoto,complete,,,,1.1641532182693481,0.0,gaussian,1.0,"[0.0, 1.1641532182693481]",1.0,
+capacity_surface,capacity_surface,86ebc6de65b8,130,,matrix_row_sum_error,0.0,probability,exact,complete,,,,1.1641532182693481,0.0,gaussian,1.0,"[0.0, 1.1641532182693481]",1.0,
+capacity_surface,capacity_surface,86ebc6de65b8,130,,mutual_information,0.19124092717251942,bits_per_symbol,exact,complete,,,,1.1641532182693481,0.0,gaussian,1.0,"[0.0, 1.1641532182693481]",1.0,
+capacity_surface,capacity_surface,69fd47df8c8c,130,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_surface,capacity_surface,61c9381a6fac,130,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_surface,capacity_surface,886cebbd1e1f,131,,capacity_bits_per_symbol,0.18207137628495598,bits_per_symbol,blahut_arimoto,complete,,,,1.4551915228366852,0.0,gaussian,1.0,"[0.0, 1.1641532182693481]",1.0,
+capacity_surface,capacity_surface,886cebbd1e1f,131,,capacity_residual,9.337999817837783e-11,bits_per_symbol,blahut_arimoto,complete,,,,1.4551915228366852,0.0,gaussian,1.0,"[0.0, 1.1641532182693481]",1.0,
+capacity_surface,capacity_surface,f6a9e8256a69,131,,matrix_row_sum_error,0.0,probability,exact,complete,,,,1.4551915228366852,0.0,gaussian,1.0,"[0.0, 1.1641532182693481]",1.0,
+capacity_surface,capacity_surface,f6a9e8256a69,131,,mutual_information,0.18207136487896178,bits_per_symbol,exact,complete,,,,1.4551915228366852,0.0,gaussian,1.0,"[0.0, 1.1641532182693481]",1.0,
+capacity_surface,capacity_surface,ab092aa9b559,131,,optimal_input_probability,0.49986843680989124,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_surface,capacity_surface,9313c0c5758d,131,,optimal_input_probability,0.5001315631901088,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_surface,capacity_surface,d158a4b5a5c4,132,,capacity_bits_per_symbol,0.3037889379707225,bits_per_symbol,blahut_arimoto,complete,,,,0.125,0.0,gaussian,1.0,"[0.0, 1.4551915228366852]",1.0,
+capacity_surface,capacity_surface,d158a4b5a5c4,132,,capacity_residual,0.0,bits_per_symbol,blahut_arimoto,complete,,,,0.125,0.0,gaussian,1.0,"[0.0, 1.4551915228366852]",1.0,
+capacity_surface,capacity_surface,1d594c1166e6,132,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.125,0.0,gaussian,1.0,"[0.0, 1.4551915228366852]",1.0,
+capacity_surface,capacity_surface,1d594c1166e6,132,,mutual_information,0.3037889379707225,bits_per_symbol,exact,complete,,,,0.125,0.0,gaussian,1.0,"[0.0, 1.4551915228366852]",1.0,
+capacity_surface,capacity_surface,7f389b710949,132,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_surface,capacity_surface,39f4a1e46f56,132,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_surface,capacity_surface,db98862ed9a6,133,,capacity_bits_per_symbol,0.30361171532913145,bits_per_symbol,blahut_arimoto,complete,,,,0.15625,0.0,gaussian,1.0,"[0.0, 1.4551915228366852]",1.0,
+capacity_surface,capacity_surface,db98862ed9a6,133,,capacity_residual,4.996003610813204e-16,bits_per_symbol,blahut_arimoto,complete,,,,0.15625,0.0,gaussian,1.0,"[0.0, 1.4551915228366852]",1.0,
+capacity_surface,capacity_surface,02eaf12bc413,133,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.15625,0.0,gaussian,1.0,"[0.0, 1.4551915228366852]",1.0,
+capacity_surface,capacity_surface,02eaf12bc413,133,,mutual_information,0.30361171532913145,bits_per_symbol,exact,complete,,,,0.15625,0.0,gaussian,1.0,"[0.0, 1.4551915228366852]",1.0,
+capacity_surface,capacity_surface,c9b35d5a756f,133,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_surface,capacity_surface,c06f9b7fe17f,133,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_surface,capacity_surface,508e324d19b3,134,,capacity_bits_per_symbol,0.3033352000774473,bits_per_symbol,blahut_arimoto,complete,,,,0.1953125,0.0,gaussian,1.0,"[0.0, 1.4551915228366852]",1.0,
+capacity_surface,capacity_surface,508e324d19b3,134,,capacity_residual,5.551115123125783e-17,bits_per_symbol,blahut_arimoto,complete,,,,0.1953125,0.0,gaussian,1.0,"[0.0, 1.4551915228366852]",1.0,
+capacity_surface,capacity_surface,b13055fc5d3a,134,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.1953125,0.0,gaussian,1.0,"[0.0, 1.4551915228366852]",1.0,
+capacity_surface,capacity_surface,b13055fc5d3a,134,,mutual_information,0.3033352000774473,bits_per_symbol,exact,complete,,,,0.1953125,0.0,gaussian,1.0,"[0.0, 1.4551915228366852]",1.0,
+capacity_surface,capacity_surface,f0180ba76ff1,134,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_surface,capacity_surface,9711a94ad654,134,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_surface,capacity_surface,8314e853339c,135,,capacity_bits_per_symbol,0.30290410712896987,bits_per_symbol,blahut_arimoto,complete,,,,0.244140625,0.0,gaussian,1.0,"[0.0, 1.4551915228366852]",1.0,
+capacity_surface,capacity_surface,8314e853339c,135,,capacity_residual,0.0,bits_per_symbol,blahut_arimoto,complete,,,,0.244140625,0.0,gaussian,1.0,"[0.0, 1.4551915228366852]",1.0,
+capacity_surface,capacity_surface,cfe6d77bb4bd,135,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.244140625,0.0,gaussian,1.0,"[0.0, 1.4551915228366852]",1.0,
+capacity_surface,capacity_surface,cfe6d77bb4bd,135,,mutual_information,0.30290410712896987,bits_per_symbol,exact,complete,,,,0.244140625,0.0,gaussian,1.0,"[0.0, 1.4551915228366852]",1.0,
+capacity_surface,capacity_surface,7ce34d56ade4,135,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_surface,capacity_surface,736efe8059fe,135,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_surface,capacity_surface,fb2f7bc0ea0a,136,,capacity_bits_per_symbol,0.3022328637542873,bits_per_symbol,blahut_arimoto,complete,,,,0.30517578125,0.0,gaussian,1.0,"[0.0, 1.4551915228366852]",1.0,
+capacity_surface,capacity_surface,fb2f7bc0ea0a,136,,capacity_residual,5.551115123125783e-17,bits_per_symbol,blahut_arimoto,complete,,,,0.30517578125,0.0,gaussian,1.0,"[0.0, 1.4551915228366852]",1.0,
+capacity_surface,capacity_surface,47356669f59a,136,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.30517578125,0.0,gaussian,1.0,"[0.0, 1.4551915228366852]",1.0,
+capacity_surface,capacity_surface,47356669f59a,136,,mutual_information,0.3022328637542873,bits_per_symbol,exact,complete,,,,0.30517578125,0.0,gaussian,1.0,"[0.0, 1.4551915228366852]",1.0,
+capacity_surface,capacity_surface,a30032391e27,136,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_surface,capacity_surface,94ce01a06721,136,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_surface,capacity_surface,1b6a2c8ea37b,137,,capacity_bits_per_symbol,0.3011897210047637,bits_per_symbol,blahut_arimoto,complete,,,,0.3814697265625,0.0,gaussian,1.0,"[0.0, 1.4551915228366852]",1.0,
+capacity_surface,capacity_surface,1b6a2c8ea37b,137,,capacity_residual,5.551115123125783e-16,bits_per_symbol,blahut_arimoto,complete,,,,0.3814697265625,0.0,gaussian,1.0,"[0.0, 1.4551915228366852]",1.0,
+capacity_surface,capacity_surface,c0298dc214e7,137,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.3814697265625,0.0,gaussian,1.0,"[0.0, 1.4551915228366852]",1.0,
+capacity_surface,capacity_surface,c0298dc214e7,137,,mutual_information,0.3011897210047637,bits_per_symbol,exact,complete,,,,0.3814697265625,0.0,gaussian,1.0,"[0.0, 1.4551915228366852]",1.0,
+capacity_surface,capacity_surface,da2893868a67,137,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_surface,capacity_surface,5ff347c94629,137,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_surface,capacity_surface,777229282920,138,,capacity_bits_per_symbol,0.2995735288784728,bits_per_symbol,blahut_arimoto,complete,,,,0.476837158203125,0.0,gaussian,1.0,"[0.0, 1.4551915228366852]",1.0,
+capacity_surface,capacity_surface,777229282920,138,,capacity_residual,2.2293278334473143e-13,bits_per_symbol,blahut_arimoto,complete,,,,0.476837158203125,0.0,gaussian,1.0,"[0.0, 1.4551915228366852]",1.0,
+capacity_surface,capacity_surface,e4682a544cc5,138,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.476837158203125,0.0,gaussian,1.0,"[0.0, 1.4551915228366852]",1.0,
+capacity_surface,capacity_surface,e4682a544cc5,138,,mutual_information,0.2995735288784728,bits_per_symbol,exact,complete,,,,0.476837158203125,0.0,gaussian,1.0,"[0.0, 1.4551915228366852]",1.0,
+capacity_surface,capacity_surface,e771e423ec85,138,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_surface,capacity_surface,2ecee359d524,138,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_surface,capacity_surface,decae58fea30,139,,capacity_bits_per_symbol,0.2970812104276135,bits_per_symbol,blahut_arimoto,complete,,,,0.5960464477539062,0.0,gaussian,1.0,"[0.0, 1.4551915228366852]",1.0,
+capacity_surface,capacity_surface,decae58fea30,139,,capacity_residual,7.948486313580361e-11,bits_per_symbol,blahut_arimoto,complete,,,,0.5960464477539062,0.0,gaussian,1.0,"[0.0, 1.4551915228366852]",1.0,
+capacity_surface,capacity_surface,27bb3995a851,139,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.5960464477539062,0.0,gaussian,1.0,"[0.0, 1.4551915228366852]",1.0,
+capacity_surface,capacity_surface,27bb3995a851,139,,mutual_information,0.2970812104276133,bits_per_symbol,exact,complete,,,,0.5960464477539062,0.0,gaussian,1.0,"[0.0, 1.4551915228366852]",1.0,
+capacity_surface,capacity_surface,fa61c03ba0f3,139,,optimal_input_probability,0.4999999996253917,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_surface,capacity_surface,f36cb5cffc7f,139,,optimal_input_probability,0.5000000003746082,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_surface,capacity_surface,ea93c4fb641a,140,,capacity_bits_per_symbol,0.2932656035620374,bits_per_symbol,blahut_arimoto,complete,,,,0.7450580596923828,0.0,gaussian,1.0,"[0.0, 1.4551915228366852]",1.0,
+capacity_surface,capacity_surface,ea93c4fb641a,140,,capacity_residual,9.694284264227804e-11,bits_per_symbol,blahut_arimoto,complete,,,,0.7450580596923828,0.0,gaussian,1.0,"[0.0, 1.4551915228366852]",1.0,
+capacity_surface,capacity_surface,d707df22bb05,140,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.7450580596923828,0.0,gaussian,1.0,"[0.0, 1.4551915228366852]",1.0,
+capacity_surface,capacity_surface,d707df22bb05,140,,mutual_information,0.2932656035620373,bits_per_symbol,exact,complete,,,,0.7450580596923828,0.0,gaussian,1.0,"[0.0, 1.4551915228366852]",1.0,
+capacity_surface,capacity_surface,ff84a3d37f16,140,,optimal_input_probability,0.5000000073163918,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_surface,capacity_surface,16a27aae2f8d,140,,optimal_input_probability,0.4999999926836081,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_surface,capacity_surface,6dd52f5b84a9,141,,capacity_bits_per_symbol,0.2874888870649509,bits_per_symbol,blahut_arimoto,complete,,,,0.9313225746154785,0.0,gaussian,1.0,"[0.0, 1.4551915228366852]",1.0,
+capacity_surface,capacity_surface,6dd52f5b84a9,141,,capacity_residual,7.885719854883178e-11,bits_per_symbol,blahut_arimoto,complete,,,,0.9313225746154785,0.0,gaussian,1.0,"[0.0, 1.4551915228366852]",1.0,
+capacity_surface,capacity_surface,99354964c374,141,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.9313225746154785,0.0,gaussian,1.0,"[0.0, 1.4551915228366852]",1.0,
+capacity_surface,capacity_surface,99354964c374,141,,mutual_information,0.28748888706026576,bits_per_symbol,exact,complete,,,,0.9313225746154785,0.0,gaussian,1.0,"[0.0, 1.4551915228366852]",1.0,
+capacity_surface,capacity_surface,eaba444ec6ac,141,,optimal_input_probability,0.5000021638202572,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_surface,capacity_surface,690216acfb8c,141,,optimal_input_probability,0.4999978361797429,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_surface,capacity_surface,3659e17aca7c,142,,capacity_bits_per_symbol,0.2788828617697315,bits_per_symbol,blahut_arimoto,complete,,,,1.1641532182693481,0.0,gaussian,1.0,"[0.0, 1.4551915228366852]",1.0,
+capacity_surface,capacity_surface,3659e17aca7c,142,,capacity_residual,9.08654262943287e-11,bits_per_symbol,blahut_arimoto,complete,,,,1.1641532182693481,0.0,gaussian,1.0,"[0.0, 1.4551915228366852]",1.0,
+capacity_surface,capacity_surface,10f71a3374b0,142,,matrix_row_sum_error,0.0,probability,exact,complete,,,,1.1641532182693481,0.0,gaussian,1.0,"[0.0, 1.4551915228366852]",1.0,
+capacity_surface,capacity_surface,10f71a3374b0,142,,mutual_information,0.278882860760072,bits_per_symbol,exact,complete,,,,1.1641532182693481,0.0,gaussian,1.0,"[0.0, 1.4551915228366852]",1.0,
+capacity_surface,capacity_surface,ce1b8548233b,142,,optimal_input_probability,0.5000322122948915,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_surface,capacity_surface,df0f30d33c79,142,,optimal_input_probability,0.4999677877051085,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_surface,capacity_surface,d7f19cb67816,143,,capacity_bits_per_symbol,0.26624698837519245,bits_per_symbol,blahut_arimoto,complete,,,,1.4551915228366852,0.0,gaussian,1.0,"[0.0, 1.4551915228366852]",1.0,
+capacity_surface,capacity_surface,d7f19cb67816,143,,capacity_residual,0.0,bits_per_symbol,blahut_arimoto,complete,,,,1.4551915228366852,0.0,gaussian,1.0,"[0.0, 1.4551915228366852]",1.0,
+capacity_surface,capacity_surface,bd7b7d8181d6,143,,matrix_row_sum_error,0.0,probability,exact,complete,,,,1.4551915228366852,0.0,gaussian,1.0,"[0.0, 1.4551915228366852]",1.0,
+capacity_surface,capacity_surface,bd7b7d8181d6,143,,mutual_information,0.2662469883751924,bits_per_symbol,exact,complete,,,,1.4551915228366852,0.0,gaussian,1.0,"[0.0, 1.4551915228366852]",1.0,
+capacity_surface,capacity_surface,e36c017002a8,143,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_surface,capacity_surface,a6d6e3f948b4,143,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,1.0

@@ -1,0 +1,39 @@
+{
+  "allow_dirty_override": false,
+  "completed_at": "2026-07-28T10:31:44.884721+00:00",
+  "completed_jobs": 1,
+  "completion_status": "complete",
+  "config_hash": "d4a34cb1269a1e7d8496456b59fb03410af570e96de5e6dbe93fdc7c0dced052",
+  "expected_jobs": 1,
+  "expected_metrics": [
+    "capacity_bits_per_symbol",
+    "matrix_row_sum_error"
+  ],
+  "experiment_kind": "memoryless_baseline",
+  "experiment_name": "memoryless_baseline",
+  "generated_files": {
+    "config.original.yaml": "ffe4d67ca378f99e3bf090bafdd5cb2a9e42a1e93f5892b11e50ee8a982b2055",
+    "config.resolved.yaml": "23c7d627b8f52debc04a2adca215095889ee4a9e69b2bc768a82336f8745783a",
+    "diagnostics.json": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "environment.json": "7f77dd98eb92ea9ff1c652cf80b3cb359aed7a214cfec6e305a751eb4ca67cf2",
+    "figures/memoryless_information_summary.pdf": "790f1ac2888125531658228f7246736400bf6d46edab54aae675cdb75abc3e3b",
+    "figures/memoryless_information_summary.png": "4818bb93597ab09d72df145bfd52d7196f4f2fd9003ce68bb35ce7fef474d72b",
+    "matrices/channel_0.npz": "e5b3287b0fa97e68ceb1f6faeea575bed8df195cf5e650182895b03061455596",
+    "results.csv": "cb71933734d381f24806b7115fde2c5c5a710bc649c284119c4deb43ce8679e9",
+    "tables/figure_memoryless_information_summary.csv": "3b1af42e4a44b5e56ea0db85de8565b33ab99ab7ea8501919e94a67fa4f9642a",
+    "tables/figure_memoryless_source.csv": "b2b563019eaef4909fc7bfb91fbcb8ae1655e9e863258386568142109c7fec9b"
+  },
+  "locale": "en",
+  "package_version": "0.6.0",
+  "project": "Project Chronocline",
+  "result_schema_version": "2.0",
+  "run_id": "398c57f4b984bb29",
+  "runner_name": "MemorylessRunner",
+  "runner_version": "2.0",
+  "semantic_validation_errors": [],
+  "semantic_validation_status": "passed",
+  "source_commit": "80149ae57edc91369e4edfc7f0ff7980129b6bac",
+  "source_dirty": false,
+  "started_at": "2026-07-28T10:31:15.419738+00:00",
+  "workers": 1
+}

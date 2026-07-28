@@ -1,0 +1,39 @@
+{
+  "allow_dirty_override": false,
+  "completed_at": "2026-07-28T10:31:36.377670+00:00",
+  "completed_jobs": 20,
+  "completion_status": "complete",
+  "config_hash": "ef8d31a5d950e101b866836adc1dc91b55950a374a709518cd5f2eb8739a2b27",
+  "expected_jobs": 20,
+  "expected_metrics": [
+    "achieved_kl_bits",
+    "constrained_capacity_bits_per_symbol",
+    "optimizer_converged",
+    "optimizer_feasible"
+  ],
+  "experiment_kind": "detectability_frontier",
+  "experiment_name": "detectability_frontier",
+  "generated_files": {
+    "config.original.yaml": "5cbfbfebe3fd40d34bc779670a8392cdb9553497d3120538450a8463d8c9f239",
+    "config.resolved.yaml": "d02d9e2880638a5d0a9a4565c1f73923e35f808be9c6c1afedcc3c4ee9d9911d",
+    "diagnostics.json": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "environment.json": "bae4445b5bdf18b8f077995f95841d07ffd96ce010893881ea4ff6cd6d9f6a96",
+    "figures/capacity_detectability_frontier.pdf": "b75b52657cff5aa4e07d32587a78b6cee72d14e22b98611ccdd12c9cdad753b4",
+    "figures/capacity_detectability_frontier.png": "70da0f8b3706f5a45d44f5f9c4635c3f29d141408ad6d6a993f929de90a48b5f",
+    "results.csv": "21fba11472a1c89a75ab649bdf8ae91c48818205afe86747eb06f364aba58e02",
+    "tables/figure_capacity_detectability_frontier.csv": "918ce25247a1da191ff2a17499b849b38f5a96dbb8e6ca972cee00b7ed49bf08"
+  },
+  "locale": "en",
+  "package_version": "0.6.0",
+  "project": "Project Chronocline",
+  "result_schema_version": "2.0",
+  "run_id": "3f3ebad16339ff5f",
+  "runner_name": "ConstrainedRunner",
+  "runner_version": "2.0",
+  "semantic_validation_errors": [],
+  "semantic_validation_status": "passed",
+  "source_commit": "80149ae57edc91369e4edfc7f0ff7980129b6bac",
+  "source_dirty": false,
+  "started_at": "2026-07-28T10:30:59.224957+00:00",
+  "workers": 2
+}

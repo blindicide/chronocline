@@ -1,0 +1,10 @@
+experiment_name,experiment_kind,job_id,sweep_index,replication,metric_name,metric_value,units,estimator,status,warning_code,confidence_interval_lower,confidence_interval_upper,sample_size,roc_table,target_false_positive_rate,target_fpr
+finite_sample_detection,finite_sample_detection,45187531840e,0,,auc,0.958466,dimensionless,likelihood_ratio,complete,,0.950589225,0.9662923625,10,tables/roc_n_10.csv,,
+finite_sample_detection,finite_sample_detection,6cc178c78fbf,1,,auc,0.997257,dimensionless,likelihood_ratio,complete,,0.99609035,0.99852415,25,tables/roc_n_25.csv,,
+finite_sample_detection,finite_sample_detection,ed053b345250,2,,auc,0.999925,dimensionless,likelihood_ratio,complete,,0.99982885,1.0,50,tables/roc_n_50.csv,,
+finite_sample_detection,finite_sample_detection,cffe87ea0deb,3,,auc,1.0,dimensionless,likelihood_ratio,complete,,1.0,1.0,100,tables/roc_n_100.csv,,
+finite_sample_detection,finite_sample_detection,44be46ff64ec,4,,auc,1.0,dimensionless,likelihood_ratio,complete,,1.0,1.0,250,tables/roc_n_250.csv,,
+finite_sample_detection,finite_sample_detection,72c809bf9684,5,,auc,1.0,dimensionless,likelihood_ratio,complete,,1.0,1.0,500,tables/roc_n_500.csv,,
+finite_sample_detection,finite_sample_detection,bfae75e3db73,6,,auc,1.0,dimensionless,likelihood_ratio,complete,,1.0,1.0,1000,tables/roc_n_1000.csv,,
+finite_sample_detection,finite_sample_detection,6afbd359680c,7,,auc,1.0,dimensionless,likelihood_ratio,complete,,1.0,1.0,2500,tables/roc_n_2500.csv,,
+finite_sample_detection,finite_sample_detection,52acc8e155b5,8,,auc,1.0,dimensionless,likelihood_ratio,complete,,1.0,1.0,5000,tables/roc_n_5000.csv,,

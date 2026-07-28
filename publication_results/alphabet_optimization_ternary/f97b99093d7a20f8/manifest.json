@@ -1,0 +1,38 @@
+{
+  "allow_dirty_override": false,
+  "completed_at": "2026-07-28T10:31:23.629078+00:00",
+  "completed_jobs": 1,
+  "completion_status": "complete",
+  "config_hash": "58009dadeacd084f00f17d6efd0d3e227bf24564a9e47e623c2939e5aed3e798",
+  "expected_jobs": 1,
+  "expected_metrics": [
+    "best_found_capacity",
+    "optimization_label",
+    "optimized_alphabet"
+  ],
+  "experiment_kind": "alphabet_optimization",
+  "experiment_name": "alphabet_optimization_ternary",
+  "generated_files": {
+    "config.original.yaml": "4b9d4a502df2dad3b3282ebdbf684edbc29eb454b830a65661860d55d152fd46",
+    "config.resolved.yaml": "a59b39976a6a2fc0e455a3850e3f86d4c211b4ed54b3c325a39768a0159cf8f0",
+    "diagnostics.json": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "environment.json": "bae4445b5bdf18b8f077995f95841d07ffd96ce010893881ea4ff6cd6d9f6a96",
+    "figures/optimized_alphabet.pdf": "bf3d83d95e845ce92d0e89eddeeeca76ce94e7c6220228cae6dd3e346937545c",
+    "figures/optimized_alphabet.png": "f2141dd216a5a51cdfbcc808c505e7741c639633230a6dcb6e82db0b5ecb301f",
+    "results.csv": "4ac0446da01ad28419c52a7e66d1ccd0e9f28b1265c9e213a23781e7bd41f061",
+    "tables/figure_optimized_alphabet.csv": "83f4dbd614c44496fc6294f8e30b6c263c034ddc7b03ee6ab5f464153616fed9"
+  },
+  "locale": "en",
+  "package_version": "0.6.0",
+  "project": "Project Chronocline",
+  "result_schema_version": "2.0",
+  "run_id": "f97b99093d7a20f8",
+  "runner_name": "AlphabetRunner",
+  "runner_version": "2.0",
+  "semantic_validation_errors": [],
+  "semantic_validation_status": "passed",
+  "source_commit": "80149ae57edc91369e4edfc7f0ff7980129b6bac",
+  "source_dirty": false,
+  "started_at": "2026-07-28T10:30:50.628089+00:00",
+  "workers": 2
+}
