@@ -137,6 +137,23 @@ def test_ternary_search_can_leave_unused_upper_range_slack() -> None:
     assert result.alphabet[-1] < 9.0
 
 
+def test_ternary_restarts_and_unanchored_lower_slack_are_real_search_dimensions() -> None:
+    """Restart metadata and unanchored first-symbol slack are not decorative fields."""
+    result = best_found_alphabet(
+        3,
+        0.0,
+        10.0,
+        0.5,
+        lambda alphabet: -float((alphabet[0] - 2.0) ** 2),
+        seed=7,
+        anchor_first_symbol=False,
+        global_restarts=3,
+    )
+    assert result.alphabet[0] > 1.0
+    assert len(result.restarts) == 3
+    assert result.label == "ternary_differential_evolution_best_found"
+
+
 def test_plotting_never_converts_failed_computation_to_passed(tmp_path: Path) -> None:
     """Adding a figure may add checksums but cannot erase failed semantic status."""
     pd.DataFrame(
@@ -203,9 +220,7 @@ def test_semantic_validation_rejects_duplicate_scientific_rows(tmp_path: Path) -
     )
     rows.to_csv(tmp_path / "results.csv", index=False)
     (tmp_path / "tables").mkdir()
-    pd.DataFrame(
-        {"false_positive_rate": [0.0, 1.0], "true_positive_rate": [0.0, 1.0]}
-    ).to_csv(
+    pd.DataFrame({"false_positive_rate": [0.0, 1.0], "true_positive_rate": [0.0, 1.0]}).to_csv(
         tmp_path / "tables" / "roc_n_10.csv", index=False
     )
     (tmp_path / "manifest.json").write_text(

@@ -121,7 +121,7 @@ def test_information_divergences_and_optimization_edges() -> None:
     exact = binary_grid_optimize(0, 1, 4, lambda alphabet: alphabet[1] - alphabet[0])
     assert exact.label == "exact_grid_optimum" and exact.objective == pytest.approx(1)
     found = best_found_alphabet(3, 0, 3, 0.5, np.sum, seed=8)
-    assert found.label == "best_found_numerical_solution"
+    assert found.label == "ternary_differential_evolution_best_found"
     assert ordered(found.alphabet, 0.5)
     assert simplex_grid(2, 2).shape == (3, 2)
     assert simplex_grid(3, 2).shape == (6, 3)
