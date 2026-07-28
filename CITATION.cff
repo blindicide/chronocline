@@ -1,0 +1,8 @@
+cff-version: 1.2.0
+message: "If you use Project Chronocline, please cite it."
+title: "Project Chronocline"
+version: 0.5.0
+date-released: 2026-07-28
+authors:
+  - name: "Author information pending"
+license: MIT
