@@ -10,10 +10,23 @@ The memoryless core is `Y = Q(X + Z)`, with a finite delay alphabet, a jitter di
 python -m pip install -e '.[dev]'
 chronocline validate-config configs/smoke.yaml
 chronocline experiment configs/smoke.yaml
-chronocline validate-results results/smoke/latest
+chronocline validate-results results/smoke
+chronocline plot results/smoke
 ```
 
-All results contain the resolved configuration, manifest, environment information, diagnostics, tables, and figures. Repeated runs with a fixed seed use deterministic child streams. See `docs/experiment_protocol.md` for reproduction commands.
+An experiment directory contains a portable `LATEST` file naming its most recent run; commands accept
+either that directory or a concrete run directory. A completed result contains the resolved
+configuration, manifest, environment information, diagnostics, scalar summaries, matrices or
+experiment tables, and figures with source tables. Publication configurations refuse dirty source
+trees unless explicitly overridden for development.
+
+Schema 2.0 result bundles are not backward-compatible with the incomplete generic-runner
+campaign recorded for v0.5.0. The v0.6.0 campaigns dispatch to distinct memoryless, phase,
+detectability, finite-sample detection, batching, jitter-comparison, and alphabet-search runners.
+Exact memoryless capacities are never used to describe stateful batching estimates.
+
+See `docs/experiment_protocol.md` for reproduction commands, expected campaign scope, baseline
+construction, and the distinction between exact and empirical metrics.
 
 ## Scope and safety
 
