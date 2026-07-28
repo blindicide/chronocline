@@ -12,6 +12,7 @@ from .experiments import run
 from .plotting import plot_result_directory
 from .results import validate_result_directory
 from .results.manifest import finalize_manifest
+from .results.validation import semantic_errors
 
 app = typer.Typer(
     no_args_is_help=True, help="Project Chronocline scientific timing-channel framework."
@@ -75,12 +76,32 @@ def validate_results(path: Path) -> None:
 @app.command()
 def plot(path: Path, locale: str = "en") -> None:
     """Regenerate plots from stored CSV data only."""
-    result = plot_result_directory(path, locale)
     directory = path / (path / "LATEST").read_text().strip() if (path / "LATEST").exists() else path
     manifest_path = directory / "manifest.json"
-    if manifest_path.exists():
-        manifest = json.loads(manifest_path.read_text())
-        finalize_manifest(directory, manifest, int(manifest.get("completed_jobs", 0)), [])
+    if not manifest_path.exists():
+        raise typer.BadParameter("plot requires a computation manifest")
+    manifest = json.loads(manifest_path.read_text())
+    prior_errors = list(manifest.get("semantic_validation_errors", []))
+    if (
+        manifest.get("completion_status") == "failed"
+        or manifest.get("semantic_validation_status") == "failed"
+        or prior_errors
+    ):
+        raise typer.BadParameter("refusing to plot a failed or semantically invalid computation")
+    try:
+        result = plot_result_directory(path, locale)
+    except Exception as error:
+        finalize_manifest(
+            directory,
+            manifest,
+            int(manifest.get("completed_jobs", 0)),
+            [f"plotting failed: {error}"],
+        )
+        raise
+    errors = semantic_errors(directory, strict=False)
+    finalize_manifest(directory, manifest, int(manifest.get("completed_jobs", 0)), errors)
+    if errors:
+        raise typer.Exit(1)
     typer.echo(result)
 
 

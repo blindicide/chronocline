@@ -90,6 +90,8 @@ def semantic_errors(
         if METRIC_UNITS.get(metric) != unit:
             errors.append(f"wrong or unknown unit for {metric}")
     kind = str(manifest.get("experiment_kind", ""))
+    if frame.duplicated(["job_id", "metric_name"], keep=False).any():
+        errors.append("duplicate scientific result rows")
     if strict and manifest.get("completion_status") not in {None, "complete"}:
         errors.append("manifest is not complete")
     if manifest.get("result_schema_version") not in {None, SCHEMA_VERSION}:
@@ -119,6 +121,21 @@ def semantic_errors(
         errors.append("phase campaign lacks phase variation")
     if kind == "finite_sample_detection" and not list((directory / "tables").glob("roc_n_*.csv")):
         errors.append("detection campaign lacks ROC artifacts")
+    if kind == "finite_sample_detection":
+        required_columns = {"sample_size", "hypothesis_pair", "replication"}
+        if not required_columns.issubset(frame.columns):
+            errors.append("detection rows lack canonical scientific identifiers")
+        else:
+            detector_rows = frame.loc[
+                frame.metric_name.isin({"auc", "minimum_equal_prior_error", "tpr_at_fpr"})
+            ]
+            key_columns = ["metric_name", "sample_size", "hypothesis_pair", "replication"]
+            if "target_false_positive_rate" in detector_rows:
+                key_columns.append("target_false_positive_rate")
+            if detector_rows.duplicated(key_columns, keep=False).any():
+                errors.append("duplicate detector scientific keys")
+            if "baseline_vs_baseline" not in set(detector_rows.hypothesis_pair.dropna()):
+                errors.append("detection campaign lacks baseline-vs-baseline null control")
     if kind == "finite_sample_detection" and (
         frame.loc[frame.metric_name == "auc", "sample_size"].nunique() < 2
     ):
