@@ -80,8 +80,10 @@ def semantic_errors(
     }
     if not required_columns.issubset(frame.columns):
         errors.append("schema-2 result columns missing")
-    if "metric_value" in frame and not np.all(np.isfinite(frame.metric_value)):
-        errors.append("non-finite result value")
+    if "metric_value" in frame:
+        allowed_infinite = frame.metric_name.eq("theoretical_total_kl_bits")
+        if not np.all(np.isfinite(frame.metric_value) | allowed_infinite):
+            errors.append("non-finite result value")
     for metric, unit in zip(frame.get("metric_name", []), frame.get("units", []), strict=False):
         if METRIC_UNITS.get(metric) != unit:
             errors.append(f"wrong or unknown unit for {metric}")
