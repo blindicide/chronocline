@@ -238,6 +238,7 @@ class SimulationConfig(StrictModel):
     preserve_order: bool = True
     block_lengths: list[int] = Field(default_factory=lambda: [1, 2, 3, 4])
     discard_initial_transient: bool = True
+    transient_observations: int = 1
 
     @model_validator(mode="after")
     def valid_simulation(self) -> SimulationConfig:
@@ -246,6 +247,7 @@ class SimulationConfig(StrictModel):
             or self.replications < 1
             or not self.block_lengths
             or any(k < 1 for k in self.block_lengths)
+            or self.transient_observations < 0
         ):
             raise ValueError("simulation trace, replications, and block lengths must be positive")
         return self

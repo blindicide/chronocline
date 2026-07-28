@@ -43,6 +43,8 @@ METRIC_UNITS = {
     "memoryless_approximation_error": "bits_per_symbol",
     "plugin_block_mutual_information": "bits_per_block",
     "normalized_plugin_block_mutual_information": "bits_per_symbol",
+    "miller_madow_block_mutual_information": "bits_per_block",
+    "normalized_miller_madow_block_mutual_information": "bits_per_symbol",
     "optimized_alphabet": "normalized_time",
     "best_found_capacity": "bits_per_symbol",
     "optimization_label": "code",

@@ -19,11 +19,13 @@ from chronocline.cli import app
 from chronocline.config import RunConfig
 from chronocline.distributions import gaussian
 from chronocline.experiments.base import ExperimentContext
+from chronocline.experiments.batching import BatchingRunner
 from chronocline.experiments.detection import DetectionRunner
 from chronocline.information.divergence import kl_divergence
 from chronocline.optimization import best_found_alphabet
 from chronocline.quantization import UniformQuantizer
 from chronocline.results.validation import semantic_errors
+from chronocline.simulation import batch_observation_trace, observation_trace
 
 
 def detector_config() -> RunConfig:
@@ -251,3 +253,38 @@ def test_ambiguous_random_phase_modes_are_rejected(mode: str) -> None:
             UniformQuantizer(0.5),
             random_phase_mode=mode,
         )
+
+
+def test_delay_and_timestamp_models_have_distinct_explicit_trace_stages() -> None:
+    """Delay noise and timestamp noise are not interchangeable simulation labels."""
+    delays = np.array([1.0, 1.0, 1.0])
+    jitter = np.array([0.4, -0.4, 0.4])
+    quantizer = UniformQuantizer(0.5)
+    delay_trace = observation_trace(delays, jitter, quantizer, model="delay_quantization")
+    timestamp_trace = observation_trace(delays, jitter, quantizer, model="timestamp_quantization")
+    assert not np.array_equal(delay_trace.observed_delays, timestamp_trace.observed_delays)
+    batched = batch_observation_trace(timestamp_trace, 1.0, maximum_batch_size=1)
+    assert np.array_equal(batched.packet_ids, np.arange(3))
+    assert batched.batch_ids.tolist() == [0, 1, 2]
+
+
+def test_batching_executes_replications_and_keeps_unbatched_packets_singleton(
+    tmp_path: Path,
+) -> None:
+    """Configured replications and no-batching semantics affect every emitted row."""
+    raw = detector_config().model_dump(mode="json")
+    raw["experiment"].update({"kind": "batching_comparison", "name": "round3_batching"})
+    raw["simulation"] = {"trace_length": 40, "replications": 2, "block_lengths": [1]}
+    raw["batching"] = {"modes": ["ideal_delays", "no_batching"], "windows": [0.5]}
+    config = RunConfig.model_validate(raw)
+    output = BatchingRunner().execute(
+        ExperimentContext(config, tmp_path, np.random.SeedSequence(11), "test", False),
+        [(0, config)],
+    )
+    sizes = [
+        row
+        for row in output.rows
+        if row["metric_name"] == "batch_size_mean" and row["batching_mode"] == "no_batching"
+    ]
+    assert len(sizes) == 2 and all(row["metric_value"] == 1 for row in sizes)
+    assert {row["replication"] for row in sizes} == {0, 1}
