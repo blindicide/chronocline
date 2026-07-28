@@ -6,7 +6,7 @@ from dataclasses import dataclass
 
 import numpy as np
 from numpy.typing import ArrayLike, NDArray
-from scipy import stats
+from scipy import special, stats
 
 
 @dataclass(frozen=True)
@@ -42,6 +42,25 @@ class GaussianMixture:
     def cdf(self, x: ArrayLike) -> NDArray[np.float64]:
         a = np.asarray(x, dtype=float)[..., None]
         return np.sum(self.weights * stats.norm.cdf(a, self.means, self.scales), axis=-1)
+
+    def logcdf(self, x: ArrayLike) -> NDArray[np.float64]:
+        """Return a stable mixture lower-tail log probability."""
+        a = np.asarray(x, dtype=float)[..., None]
+        log_weights = np.where(self.weights > 0, np.log(self.weights), -np.inf)
+        return special.logsumexp(
+            log_weights + stats.norm.logcdf(a, self.means, self.scales), axis=-1
+        )
+
+    def logsf(self, x: ArrayLike) -> NDArray[np.float64]:
+        """Return a stable mixture upper-tail log probability via log-sum-exp."""
+        a = np.asarray(x, dtype=float)[..., None]
+        log_weights = np.where(self.weights > 0, np.log(self.weights), -np.inf)
+        return special.logsumexp(
+            log_weights + stats.norm.logsf(a, self.means, self.scales), axis=-1
+        )
+
+    def sf(self, x: ArrayLike) -> NDArray[np.float64]:
+        return np.exp(self.logsf(x))
 
     def ppf(self, q: ArrayLike) -> NDArray[np.float64]:
         from scipy.optimize import brentq

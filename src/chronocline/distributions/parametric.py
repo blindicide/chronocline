@@ -23,6 +23,16 @@ class ScipyJitter:
     def cdf(self, x: ArrayLike) -> NDArray[np.float64]:
         return np.asarray(self.law.cdf(x), dtype=float)
 
+    def sf(self, x: ArrayLike) -> NDArray[np.float64]:
+        """Return the numerically stable survival probability."""
+        return np.asarray(self.law.sf(x), dtype=float)
+
+    def logcdf(self, x: ArrayLike) -> NDArray[np.float64]:
+        return np.asarray(self.law.logcdf(x), dtype=float)
+
+    def logsf(self, x: ArrayLike) -> NDArray[np.float64]:
+        return np.asarray(self.law.logsf(x), dtype=float)
+
     def ppf(self, q: ArrayLike) -> NDArray[np.float64]:
         return np.asarray(self.law.ppf(q), dtype=float)
 

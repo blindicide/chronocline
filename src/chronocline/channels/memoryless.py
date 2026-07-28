@@ -10,6 +10,49 @@ from ..quantization.random_phase import phase_nodes
 from .matrix import ChannelMatrix
 
 
+def stable_interval_probability(
+    jitter: JitterDistribution, lower: np.ndarray, upper: np.ndarray
+) -> tuple[np.ndarray, dict[str, int]]:
+    """Return ``P(lower <= Z < upper)`` without subtracting saturated CDF values.
+
+    The lower-tail representation is stable near negative infinity; the survival
+    representation is stable in the far upper tail.  A material disagreement is
+    treated as a numerical error rather than silently clipped into probability.
+    """
+    lower_cdf = jitter.cdf(lower)
+    upper_cdf = jitter.cdf(upper)
+    cdf_difference = upper_cdf - lower_cdf
+    survival_difference = jitter.sf(lower) - jitter.sf(upper)
+    use_survival = np.asarray(lower, float) >= jitter.mean()
+    chosen = np.where(use_survival, survival_difference, cdf_difference)
+    alternate = np.where(use_survival, cdf_difference, survival_difference)
+    scale = np.maximum(np.maximum(np.abs(chosen), np.abs(alternate)), 1e-300)
+    # A saturated representation is intentionally not used for its tail.  Compare
+    # the two formulae only where both endpoint probabilities are well resolved.
+    resolution_floor = 1e-8
+    cdf_resolved = (lower_cdf > resolution_floor) & (upper_cdf < 1 - resolution_floor)
+    survival_lower = jitter.sf(lower)
+    survival_upper = jitter.sf(upper)
+    sf_resolved = (survival_lower > resolution_floor) & (
+        survival_upper < 1 - resolution_floor
+    )
+    inconsistent = (
+        (chosen > 1e-12)
+        & (alternate > 1e-12)
+        & cdf_resolved
+        & sf_resolved
+        & (np.abs(chosen - alternate) > 1e-8 * scale)
+    )
+    if np.any(inconsistent):
+        raise RuntimeError("CDF and survival interval calculations materially disagree")
+    if np.any(chosen < -1e-14):
+        raise RuntimeError("stable interval calculation produced negative probability")
+    return np.maximum(chosen, 0.0), {
+        "cdf_difference": int(np.size(use_survival) - np.count_nonzero(use_survival)),
+        "survival_difference": int(np.count_nonzero(use_survival)),
+    }
+
+
 def _index_limits(
     alphabet: np.ndarray, jitter: JitterDistribution, quantizer: UniformQuantizer, tail: float
 ) -> tuple[int, int]:
@@ -27,6 +70,7 @@ def build_memoryless_channel(
     *,
     tail_probability: float = 1e-12,
     include_overflow_bins: bool = True,
+    random_phase_mode: str | bool = False,
 ) -> ChannelMatrix:
     """Build a shared-support exact channel using jitter CDF bin differences.
 
@@ -36,6 +80,18 @@ def build_memoryless_channel(
     inputs = np.asarray(alphabet, dtype=float)
     if inputs.ndim != 1 or len(inputs) == 0 or np.any(np.diff(inputs) <= 0):
         raise ValueError("alphabet must be a non-empty strictly ordered vector")
+    if random_phase_mode in {"per_trace", "per_symbol_unknown"}:
+        raise NotImplementedError(
+            f"{random_phase_mode} phase is not a memoryless DMC; use an explicit stateful model"
+        )
+    supported_phase_modes = {
+        False,
+        "fixed_known",
+        "fixed_unknown",
+        "per_symbol_receiver_known",
+    }
+    if random_phase_mode not in supported_phase_modes:
+        raise ValueError(f"unknown random phase mode {random_phase_mode}")
     configured_metadata = quantizer.metadata()
     if quantizer.mode != "floor":
         # Nearest bins have the same CDF intervals after a half-step phase shift.
@@ -44,14 +100,15 @@ def build_memoryless_channel(
     indexes = np.arange(start, end + 1)
     lower = quantizer.phase + indexes * quantizer.step
     upper = lower + quantizer.step
-    interior = jitter.cdf(upper[None, :] - inputs[:, None]) - jitter.cdf(
-        lower[None, :] - inputs[:, None]
+    interior, interval_diagnostics = stable_interval_probability(
+        jitter,
+        lower[None, :] - inputs[:, None],
+        upper[None, :] - inputs[:, None],
     )
-    interior = np.maximum(interior, 0.0)
     omitted_mass = 1 - interior.sum(axis=1)
     if include_overflow_bins:
         low_tail = jitter.cdf(lower[0] - inputs)[:, None]
-        high_tail = (1 - jitter.cdf(upper[-1] - inputs))[:, None]
+        high_tail = jitter.sf(upper[-1] - inputs)[:, None]
         matrix = np.concatenate([low_tail, interior, high_tail], axis=1)
         outputs = np.concatenate(
             [
@@ -79,6 +136,8 @@ def build_memoryless_channel(
             "tail_probability": tail_probability,
             "tail_mode": "overflow_bins" if include_overflow_bins else "conditional_truncation",
             "omitted_mass_per_row": omitted_mass.tolist(),
+            "transition_probability_methods": interval_diagnostics,
+            "upper_tail_method": "survival_function",
             "quantizer": configured_metadata,
             "construction": "exact_cdf_difference",
         },
@@ -141,8 +200,16 @@ def monte_carlo_matrix(
     lo, hi = min(interior), max(interior)
     for i, symbol in enumerate(channel.inputs):
         indexes = quantizer.bin_index(symbol + jitter.sample(samples, rng))
-        estimates[i, labels["lower_overflow"]] = np.mean(indexes < lo)
-        estimates[i, labels["upper_overflow"]] = np.mean(indexes > hi)
+        has_overflow = "lower_overflow" in labels and "upper_overflow" in labels
+        if has_overflow:
+            estimates[i, labels["lower_overflow"]] = np.mean(indexes < lo)
+            estimates[i, labels["upper_overflow"]] = np.mean(indexes > hi)
+        else:
+            retained = indexes[(indexes >= lo) & (indexes <= hi)]
+            while len(retained) < samples:
+                additional = quantizer.bin_index(symbol + jitter.sample(samples, rng))
+                retained = np.r_[retained, additional[(additional >= lo) & (additional <= hi)]]
+            indexes = retained[:samples]
         for index in range(lo, hi + 1):
             estimates[i, labels[index]] = np.mean(indexes == index)
     return estimates
