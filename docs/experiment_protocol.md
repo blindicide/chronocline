@@ -1,5 +1,10 @@
 # Experiment protocol
 
+Round-3 work units are detector sample-size × hypothesis-pair and batching
+model × window × replication. `configs/analysis_v3.yaml` is a corrected
+stateful fixture; it is intentionally not a request to regenerate publication
+campaigns.
+
 ```bash
 .venv/bin/chronocline validate-config configs/ci/capacity_surface.yaml
 .venv/bin/chronocline experiment configs/ci/capacity_surface.yaml

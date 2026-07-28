@@ -25,6 +25,11 @@ campaign recorded for v0.5.0. The v0.6.0 campaigns dispatch to distinct memoryle
 detectability, finite-sample detection, batching, jitter-comparison, and alphabet-search runners.
 Exact memoryless capacities are never used to describe stateful batching estimates.
 
+The corrective model uses stable survival-tail probabilities and explicit
+`X → S → A → R → Y` traces. Delay and timestamp noise are distinct, batching
+keeps packet and closure provenance, detector output includes a null control,
+and plotting cannot change a failed computation into a passing manifest.
+
 See `docs/experiment_protocol.md` for reproduction commands, expected campaign scope, baseline
 construction, and the distinction between exact and empirical metrics.
 

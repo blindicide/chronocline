@@ -15,12 +15,14 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: ${{ matrix.python }}
-      - run: python -m pip install -e '.[dev]'
-      - run: ruff check .
-      - run: mypy src/chronocline
-      - run: pytest --cov=chronocline --cov-report=term-missing --cov-fail-under=85
+      - uses: astral-sh/setup-uv@v3
+      - run: uv sync --all-groups
+      - run: uv run ruff check .
+      - run: uv run mypy src/chronocline
+      - run: uv run pytest --cov=chronocline --cov-report=term-missing --cov-fail-under=88
+      - run: uv build
       - run: |
           for config in configs/ci/*.yaml; do
-            chronocline experiment "$config"
-            chronocline validate-results "results/$(python -c "import yaml; print(yaml.safe_load(open('$config'))['experiment']['name'])")"
+            uv run chronocline experiment "$config"
+            uv run chronocline validate-results "results/$(uv run python -c "import yaml; print(yaml.safe_load(open('$config'))['experiment']['name'])")"
           done

@@ -1,0 +1,8 @@
+# Corrected stateful analysis fixture; it is intentionally not run as publication output.
+experiment: {kind: batching_comparison, name: analysis_v3_stateful_batching, seed: 20260728, output_directory: results_v3, require_clean_git: true}
+channel: {alphabet: {values: [0.0, 0.7, 1.5]}, input_probabilities: [0.3, 0.4, 0.3]}
+jitter: {distribution: gaussian, scale: 1.0}
+quantizer: {step: 0.5}
+matrix: {tail_probability: 1.0e-12, tail_mode: overflow_bins}
+simulation: {trace_length: 2000, replications: 10, transient_observations: 1, block_lengths: [1, 2, 3, 4]}
+batching: {modes: [ideal_delays, delay_quantization, timestamp_quantization, fixed_window_observation, ceiling_release], windows: [0.25, 0.5, 0.75, 1.0], maximum_batch_size: 8}
