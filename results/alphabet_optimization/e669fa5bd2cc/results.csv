@@ -1,0 +1,5 @@
+estimator,experiment,metric_name,metric_value,replication,status,units
+exact_cdf_difference,alphabet_optimization,mutual_information,0.43657476466493406,0,complete,bits_per_symbol
+exact_cdf_difference,alphabet_optimization,capacity_bits_per_symbol,0.525417850730872,0,complete,bits_per_symbol
+exact_cdf_difference,alphabet_optimization,capacity_residual,9.617142637807774e-10,0,complete,bits_per_symbol
+exact_cdf_difference,alphabet_optimization,matrix_row_sum_error,0.0,0,complete,bits_per_symbol

@@ -1,0 +1,5 @@
+estimator,experiment,metric_name,metric_value,replication,status,units
+exact_cdf_difference,heavy_tailed_jitter,mutual_information,0.2628265926537603,0,complete,bits_per_symbol
+exact_cdf_difference,heavy_tailed_jitter,capacity_bits_per_symbol,0.26282659265376024,0,complete,bits_per_symbol
+exact_cdf_difference,heavy_tailed_jitter,capacity_residual,5.551115123125783e-17,0,complete,bits_per_symbol
+exact_cdf_difference,heavy_tailed_jitter,matrix_row_sum_error,0.0,0,complete,bits_per_symbol

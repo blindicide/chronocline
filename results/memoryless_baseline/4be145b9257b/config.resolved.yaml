@@ -1,0 +1,46 @@
+channel:
+  alphabet:
+    unit: normalized
+    values:
+    - 0.0
+    - 1.0
+  input_probabilities:
+  - 0.5
+  - 0.5
+  mode: absolute_delay
+constraints:
+  max_kl_divergence: null
+  max_mean_delay: null
+experiment:
+  locale: en
+  name: memoryless_baseline
+  output_directory: results
+  overwrite: false
+  seed: 20260728
+  workers: 1
+jitter:
+  degrees_of_freedom: null
+  distribution: gaussian
+  lower: null
+  mean: 0.0
+  means: null
+  scale: 1.0
+  scales: null
+  upper: null
+  weights: null
+matrix:
+  include_overflow_bins: true
+  tail_probability: 1.0e-12
+optimization:
+  max_iterations: 10000
+  method: blahut_arimoto
+  tolerance: 1.0e-10
+quantizer:
+  mode: floor
+  phase: 0.0
+  quadrature_points: 32
+  random_phase: false
+  step: 0.5
+  type: uniform
+sweep:
+  parameters: {}

@@ -1,0 +1,28 @@
+{
+  "completed_at": "2026-07-28T09:03:52.905484+00:00",
+  "completion_status": "complete",
+  "config_hash": "c74ee854733261c299baf72399e161b78c0e2f1727172f41cf15f0f614fa2a52",
+  "experiment": "smoke",
+  "generated_files": {
+    "config.original.yaml": "cb381a2832e13a7c7f7e8c759e3e1549ad59e68c3e71cbde882c54f018b70531",
+    "config.resolved.yaml": "6a18f6e9e3163acf34d6e7297f86be2dfab50cbb112da034a9491b14a0d1bdef",
+    "figures/capacity.pdf": "cd3717e0f6d5b7d673a906b0416328c66dc402fb0dd086c64b196798738e7b57",
+    "figures/capacity.png": "951421fa2fd3d23dc16e46a418e223637a4360f93d37acb702f81e7f12360997",
+    "figures/capacity.svg": "e533ab624d2e17444c6bef26b9769de65497001c5b9de2681f3c4a236a2374a9",
+    "matrix_0.npz": "23be4fb43a6b40e6bc08608424e0cfcc63048eb90ff8915f2f6f93335eb14495",
+    "matrix_1.npz": "e5b3287b0fa97e68ceb1f6faeea575bed8df195cf5e650182895b03061455596",
+    "matrix_2.npz": "b6ec45659d7d50ca86ae0343eb4658259623947d39ba024aa09ed90d10695959",
+    "results.csv": "159144925bc75f14210f1abe318084987c964d3a4337d89910796f9924df4dcc"
+  },
+  "git_commit": "6671c7578722a04e8c5950f7bebd08157069c8a5",
+  "git_dirty": true,
+  "locale": "en",
+  "package_version": "0.5.0",
+  "platform": "Linux-6.8.0-124-generic-x86_64-with-glibc2.39",
+  "project": "Project Chronocline",
+  "python": "3.12.3",
+  "result_schema_version": "1.0",
+  "root_seed": 20260728,
+  "started_at": "2026-07-28T09:02:08.579271+00:00",
+  "workers": 1
+}

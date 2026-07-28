@@ -1,0 +1,16 @@
+estimator,experiment,metric_name,metric_value,quantizer.step,replication,status,units
+exact_cdf_difference,smoke,mutual_information,0.16000298287040332,0.25,0,complete,bits_per_symbol
+exact_cdf_difference,smoke,capacity_bits_per_symbol,0.16000298287040332,0.25,0,complete,bits_per_symbol
+exact_cdf_difference,smoke,capacity_residual,2.7755575615628914e-17,0.25,0,complete,bits_per_symbol
+exact_cdf_difference,smoke,matrix_row_sum_error,0.0,0.25,0,complete,bits_per_symbol
+exact_cdf_difference,smoke,monte_carlo_max_absolute_error,0.004143864408910583,0.25,0,complete,bits_per_symbol
+exact_cdf_difference,smoke,mutual_information,0.1578098993297024,0.5,1,complete,bits_per_symbol
+exact_cdf_difference,smoke,capacity_bits_per_symbol,0.15780989932970238,0.5,1,complete,bits_per_symbol
+exact_cdf_difference,smoke,capacity_residual,5.551115123125783e-17,0.5,1,complete,bits_per_symbol
+exact_cdf_difference,smoke,matrix_row_sum_error,0.0,0.5,1,complete,bits_per_symbol
+exact_cdf_difference,smoke,monte_carlo_max_absolute_error,0.005167715205470186,0.5,1,complete,bits_per_symbol
+exact_cdf_difference,smoke,mutual_information,0.14959422631881045,1.0,2,complete,bits_per_symbol
+exact_cdf_difference,smoke,capacity_bits_per_symbol,0.14959422631881047,1.0,2,complete,bits_per_symbol
+exact_cdf_difference,smoke,capacity_residual,1.3877787807814457e-16,1.0,2,complete,bits_per_symbol
+exact_cdf_difference,smoke,matrix_row_sum_error,0.0,1.0,2,complete,bits_per_symbol
+exact_cdf_difference,smoke,monte_carlo_max_absolute_error,0.004955121983277855,1.0,2,complete,bits_per_symbol

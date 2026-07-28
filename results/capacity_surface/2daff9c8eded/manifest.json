@@ -1,0 +1,30 @@
+{
+  "completed_at": "2026-07-28T09:04:22.119260+00:00",
+  "completion_status": "complete",
+  "config_hash": "2daff9c8ededa8635b26f253e004cf243f67a798912cf8ba24e1405d46a79349",
+  "experiment": "capacity_surface",
+  "generated_files": {
+    "config.original.yaml": "b0163ee7049113b7ef35dd0c7611cb7e5b418bd2d7c8cdce53be4621aec57113",
+    "config.resolved.yaml": "249a50642dc9153de7da31955f426ab6a96eda2722ea0f1e842e36ec5d77e2c1",
+    "figures/capacity.pdf": "955d88bac79ddd8bdf221550e58c8e1780044bbb09b3a69d7c5159877d66674e",
+    "figures/capacity.png": "98a0aa1783c2088b6a59a8371f2b00d336fa94bf3fe22de5e37d9b2468759062",
+    "figures/capacity.svg": "ca0dbf76b23241707174457c499349f1959a99ab8503fdeb8157c1d180eb2f45",
+    "matrix_0.npz": "6bc249dc5282586746e35484673e95ce46be492d959384dba73167da3e78fd37",
+    "matrix_1.npz": "23be4fb43a6b40e6bc08608424e0cfcc63048eb90ff8915f2f6f93335eb14495",
+    "matrix_2.npz": "e5b3287b0fa97e68ceb1f6faeea575bed8df195cf5e650182895b03061455596",
+    "matrix_3.npz": "b6ec45659d7d50ca86ae0343eb4658259623947d39ba024aa09ed90d10695959",
+    "matrix_4.npz": "afaf8bd459fce4e69385e63e7ffb0101e41fb9a39216da5bc03cc5b3945e04c1",
+    "results.csv": "b7d6ab9523f308ebd42323d6ab6fec3fdd7739d634af022f4f83da746718ef1a"
+  },
+  "git_commit": "9989f9ae0641c6d5d6026b74a26a0252fc94cb59",
+  "git_dirty": true,
+  "locale": "en",
+  "package_version": "0.5.0",
+  "platform": "Linux-6.8.0-124-generic-x86_64-with-glibc2.39",
+  "project": "Project Chronocline",
+  "python": "3.12.3",
+  "result_schema_version": "1.0",
+  "root_seed": 20260728,
+  "started_at": "2026-07-28T09:00:04.717933+00:00",
+  "workers": 1
+}

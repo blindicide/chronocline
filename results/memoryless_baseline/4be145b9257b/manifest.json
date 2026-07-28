@@ -1,0 +1,26 @@
+{
+  "completed_at": "2026-07-28T09:04:38.199385+00:00",
+  "completion_status": "complete",
+  "config_hash": "4be145b9257b7f795e7cabfb46ade5752ab78bb840b95a4c22401534a005316a",
+  "experiment": "memoryless_baseline",
+  "generated_files": {
+    "config.original.yaml": "c8acb9090165e223a8856f69cda9d48730b7655711c045421ee42fae07a16fa3",
+    "config.resolved.yaml": "5fc8c1d907062bbeff84c32f1926d714afe6bf6617fb2a2978bcdf3d9858491f",
+    "figures/capacity.pdf": "6da1577730063a327c470974487648e32e9ad5af6969f560e8a7bd7ad426da6f",
+    "figures/capacity.png": "63a7bb37911aaead5264ba6af306a752923894b5bb1228fee6572bc58d9123e8",
+    "figures/capacity.svg": "6562654ef0cb1257a44db5c3f7c43f081c935cba51189bb21ea59f035c7a9a0f",
+    "matrix_0.npz": "e5b3287b0fa97e68ceb1f6faeea575bed8df195cf5e650182895b03061455596",
+    "results.csv": "b132131235509f50098232b2299553a9a50fc28a3004229883c724348446ed07"
+  },
+  "git_commit": "9989f9ae0641c6d5d6026b74a26a0252fc94cb59",
+  "git_dirty": true,
+  "locale": "en",
+  "package_version": "0.5.0",
+  "platform": "Linux-6.8.0-124-generic-x86_64-with-glibc2.39",
+  "project": "Project Chronocline",
+  "python": "3.12.3",
+  "result_schema_version": "1.0",
+  "root_seed": 20260728,
+  "started_at": "2026-07-28T09:00:04.806103+00:00",
+  "workers": 1
+}
