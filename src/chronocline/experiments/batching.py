@@ -51,8 +51,9 @@ class BatchingRunner:
             UniformQuantizer(config.quantizer.step, config.quantizer.phase),
             preserve_order=config.simulation.preserve_order,
         )
+        aligned_symbols = symbols[1:]
         base_mi = empirical_mutual_information(
-            symbols, np.rint(observed / config.quantizer.step).astype(int)
+            aligned_symbols, np.rint(observed[1:] / config.quantizer.step).astype(int)
         )
         rows = []
         index = 0
@@ -68,7 +69,7 @@ class BatchingRunner:
                     values = ceiling_release(timestamps, window, config.batching.phase)
                 output = np.diff(values)
                 mi = empirical_mutual_information(
-                    symbols, np.rint(output / config.quantizer.step).astype(int)
+                    aligned_symbols, np.rint(output / config.quantizer.step).astype(int)
                 )
                 params: dict[str, object] = {"batching_mode": mode, "batching_window": window}
                 rows.extend(
@@ -110,7 +111,7 @@ class BatchingRunner:
                 )
                 for block in config.simulation.block_lengths:
                     estimate = block_mutual_information(
-                        symbols, np.rint(output / config.quantizer.step).astype(int), block
+                        aligned_symbols, np.rint(output / config.quantizer.step).astype(int), block
                     )
                     rows.append(
                         row(
