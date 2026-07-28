@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import json
 from pathlib import Path
 
 import pandas as pd
@@ -11,6 +12,7 @@ from .config import load_config
 from .experiments import run
 from .plotting import plot_capacity
 from .results import validate_result_directory
+from .results.manifest import finalize_manifest
 
 app = typer.Typer(
     no_args_is_help=True, help="Project Chronocline scientific timing-channel framework."
@@ -57,6 +59,9 @@ def validate_results(path: Path) -> None:
 def plot(path: Path, locale: str = "en") -> None:
     """Regenerate plots from stored CSV data only."""
     plot_capacity(pd.read_csv(path / "results.csv"), path / "figures", locale)
+    manifest_path = path / "manifest.json"
+    if manifest_path.exists():
+        finalize_manifest(path, json.loads(manifest_path.read_text()))
     typer.echo(path / "figures")
 
 
