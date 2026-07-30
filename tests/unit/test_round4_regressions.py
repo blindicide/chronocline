@@ -12,7 +12,7 @@ from chronocline.distributions import laplace, student_t
 from chronocline.exceptions import UnsupportedScientificModelError
 from chronocline.experiments.runner import plan
 from chronocline.quantization import UniformQuantizer
-from chronocline.simulation import block_mutual_information
+from chronocline.simulation import block_mutual_information, observation_trace
 
 
 @pytest.mark.parametrize("jitter", [laplace(), student_t(5.0)])
@@ -62,3 +62,14 @@ def test_ambiguous_random_phase_channel_is_rejected() -> None:
     """Averaging phase-dependent DMCs is not an exact receiver semantics."""
     with pytest.raises(UnsupportedScientificModelError):
         build_random_phase_channel([0.0, 1.0], laplace(), 0.5)
+
+
+def test_direct_batching_starts_from_arrivals_not_timestamp_quantization() -> None:
+    """Direct release models preserve arrival resolution until their release rule."""
+    delays = np.array([0.7, 0.7, 0.7])
+    jitter = np.array([0.12, -0.11, 0.12])
+    direct = observation_trace(delays, jitter, UniformQuantizer(0.5), model="arrival_timestamps")
+    quantized = observation_trace(
+        delays, jitter, UniformQuantizer(0.5), model="timestamp_quantization"
+    )
+    assert not np.array_equal(direct.observed_timestamps, quantized.observed_timestamps)

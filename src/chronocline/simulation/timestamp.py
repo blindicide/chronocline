@@ -75,11 +75,15 @@ def observation_trace(
         arrivals = ideal.copy()
         observed = quantizer.quantize(np.maximum(intended + noise[: len(intended)], 0.0))
         timestamps = np.cumsum(observed)
-    elif model in {"timestamp_quantization", "timestamp_quantization_then_batching"}:
+    elif model in {
+        "timestamp_quantization",
+        "timestamp_quantization_then_batching",
+        "arrival_timestamps",
+    }:
         arrivals = ideal + noise[: len(intended)]
         if preserve_order:
             arrivals = np.maximum.accumulate(arrivals)
-        timestamps = quantizer.quantize(arrivals)
+        timestamps = arrivals if model == "arrival_timestamps" else quantizer.quantize(arrivals)
         observed = np.diff(np.r_[0.0, timestamps])
     else:
         raise ValueError(f"unsupported observation model {model}")

@@ -41,8 +41,10 @@ class BatchingRunner:
     @staticmethod
     def _trace(config, delays: np.ndarray, jitter: np.ndarray, mode: str):
         base_mode = mode
-        if mode in {"no_batching", "fixed_window_observation", "ceiling_release"}:
-            base_mode = "timestamp_quantization"
+        if mode == "no_batching":
+            base_mode = "ideal_delays"
+        elif mode in {"fixed_window_observation", "ceiling_release"}:
+            base_mode = "arrival_timestamps"
         if mode == "timestamp_quantization_then_batching":
             base_mode = "timestamp_quantization_then_batching"
         return observation_trace(
