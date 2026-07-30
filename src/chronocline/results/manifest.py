@@ -24,7 +24,7 @@ def git_state() -> tuple[str | None, bool]:
             subprocess.check_output(["git", "rev-parse", "HEAD"], text=True).strip(),
             bool(
                 subprocess.check_output(
-                    ["git", "status", "--porcelain", "--untracked-files=no"], text=True
+                    ["git", "status", "--porcelain", "--untracked-files=all"], text=True
                 ).strip()
             ),
         )
