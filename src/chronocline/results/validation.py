@@ -109,6 +109,14 @@ def semantic_errors(
         errors.append("incomplete jobs")
     if manifest.get("failed_jobs", 0) != 0:
         errors.append("failed work units")
+    work_units_path = directory / "tables" / "work_units.csv"
+    if strict and not work_units_path.exists():
+        errors.append("missing work-unit table")
+    if work_units_path.exists():
+        work_units = pd.read_csv(work_units_path)
+        expected = manifest.get("expected_jobs")
+        if expected is not None and len(work_units) != expected:
+            errors.append("work-unit count contradicts expected jobs")
     if manifest.get("source_commit") is None:
         errors.append("missing source commit")
     if manifest.get("source_dirty") and not manifest.get("allow_dirty_override"):

@@ -111,3 +111,19 @@ def finalize_manifest(
     temporary = directory / "manifest.json.tmp"
     temporary.write_text(json.dumps(manifest, indent=2, sort_keys=True), encoding="utf-8")
     temporary.replace(directory / "manifest.json")
+
+
+def write_preliminary_manifest(
+    directory: Path, manifest: dict[str, Any], completed_jobs: int
+) -> None:
+    """Persist real work counts before semantic validation consumes the manifest."""
+    manifest.update(
+        {
+            "completed_jobs": completed_jobs,
+            "failed_jobs": max(0, int(manifest["expected_jobs"]) - completed_jobs),
+            "completion_status": "running",
+        }
+    )
+    (directory / "manifest.json").write_text(
+        json.dumps(manifest, indent=2, sort_keys=True), encoding="utf-8"
+    )

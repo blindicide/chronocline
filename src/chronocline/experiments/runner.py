@@ -16,6 +16,7 @@ from ..results.manifest import (
     git_state,
     run_identifier,
     write_environment,
+    write_preliminary_manifest,
 )
 from ..results.storage import write_results
 from ..results.validation import semantic_errors
@@ -147,6 +148,7 @@ def run(
     (directory / "diagnostics.json").write_text(
         json.dumps(output.diagnostics, indent=2, default=str)
     )
+    write_preliminary_manifest(directory, manifest, len(work_units))
     errors = semantic_errors(directory, manifest=manifest, strict=False)
     finalize_manifest(directory, manifest, len(work_units), errors)
     if errors:
