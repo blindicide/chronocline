@@ -34,14 +34,15 @@ def block_mutual_information(x: np.ndarray, y: np.ndarray, block: int) -> dict[s
     output_states = len(np.unique(y_codes))
     joint_states = len(np.unique(np.column_stack((x_codes, y_codes)), axis=0))
     # H_MM = H_plugin + (K - 1)/(2N ln 2); MI combines three entropy terms.
-    correction = (joint_states - input_states - output_states + 1) / (2 * n * np.log(2))
-    miller_madow = max(0.0, value + correction)
+    correction = (input_states + output_states - joint_states - 1) / (2 * n * np.log(2))
+    miller_madow = value + correction
     return {
         "block_length": block,
         "block_mutual_information_estimate": value,
         "normalized_block_estimate": value / block,
         "miller_madow_block_mutual_information": miller_madow,
         "normalized_miller_madow_block_estimate": miller_madow / block,
+        "miller_madow_was_clipped": 0.0,
         "observed_input_states": float(input_states),
         "observed_output_states": float(output_states),
         "observed_joint_states": float(joint_states),

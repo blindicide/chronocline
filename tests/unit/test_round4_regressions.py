@@ -10,6 +10,7 @@ from chronocline.config import RunConfig
 from chronocline.distributions import laplace, student_t
 from chronocline.experiments.runner import plan
 from chronocline.quantization import UniformQuantizer
+from chronocline.simulation import block_mutual_information
 
 
 @pytest.mark.parametrize("jitter", [laplace(), student_t(5.0)])
@@ -44,3 +45,12 @@ def test_capacity_surface_plan_uses_cartesian_sweep_count(tmp_path) -> None:
         }
     )
     assert plan(config).jobs == 4
+
+
+def test_miller_madow_identity_correction_has_the_entropy_combination_sign() -> None:
+    """For an identity trace the MI correction is negative, not the old opposite sign."""
+    values = np.tile(np.array([0, 1]), 10)
+    estimate = block_mutual_information(values, values, 1)
+    assert estimate["miller_madow_block_mutual_information"] > estimate[
+        "block_mutual_information_estimate"
+    ]
