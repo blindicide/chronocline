@@ -58,7 +58,25 @@ ALLOWED_SWEEPS = {
 def plan(config: RunConfig) -> ExperimentPlan:
     """Resolve runner planning without generating output."""
     root = Path(config.experiment.output_directory) / config.experiment.name
-    return RUNNERS[config.experiment.kind].plan(config, root)
+    resolved = resolve_sweep(config, ALLOWED_SWEEPS[config.experiment.kind])
+    base = RUNNERS[config.experiment.kind].plan(config, root)
+    if config.experiment.kind in {
+        ExperimentKind.SMOKE,
+        ExperimentKind.MEMORYLESS_BASELINE,
+        ExperimentKind.CAPACITY_CURVE,
+        ExperimentKind.CAPACITY_SURFACE,
+        ExperimentKind.JITTER_COMPARISON,
+        ExperimentKind.PHASE_SENSITIVITY,
+        ExperimentKind.DETECTABILITY_FRONTIER,
+    }:
+        return ExperimentPlan(
+            base.kind,
+            len(resolved),
+            base.expected_metrics,
+            base.expected_artifacts,
+            base.output_directory,
+        )
+    return base
 
 
 def run(

@@ -25,23 +25,12 @@ def stable_interval_probability(
     survival_difference = jitter.sf(lower) - jitter.sf(upper)
     use_survival = np.asarray(lower, float) >= jitter.mean()
     chosen = np.where(use_survival, survival_difference, cdf_difference)
-    alternate = np.where(use_survival, cdf_difference, survival_difference)
-    scale = np.maximum(np.maximum(np.abs(chosen), np.abs(alternate)), 1e-300)
-    # A saturated representation is intentionally not used for its tail.  Compare
-    # the two formulae only where both endpoint probabilities are well resolved.
-    resolution_floor = 1e-8
-    cdf_resolved = (lower_cdf > resolution_floor) & (upper_cdf < 1 - resolution_floor)
-    survival_lower = jitter.sf(lower)
-    survival_upper = jitter.sf(upper)
-    sf_resolved = (survival_lower > resolution_floor) & (
-        survival_upper < 1 - resolution_floor
-    )
+    scale = np.maximum(np.abs(cdf_difference), np.abs(survival_difference))
+    tolerance = 5e-15 + 1e-8 * scale
     inconsistent = (
-        (chosen > 1e-12)
-        & (alternate > 1e-12)
-        & cdf_resolved
-        & sf_resolved
-        & (np.abs(chosen - alternate) > 1e-8 * scale)
+        (cdf_difference > 0)
+        & (survival_difference > 0)
+        & (np.abs(cdf_difference - survival_difference) > tolerance)
     )
     if np.any(inconsistent):
         raise RuntimeError("CDF and survival interval calculations materially disagree")
@@ -58,8 +47,9 @@ def _index_limits(
 ) -> tuple[int, int]:
     lo = float(np.min(alphabet) + jitter.ppf(tail / 2))
     hi = float(np.max(alphabet) + jitter.ppf(1 - tail / 2))
-    return int(np.floor((lo - quantizer.phase) / quantizer.step)), int(
-        np.floor((hi - quantizer.phase) / quantizer.step)
+    offset = 0.5 if quantizer.mode == "nearest" else 0.0
+    return int(np.floor((lo - quantizer.phase) / quantizer.step - offset)), int(
+        np.floor((hi - quantizer.phase) / quantizer.step + offset)
     )
 
 
@@ -93,13 +83,13 @@ def build_memoryless_channel(
     if random_phase_mode not in supported_phase_modes:
         raise ValueError(f"unknown random phase mode {random_phase_mode}")
     configured_metadata = quantizer.metadata()
-    if quantizer.mode != "floor":
-        # Nearest bins have the same CDF intervals after a half-step phase shift.
-        quantizer = UniformQuantizer(quantizer.step, quantizer.phase - quantizer.step / 2, "floor")
     start, end = _index_limits(inputs, jitter, quantizer, tail_probability)
     indexes = np.arange(start, end + 1)
-    lower = quantizer.phase + indexes * quantizer.step
-    upper = lower + quantizer.step
+    centers = quantizer.phase + indexes * quantizer.step
+    if quantizer.mode == "nearest":
+        lower, upper = centers - quantizer.step / 2, centers + quantizer.step / 2
+    else:
+        lower, upper = centers, centers + quantizer.step
     interior, interval_diagnostics = stable_interval_probability(
         jitter,
         lower[None, :] - inputs[:, None],
