@@ -8,7 +8,7 @@ import pytest
 
 from chronocline.config import ExperimentKind, RunConfig
 from chronocline.experiments.base import ExperimentContext
-from chronocline.experiments.runner import RUNNERS
+from chronocline.experiments.runner import RUNNERS, _work_units
 from chronocline.plotting import plot_result_directory
 from chronocline.results.manifest import create_manifest, finalize_manifest
 from chronocline.results.storage import write_results
@@ -136,6 +136,10 @@ def test_plot_dispatch_and_semantic_rejection(tmp_path: Path) -> None:
     )
     output = RUNNERS[config.experiment.kind].execute(context, [(0, config)])
     write_results(tmp_path, output.rows)
+    work_units = _work_units(output.rows, config.experiment.kind)
+    tables = tmp_path / "tables"
+    tables.mkdir(exist_ok=True)
+    pd.DataFrame(work_units).to_csv(tables / "work_units.csv", index=False)
     manifest = create_manifest(
         run_id="x",
         config_hash="h",
@@ -146,14 +150,14 @@ def test_plot_dispatch_and_semantic_rejection(tmp_path: Path) -> None:
         source_dirty=False,
         allow_dirty_override=False,
         workers=1,
-        expected_jobs=1,
+        expected_jobs=len(work_units),
         expected_metrics=["auc"],
         locale="en",
     )
-    finalize_manifest(tmp_path, manifest, 1, [])
+    finalize_manifest(tmp_path, manifest, len(work_units), [])
     assert not semantic_errors(tmp_path)
     assert plot_result_directory(tmp_path).exists()
-    finalize_manifest(tmp_path, manifest, 1, [])
+    finalize_manifest(tmp_path, manifest, len(work_units), [])
     assert not semantic_errors(tmp_path)
 
     frame = pd.read_csv(tmp_path / "results.csv")
