@@ -70,9 +70,10 @@ def plan(config: RunConfig) -> ExperimentPlan:
         ExperimentKind.PHASE_SENSITIVITY,
         ExperimentKind.DETECTABILITY_FRONTIER,
     }:
+        multiplier = 4 if config.experiment.kind is ExperimentKind.JITTER_COMPARISON else 1
         return ExperimentPlan(
             base.kind,
-            len(resolved),
+            len(resolved) * multiplier,
             base.expected_metrics,
             base.expected_artifacts,
             base.output_directory,
