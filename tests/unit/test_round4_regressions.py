@@ -2,12 +2,14 @@
 
 from __future__ import annotations
 
+from pathlib import Path
+
 import numpy as np
 import pytest
 
 from chronocline.channels import build_memoryless_channel, monte_carlo_matrix
 from chronocline.channels.memoryless import build_random_phase_channel
-from chronocline.config import RunConfig
+from chronocline.config import RunConfig, load_config
 from chronocline.distributions import laplace, student_t
 from chronocline.exceptions import UnsupportedScientificModelError
 from chronocline.experiments.runner import plan
@@ -102,3 +104,40 @@ def test_stateful_runner_uses_nonidentity_information_metric_names(tmp_path) -> 
     assert "information_loss_from_ideal_bits_per_symbol" in {
         item["metric_name"] for item in output.rows
     }
+
+
+def test_publication_configs_encode_round_four_sampling_and_phase_controls() -> None:
+    """Publication configs retain the required detector, batching, and phase evidence."""
+    root = Path("configs/publication")
+    detector = load_config(root / "finite_sample_detection.yaml")
+    assert detector.detection.trials >= 5_000
+
+    batching = load_config(root / "batching_comparison.yaml")
+    assert batching.simulation.replications >= 10
+    assert set(batching.batching.modes) == {
+        "ideal_delays",
+        "delay_quantization",
+        "timestamp_quantization",
+        "fixed_window_observation",
+        "ceiling_release",
+    }
+
+    phase_configs = [
+        load_config(root / name)
+        for name in (
+            "phase_sensitivity.yaml",
+            "phase_sensitivity_noncommensurate_07.yaml",
+            "phase_sensitivity_noncommensurate_075.yaml",
+        )
+    ]
+    assert all(len(config.sweep.parameters["quantizer.phase"]) >= 65 for config in phase_configs)
+    ratios = {
+        config.channel.alphabet.values[1] / config.quantizer.step for config in phase_configs
+    }
+    assert 2.0 in ratios and len(ratios - {2.0}) >= 2
+
+    for name in (
+        "alphabet_optimization_binary_constrained.yaml",
+        "alphabet_optimization_ternary_constrained.yaml",
+    ):
+        assert load_config(root / name).constraints is not None

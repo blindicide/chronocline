@@ -2,5 +2,5 @@ experiment: {kind: batching_comparison, name: batching_comparison, seed: 2026072
 channel: {alphabet: {values: [0.0, 1.0]}, input_probabilities: [0.5, 0.5]}
 jitter: {distribution: gaussian, scale: 1.0}
 quantizer: {step: 0.5}
-simulation: {trace_length: 1000, replications: 1, block_lengths: [1, 2, 3, 4]}
-batching: {modes: [no_batching, timestamp_quantization, fixed_window_observation, ceiling_release], windows: [0.25, 0.5, 1.0]}
+simulation: {trace_length: 1000, replications: 10, transient_observations: 1, block_lengths: [1, 2, 3, 4]}
+batching: {modes: [ideal_delays, delay_quantization, timestamp_quantization, fixed_window_observation, ceiling_release], windows: [0.25, 0.5, 0.75, 1.0], maximum_batch_size: 8}
