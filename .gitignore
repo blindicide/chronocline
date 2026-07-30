@@ -5,7 +5,7 @@ __pycache__/
 .coverage
 INSTRUCTION.md
 CORRECTIVE_MANDATE.md
-/publication_results/*/*
+/publication_results/
 .mypy_cache/
 .ruff_cache/
 /results/
