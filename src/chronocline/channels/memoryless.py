@@ -5,8 +5,8 @@ from __future__ import annotations
 import numpy as np
 
 from ..distributions.base import JitterDistribution
+from ..exceptions import UnsupportedScientificModelError
 from ..quantization import UniformQuantizer
-from ..quantization.random_phase import phase_nodes
 from .matrix import ChannelMatrix
 
 
@@ -142,35 +142,10 @@ def build_random_phase_channel(
     points: int = 32,
     tail_probability: float = 1e-12,
 ) -> ChannelMatrix:
-    """Average fixed-phase matrices by deterministic Gauss-Legendre quadrature."""
-    nodes, weights = phase_nodes(step, points)
-    matrices = [
-        build_memoryless_channel(
-            alphabet, jitter, UniformQuantizer(step, float(phi)), tail_probability=tail_probability
-        )
-        for phi in nodes
-    ]
-    # A phase-dependent support cannot be averaged by labels safely; use a common index support.
-    all_outputs = sorted(
-        {
-            int(label)
-            for matrix in matrices
-            for label in matrix.outputs
-            if isinstance(label, (int, np.integer))
-        }
-    )
-    output_labels = np.array(["lower_overflow", *all_outputs, "upper_overflow"], dtype=object)
-    averaged = np.zeros((len(alphabet), len(output_labels)))
-    for weight, matrix in zip(weights, matrices, strict=True):
-        lookup = {label: i for i, label in enumerate(matrix.outputs)}
-        for col, label in enumerate(output_labels):
-            if label in lookup:
-                averaged[:, col] += weight * matrix.probabilities[:, lookup[label]]
-    return ChannelMatrix(
-        np.asarray(alphabet, dtype=float),
-        output_labels,
-        averaged,
-        {"construction": "phase_gauss_legendre", "quadrature_points": points},
+    """Reject the deprecated ambiguous phase-averaged channel construction."""
+    del alphabet, jitter, step, points, tail_probability
+    raise UnsupportedScientificModelError(
+        "phase averaging has no unique receiver semantics; use an explicit phase mode"
     )
 
 

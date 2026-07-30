@@ -6,8 +6,10 @@ import numpy as np
 import pytest
 
 from chronocline.channels import build_memoryless_channel, monte_carlo_matrix
+from chronocline.channels.memoryless import build_random_phase_channel
 from chronocline.config import RunConfig
 from chronocline.distributions import laplace, student_t
+from chronocline.exceptions import UnsupportedScientificModelError
 from chronocline.experiments.runner import plan
 from chronocline.quantization import UniformQuantizer
 from chronocline.simulation import block_mutual_information
@@ -54,3 +56,9 @@ def test_miller_madow_identity_correction_has_the_entropy_combination_sign() -> 
     assert estimate["miller_madow_block_mutual_information"] > estimate[
         "block_mutual_information_estimate"
     ]
+
+
+def test_ambiguous_random_phase_channel_is_rejected() -> None:
+    """Averaging phase-dependent DMCs is not an exact receiver semantics."""
+    with pytest.raises(UnsupportedScientificModelError):
+        build_random_phase_channel([0.0, 1.0], laplace(), 0.5)

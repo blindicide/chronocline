@@ -148,7 +148,15 @@ class QuantizerConfig(StrictModel):
     step: float
     phase: float = 0.0
     mode: Literal["floor", "nearest"] = "floor"
-    random_phase: Literal[False, "per_trace", "per_symbol_known", "per_symbol_unknown"] = False
+    random_phase: Literal[
+        False,
+        "fixed_known",
+        "fixed_phase_sweep",
+        "fixed_unknown_summary",
+        "per_symbol_phase_receiver_known",
+        "per_trace",
+        "per_symbol_unknown",
+    ] = False
     quadrature_points: int = 32
 
     @model_validator(mode="after")

@@ -7,3 +7,7 @@ class ChronoclineError(Exception):
 
 class ValidationError(ChronoclineError):
     """Raised when a mathematical object violates its invariants."""
+
+
+class UnsupportedScientificModelError(ChronoclineError):
+    """Raised when a requested model lacks a defined scientific interpretation."""
