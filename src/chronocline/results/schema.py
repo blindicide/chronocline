@@ -40,7 +40,7 @@ METRIC_UNITS = {
     "zero_delay_probability": "probability",
     "batch_size_mean": "packets",
     "batch_size_maximum": "packets",
-    "memoryless_approximation_error": "bits_per_symbol",
+    "information_loss_from_ideal_bits_per_symbol": "bits_per_symbol",
     "plugin_block_mutual_information": "bits_per_block",
     "normalized_plugin_block_mutual_information": "bits_per_symbol",
     "miller_madow_block_mutual_information": "bits_per_block",

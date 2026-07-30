@@ -42,7 +42,7 @@ REQUIRED = {
         "symbol_mutual_information",
         "zero_delay_probability",
         "batch_size_mean",
-        "memoryless_approximation_error",
+        "information_loss_from_ideal_bits_per_symbol",
         "plugin_block_mutual_information",
     },
     "jitter_comparison": {"capacity_bits_per_symbol", "jitter_variance"},

@@ -53,9 +53,10 @@ def test_miller_madow_identity_correction_has_the_entropy_combination_sign() -> 
     """For an identity trace the MI correction is negative, not the old opposite sign."""
     values = np.tile(np.array([0, 1]), 10)
     estimate = block_mutual_information(values, values, 1)
-    assert estimate["miller_madow_block_mutual_information"] > estimate[
-        "block_mutual_information_estimate"
-    ]
+    assert (
+        estimate["miller_madow_block_mutual_information"]
+        > estimate["block_mutual_information_estimate"]
+    )
 
 
 def test_ambiguous_random_phase_channel_is_rejected() -> None:
@@ -73,3 +74,31 @@ def test_direct_batching_starts_from_arrivals_not_timestamp_quantization() -> No
         delays, jitter, UniformQuantizer(0.5), model="timestamp_quantization"
     )
     assert not np.array_equal(direct.observed_timestamps, quantized.observed_timestamps)
+
+
+def test_stateful_runner_uses_nonidentity_information_metric_names(tmp_path) -> None:
+    """Stateful MI comparisons must identify their reference rather than call it an error."""
+    raw = {
+        "experiment": {
+            "kind": "batching_comparison",
+            "name": "stateful",
+            "require_clean_git": False,
+        },
+        "channel": {"alphabet": {"values": [0.0, 1.0]}},
+        "jitter": {"distribution": "gaussian"},
+        "quantizer": {"step": 0.5},
+        "simulation": {"trace_length": 20, "replications": 1, "block_lengths": [1]},
+        "batching": {"modes": ["ideal_delays"], "windows": [0.5]},
+    }
+    from chronocline.experiments.base import ExperimentContext
+    from chronocline.experiments.batching import BatchingRunner
+
+    output = BatchingRunner().execute(
+        ExperimentContext(
+            RunConfig.model_validate(raw), tmp_path, np.random.SeedSequence(1), "x", False
+        ),
+        [],
+    )
+    assert "information_loss_from_ideal_bits_per_symbol" in {
+        item["metric_name"] for item in output.rows
+    }

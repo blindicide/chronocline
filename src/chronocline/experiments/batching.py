@@ -30,7 +30,7 @@ class BatchingRunner:
                     "zero_delay_probability",
                     "batch_size_mean",
                     "batch_size_maximum",
-                    "memoryless_approximation_error",
+                    "information_loss_from_ideal_bits_per_symbol",
                     "plugin_block_mutual_information",
                 }
             ),
@@ -143,7 +143,7 @@ class BatchingRunner:
                             row(
                                 config,
                                 job_index,
-                                "memoryless_approximation_error",
+                                "information_loss_from_ideal_bits_per_symbol",
                                 abs(mi - ideal),
                                 "bits_per_symbol",
                                 **params,
