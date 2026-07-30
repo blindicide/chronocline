@@ -95,7 +95,7 @@ def run(
     run_id = run_identifier(config_hash, source_commit, config.experiment.kind)
     directory = Path(config.experiment.output_directory) / config.experiment.name / run_id
     runner = RUNNERS[config.experiment.kind]
-    experiment_plan = runner.plan(config, directory)
+    experiment_plan = plan(config)
     if dry_run:
         return {
             "kind": config.experiment.kind,
