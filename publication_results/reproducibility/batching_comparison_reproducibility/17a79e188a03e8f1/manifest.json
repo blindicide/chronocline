@@ -1,0 +1,40 @@
+{
+  "allow_dirty_override": false,
+  "completed_at": "2026-07-30T18:37:37.780218+00:00",
+  "completed_jobs": 200,
+  "completion_status": "complete",
+  "config_hash": "eb0cc7e61419ae5afad3e5fd0b8ab5cb02dc32ade85c772dff841cbdc4be814a",
+  "expected_jobs": 200,
+  "expected_metrics": [
+    "batch_size_maximum",
+    "batch_size_mean",
+    "information_loss_from_ideal_bits_per_symbol",
+    "plugin_block_mutual_information",
+    "symbol_mutual_information",
+    "zero_delay_probability"
+  ],
+  "experiment_kind": "batching_comparison",
+  "experiment_name": "batching_comparison_reproducibility",
+  "failed_jobs": 0,
+  "generated_files": {
+    "config.original.yaml": "c835a901708c1c673017277c4c9ab78cfca35cdc270431c8f372c6a48ffedf4d",
+    "config.resolved.yaml": "7e3da176d3035f5d3294be07799accc38d5179820c4495ea1539ef068cf6e20c",
+    "diagnostics.json": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "environment.json": "8a19c410f1040330521c7a44505e6596dccd0f1a40ad39b5eaf60a4d81e5e2c8",
+    "results.csv": "85219ced2fbd5401529f813cc6a1512d3639377a7c4b7281a2ac82e5c068650d",
+    "tables/work_units.csv": "44c6083ef14b80b43073e9bde67a86f4d93975e9c67177443b8986c4c7bb8806"
+  },
+  "locale": "en",
+  "package_version": "0.6.0",
+  "project": "Project Chronocline",
+  "result_schema_version": "2.0",
+  "run_id": "17a79e188a03e8f1",
+  "runner_name": "BatchingRunner",
+  "runner_version": "2.0",
+  "semantic_validation_errors": [],
+  "semantic_validation_status": "passed",
+  "source_commit": "6496e1295812a524866591a3c677478aab574914",
+  "source_dirty": false,
+  "started_at": "2026-07-30T18:37:36.903903+00:00",
+  "workers": 1
+}

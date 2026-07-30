@@ -1,0 +1,42 @@
+{
+  "allow_dirty_override": false,
+  "completed_at": "2026-07-30T18:38:03.045310+00:00",
+  "completed_jobs": 6,
+  "completion_status": "complete",
+  "config_hash": "afd2ca8a2dcbb26bd0b0b817c4cb541ca9105dca439b913725be5ffa36c015cc",
+  "expected_jobs": 6,
+  "expected_metrics": [
+    "auc",
+    "minimum_equal_prior_error"
+  ],
+  "experiment_kind": "finite_sample_detection",
+  "experiment_name": "finite_detection_reduced_reproducibility_b",
+  "failed_jobs": 0,
+  "generated_files": {
+    "config.original.yaml": "4b3ed9e0c8cc8de7bf08d2c6570b8c1a5439dd26135eb724cfac17c8aa429c18",
+    "config.resolved.yaml": "04ab0a2b2f1dfef7e9c91c64e2f0a374c3ca4a6a350e4889b7b631714af4ed71",
+    "diagnostics.json": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "environment.json": "0a62670ff472f433ce844f3463e61d88886a6dfe026ecba22d0007ebfebc5f99",
+    "results.csv": "ce30dbe9450676049a9dac0b7afd7ef8c2efbe071f829bca80ffce1a1c447cdb",
+    "tables/roc_n_10_active_vs_baseline.csv": "408a3788a992113e93787dc2ac7b30910b8b218056977cf4b2d836c8c6978ffb",
+    "tables/roc_n_10_baseline_vs_baseline.csv": "50905407e705110d8156a83ba4f625802056e12aeddf522edb2ea676ca931a94",
+    "tables/roc_n_25_active_vs_baseline.csv": "10f1608b940f76a6b6264abfbba5df5b242b0e2966b5ccee489f266ad85b365b",
+    "tables/roc_n_25_baseline_vs_baseline.csv": "50905407e705110d8156a83ba4f625802056e12aeddf522edb2ea676ca931a94",
+    "tables/roc_n_50_active_vs_baseline.csv": "c435a5afc586a12410232408a806e3b924d8346bbe3a3e5946471611838e526a",
+    "tables/roc_n_50_baseline_vs_baseline.csv": "50905407e705110d8156a83ba4f625802056e12aeddf522edb2ea676ca931a94",
+    "tables/work_units.csv": "d8c5351ac7eb4fdac215bcca581da59171d26127a16b3ac36022d291a70668d1"
+  },
+  "locale": "en",
+  "package_version": "0.6.0",
+  "project": "Project Chronocline",
+  "result_schema_version": "2.0",
+  "run_id": "ffa7f8585d0b0a41",
+  "runner_name": "DetectionRunner",
+  "runner_version": "2.0",
+  "semantic_validation_errors": [],
+  "semantic_validation_status": "passed",
+  "source_commit": "6496e1295812a524866591a3c677478aab574914",
+  "source_dirty": false,
+  "started_at": "2026-07-30T18:38:02.952314+00:00",
+  "workers": 2
+}

@@ -1,0 +1,41 @@
+{
+  "allow_dirty_override": false,
+  "completed_at": "2026-07-30T18:36:12.795552+00:00",
+  "completed_jobs": 1,
+  "completion_status": "complete",
+  "config_hash": "c45152d5235845e1be96193d371bd040f292b51ac305cf03af4f623b704c4f00",
+  "expected_jobs": 1,
+  "expected_metrics": [
+    "capacity_bits_per_symbol",
+    "matrix_row_sum_error"
+  ],
+  "experiment_kind": "memoryless_baseline",
+  "experiment_name": "memoryless_baseline",
+  "failed_jobs": 0,
+  "generated_files": {
+    "config.original.yaml": "e0180d3514993b2f4f06d5b6fe9a49929831fe6096b6178b0f311f6c39f21f3c",
+    "config.resolved.yaml": "5783832b0f2479422cada74fbe02bce22763ad731c8583a58c6118908f250491",
+    "diagnostics.json": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "environment.json": "8a19c410f1040330521c7a44505e6596dccd0f1a40ad39b5eaf60a4d81e5e2c8",
+    "figures/memoryless_information_summary.pdf": "01fa9a8c99ac0c3901f68a7e62e663f63ca16b3b116e243c3fc4ddf1e48b6ad0",
+    "figures/memoryless_information_summary.png": "4818bb93597ab09d72df145bfd52d7196f4f2fd9003ce68bb35ce7fef474d72b",
+    "matrices/channel_0.npz": "597f0a9c2028f1145c5d3b108dc30fdf243216e2dad4dd31a81739bf91b8af27",
+    "results.csv": "caccc25c47d35d0e97ae4795b1ef4bfe58936b92a35aa33dc2812aaa4bd172f7",
+    "tables/figure_memoryless_information_summary.csv": "17ccc7b5e3285e3029d430fea110d4b760f93f25c13b1de1077c180e271acf4c",
+    "tables/figure_memoryless_source.csv": "40b9144ac179abd8b571650f846e5f2d6a692343c0e11517c37960fc5cddd2ed",
+    "tables/work_units.csv": "59058fb68af456fead23b2f39640773e83fd123ea50fdfcfaa69d4e84dc7e028"
+  },
+  "locale": "en",
+  "package_version": "0.6.0",
+  "project": "Project Chronocline",
+  "result_schema_version": "2.0",
+  "run_id": "bdc85d28cf0b13f9",
+  "runner_name": "MemorylessRunner",
+  "runner_version": "2.0",
+  "semantic_validation_errors": [],
+  "semantic_validation_status": "passed",
+  "source_commit": "6496e1295812a524866591a3c677478aab574914",
+  "source_dirty": false,
+  "started_at": "2026-07-30T18:34:14.776492+00:00",
+  "workers": 1
+}

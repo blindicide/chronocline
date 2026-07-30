@@ -1,0 +1,37 @@
+experiment_name,experiment_kind,job_id,sweep_index,replication,metric_name,metric_value,units,estimator,status,warning_code,confidence_interval_lower,confidence_interval_upper,quantizer_step,quantizer_phase,jitter_distribution,jitter_scale,alphabet,jitter_variance,symbol_index
+capacity_curve,capacity_curve,74432f713340,0,,capacity_bits_per_symbol,0.160560531473021,bits_per_symbol,blahut_arimoto,complete,,,,0.125,0.0,gaussian,1.0,"[0.0, 1.0]",1.0,
+capacity_curve,capacity_curve,74432f713340,0,,capacity_residual,3.3306690738754696e-16,bits_per_symbol,blahut_arimoto,complete,,,,0.125,0.0,gaussian,1.0,"[0.0, 1.0]",1.0,
+capacity_curve,capacity_curve,9dadfb89807b,0,,matrix_row_sum_error,2.220446049250313e-16,probability,exact,complete,,,,0.125,0.0,gaussian,1.0,"[0.0, 1.0]",1.0,
+capacity_curve,capacity_curve,9dadfb89807b,0,,mutual_information,0.160560531473021,bits_per_symbol,exact,complete,,,,0.125,0.0,gaussian,1.0,"[0.0, 1.0]",1.0,
+capacity_curve,capacity_curve,6f06635a84bf,0,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_curve,capacity_curve,cf91c9ba32be,0,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_curve,capacity_curve,6f2bf11a913a,1,,capacity_bits_per_symbol,0.16000298287040338,bits_per_symbol,blahut_arimoto,complete,,,,0.25,0.0,gaussian,1.0,"[0.0, 1.0]",1.0,
+capacity_curve,capacity_curve,6f2bf11a913a,1,,capacity_residual,0.0,bits_per_symbol,blahut_arimoto,complete,,,,0.25,0.0,gaussian,1.0,"[0.0, 1.0]",1.0,
+capacity_curve,capacity_curve,604750cdeda0,1,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.25,0.0,gaussian,1.0,"[0.0, 1.0]",1.0,
+capacity_curve,capacity_curve,604750cdeda0,1,,mutual_information,0.16000298287040338,bits_per_symbol,exact,complete,,,,0.25,0.0,gaussian,1.0,"[0.0, 1.0]",1.0,
+capacity_curve,capacity_curve,c3ec4f33e8a3,1,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_curve,capacity_curve,66d8e8ca0d18,1,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_curve,capacity_curve,407a8cc30b83,2,,capacity_bits_per_symbol,0.15780989932970246,bits_per_symbol,blahut_arimoto,complete,,,,0.5,0.0,gaussian,1.0,"[0.0, 1.0]",1.0,
+capacity_curve,capacity_curve,407a8cc30b83,2,,capacity_residual,5.551115123125783e-17,bits_per_symbol,blahut_arimoto,complete,,,,0.5,0.0,gaussian,1.0,"[0.0, 1.0]",1.0,
+capacity_curve,capacity_curve,a00cdfa84479,2,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.5,0.0,gaussian,1.0,"[0.0, 1.0]",1.0,
+capacity_curve,capacity_curve,a00cdfa84479,2,,mutual_information,0.15780989932970252,bits_per_symbol,exact,complete,,,,0.5,0.0,gaussian,1.0,"[0.0, 1.0]",1.0,
+capacity_curve,capacity_curve,386a849ca382,2,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_curve,capacity_curve,b3c65854deaa,2,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_curve,capacity_curve,068a6e11808d,3,,capacity_bits_per_symbol,0.1495942263188106,bits_per_symbol,blahut_arimoto,complete,,,,1.0,0.0,gaussian,1.0,"[0.0, 1.0]",1.0,
+capacity_curve,capacity_curve,068a6e11808d,3,,capacity_residual,0.0,bits_per_symbol,blahut_arimoto,complete,,,,1.0,0.0,gaussian,1.0,"[0.0, 1.0]",1.0,
+capacity_curve,capacity_curve,6c2af1c907ed,3,,matrix_row_sum_error,0.0,probability,exact,complete,,,,1.0,0.0,gaussian,1.0,"[0.0, 1.0]",1.0,
+capacity_curve,capacity_curve,6c2af1c907ed,3,,mutual_information,0.1495942263188106,bits_per_symbol,exact,complete,,,,1.0,0.0,gaussian,1.0,"[0.0, 1.0]",1.0,
+capacity_curve,capacity_curve,9a56bb7171ed,3,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_curve,capacity_curve,d2adc6e00685,3,,optimal_input_probability,0.5,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_curve,capacity_curve,26e1063275ae,4,,capacity_bits_per_symbol,0.1237993305136098,bits_per_symbol,blahut_arimoto,complete,,,,2.0,0.0,gaussian,1.0,"[0.0, 1.0]",1.0,
+capacity_curve,capacity_curve,26e1063275ae,4,,capacity_residual,9.07657976556564e-11,bits_per_symbol,blahut_arimoto,complete,,,,2.0,0.0,gaussian,1.0,"[0.0, 1.0]",1.0,
+capacity_curve,capacity_curve,dc951a69e880,4,,matrix_row_sum_error,0.0,probability,exact,complete,,,,2.0,0.0,gaussian,1.0,"[0.0, 1.0]",1.0,
+capacity_curve,capacity_curve,dc951a69e880,4,,mutual_information,0.12379553312575955,bits_per_symbol,exact,complete,,,,2.0,0.0,gaussian,1.0,"[0.0, 1.0]",1.0,
+capacity_curve,capacity_curve,0d1a29aa6f26,4,,optimal_input_probability,0.4971258901072657,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_curve,capacity_curve,83a813f15078,4,,optimal_input_probability,0.5028741098927342,probability,exact,complete,,,,,,,,,1.0,1.0
+capacity_curve,capacity_curve,cd0d549b8f9e,5,,capacity_bits_per_symbol,0.09928798778035361,bits_per_symbol,blahut_arimoto,complete,,,,4.0,0.0,gaussian,1.0,"[0.0, 1.0]",1.0,
+capacity_curve,capacity_curve,cd0d549b8f9e,5,,capacity_residual,9.353171015469286e-11,bits_per_symbol,blahut_arimoto,complete,,,,4.0,0.0,gaussian,1.0,"[0.0, 1.0]",1.0,
+capacity_curve,capacity_curve,9fb0ae7da983,5,,matrix_row_sum_error,0.0,probability,exact,complete,,,,4.0,0.0,gaussian,1.0,"[0.0, 1.0]",1.0,
+capacity_curve,capacity_curve,9fb0ae7da983,5,,mutual_information,0.09907011938260865,bits_per_symbol,exact,complete,,,,4.0,0.0,gaussian,1.0,"[0.0, 1.0]",1.0,
+capacity_curve,capacity_curve,43158051ca71,5,,optimal_input_probability,0.4762037800993121,probability,exact,complete,,,,,,,,,1.0,0.0
+capacity_curve,capacity_curve,e455288f764d,5,,optimal_input_probability,0.5237962199006879,probability,exact,complete,,,,,,,,,1.0,1.0

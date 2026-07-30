@@ -1,0 +1,7 @@
+work_unit_id,experiment_kind,status,error,sample_size,hypothesis_pair,replication,sweep_index
+10:active_vs_baseline:0,finite_sample_detection,complete,,10,active_vs_baseline,0,0
+10:baseline_vs_baseline:0,finite_sample_detection,complete,,10,baseline_vs_baseline,0,1
+25:active_vs_baseline:0,finite_sample_detection,complete,,25,active_vs_baseline,0,2
+25:baseline_vs_baseline:0,finite_sample_detection,complete,,25,baseline_vs_baseline,0,3
+50:active_vs_baseline:0,finite_sample_detection,complete,,50,active_vs_baseline,0,4
+50:baseline_vs_baseline:0,finite_sample_detection,complete,,50,baseline_vs_baseline,0,5

@@ -1,0 +1,162 @@
+alphabet_search:
+  anchor_first_symbol: true
+  binary_grid_points: 101
+  global_restarts: 4
+  maximum: 4.0
+  minimum: 0.0
+  minimum_spacing: 0.05
+  symbols: 2
+baseline:
+  input_probabilities: null
+  mode: channel_symbol
+  symbol_index: 0
+batching:
+  maximum_batch_size: null
+  modes:
+  - no_batching
+  - timestamp_quantization
+  - fixed_window_observation
+  - ceiling_release
+  phase: 0.0
+  windows:
+  - 0.25
+  - 0.5
+  - 1.0
+channel:
+  alphabet:
+    unit: normalized
+    values:
+    - 0.0
+    - 0.7
+  input_probabilities: null
+  mode: absolute_delay
+constraints:
+  max_kl_bits: null
+  max_mean_delay: null
+detection:
+  active_distribution_source: configured_input
+  batch_size: 256
+  bootstrap_repetitions: 100
+  sample_sizes:
+  - 10
+  - 25
+  - 50
+  - 100
+  target_false_positive_rates:
+  - 0.01
+  - 0.05
+  - 0.1
+  trials: 300
+experiment:
+  kind: phase_sensitivity
+  locale: en
+  name: phase_sensitivity_noncommensurate_07
+  output_directory: publication_results
+  overwrite: false
+  require_clean_git: true
+  seed: 20260728
+  workers: 2
+jitter:
+  degrees_of_freedom: null
+  distribution: gaussian
+  lower: null
+  mean: 0.0
+  means: null
+  scale: 1.0
+  scales: null
+  upper: null
+  weights: null
+matrix:
+  tail_mode: overflow_bins
+  tail_probability: 1.0e-12
+optimization:
+  max_iterations: 10000
+  method: blahut_arimoto
+  tolerance: 1.0e-10
+quantizer:
+  mode: floor
+  phase: 0.0
+  quadrature_points: 32
+  random_phase: false
+  step: 0.5
+  type: uniform
+simulation:
+  block_lengths:
+  - 1
+  - 2
+  - 3
+  - 4
+  discard_initial_transient: true
+  jitter_application: timestamp
+  preserve_order: true
+  replications: 3
+  trace_length: 2000
+  transient_observations: 1
+sweep:
+  parameters:
+    quantizer.phase:
+    - 0.0
+    - 0.0078125
+    - 0.015625
+    - 0.0234375
+    - 0.03125
+    - 0.0390625
+    - 0.046875
+    - 0.0546875
+    - 0.0625
+    - 0.0703125
+    - 0.078125
+    - 0.0859375
+    - 0.09375
+    - 0.1015625
+    - 0.109375
+    - 0.1171875
+    - 0.125
+    - 0.1328125
+    - 0.140625
+    - 0.1484375
+    - 0.15625
+    - 0.1640625
+    - 0.171875
+    - 0.1796875
+    - 0.1875
+    - 0.1953125
+    - 0.203125
+    - 0.2109375
+    - 0.21875
+    - 0.2265625
+    - 0.234375
+    - 0.2421875
+    - 0.25
+    - 0.2578125
+    - 0.265625
+    - 0.2734375
+    - 0.28125
+    - 0.2890625
+    - 0.296875
+    - 0.3046875
+    - 0.3125
+    - 0.3203125
+    - 0.328125
+    - 0.3359375
+    - 0.34375
+    - 0.3515625
+    - 0.359375
+    - 0.3671875
+    - 0.375
+    - 0.3828125
+    - 0.390625
+    - 0.3984375
+    - 0.40625
+    - 0.4140625
+    - 0.421875
+    - 0.4296875
+    - 0.4375
+    - 0.4453125
+    - 0.453125
+    - 0.4609375
+    - 0.46875
+    - 0.4765625
+    - 0.484375
+    - 0.4921875
+    - 0.49230769230769234

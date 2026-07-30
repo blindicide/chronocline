@@ -1,0 +1,119 @@
+alphabet_search:
+  anchor_first_symbol: true
+  binary_grid_points: 101
+  global_restarts: 4
+  maximum: 4.0
+  minimum: 0.0
+  minimum_spacing: 0.05
+  symbols: 2
+baseline:
+  input_probabilities:
+  - 0.99
+  - 0.01
+  mode: input_distribution
+  symbol_index: 0
+batching:
+  maximum_batch_size: null
+  modes:
+  - no_batching
+  - timestamp_quantization
+  - fixed_window_observation
+  - ceiling_release
+  phase: 0.0
+  windows:
+  - 0.25
+  - 0.5
+  - 1.0
+channel:
+  alphabet:
+    unit: normalized
+    values:
+    - 0.0
+    - 1.0
+  input_probabilities: null
+  mode: absolute_delay
+constraints:
+  max_kl_bits: 0.001
+  max_mean_delay: null
+detection:
+  active_distribution_source: configured_input
+  batch_size: 256
+  bootstrap_repetitions: 100
+  sample_sizes:
+  - 10
+  - 25
+  - 50
+  - 100
+  target_false_positive_rates:
+  - 0.01
+  - 0.05
+  - 0.1
+  trials: 300
+experiment:
+  kind: detectability_frontier
+  locale: en
+  name: detectability_frontier
+  output_directory: publication_results
+  overwrite: false
+  require_clean_git: true
+  seed: 20260728
+  workers: 2
+jitter:
+  degrees_of_freedom: null
+  distribution: gaussian
+  lower: null
+  mean: 0.0
+  means: null
+  scale: 1.0
+  scales: null
+  upper: null
+  weights: null
+matrix:
+  tail_mode: overflow_bins
+  tail_probability: 1.0e-12
+optimization:
+  max_iterations: 10000
+  method: blahut_arimoto
+  tolerance: 1.0e-10
+quantizer:
+  mode: floor
+  phase: 0.0
+  quadrature_points: 32
+  random_phase: false
+  step: 0.5
+  type: uniform
+simulation:
+  block_lengths:
+  - 1
+  - 2
+  - 3
+  - 4
+  discard_initial_transient: true
+  jitter_application: timestamp
+  preserve_order: true
+  replications: 3
+  trace_length: 2000
+  transient_observations: 1
+sweep:
+  parameters:
+    constraints.max_kl_bits:
+    - 0.0001
+    - 0.0002
+    - 0.0005
+    - 0.001
+    - 0.002
+    - 0.005
+    - 0.01
+    - 0.02
+    - 0.05
+    - 0.1
+    - 0.15
+    - 0.2
+    - 0.3
+    - 0.4
+    - 0.5
+    - 0.6
+    - 0.75
+    - 0.9
+    - 1.1
+    - 1.5

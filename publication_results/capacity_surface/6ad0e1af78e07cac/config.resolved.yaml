@@ -1,0 +1,134 @@
+alphabet_search:
+  anchor_first_symbol: true
+  binary_grid_points: 101
+  global_restarts: 4
+  maximum: 4.0
+  minimum: 0.0
+  minimum_spacing: 0.05
+  symbols: 2
+baseline:
+  input_probabilities: null
+  mode: channel_symbol
+  symbol_index: 0
+batching:
+  maximum_batch_size: null
+  modes:
+  - no_batching
+  - timestamp_quantization
+  - fixed_window_observation
+  - ceiling_release
+  phase: 0.0
+  windows:
+  - 0.25
+  - 0.5
+  - 1.0
+channel:
+  alphabet:
+    unit: normalized
+    values:
+    - 0.0
+    - 0.25
+  input_probabilities: null
+  mode: absolute_delay
+constraints:
+  max_kl_bits: null
+  max_mean_delay: null
+detection:
+  active_distribution_source: configured_input
+  batch_size: 256
+  bootstrap_repetitions: 100
+  sample_sizes:
+  - 10
+  - 25
+  - 50
+  - 100
+  target_false_positive_rates:
+  - 0.01
+  - 0.05
+  - 0.1
+  trials: 300
+experiment:
+  kind: capacity_surface
+  locale: en
+  name: capacity_surface
+  output_directory: publication_results
+  overwrite: false
+  require_clean_git: true
+  seed: 20260728
+  workers: 2
+jitter:
+  degrees_of_freedom: null
+  distribution: gaussian
+  lower: null
+  mean: 0.0
+  means: null
+  scale: 1.0
+  scales: null
+  upper: null
+  weights: null
+matrix:
+  tail_mode: overflow_bins
+  tail_probability: 1.0e-12
+optimization:
+  max_iterations: 10000
+  method: blahut_arimoto
+  tolerance: 1.0e-10
+quantizer:
+  mode: floor
+  phase: 0.0
+  quadrature_points: 32
+  random_phase: false
+  step: 0.125
+  type: uniform
+simulation:
+  block_lengths:
+  - 1
+  - 2
+  - 3
+  - 4
+  discard_initial_transient: true
+  jitter_application: timestamp
+  preserve_order: true
+  replications: 3
+  trace_length: 2000
+  transient_observations: 1
+sweep:
+  parameters:
+    channel.alphabet.values:
+    - - 0.0
+      - 0.125
+    - - 0.0
+      - 0.15625
+    - - 0.0
+      - 0.1953125
+    - - 0.0
+      - 0.244140625
+    - - 0.0
+      - 0.30517578125
+    - - 0.0
+      - 0.3814697265625
+    - - 0.0
+      - 0.476837158203125
+    - - 0.0
+      - 0.5960464477539062
+    - - 0.0
+      - 0.7450580596923828
+    - - 0.0
+      - 0.9313225746154785
+    - - 0.0
+      - 1.1641532182693481
+    - - 0.0
+      - 1.4551915228366852
+    quantizer.step:
+    - 0.125
+    - 0.15625
+    - 0.1953125
+    - 0.244140625
+    - 0.30517578125
+    - 0.3814697265625
+    - 0.476837158203125
+    - 0.5960464477539062
+    - 0.7450580596923828
+    - 0.9313225746154785
+    - 1.1641532182693481
+    - 1.4551915228366852

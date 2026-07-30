@@ -1,0 +1,97 @@
+experiment:
+  kind: alphabet_optimization
+  name: alphabet_optimization_ternary_constrained
+  seed: 20260728
+  output_directory: publication_results
+  overwrite: false
+  locale: en
+  workers: 2
+  require_clean_git: true
+channel:
+  mode: absolute_delay
+  alphabet:
+    values:
+    - 0.0
+    - 1.0
+    - 2.0
+    unit: normalized
+  input_probabilities: null
+jitter:
+  distribution: gaussian
+  mean: 0.0
+  scale: 1.0
+  degrees_of_freedom: null
+  lower: null
+  upper: null
+  weights: null
+  means: null
+  scales: null
+quantizer:
+  type: uniform
+  step: 0.5
+  phase: 0.0
+  mode: floor
+  random_phase: false
+  quadrature_points: 32
+matrix:
+  tail_probability: 1.0e-12
+  tail_mode: overflow_bins
+optimization:
+  method: blahut_arimoto
+  tolerance: 1.0e-10
+  max_iterations: 10000
+constraints:
+  max_kl_bits: 0.05
+  max_mean_delay: 1.75
+baseline:
+  mode: channel_symbol
+  symbol_index: 0
+  input_probabilities: null
+detection:
+  active_distribution_source: configured_input
+  sample_sizes:
+  - 10
+  - 25
+  - 50
+  - 100
+  trials: 300
+  bootstrap_repetitions: 100
+  target_false_positive_rates:
+  - 0.01
+  - 0.05
+  - 0.1
+  batch_size: 256
+simulation:
+  trace_length: 2000
+  replications: 3
+  jitter_application: timestamp
+  preserve_order: true
+  block_lengths:
+  - 1
+  - 2
+  - 3
+  - 4
+  discard_initial_transient: true
+  transient_observations: 1
+batching:
+  modes:
+  - no_batching
+  - timestamp_quantization
+  - fixed_window_observation
+  - ceiling_release
+  windows:
+  - 0.25
+  - 0.5
+  - 1.0
+  phase: 0.0
+  maximum_batch_size: null
+alphabet_search:
+  symbols: 3
+  minimum: 0.0
+  maximum: 3.0
+  minimum_spacing: 0.05
+  anchor_first_symbol: true
+  binary_grid_points: 61
+  global_restarts: 4
+sweep:
+  parameters: {}

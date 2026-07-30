@@ -1,0 +1,37 @@
+{
+  "allow_dirty_override": false,
+  "completed_at": "2026-07-30T18:38:02.796571+00:00",
+  "completed_jobs": 1,
+  "completion_status": "complete",
+  "config_hash": "41b05e6a49499d94243f077a0165565ccded10b12bd4ad39fe1f758a1e2a4546",
+  "expected_jobs": 1,
+  "expected_metrics": [
+    "best_found_capacity",
+    "optimization_label",
+    "optimized_alphabet"
+  ],
+  "experiment_kind": "alphabet_optimization",
+  "experiment_name": "alphabet_binary_constrained_reproducibility",
+  "failed_jobs": 0,
+  "generated_files": {
+    "config.original.yaml": "72384c1ca39fe16639e3f9cec94c6f5b5dfc8fb6a3cb6ad6685b9aecae3a7d3a",
+    "config.resolved.yaml": "b2469052b2377a9105e47abd9a11b086c584722779654ae174a3e3c2ae1bc7b2",
+    "diagnostics.json": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "environment.json": "0a62670ff472f433ce844f3463e61d88886a6dfe026ecba22d0007ebfebc5f99",
+    "results.csv": "79377a4a7292c0826116d077b95c3c70901f8c514e8d86b224d84f3bf0164977",
+    "tables/work_units.csv": "a2ccbb413b42797bc769ad94e8dbd02c9cad49251582050dd0e334546118aa8d"
+  },
+  "locale": "en",
+  "package_version": "0.6.0",
+  "project": "Project Chronocline",
+  "result_schema_version": "2.0",
+  "run_id": "970f8c36c87d8506",
+  "runner_name": "AlphabetRunner",
+  "runner_version": "2.0",
+  "semantic_validation_errors": [],
+  "semantic_validation_status": "passed",
+  "source_commit": "6496e1295812a524866591a3c677478aab574914",
+  "source_dirty": false,
+  "started_at": "2026-07-30T18:37:37.795037+00:00",
+  "workers": 2
+}

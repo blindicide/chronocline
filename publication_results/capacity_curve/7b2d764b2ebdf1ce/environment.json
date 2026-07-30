@@ -1,0 +1,16 @@
+{
+  "cpu_count": 4,
+  "dependencies": {
+    "matplotlib": "3.11.1",
+    "numpy": "2.4.6",
+    "pandas": "3.0.5",
+    "pydantic": "2.13.4",
+    "scipy": "1.17.1"
+  },
+  "package_version": "0.6.0",
+  "platform": "Linux-6.8.0-124-generic-x86_64-with-glibc2.39",
+  "python": "3.11.15",
+  "source_commit": "6496e1295812a524866591a3c677478aab574914",
+  "source_dirty": false,
+  "workers": 1
+}

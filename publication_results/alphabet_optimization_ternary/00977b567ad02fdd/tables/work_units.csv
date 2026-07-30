@@ -1,0 +1,5 @@
+work_unit_id,experiment_kind,status,error,replication,sweep_index,restart_index
+0,alphabet_optimization,complete,,,0,
+1,alphabet_optimization,complete,,,1,1.0
+2,alphabet_optimization,complete,,,2,2.0
+3,alphabet_optimization,complete,,,3,3.0

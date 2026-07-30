@@ -1,0 +1,169 @@
+experiment_name,experiment_kind,job_id,sweep_index,replication,metric_name,metric_value,units,estimator,status,quantizer_step,quantizer_phase,jitter_distribution,jitter_scale,alphabet,jitter_variance,symbol_index
+jitter_comparison,jitter_comparison,04891b66ed5a,0,,mutual_information,0.160560531473021,bits_per_symbol,exact,complete,0.125,0.0,gaussian,1.0,"[0.0, 1.0]",1.0,
+jitter_comparison,jitter_comparison,46de592bbc5d,0,,capacity_bits_per_symbol,0.160560531473021,bits_per_symbol,blahut_arimoto,complete,0.125,0.0,gaussian,1.0,"[0.0, 1.0]",1.0,
+jitter_comparison,jitter_comparison,46de592bbc5d,0,,capacity_residual,3.3306690738754696e-16,bits_per_symbol,blahut_arimoto,complete,0.125,0.0,gaussian,1.0,"[0.0, 1.0]",1.0,
+jitter_comparison,jitter_comparison,04891b66ed5a,0,,matrix_row_sum_error,2.220446049250313e-16,probability,exact,complete,0.125,0.0,gaussian,1.0,"[0.0, 1.0]",1.0,
+jitter_comparison,jitter_comparison,32bea1a8921f,0,,jitter_variance,1.0,normalized_time_squared,analytic,complete,0.125,,gaussian,,,,
+jitter_comparison,jitter_comparison,e521c5ae54fe,0,,optimal_input_probability,0.5,probability,exact,complete,,,,,,1.0,0.0
+jitter_comparison,jitter_comparison,788c4b75e7ea,0,,optimal_input_probability,0.5,probability,exact,complete,,,,,,1.0,1.0
+jitter_comparison,jitter_comparison,654aa5ce53d0,1,,mutual_information,0.21976740814053514,bits_per_symbol,exact,complete,0.125,0.0,laplace,0.7071067811865475,"[0.0, 1.0]",0.9999999999999998,
+jitter_comparison,jitter_comparison,021c3f5dce18,1,,capacity_bits_per_symbol,0.21976740814053514,bits_per_symbol,blahut_arimoto,complete,0.125,0.0,laplace,0.7071067811865475,"[0.0, 1.0]",0.9999999999999998,
+jitter_comparison,jitter_comparison,021c3f5dce18,1,,capacity_residual,5.551115123125783e-17,bits_per_symbol,blahut_arimoto,complete,0.125,0.0,laplace,0.7071067811865475,"[0.0, 1.0]",0.9999999999999998,
+jitter_comparison,jitter_comparison,654aa5ce53d0,1,,matrix_row_sum_error,0.0,probability,exact,complete,0.125,0.0,laplace,0.7071067811865475,"[0.0, 1.0]",0.9999999999999998,
+jitter_comparison,jitter_comparison,9085a302a956,1,,jitter_variance,0.9999999999999998,normalized_time_squared,analytic,complete,0.125,,laplace,,,,
+jitter_comparison,jitter_comparison,924993a7b562,1,,optimal_input_probability,0.5,probability,exact,complete,,,,,,0.9999999999999998,0.0
+jitter_comparison,jitter_comparison,baddec1eb4fc,1,,optimal_input_probability,0.5,probability,exact,complete,,,,,,0.9999999999999998,1.0
+jitter_comparison,jitter_comparison,9a0757130564,2,,mutual_information,0.19271941510928428,bits_per_symbol,exact,complete,0.125,0.0,student_t,0.7745966692414834,"[0.0, 1.0]",1.0000000000000002,
+jitter_comparison,jitter_comparison,3b18f14cc915,2,,capacity_bits_per_symbol,0.19271941510928434,bits_per_symbol,blahut_arimoto,complete,0.125,0.0,student_t,0.7745966692414834,"[0.0, 1.0]",1.0000000000000002,
+jitter_comparison,jitter_comparison,3b18f14cc915,2,,capacity_residual,5.551115123125783e-17,bits_per_symbol,blahut_arimoto,complete,0.125,0.0,student_t,0.7745966692414834,"[0.0, 1.0]",1.0000000000000002,
+jitter_comparison,jitter_comparison,9a0757130564,2,,matrix_row_sum_error,0.0,probability,exact,complete,0.125,0.0,student_t,0.7745966692414834,"[0.0, 1.0]",1.0000000000000002,
+jitter_comparison,jitter_comparison,ae8f9018bf2c,2,,jitter_variance,1.0000000000000002,normalized_time_squared,analytic,complete,0.125,,student_t,,,,
+jitter_comparison,jitter_comparison,fbe9c9f97454,2,,optimal_input_probability,0.5,probability,exact,complete,,,,,,1.0000000000000002,0.0
+jitter_comparison,jitter_comparison,75253cd853b0,2,,optimal_input_probability,0.5,probability,exact,complete,,,,,,1.0000000000000002,1.0
+jitter_comparison,jitter_comparison,b831ded63f55,3,,mutual_information,0.16043120456590754,bits_per_symbol,exact,complete,0.125,0.0,gaussian_mixture,1.0,"[0.0, 1.0]",0.9999999999999999,
+jitter_comparison,jitter_comparison,04a594bd6c93,3,,capacity_bits_per_symbol,0.16043120456590754,bits_per_symbol,blahut_arimoto,complete,0.125,0.0,gaussian_mixture,1.0,"[0.0, 1.0]",0.9999999999999999,
+jitter_comparison,jitter_comparison,04a594bd6c93,3,,capacity_residual,8.881784197001252e-16,bits_per_symbol,blahut_arimoto,complete,0.125,0.0,gaussian_mixture,1.0,"[0.0, 1.0]",0.9999999999999999,
+jitter_comparison,jitter_comparison,b831ded63f55,3,,matrix_row_sum_error,0.0,probability,exact,complete,0.125,0.0,gaussian_mixture,1.0,"[0.0, 1.0]",0.9999999999999999,
+jitter_comparison,jitter_comparison,a037c978d97c,3,,jitter_variance,0.9999999999999999,normalized_time_squared,analytic,complete,0.125,,gaussian_mixture,,,,
+jitter_comparison,jitter_comparison,96088537e244,3,,optimal_input_probability,0.5,probability,exact,complete,,,,,,0.9999999999999999,0.0
+jitter_comparison,jitter_comparison,97e3f2ae2b2a,3,,optimal_input_probability,0.5,probability,exact,complete,,,,,,0.9999999999999999,1.0
+jitter_comparison,jitter_comparison,cf1d56cf5bea,4,,mutual_information,0.16000298287040338,bits_per_symbol,exact,complete,0.25,0.0,gaussian,1.0,"[0.0, 1.0]",1.0,
+jitter_comparison,jitter_comparison,2d29e658deb6,4,,capacity_bits_per_symbol,0.16000298287040338,bits_per_symbol,blahut_arimoto,complete,0.25,0.0,gaussian,1.0,"[0.0, 1.0]",1.0,
+jitter_comparison,jitter_comparison,2d29e658deb6,4,,capacity_residual,0.0,bits_per_symbol,blahut_arimoto,complete,0.25,0.0,gaussian,1.0,"[0.0, 1.0]",1.0,
+jitter_comparison,jitter_comparison,cf1d56cf5bea,4,,matrix_row_sum_error,0.0,probability,exact,complete,0.25,0.0,gaussian,1.0,"[0.0, 1.0]",1.0,
+jitter_comparison,jitter_comparison,f72952906c95,4,,jitter_variance,1.0,normalized_time_squared,analytic,complete,0.25,,gaussian,,,,
+jitter_comparison,jitter_comparison,bb0902417d81,4,,optimal_input_probability,0.5,probability,exact,complete,,,,,,1.0,0.0
+jitter_comparison,jitter_comparison,9a27297d07d5,4,,optimal_input_probability,0.5,probability,exact,complete,,,,,,1.0,1.0
+jitter_comparison,jitter_comparison,85c99bc555a0,5,,mutual_information,0.2179386650656936,bits_per_symbol,exact,complete,0.25,0.0,laplace,0.7071067811865475,"[0.0, 1.0]",0.9999999999999998,
+jitter_comparison,jitter_comparison,e15aba544902,5,,capacity_bits_per_symbol,0.2179386650656936,bits_per_symbol,blahut_arimoto,complete,0.25,0.0,laplace,0.7071067811865475,"[0.0, 1.0]",0.9999999999999998,
+jitter_comparison,jitter_comparison,e15aba544902,5,,capacity_residual,2.7755575615628914e-17,bits_per_symbol,blahut_arimoto,complete,0.25,0.0,laplace,0.7071067811865475,"[0.0, 1.0]",0.9999999999999998,
+jitter_comparison,jitter_comparison,85c99bc555a0,5,,matrix_row_sum_error,0.0,probability,exact,complete,0.25,0.0,laplace,0.7071067811865475,"[0.0, 1.0]",0.9999999999999998,
+jitter_comparison,jitter_comparison,21c3ddb36018,5,,jitter_variance,0.9999999999999998,normalized_time_squared,analytic,complete,0.25,,laplace,,,,
+jitter_comparison,jitter_comparison,7a9c321b2e4c,5,,optimal_input_probability,0.5,probability,exact,complete,,,,,,0.9999999999999998,0.0
+jitter_comparison,jitter_comparison,279aff2c034f,5,,optimal_input_probability,0.5,probability,exact,complete,,,,,,0.9999999999999998,1.0
+jitter_comparison,jitter_comparison,3ee2c43d6989,6,,mutual_information,0.19173595059227502,bits_per_symbol,exact,complete,0.25,0.0,student_t,0.7745966692414834,"[0.0, 1.0]",1.0000000000000002,
+jitter_comparison,jitter_comparison,5529bf0c0eda,6,,capacity_bits_per_symbol,0.191735950592275,bits_per_symbol,blahut_arimoto,complete,0.25,0.0,student_t,0.7745966692414834,"[0.0, 1.0]",1.0000000000000002,
+jitter_comparison,jitter_comparison,5529bf0c0eda,6,,capacity_residual,2.7755575615628914e-17,bits_per_symbol,blahut_arimoto,complete,0.25,0.0,student_t,0.7745966692414834,"[0.0, 1.0]",1.0000000000000002,
+jitter_comparison,jitter_comparison,3ee2c43d6989,6,,matrix_row_sum_error,0.0,probability,exact,complete,0.25,0.0,student_t,0.7745966692414834,"[0.0, 1.0]",1.0000000000000002,
+jitter_comparison,jitter_comparison,c524688ea325,6,,jitter_variance,1.0000000000000002,normalized_time_squared,analytic,complete,0.25,,student_t,,,,
+jitter_comparison,jitter_comparison,c858f9909863,6,,optimal_input_probability,0.5,probability,exact,complete,,,,,,1.0000000000000002,0.0
+jitter_comparison,jitter_comparison,951719d672b9,6,,optimal_input_probability,0.5,probability,exact,complete,,,,,,1.0000000000000002,1.0
+jitter_comparison,jitter_comparison,e46ce656f5b8,7,,mutual_information,0.1598737062584875,bits_per_symbol,exact,complete,0.25,0.0,gaussian_mixture,1.0,"[0.0, 1.0]",0.9999999999999999,
+jitter_comparison,jitter_comparison,1a5d5bf3607d,7,,capacity_bits_per_symbol,0.15987370625848757,bits_per_symbol,blahut_arimoto,complete,0.25,0.0,gaussian_mixture,1.0,"[0.0, 1.0]",0.9999999999999999,
+jitter_comparison,jitter_comparison,1a5d5bf3607d,7,,capacity_residual,4.163336342344337e-16,bits_per_symbol,blahut_arimoto,complete,0.25,0.0,gaussian_mixture,1.0,"[0.0, 1.0]",0.9999999999999999,
+jitter_comparison,jitter_comparison,e46ce656f5b8,7,,matrix_row_sum_error,0.0,probability,exact,complete,0.25,0.0,gaussian_mixture,1.0,"[0.0, 1.0]",0.9999999999999999,
+jitter_comparison,jitter_comparison,5aab4768abf3,7,,jitter_variance,0.9999999999999999,normalized_time_squared,analytic,complete,0.25,,gaussian_mixture,,,,
+jitter_comparison,jitter_comparison,aac08ee3fd81,7,,optimal_input_probability,0.5,probability,exact,complete,,,,,,0.9999999999999999,0.0
+jitter_comparison,jitter_comparison,0d01a6795975,7,,optimal_input_probability,0.5,probability,exact,complete,,,,,,0.9999999999999999,1.0
+jitter_comparison,jitter_comparison,3bc009c73163,8,,mutual_information,0.15780989932970252,bits_per_symbol,exact,complete,0.5,0.0,gaussian,1.0,"[0.0, 1.0]",1.0,
+jitter_comparison,jitter_comparison,a25d610a4302,8,,capacity_bits_per_symbol,0.15780989932970246,bits_per_symbol,blahut_arimoto,complete,0.5,0.0,gaussian,1.0,"[0.0, 1.0]",1.0,
+jitter_comparison,jitter_comparison,a25d610a4302,8,,capacity_residual,5.551115123125783e-17,bits_per_symbol,blahut_arimoto,complete,0.5,0.0,gaussian,1.0,"[0.0, 1.0]",1.0,
+jitter_comparison,jitter_comparison,3bc009c73163,8,,matrix_row_sum_error,0.0,probability,exact,complete,0.5,0.0,gaussian,1.0,"[0.0, 1.0]",1.0,
+jitter_comparison,jitter_comparison,64cf4f6913a2,8,,jitter_variance,1.0,normalized_time_squared,analytic,complete,0.5,,gaussian,,,,
+jitter_comparison,jitter_comparison,9f2f42ea93aa,8,,optimal_input_probability,0.5,probability,exact,complete,,,,,,1.0,0.0
+jitter_comparison,jitter_comparison,24d44ed1b4d8,8,,optimal_input_probability,0.5,probability,exact,complete,,,,,,1.0,1.0
+jitter_comparison,jitter_comparison,c19a6f37fb00,9,,mutual_information,0.2105031010379304,bits_per_symbol,exact,complete,0.5,0.0,laplace,0.7071067811865475,"[0.0, 1.0]",0.9999999999999998,
+jitter_comparison,jitter_comparison,319e4421304c,9,,capacity_bits_per_symbol,0.21050310103793043,bits_per_symbol,blahut_arimoto,complete,0.5,0.0,laplace,0.7071067811865475,"[0.0, 1.0]",0.9999999999999998,
+jitter_comparison,jitter_comparison,319e4421304c,9,,capacity_residual,1.1102230246251565e-16,bits_per_symbol,blahut_arimoto,complete,0.5,0.0,laplace,0.7071067811865475,"[0.0, 1.0]",0.9999999999999998,
+jitter_comparison,jitter_comparison,c19a6f37fb00,9,,matrix_row_sum_error,0.0,probability,exact,complete,0.5,0.0,laplace,0.7071067811865475,"[0.0, 1.0]",0.9999999999999998,
+jitter_comparison,jitter_comparison,f69e210bdc7a,9,,jitter_variance,0.9999999999999998,normalized_time_squared,analytic,complete,0.5,,laplace,,,,
+jitter_comparison,jitter_comparison,5a44c24aa17a,9,,optimal_input_probability,0.5,probability,exact,complete,,,,,,0.9999999999999998,0.0
+jitter_comparison,jitter_comparison,9da3e452c315,9,,optimal_input_probability,0.5,probability,exact,complete,,,,,,0.9999999999999998,1.0
+jitter_comparison,jitter_comparison,6717f005a7c4,10,,mutual_information,0.18790153257789743,bits_per_symbol,exact,complete,0.5,0.0,student_t,0.7745966692414834,"[0.0, 1.0]",1.0000000000000002,
+jitter_comparison,jitter_comparison,6326abe811c6,10,,capacity_bits_per_symbol,0.18790153257789743,bits_per_symbol,blahut_arimoto,complete,0.5,0.0,student_t,0.7745966692414834,"[0.0, 1.0]",1.0000000000000002,
+jitter_comparison,jitter_comparison,6326abe811c6,10,,capacity_residual,0.0,bits_per_symbol,blahut_arimoto,complete,0.5,0.0,student_t,0.7745966692414834,"[0.0, 1.0]",1.0000000000000002,
+jitter_comparison,jitter_comparison,6717f005a7c4,10,,matrix_row_sum_error,0.0,probability,exact,complete,0.5,0.0,student_t,0.7745966692414834,"[0.0, 1.0]",1.0000000000000002,
+jitter_comparison,jitter_comparison,c60406328a9e,10,,jitter_variance,1.0000000000000002,normalized_time_squared,analytic,complete,0.5,,student_t,,,,
+jitter_comparison,jitter_comparison,3f5d6b851e1e,10,,optimal_input_probability,0.5,probability,exact,complete,,,,,,1.0000000000000002,0.0
+jitter_comparison,jitter_comparison,0bd29b0f7f99,10,,optimal_input_probability,0.5,probability,exact,complete,,,,,,1.0000000000000002,1.0
+jitter_comparison,jitter_comparison,b17596fae161,11,,mutual_information,0.15768250950248053,bits_per_symbol,exact,complete,0.5,0.0,gaussian_mixture,1.0,"[0.0, 1.0]",0.9999999999999999,
+jitter_comparison,jitter_comparison,0d21632b2e30,11,,capacity_bits_per_symbol,0.15768250950248053,bits_per_symbol,blahut_arimoto,complete,0.5,0.0,gaussian_mixture,1.0,"[0.0, 1.0]",0.9999999999999999,
+jitter_comparison,jitter_comparison,0d21632b2e30,11,,capacity_residual,0.0,bits_per_symbol,blahut_arimoto,complete,0.5,0.0,gaussian_mixture,1.0,"[0.0, 1.0]",0.9999999999999999,
+jitter_comparison,jitter_comparison,b17596fae161,11,,matrix_row_sum_error,0.0,probability,exact,complete,0.5,0.0,gaussian_mixture,1.0,"[0.0, 1.0]",0.9999999999999999,
+jitter_comparison,jitter_comparison,82586e56a1b0,11,,jitter_variance,0.9999999999999999,normalized_time_squared,analytic,complete,0.5,,gaussian_mixture,,,,
+jitter_comparison,jitter_comparison,b8128c969cf8,11,,optimal_input_probability,0.5,probability,exact,complete,,,,,,0.9999999999999999,0.0
+jitter_comparison,jitter_comparison,87b0c8b6b95d,11,,optimal_input_probability,0.5,probability,exact,complete,,,,,,0.9999999999999999,1.0
+jitter_comparison,jitter_comparison,d728cd9286ba,12,,mutual_information,0.1495942263188106,bits_per_symbol,exact,complete,1.0,0.0,gaussian,1.0,"[0.0, 1.0]",1.0,
+jitter_comparison,jitter_comparison,210b99c7082c,12,,capacity_bits_per_symbol,0.1495942263188106,bits_per_symbol,blahut_arimoto,complete,1.0,0.0,gaussian,1.0,"[0.0, 1.0]",1.0,
+jitter_comparison,jitter_comparison,210b99c7082c,12,,capacity_residual,0.0,bits_per_symbol,blahut_arimoto,complete,1.0,0.0,gaussian,1.0,"[0.0, 1.0]",1.0,
+jitter_comparison,jitter_comparison,d728cd9286ba,12,,matrix_row_sum_error,0.0,probability,exact,complete,1.0,0.0,gaussian,1.0,"[0.0, 1.0]",1.0,
+jitter_comparison,jitter_comparison,918b80137a6a,12,,jitter_variance,1.0,normalized_time_squared,analytic,complete,1.0,,gaussian,,,,
+jitter_comparison,jitter_comparison,45f8da1414f5,12,,optimal_input_probability,0.5,probability,exact,complete,,,,,,1.0,0.0
+jitter_comparison,jitter_comparison,5d6b35104916,12,,optimal_input_probability,0.5,probability,exact,complete,,,,,,1.0,1.0
+jitter_comparison,jitter_comparison,be2dc3137f96,13,,mutual_information,0.17839982587017136,bits_per_symbol,exact,complete,1.0,0.0,laplace,0.7071067811865475,"[0.0, 1.0]",0.9999999999999998,
+jitter_comparison,jitter_comparison,f536b9f7708d,13,,capacity_bits_per_symbol,0.1783998258701714,bits_per_symbol,blahut_arimoto,complete,1.0,0.0,laplace,0.7071067811865475,"[0.0, 1.0]",0.9999999999999998,
+jitter_comparison,jitter_comparison,f536b9f7708d,13,,capacity_residual,2.7755575615628914e-17,bits_per_symbol,blahut_arimoto,complete,1.0,0.0,laplace,0.7071067811865475,"[0.0, 1.0]",0.9999999999999998,
+jitter_comparison,jitter_comparison,be2dc3137f96,13,,matrix_row_sum_error,0.0,probability,exact,complete,1.0,0.0,laplace,0.7071067811865475,"[0.0, 1.0]",0.9999999999999998,
+jitter_comparison,jitter_comparison,1622b4f483ff,13,,jitter_variance,0.9999999999999998,normalized_time_squared,analytic,complete,1.0,,laplace,,,,
+jitter_comparison,jitter_comparison,a3c9cc1ce457,13,,optimal_input_probability,0.5,probability,exact,complete,,,,,,0.9999999999999998,0.0
+jitter_comparison,jitter_comparison,de866cbcbf13,13,,optimal_input_probability,0.5,probability,exact,complete,,,,,,0.9999999999999998,1.0
+jitter_comparison,jitter_comparison,696f6997f6f1,14,,mutual_information,0.17339009407614392,bits_per_symbol,exact,complete,1.0,0.0,student_t,0.7745966692414834,"[0.0, 1.0]",1.0000000000000002,
+jitter_comparison,jitter_comparison,161725931a46,14,,capacity_bits_per_symbol,0.1733900940761439,bits_per_symbol,blahut_arimoto,complete,1.0,0.0,student_t,0.7745966692414834,"[0.0, 1.0]",1.0000000000000002,
+jitter_comparison,jitter_comparison,161725931a46,14,,capacity_residual,0.0,bits_per_symbol,blahut_arimoto,complete,1.0,0.0,student_t,0.7745966692414834,"[0.0, 1.0]",1.0000000000000002,
+jitter_comparison,jitter_comparison,696f6997f6f1,14,,matrix_row_sum_error,0.0,probability,exact,complete,1.0,0.0,student_t,0.7745966692414834,"[0.0, 1.0]",1.0000000000000002,
+jitter_comparison,jitter_comparison,3a28f2dde597,14,,jitter_variance,1.0000000000000002,normalized_time_squared,analytic,complete,1.0,,student_t,,,,
+jitter_comparison,jitter_comparison,99704fa8edb7,14,,optimal_input_probability,0.5,probability,exact,complete,,,,,,1.0000000000000002,0.0
+jitter_comparison,jitter_comparison,adbaa6923613,14,,optimal_input_probability,0.5,probability,exact,complete,,,,,,1.0000000000000002,1.0
+jitter_comparison,jitter_comparison,82daf77ddc5d,15,,mutual_information,0.1494927435768662,bits_per_symbol,exact,complete,1.0,0.0,gaussian_mixture,1.0,"[0.0, 1.0]",0.9999999999999999,
+jitter_comparison,jitter_comparison,0352af5c45c0,15,,capacity_bits_per_symbol,0.14949274357686615,bits_per_symbol,blahut_arimoto,complete,1.0,0.0,gaussian_mixture,1.0,"[0.0, 1.0]",0.9999999999999999,
+jitter_comparison,jitter_comparison,0352af5c45c0,15,,capacity_residual,2.498001805406602e-16,bits_per_symbol,blahut_arimoto,complete,1.0,0.0,gaussian_mixture,1.0,"[0.0, 1.0]",0.9999999999999999,
+jitter_comparison,jitter_comparison,82daf77ddc5d,15,,matrix_row_sum_error,0.0,probability,exact,complete,1.0,0.0,gaussian_mixture,1.0,"[0.0, 1.0]",0.9999999999999999,
+jitter_comparison,jitter_comparison,98e48d8e8535,15,,jitter_variance,0.9999999999999999,normalized_time_squared,analytic,complete,1.0,,gaussian_mixture,,,,
+jitter_comparison,jitter_comparison,bd9309837d2f,15,,optimal_input_probability,0.5,probability,exact,complete,,,,,,0.9999999999999999,0.0
+jitter_comparison,jitter_comparison,ba2cb67a691f,15,,optimal_input_probability,0.5,probability,exact,complete,,,,,,0.9999999999999999,1.0
+jitter_comparison,jitter_comparison,c07f04dff5b1,16,,mutual_information,0.12379553312575955,bits_per_symbol,exact,complete,2.0,0.0,gaussian,1.0,"[0.0, 1.0]",1.0,
+jitter_comparison,jitter_comparison,edaef8a11c30,16,,capacity_bits_per_symbol,0.1237993305136098,bits_per_symbol,blahut_arimoto,complete,2.0,0.0,gaussian,1.0,"[0.0, 1.0]",1.0,
+jitter_comparison,jitter_comparison,edaef8a11c30,16,,capacity_residual,9.07657976556564e-11,bits_per_symbol,blahut_arimoto,complete,2.0,0.0,gaussian,1.0,"[0.0, 1.0]",1.0,
+jitter_comparison,jitter_comparison,c07f04dff5b1,16,,matrix_row_sum_error,0.0,probability,exact,complete,2.0,0.0,gaussian,1.0,"[0.0, 1.0]",1.0,
+jitter_comparison,jitter_comparison,03fa5b8e3823,16,,jitter_variance,1.0,normalized_time_squared,analytic,complete,2.0,,gaussian,,,,
+jitter_comparison,jitter_comparison,3e7d52c5a9ca,16,,optimal_input_probability,0.4971258901072657,probability,exact,complete,,,,,,1.0,0.0
+jitter_comparison,jitter_comparison,3f30553af89e,16,,optimal_input_probability,0.5028741098927342,probability,exact,complete,,,,,,1.0,1.0
+jitter_comparison,jitter_comparison,5238cefeaeaa,17,,mutual_information,0.1352203257360701,bits_per_symbol,exact,complete,2.0,0.0,laplace,0.7071067811865475,"[0.0, 1.0]",0.9999999999999998,
+jitter_comparison,jitter_comparison,20f13295a3dd,17,,capacity_bits_per_symbol,0.1355305381365563,bits_per_symbol,blahut_arimoto,complete,2.0,0.0,laplace,0.7071067811865475,"[0.0, 1.0]",0.9999999999999998,
+jitter_comparison,jitter_comparison,20f13295a3dd,17,,capacity_residual,9.279546575591269e-11,bits_per_symbol,blahut_arimoto,complete,2.0,0.0,laplace,0.7071067811865475,"[0.0, 1.0]",0.9999999999999998,
+jitter_comparison,jitter_comparison,5238cefeaeaa,17,,matrix_row_sum_error,0.0,probability,exact,complete,2.0,0.0,laplace,0.7071067811865475,"[0.0, 1.0]",0.9999999999999998,
+jitter_comparison,jitter_comparison,3d3624bcc5d5,17,,jitter_variance,0.9999999999999998,normalized_time_squared,analytic,complete,2.0,,laplace,,,,
+jitter_comparison,jitter_comparison,c888f1771bef,17,,optimal_input_probability,0.47543697132380797,probability,exact,complete,,,,,,0.9999999999999998,0.0
+jitter_comparison,jitter_comparison,5f7d1b13d063,17,,optimal_input_probability,0.5245630286761921,probability,exact,complete,,,,,,0.9999999999999998,1.0
+jitter_comparison,jitter_comparison,2a5a708a0c5c,18,,mutual_information,0.13505173928859415,bits_per_symbol,exact,complete,2.0,0.0,student_t,0.7745966692414834,"[0.0, 1.0]",1.0000000000000002,
+jitter_comparison,jitter_comparison,e866733c608f,18,,capacity_bits_per_symbol,0.13523977295161788,bits_per_symbol,blahut_arimoto,complete,2.0,0.0,student_t,0.7745966692414834,"[0.0, 1.0]",1.0000000000000002,
+jitter_comparison,jitter_comparison,e866733c608f,18,,capacity_residual,8.577041854529455e-11,bits_per_symbol,blahut_arimoto,complete,2.0,0.0,student_t,0.7745966692414834,"[0.0, 1.0]",1.0000000000000002,
+jitter_comparison,jitter_comparison,2a5a708a0c5c,18,,matrix_row_sum_error,0.0,probability,exact,complete,2.0,0.0,student_t,0.7745966692414834,"[0.0, 1.0]",1.0000000000000002,
+jitter_comparison,jitter_comparison,bcc7e4ddd0c9,18,,jitter_variance,1.0000000000000002,normalized_time_squared,analytic,complete,2.0,,student_t,,,,
+jitter_comparison,jitter_comparison,530cb1500c1b,18,,optimal_input_probability,0.48080534895634036,probability,exact,complete,,,,,,1.0000000000000002,0.0
+jitter_comparison,jitter_comparison,f0974df69810,18,,optimal_input_probability,0.5191946510436597,probability,exact,complete,,,,,,1.0000000000000002,1.0
+jitter_comparison,jitter_comparison,cbb92ef4f8e7,19,,mutual_information,0.12388167214609415,bits_per_symbol,exact,complete,2.0,0.0,gaussian_mixture,1.0,"[0.0, 1.0]",0.9999999999999999,
+jitter_comparison,jitter_comparison,3bd9ce8b9e6a,19,,capacity_bits_per_symbol,0.12388185774557088,bits_per_symbol,blahut_arimoto,complete,2.0,0.0,gaussian_mixture,1.0,"[0.0, 1.0]",0.9999999999999999,
+jitter_comparison,jitter_comparison,3bd9ce8b9e6a,19,,capacity_residual,8.541220508639924e-11,bits_per_symbol,blahut_arimoto,complete,2.0,0.0,gaussian_mixture,1.0,"[0.0, 1.0]",0.9999999999999999,
+jitter_comparison,jitter_comparison,cbb92ef4f8e7,19,,matrix_row_sum_error,0.0,probability,exact,complete,2.0,0.0,gaussian_mixture,1.0,"[0.0, 1.0]",0.9999999999999999,
+jitter_comparison,jitter_comparison,3cd5dac5500d,19,,jitter_variance,0.9999999999999999,normalized_time_squared,analytic,complete,2.0,,gaussian_mixture,,,,
+jitter_comparison,jitter_comparison,ba831f95d8c7,19,,optimal_input_probability,0.49936350555944076,probability,exact,complete,,,,,,0.9999999999999999,0.0
+jitter_comparison,jitter_comparison,4d101b6a9c2f,19,,optimal_input_probability,0.5006364944405591,probability,exact,complete,,,,,,0.9999999999999999,1.0
+jitter_comparison,jitter_comparison,e4f924264b0f,20,,mutual_information,0.09907011938260865,bits_per_symbol,exact,complete,4.0,0.0,gaussian,1.0,"[0.0, 1.0]",1.0,
+jitter_comparison,jitter_comparison,6c1d56670527,20,,capacity_bits_per_symbol,0.09928798778035361,bits_per_symbol,blahut_arimoto,complete,4.0,0.0,gaussian,1.0,"[0.0, 1.0]",1.0,
+jitter_comparison,jitter_comparison,6c1d56670527,20,,capacity_residual,9.353171015469286e-11,bits_per_symbol,blahut_arimoto,complete,4.0,0.0,gaussian,1.0,"[0.0, 1.0]",1.0,
+jitter_comparison,jitter_comparison,e4f924264b0f,20,,matrix_row_sum_error,0.0,probability,exact,complete,4.0,0.0,gaussian,1.0,"[0.0, 1.0]",1.0,
+jitter_comparison,jitter_comparison,cd854281fca6,20,,jitter_variance,1.0,normalized_time_squared,analytic,complete,4.0,,gaussian,,,,
+jitter_comparison,jitter_comparison,e2856694fefe,20,,optimal_input_probability,0.4762037800993121,probability,exact,complete,,,,,,1.0,0.0
+jitter_comparison,jitter_comparison,9540a74eb69f,20,,optimal_input_probability,0.5237962199006879,probability,exact,complete,,,,,,1.0,1.0
+jitter_comparison,jitter_comparison,6ab0723add22,21,,mutual_information,0.12759037877923435,bits_per_symbol,exact,complete,4.0,0.0,laplace,0.7071067811865475,"[0.0, 1.0]",0.9999999999999998,
+jitter_comparison,jitter_comparison,c993ba4a13ca,21,,capacity_bits_per_symbol,0.12808282585021633,bits_per_symbol,blahut_arimoto,complete,4.0,0.0,laplace,0.7071067811865475,"[0.0, 1.0]",0.9999999999999998,
+jitter_comparison,jitter_comparison,c993ba4a13ca,21,,capacity_residual,9.136252865360461e-11,bits_per_symbol,blahut_arimoto,complete,4.0,0.0,laplace,0.7071067811865475,"[0.0, 1.0]",0.9999999999999998,
+jitter_comparison,jitter_comparison,6ab0723add22,21,,matrix_row_sum_error,0.0,probability,exact,complete,4.0,0.0,laplace,0.7071067811865475,"[0.0, 1.0]",0.9999999999999998,
+jitter_comparison,jitter_comparison,54aa450ea9c4,21,,jitter_variance,0.9999999999999998,normalized_time_squared,analytic,complete,4.0,,laplace,,,,
+jitter_comparison,jitter_comparison,94cb153b0cd0,21,,optimal_input_probability,0.4683237428377402,probability,exact,complete,,,,,,0.9999999999999998,0.0
+jitter_comparison,jitter_comparison,0a7984af380f,21,,optimal_input_probability,0.5316762571622599,probability,exact,complete,,,,,,0.9999999999999998,1.0
+jitter_comparison,jitter_comparison,ebe88d571f32,22,,mutual_information,0.1231884645915903,bits_per_symbol,exact,complete,4.0,0.0,student_t,0.7745966692414834,"[0.0, 1.0]",1.0000000000000002,
+jitter_comparison,jitter_comparison,09a5fb2c561f,22,,capacity_bits_per_symbol,0.12363719179010306,bits_per_symbol,blahut_arimoto,complete,4.0,0.0,student_t,0.7745966692414834,"[0.0, 1.0]",1.0000000000000002,
+jitter_comparison,jitter_comparison,09a5fb2c561f,22,,capacity_residual,9.850729953964077e-11,bits_per_symbol,blahut_arimoto,complete,4.0,0.0,student_t,0.7745966692414834,"[0.0, 1.0]",1.0000000000000002,
+jitter_comparison,jitter_comparison,ebe88d571f32,22,,matrix_row_sum_error,0.0,probability,exact,complete,4.0,0.0,student_t,0.7745966692414834,"[0.0, 1.0]",1.0000000000000002,
+jitter_comparison,jitter_comparison,6d27d572c453,22,,jitter_variance,1.0000000000000002,normalized_time_squared,analytic,complete,4.0,,student_t,,,,
+jitter_comparison,jitter_comparison,5df25ab1a0db,22,,optimal_input_probability,0.4692576294022531,probability,exact,complete,,,,,,1.0000000000000002,0.0
+jitter_comparison,jitter_comparison,baa7be31b503,22,,optimal_input_probability,0.530742370597747,probability,exact,complete,,,,,,1.0000000000000002,1.0
+jitter_comparison,jitter_comparison,e486a3a6c4fe,23,,mutual_information,0.096877438210414,bits_per_symbol,exact,complete,4.0,0.0,gaussian_mixture,1.0,"[0.0, 1.0]",0.9999999999999999,
+jitter_comparison,jitter_comparison,95589197d4e6,23,,capacity_bits_per_symbol,0.09708248121007133,bits_per_symbol,blahut_arimoto,complete,4.0,0.0,gaussian_mixture,1.0,"[0.0, 1.0]",0.9999999999999999,
+jitter_comparison,jitter_comparison,95589197d4e6,23,,capacity_residual,8.970640896777127e-11,bits_per_symbol,blahut_arimoto,complete,4.0,0.0,gaussian_mixture,1.0,"[0.0, 1.0]",0.9999999999999999,
+jitter_comparison,jitter_comparison,e486a3a6c4fe,23,,matrix_row_sum_error,0.0,probability,exact,complete,4.0,0.0,gaussian_mixture,1.0,"[0.0, 1.0]",0.9999999999999999,
+jitter_comparison,jitter_comparison,64d40271189f,23,,jitter_variance,0.9999999999999999,normalized_time_squared,analytic,complete,4.0,,gaussian_mixture,,,,
+jitter_comparison,jitter_comparison,f3903afcb1d7,23,,optimal_input_probability,0.47666624795581747,probability,exact,complete,,,,,,0.9999999999999999,0.0
+jitter_comparison,jitter_comparison,09c477a46541,23,,optimal_input_probability,0.5233337520441825,probability,exact,complete,,,,,,0.9999999999999999,1.0

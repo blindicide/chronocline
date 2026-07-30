@@ -1,0 +1,11 @@
+experiment_name,experiment_kind,job_id,sweep_index,replication,metric_name,metric_value,units,estimator,status,warning_code,confidence_interval_lower,confidence_interval_upper,symbol_index,optimization_label,anchor_first_symbol,minimum_spacing,optimizer_feasible,optimizer_converged,label
+alphabet_binary_constrained_reproducibility,alphabet_optimization,556870a1351e,0,,achieved_kl_bits,0.049987456832754434,bits,exact,complete,,,,,binary_dense_grid_global_on_grid,True,0.05,True,True,
+alphabet_binary_constrained_reproducibility,alphabet_optimization,556870a1351e,0,,best_found_capacity,0.1597553028796638,bits_per_symbol,exact,complete,,,,,binary_dense_grid_global_on_grid,True,0.05,True,True,
+alphabet_binary_constrained_reproducibility,alphabet_optimization,27f836a8f8de,0,,optimal_input_probability,0.9084000000000001,probability,exact,complete,,,,0.0,binary_dense_grid_global_on_grid,True,0.05,True,True,
+alphabet_binary_constrained_reproducibility,alphabet_optimization,fd9a40b2ab90,0,,optimal_input_probability,0.0915999999999999,probability,exact,complete,,,,1.0,binary_dense_grid_global_on_grid,True,0.05,True,True,
+alphabet_binary_constrained_reproducibility,alphabet_optimization,ef125a677068,0,,optimization_label,1.0,code,exact,complete,,,,,binary_dense_grid_global_on_grid,True,0.05,True,True,binary_dense_grid_global_on_grid
+alphabet_binary_constrained_reproducibility,alphabet_optimization,27f836a8f8de,0,,optimized_alphabet,0.0,normalized_time,exact,complete,,,,0.0,binary_dense_grid_global_on_grid,True,0.05,True,True,
+alphabet_binary_constrained_reproducibility,alphabet_optimization,fd9a40b2ab90,0,,optimized_alphabet,1.8,normalized_time,exact,complete,,,,1.0,binary_dense_grid_global_on_grid,True,0.05,True,True,
+alphabet_binary_constrained_reproducibility,alphabet_optimization,556870a1351e,0,,optimizer_accepted,1.0,boolean,exact,complete,,,,,binary_dense_grid_global_on_grid,True,0.05,True,True,
+alphabet_binary_constrained_reproducibility,alphabet_optimization,556870a1351e,0,,optimizer_converged,1.0,boolean,exact,complete,,,,,binary_dense_grid_global_on_grid,True,0.05,True,True,
+alphabet_binary_constrained_reproducibility,alphabet_optimization,556870a1351e,0,,optimizer_feasible,1.0,boolean,exact,complete,,,,,binary_dense_grid_global_on_grid,True,0.05,True,True,

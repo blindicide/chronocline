@@ -1,0 +1,279 @@
+{
+  "all_publication_manifests_complete": true,
+  "campaign": "round4-publication-readiness",
+  "generated_at": "2026-07-30T20:41:40.026666+02:00",
+  "publication_campaign_count": 14,
+  "publication_campaigns": [
+    {
+      "completed_jobs": 1,
+      "expected_jobs": 1,
+      "experiment_name": "alphabet_optimization_binary",
+      "failed_jobs": 0,
+      "path": "publication_results/alphabet_optimization_binary/f3f2c6c5bcba80aa",
+      "run_id": "f3f2c6c5bcba80aa",
+      "runtime_seconds": 179.72588,
+      "semantic_validation_status": "passed",
+      "source_commit": "6496e1295812a524866591a3c677478aab574914",
+      "source_dirty": false,
+      "strict_validation_errors": [],
+      "workers": 2
+    },
+    {
+      "completed_jobs": 1,
+      "expected_jobs": 1,
+      "experiment_name": "alphabet_optimization_binary_constrained",
+      "failed_jobs": 0,
+      "path": "publication_results/alphabet_optimization_binary_constrained/098925080f03004d",
+      "run_id": "098925080f03004d",
+      "runtime_seconds": 181.686277,
+      "semantic_validation_status": "passed",
+      "source_commit": "6496e1295812a524866591a3c677478aab574914",
+      "source_dirty": false,
+      "strict_validation_errors": [],
+      "workers": 2
+    },
+    {
+      "completed_jobs": 4,
+      "expected_jobs": 4,
+      "experiment_name": "alphabet_optimization_ternary",
+      "failed_jobs": 0,
+      "path": "publication_results/alphabet_optimization_ternary/00977b567ad02fdd",
+      "run_id": "00977b567ad02fdd",
+      "runtime_seconds": 159.40004,
+      "semantic_validation_status": "passed",
+      "source_commit": "6496e1295812a524866591a3c677478aab574914",
+      "source_dirty": false,
+      "strict_validation_errors": [],
+      "workers": 2
+    },
+    {
+      "completed_jobs": 4,
+      "expected_jobs": 4,
+      "experiment_name": "alphabet_optimization_ternary_constrained",
+      "failed_jobs": 0,
+      "path": "publication_results/alphabet_optimization_ternary_constrained/54c2ba9d31929d98",
+      "run_id": "54c2ba9d31929d98",
+      "runtime_seconds": 156.583677,
+      "semantic_validation_status": "passed",
+      "source_commit": "6496e1295812a524866591a3c677478aab574914",
+      "source_dirty": false,
+      "strict_validation_errors": [],
+      "workers": 2
+    },
+    {
+      "completed_jobs": 200,
+      "expected_jobs": 200,
+      "experiment_name": "batching_comparison",
+      "failed_jobs": 0,
+      "path": "publication_results/batching_comparison/bf0d7adee4dd3398",
+      "run_id": "bf0d7adee4dd3398",
+      "runtime_seconds": 98.89012,
+      "semantic_validation_status": "passed",
+      "source_commit": "6496e1295812a524866591a3c677478aab574914",
+      "source_dirty": false,
+      "strict_validation_errors": [],
+      "workers": 1
+    },
+    {
+      "completed_jobs": 6,
+      "expected_jobs": 6,
+      "experiment_name": "capacity_curve",
+      "failed_jobs": 0,
+      "path": "publication_results/capacity_curve/7b2d764b2ebdf1ce",
+      "run_id": "7b2d764b2ebdf1ce",
+      "runtime_seconds": 100.170586,
+      "semantic_validation_status": "passed",
+      "source_commit": "6496e1295812a524866591a3c677478aab574914",
+      "source_dirty": false,
+      "strict_validation_errors": [],
+      "workers": 1
+    },
+    {
+      "completed_jobs": 144,
+      "expected_jobs": 144,
+      "experiment_name": "capacity_surface",
+      "failed_jobs": 0,
+      "path": "publication_results/capacity_surface/6ad0e1af78e07cac",
+      "run_id": "6ad0e1af78e07cac",
+      "runtime_seconds": 102.906304,
+      "semantic_validation_status": "passed",
+      "source_commit": "6496e1295812a524866591a3c677478aab574914",
+      "source_dirty": false,
+      "strict_validation_errors": [],
+      "workers": 2
+    },
+    {
+      "completed_jobs": 20,
+      "expected_jobs": 20,
+      "experiment_name": "detectability_frontier",
+      "failed_jobs": 0,
+      "path": "publication_results/detectability_frontier/e9e8b18fb541d7e1",
+      "run_id": "e9e8b18fb541d7e1",
+      "runtime_seconds": 93.278082,
+      "semantic_validation_status": "passed",
+      "source_commit": "6496e1295812a524866591a3c677478aab574914",
+      "source_dirty": false,
+      "strict_validation_errors": [],
+      "workers": 2
+    },
+    {
+      "completed_jobs": 18,
+      "expected_jobs": 18,
+      "experiment_name": "finite_sample_detection",
+      "failed_jobs": 0,
+      "path": "publication_results/finite_sample_detection/d0f334fbf8ac5a6f",
+      "run_id": "d0f334fbf8ac5a6f",
+      "runtime_seconds": 95.427572,
+      "semantic_validation_status": "passed",
+      "source_commit": "6496e1295812a524866591a3c677478aab574914",
+      "source_dirty": false,
+      "strict_validation_errors": [],
+      "workers": 2
+    },
+    {
+      "completed_jobs": 24,
+      "expected_jobs": 24,
+      "experiment_name": "jitter_comparison",
+      "failed_jobs": 0,
+      "path": "publication_results/jitter_comparison/a46d1b2c78892491",
+      "run_id": "a46d1b2c78892491",
+      "runtime_seconds": 93.160556,
+      "semantic_validation_status": "passed",
+      "source_commit": "6496e1295812a524866591a3c677478aab574914",
+      "source_dirty": false,
+      "strict_validation_errors": [],
+      "workers": 2
+    },
+    {
+      "completed_jobs": 1,
+      "expected_jobs": 1,
+      "experiment_name": "memoryless_baseline",
+      "failed_jobs": 0,
+      "path": "publication_results/memoryless_baseline/bdc85d28cf0b13f9",
+      "run_id": "bdc85d28cf0b13f9",
+      "runtime_seconds": 118.01906,
+      "semantic_validation_status": "passed",
+      "source_commit": "6496e1295812a524866591a3c677478aab574914",
+      "source_dirty": false,
+      "strict_validation_errors": [],
+      "workers": 1
+    },
+    {
+      "completed_jobs": 65,
+      "expected_jobs": 65,
+      "experiment_name": "phase_sensitivity_commensurate",
+      "failed_jobs": 0,
+      "path": "publication_results/phase_sensitivity_commensurate/8f1e82fc525e56ad",
+      "run_id": "8f1e82fc525e56ad",
+      "runtime_seconds": 97.089815,
+      "semantic_validation_status": "passed",
+      "source_commit": "6496e1295812a524866591a3c677478aab574914",
+      "source_dirty": false,
+      "strict_validation_errors": [],
+      "workers": 2
+    },
+    {
+      "completed_jobs": 65,
+      "expected_jobs": 65,
+      "experiment_name": "phase_sensitivity_noncommensurate_07",
+      "failed_jobs": 0,
+      "path": "publication_results/phase_sensitivity_noncommensurate_07/cd0463dda2a5ae9d",
+      "run_id": "cd0463dda2a5ae9d",
+      "runtime_seconds": 99.076665,
+      "semantic_validation_status": "passed",
+      "source_commit": "6496e1295812a524866591a3c677478aab574914",
+      "source_dirty": false,
+      "strict_validation_errors": [],
+      "workers": 2
+    },
+    {
+      "completed_jobs": 65,
+      "expected_jobs": 65,
+      "experiment_name": "phase_sensitivity_noncommensurate_075",
+      "failed_jobs": 0,
+      "path": "publication_results/phase_sensitivity_noncommensurate_075/1c7d54b0cf4d79d6",
+      "run_id": "1c7d54b0cf4d79d6",
+      "runtime_seconds": 100.966781,
+      "semantic_validation_status": "passed",
+      "source_commit": "6496e1295812a524866591a3c677478aab574914",
+      "source_dirty": false,
+      "strict_validation_errors": [],
+      "workers": 2
+    }
+  ],
+  "publication_work_units": 618,
+  "report_schema_version": "1.0",
+  "reproducibility_campaigns": [
+    {
+      "completed_jobs": 1,
+      "expected_jobs": 1,
+      "experiment_name": "alphabet_binary_constrained_reproducibility",
+      "path": "publication_results/reproducibility/alphabet_binary_constrained_reproducibility/970f8c36c87d8506",
+      "run_id": "970f8c36c87d8506",
+      "strict_validation_errors": []
+    },
+    {
+      "completed_jobs": 200,
+      "expected_jobs": 200,
+      "experiment_name": "batching_comparison_reproducibility",
+      "path": "publication_results/reproducibility/batching_comparison_reproducibility/17a79e188a03e8f1",
+      "run_id": "17a79e188a03e8f1",
+      "strict_validation_errors": []
+    },
+    {
+      "completed_jobs": 6,
+      "expected_jobs": 6,
+      "experiment_name": "finite_detection_reduced_reproducibility_a",
+      "path": "publication_results/reproducibility/finite_detection_reduced_reproducibility_a/54cc6cd87f6e0e0f",
+      "run_id": "54cc6cd87f6e0e0f",
+      "strict_validation_errors": []
+    },
+    {
+      "completed_jobs": 6,
+      "expected_jobs": 6,
+      "experiment_name": "finite_detection_reduced_reproducibility_b",
+      "path": "publication_results/reproducibility/finite_detection_reduced_reproducibility_b/ffa7f8585d0b0a41",
+      "run_id": "ffa7f8585d0b0a41",
+      "strict_validation_errors": []
+    },
+    {
+      "completed_jobs": 1,
+      "expected_jobs": 1,
+      "experiment_name": "memoryless_baseline_reproducibility",
+      "path": "publication_results/reproducibility/memoryless_baseline_reproducibility/f3240f3ca5a7a17b",
+      "run_id": "f3240f3ca5a7a17b",
+      "strict_validation_errors": []
+    }
+  ],
+  "reproducibility_comparisons": [
+    {
+      "exact_match": true,
+      "left": "publication_results/memoryless_baseline/bdc85d28cf0b13f9",
+      "name": "memoryless_baseline",
+      "right": "publication_results/reproducibility/memoryless_baseline_reproducibility/f3240f3ca5a7a17b",
+      "scientific_rows": 7
+    },
+    {
+      "exact_match": true,
+      "left": "publication_results/batching_comparison/bf0d7adee4dd3398",
+      "name": "batching_comparison",
+      "right": "publication_results/reproducibility/batching_comparison_reproducibility/17a79e188a03e8f1",
+      "scientific_rows": 4200
+    },
+    {
+      "exact_match": true,
+      "left": "publication_results/alphabet_optimization_binary_constrained/098925080f03004d",
+      "name": "alphabet_binary_constrained",
+      "right": "publication_results/reproducibility/alphabet_binary_constrained_reproducibility/970f8c36c87d8506",
+      "scientific_rows": 10
+    },
+    {
+      "exact_match": true,
+      "left": "publication_results/reproducibility/finite_detection_reduced_reproducibility_a/54cc6cd87f6e0e0f",
+      "name": "finite_detection_reduced",
+      "right": "publication_results/reproducibility/finite_detection_reduced_reproducibility_b/ffa7f8585d0b0a41",
+      "scientific_rows": 54
+    }
+  ],
+  "source_commit": "6496e1295812a524866591a3c677478aab574914"
+}

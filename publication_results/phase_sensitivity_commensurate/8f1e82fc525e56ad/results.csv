@@ -1,0 +1,329 @@
+experiment_name,experiment_kind,job_id,sweep_index,replication,metric_name,metric_value,units,estimator,status,warning_code,confidence_interval_lower,confidence_interval_upper,quantizer_step,quantizer_phase,jitter_distribution,jitter_scale,alphabet
+phase_sensitivity_commensurate,phase_sensitivity,c7249a5b777f,0,,capacity_bits_per_symbol,0.15780989932970246,bits_per_symbol,blahut_arimoto,complete,,,,0.5,0.0,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,919d11ae51dd,0,,capacity_phase_maximum,0.15780989932970313,bits_per_symbol,exact,complete,,,,,,,,
+phase_sensitivity_commensurate,phase_sensitivity,919d11ae51dd,0,,capacity_phase_mean,0.15780989932970232,bits_per_symbol,exact,complete,,,,,,,,
+phase_sensitivity_commensurate,phase_sensitivity,919d11ae51dd,0,,capacity_phase_minimum,0.1578098993297014,bits_per_symbol,exact,complete,,,,,,,,
+phase_sensitivity_commensurate,phase_sensitivity,c7249a5b777f,0,,capacity_residual,5.551115123125783e-17,bits_per_symbol,blahut_arimoto,complete,,,,0.5,0.0,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,793aee609182,0,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.5,0.0,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,793aee609182,0,,mutual_information,0.15780989932970252,bits_per_symbol,exact,complete,,,,0.5,0.0,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,919d11ae51dd,0,,quantizer_phase,0.0,normalized_time,exact,complete,,,,,,,,
+phase_sensitivity_commensurate,phase_sensitivity,cb64da789e5c,1,,capacity_bits_per_symbol,0.1578098993297025,bits_per_symbol,blahut_arimoto,complete,,,,0.5,0.0078125,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,cb64da789e5c,1,,capacity_residual,2.7755575615628914e-17,bits_per_symbol,blahut_arimoto,complete,,,,0.5,0.0078125,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,c7d9eef31903,1,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.5,0.0078125,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,c7d9eef31903,1,,mutual_information,0.1578098993297025,bits_per_symbol,exact,complete,,,,0.5,0.0078125,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,ff35858c6dfe,1,,quantizer_phase,0.0078125,normalized_time,exact,complete,,,,,,,,
+phase_sensitivity_commensurate,phase_sensitivity,26ac5ba4d98b,2,,capacity_bits_per_symbol,0.15780989932970252,bits_per_symbol,blahut_arimoto,complete,,,,0.5,0.015625,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,26ac5ba4d98b,2,,capacity_residual,8.326672684688674e-17,bits_per_symbol,blahut_arimoto,complete,,,,0.5,0.015625,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,3ad40191caa2,2,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.5,0.015625,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,3ad40191caa2,2,,mutual_information,0.1578098993297025,bits_per_symbol,exact,complete,,,,0.5,0.015625,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,ce9ddfb21dd2,2,,quantizer_phase,0.015625,normalized_time,exact,complete,,,,,,,,
+phase_sensitivity_commensurate,phase_sensitivity,78dc320dd93e,3,,capacity_bits_per_symbol,0.15780989932970252,bits_per_symbol,blahut_arimoto,complete,,,,0.5,0.0234375,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,78dc320dd93e,3,,capacity_residual,5.551115123125783e-17,bits_per_symbol,blahut_arimoto,complete,,,,0.5,0.0234375,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,0122410e1dbb,3,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.5,0.0234375,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,0122410e1dbb,3,,mutual_information,0.15780989932970252,bits_per_symbol,exact,complete,,,,0.5,0.0234375,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,b9169dfd7099,3,,quantizer_phase,0.0234375,normalized_time,exact,complete,,,,,,,,
+phase_sensitivity_commensurate,phase_sensitivity,a9f0af170797,4,,capacity_bits_per_symbol,0.15780989932970257,bits_per_symbol,blahut_arimoto,complete,,,,0.5,0.03125,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,a9f0af170797,4,,capacity_residual,8.326672684688674e-17,bits_per_symbol,blahut_arimoto,complete,,,,0.5,0.03125,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,7c345f83342f,4,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.5,0.03125,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,7c345f83342f,4,,mutual_information,0.1578098993297026,bits_per_symbol,exact,complete,,,,0.5,0.03125,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,5a335f5dc764,4,,quantizer_phase,0.03125,normalized_time,exact,complete,,,,,,,,
+phase_sensitivity_commensurate,phase_sensitivity,938912581d05,5,,capacity_bits_per_symbol,0.15780989932970202,bits_per_symbol,blahut_arimoto,complete,,,,0.5,0.0390625,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,938912581d05,5,,capacity_residual,1.3877787807814457e-16,bits_per_symbol,blahut_arimoto,complete,,,,0.5,0.0390625,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,9ad06d3f0f81,5,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.5,0.0390625,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,9ad06d3f0f81,5,,mutual_information,0.15780989932970194,bits_per_symbol,exact,complete,,,,0.5,0.0390625,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,fb9cc9eebe15,5,,quantizer_phase,0.0390625,normalized_time,exact,complete,,,,,,,,
+phase_sensitivity_commensurate,phase_sensitivity,e398f0abae32,6,,capacity_bits_per_symbol,0.15780989932970244,bits_per_symbol,blahut_arimoto,complete,,,,0.5,0.046875,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,e398f0abae32,6,,capacity_residual,1.942890293094024e-16,bits_per_symbol,blahut_arimoto,complete,,,,0.5,0.046875,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,553f976da002,6,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.5,0.046875,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,553f976da002,6,,mutual_information,0.1578098993297024,bits_per_symbol,exact,complete,,,,0.5,0.046875,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,95eed3b270f9,6,,quantizer_phase,0.046875,normalized_time,exact,complete,,,,,,,,
+phase_sensitivity_commensurate,phase_sensitivity,e84868767707,7,,capacity_bits_per_symbol,0.15780989932970257,bits_per_symbol,blahut_arimoto,complete,,,,0.5,0.0546875,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,e84868767707,7,,capacity_residual,1.6653345369377348e-16,bits_per_symbol,blahut_arimoto,complete,,,,0.5,0.0546875,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,c69e5f798c69,7,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.5,0.0546875,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,c69e5f798c69,7,,mutual_information,0.1578098993297026,bits_per_symbol,exact,complete,,,,0.5,0.0546875,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,f2d3d43eeb6d,7,,quantizer_phase,0.0546875,normalized_time,exact,complete,,,,,,,,
+phase_sensitivity_commensurate,phase_sensitivity,d715b7168131,8,,capacity_bits_per_symbol,0.15780989932970246,bits_per_symbol,blahut_arimoto,complete,,,,0.5,0.0625,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,d715b7168131,8,,capacity_residual,1.942890293094024e-16,bits_per_symbol,blahut_arimoto,complete,,,,0.5,0.0625,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,36e6c791733e,8,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.5,0.0625,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,36e6c791733e,8,,mutual_information,0.15780989932970246,bits_per_symbol,exact,complete,,,,0.5,0.0625,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,71b81d8d69b5,8,,quantizer_phase,0.0625,normalized_time,exact,complete,,,,,,,,
+phase_sensitivity_commensurate,phase_sensitivity,4da76f9e2165,9,,capacity_bits_per_symbol,0.15780989932970246,bits_per_symbol,blahut_arimoto,complete,,,,0.5,0.0703125,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,4da76f9e2165,9,,capacity_residual,2.220446049250313e-16,bits_per_symbol,blahut_arimoto,complete,,,,0.5,0.0703125,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,81d5cebace48,9,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.5,0.0703125,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,81d5cebace48,9,,mutual_information,0.15780989932970244,bits_per_symbol,exact,complete,,,,0.5,0.0703125,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,88dfda5c5b10,9,,quantizer_phase,0.0703125,normalized_time,exact,complete,,,,,,,,
+phase_sensitivity_commensurate,phase_sensitivity,23e787b2a3a4,10,,capacity_bits_per_symbol,0.15780989932970246,bits_per_symbol,blahut_arimoto,complete,,,,0.5,0.078125,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,23e787b2a3a4,10,,capacity_residual,2.498001805406602e-16,bits_per_symbol,blahut_arimoto,complete,,,,0.5,0.078125,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,7ad676b38e77,10,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.5,0.078125,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,7ad676b38e77,10,,mutual_information,0.15780989932970244,bits_per_symbol,exact,complete,,,,0.5,0.078125,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,c2eb539e38a2,10,,quantizer_phase,0.078125,normalized_time,exact,complete,,,,,,,,
+phase_sensitivity_commensurate,phase_sensitivity,84ec697ef95b,11,,capacity_bits_per_symbol,0.15780989932970252,bits_per_symbol,blahut_arimoto,complete,,,,0.5,0.0859375,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,84ec697ef95b,11,,capacity_residual,2.498001805406602e-16,bits_per_symbol,blahut_arimoto,complete,,,,0.5,0.0859375,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,92a8ab759f3a,11,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.5,0.0859375,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,92a8ab759f3a,11,,mutual_information,0.15780989932970252,bits_per_symbol,exact,complete,,,,0.5,0.0859375,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,d8e99effb376,11,,quantizer_phase,0.0859375,normalized_time,exact,complete,,,,,,,,
+phase_sensitivity_commensurate,phase_sensitivity,c26d63f4fb83,12,,capacity_bits_per_symbol,0.15780989932970252,bits_per_symbol,blahut_arimoto,complete,,,,0.5,0.09375,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,c26d63f4fb83,12,,capacity_residual,2.498001805406602e-16,bits_per_symbol,blahut_arimoto,complete,,,,0.5,0.09375,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,d8a1e8b83fd8,12,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.5,0.09375,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,d8a1e8b83fd8,12,,mutual_information,0.1578098993297025,bits_per_symbol,exact,complete,,,,0.5,0.09375,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,ed5818dcbb00,12,,quantizer_phase,0.09375,normalized_time,exact,complete,,,,,,,,
+phase_sensitivity_commensurate,phase_sensitivity,6a3a89fdb57c,13,,capacity_bits_per_symbol,0.1578098993297017,bits_per_symbol,blahut_arimoto,complete,,,,0.5,0.1015625,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,6a3a89fdb57c,13,,capacity_residual,1.1102230246251565e-16,bits_per_symbol,blahut_arimoto,complete,,,,0.5,0.1015625,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,ccaaef793533,13,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.5,0.1015625,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,ccaaef793533,13,,mutual_information,0.1578098993297017,bits_per_symbol,exact,complete,,,,0.5,0.1015625,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,b58806d856c4,13,,quantizer_phase,0.1015625,normalized_time,exact,complete,,,,,,,,
+phase_sensitivity_commensurate,phase_sensitivity,2e0baf57f9d6,14,,capacity_bits_per_symbol,0.15780989932970252,bits_per_symbol,blahut_arimoto,complete,,,,0.5,0.109375,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,2e0baf57f9d6,14,,capacity_residual,3.3306690738754696e-16,bits_per_symbol,blahut_arimoto,complete,,,,0.5,0.109375,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,2edca0e346bd,14,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.5,0.109375,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,2edca0e346bd,14,,mutual_information,0.15780989932970255,bits_per_symbol,exact,complete,,,,0.5,0.109375,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,2c3fa73cbe44,14,,quantizer_phase,0.109375,normalized_time,exact,complete,,,,,,,,
+phase_sensitivity_commensurate,phase_sensitivity,0accca8979c6,15,,capacity_bits_per_symbol,0.15780989932970185,bits_per_symbol,blahut_arimoto,complete,,,,0.5,0.1171875,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,0accca8979c6,15,,capacity_residual,5.551115123125783e-17,bits_per_symbol,blahut_arimoto,complete,,,,0.5,0.1171875,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,047970389514,15,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.5,0.1171875,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,047970389514,15,,mutual_information,0.15780989932970188,bits_per_symbol,exact,complete,,,,0.5,0.1171875,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,cd50cbd015cf,15,,quantizer_phase,0.1171875,normalized_time,exact,complete,,,,,,,,
+phase_sensitivity_commensurate,phase_sensitivity,8c3cb7f3eeca,16,,capacity_bits_per_symbol,0.15780989932970252,bits_per_symbol,blahut_arimoto,complete,,,,0.5,0.125,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,8c3cb7f3eeca,16,,capacity_residual,2.7755575615628914e-16,bits_per_symbol,blahut_arimoto,complete,,,,0.5,0.125,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,9a0b9625198f,16,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.5,0.125,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,9a0b9625198f,16,,mutual_information,0.15780989932970252,bits_per_symbol,exact,complete,,,,0.5,0.125,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,ebc7dd92d6f4,16,,quantizer_phase,0.125,normalized_time,exact,complete,,,,,,,,
+phase_sensitivity_commensurate,phase_sensitivity,91bda98aaf63,17,,capacity_bits_per_symbol,0.1578098993297024,bits_per_symbol,blahut_arimoto,complete,,,,0.5,0.1328125,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,91bda98aaf63,17,,capacity_residual,3.0531133177191805e-16,bits_per_symbol,blahut_arimoto,complete,,,,0.5,0.1328125,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,034f46bb1a63,17,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.5,0.1328125,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,034f46bb1a63,17,,mutual_information,0.1578098993297024,bits_per_symbol,exact,complete,,,,0.5,0.1328125,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,803adf009ce0,17,,quantizer_phase,0.1328125,normalized_time,exact,complete,,,,,,,,
+phase_sensitivity_commensurate,phase_sensitivity,0287ee7bd06a,18,,capacity_bits_per_symbol,0.15780989932970252,bits_per_symbol,blahut_arimoto,complete,,,,0.5,0.140625,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,0287ee7bd06a,18,,capacity_residual,3.608224830031759e-16,bits_per_symbol,blahut_arimoto,complete,,,,0.5,0.140625,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,28ad089f9c38,18,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.5,0.140625,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,28ad089f9c38,18,,mutual_information,0.1578098993297025,bits_per_symbol,exact,complete,,,,0.5,0.140625,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,9d7162564e76,18,,quantizer_phase,0.140625,normalized_time,exact,complete,,,,,,,,
+phase_sensitivity_commensurate,phase_sensitivity,9f5d3f27b48f,19,,capacity_bits_per_symbol,0.15780989932970252,bits_per_symbol,blahut_arimoto,complete,,,,0.5,0.1484375,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,9f5d3f27b48f,19,,capacity_residual,3.3306690738754696e-16,bits_per_symbol,blahut_arimoto,complete,,,,0.5,0.1484375,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,92d876f7c06b,19,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.5,0.1484375,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,92d876f7c06b,19,,mutual_information,0.15780989932970255,bits_per_symbol,exact,complete,,,,0.5,0.1484375,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,ffe479fb6372,19,,quantizer_phase,0.1484375,normalized_time,exact,complete,,,,,,,,
+phase_sensitivity_commensurate,phase_sensitivity,46e272d07da1,20,,capacity_bits_per_symbol,0.15780989932970246,bits_per_symbol,blahut_arimoto,complete,,,,0.5,0.15625,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,46e272d07da1,20,,capacity_residual,3.0531133177191805e-16,bits_per_symbol,blahut_arimoto,complete,,,,0.5,0.15625,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,4122e7239d9e,20,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.5,0.15625,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,4122e7239d9e,20,,mutual_information,0.1578098993297025,bits_per_symbol,exact,complete,,,,0.5,0.15625,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,17a4671b7ad7,20,,quantizer_phase,0.15625,normalized_time,exact,complete,,,,,,,,
+phase_sensitivity_commensurate,phase_sensitivity,27d36e2a09e1,21,,capacity_bits_per_symbol,0.15780989932970246,bits_per_symbol,blahut_arimoto,complete,,,,0.5,0.1640625,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,27d36e2a09e1,21,,capacity_residual,2.7755575615628914e-16,bits_per_symbol,blahut_arimoto,complete,,,,0.5,0.1640625,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,633cf7ba93ee,21,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.5,0.1640625,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,633cf7ba93ee,21,,mutual_information,0.15780989932970244,bits_per_symbol,exact,complete,,,,0.5,0.1640625,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,826f5c8c647f,21,,quantizer_phase,0.1640625,normalized_time,exact,complete,,,,,,,,
+phase_sensitivity_commensurate,phase_sensitivity,9514fb5c0874,22,,capacity_bits_per_symbol,0.15780989932970185,bits_per_symbol,blahut_arimoto,complete,,,,0.5,0.171875,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,9514fb5c0874,22,,capacity_residual,1.3877787807814457e-16,bits_per_symbol,blahut_arimoto,complete,,,,0.5,0.171875,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,c7c2c562dc8c,22,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.5,0.171875,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,c7c2c562dc8c,22,,mutual_information,0.15780989932970182,bits_per_symbol,exact,complete,,,,0.5,0.171875,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,bf05784aa008,22,,quantizer_phase,0.171875,normalized_time,exact,complete,,,,,,,,
+phase_sensitivity_commensurate,phase_sensitivity,194fbc5a5a87,23,,capacity_bits_per_symbol,0.15780989932970196,bits_per_symbol,blahut_arimoto,complete,,,,0.5,0.1796875,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,194fbc5a5a87,23,,capacity_residual,1.6653345369377348e-16,bits_per_symbol,blahut_arimoto,complete,,,,0.5,0.1796875,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,31bee948b63d,23,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.5,0.1796875,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,31bee948b63d,23,,mutual_information,0.157809899329702,bits_per_symbol,exact,complete,,,,0.5,0.1796875,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,6123a5bd2a81,23,,quantizer_phase,0.1796875,normalized_time,exact,complete,,,,,,,,
+phase_sensitivity_commensurate,phase_sensitivity,e081d2f58b55,24,,capacity_bits_per_symbol,0.15780989932970194,bits_per_symbol,blahut_arimoto,complete,,,,0.5,0.1875,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,e081d2f58b55,24,,capacity_residual,1.6653345369377348e-16,bits_per_symbol,blahut_arimoto,complete,,,,0.5,0.1875,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,91343fd1345f,24,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.5,0.1875,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,91343fd1345f,24,,mutual_information,0.15780989932970194,bits_per_symbol,exact,complete,,,,0.5,0.1875,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,13d3cf8324d3,24,,quantizer_phase,0.1875,normalized_time,exact,complete,,,,,,,,
+phase_sensitivity_commensurate,phase_sensitivity,b16e653b3f56,25,,capacity_bits_per_symbol,0.15780989932970313,bits_per_symbol,blahut_arimoto,complete,,,,0.5,0.1953125,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,b16e653b3f56,25,,capacity_residual,7.771561172376096e-16,bits_per_symbol,blahut_arimoto,complete,,,,0.5,0.1953125,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,2488601659e2,25,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.5,0.1953125,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,2488601659e2,25,,mutual_information,0.15780989932970316,bits_per_symbol,exact,complete,,,,0.5,0.1953125,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,97e727e51094,25,,quantizer_phase,0.1953125,normalized_time,exact,complete,,,,,,,,
+phase_sensitivity_commensurate,phase_sensitivity,d78485891b62,26,,capacity_bits_per_symbol,0.1578098993297031,bits_per_symbol,blahut_arimoto,complete,,,,0.5,0.203125,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,d78485891b62,26,,capacity_residual,6.938893903907228e-16,bits_per_symbol,blahut_arimoto,complete,,,,0.5,0.203125,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,5239428afc99,26,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.5,0.203125,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,5239428afc99,26,,mutual_information,0.15780989932970316,bits_per_symbol,exact,complete,,,,0.5,0.203125,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,f61e041d5c9b,26,,quantizer_phase,0.203125,normalized_time,exact,complete,,,,,,,,
+phase_sensitivity_commensurate,phase_sensitivity,882cec4bc69a,27,,capacity_bits_per_symbol,0.15780989932970246,bits_per_symbol,blahut_arimoto,complete,,,,0.5,0.2109375,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,882cec4bc69a,27,,capacity_residual,1.3877787807814457e-16,bits_per_symbol,blahut_arimoto,complete,,,,0.5,0.2109375,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,06256dcc6769,27,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.5,0.2109375,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,06256dcc6769,27,,mutual_information,0.15780989932970246,bits_per_symbol,exact,complete,,,,0.5,0.2109375,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,a3c53b673575,27,,quantizer_phase,0.2109375,normalized_time,exact,complete,,,,,,,,
+phase_sensitivity_commensurate,phase_sensitivity,a8231eafeb0c,28,,capacity_bits_per_symbol,0.15780989932970252,bits_per_symbol,blahut_arimoto,complete,,,,0.5,0.21875,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,a8231eafeb0c,28,,capacity_residual,5.551115123125783e-17,bits_per_symbol,blahut_arimoto,complete,,,,0.5,0.21875,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,78e50d8061be,28,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.5,0.21875,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,78e50d8061be,28,,mutual_information,0.15780989932970255,bits_per_symbol,exact,complete,,,,0.5,0.21875,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,1104de8a01bc,28,,quantizer_phase,0.21875,normalized_time,exact,complete,,,,,,,,
+phase_sensitivity_commensurate,phase_sensitivity,c7de87202d0e,29,,capacity_bits_per_symbol,0.1578098993297019,bits_per_symbol,blahut_arimoto,complete,,,,0.5,0.2265625,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,c7de87202d0e,29,,capacity_residual,3.0531133177191805e-16,bits_per_symbol,blahut_arimoto,complete,,,,0.5,0.2265625,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,fe0f2146df2b,29,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.5,0.2265625,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,fe0f2146df2b,29,,mutual_information,0.15780989932970194,bits_per_symbol,exact,complete,,,,0.5,0.2265625,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,fe2c5d6ffb40,29,,quantizer_phase,0.2265625,normalized_time,exact,complete,,,,,,,,
+phase_sensitivity_commensurate,phase_sensitivity,c974bed48c7c,30,,capacity_bits_per_symbol,0.15780989932970246,bits_per_symbol,blahut_arimoto,complete,,,,0.5,0.234375,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,c974bed48c7c,30,,capacity_residual,5.551115123125783e-17,bits_per_symbol,blahut_arimoto,complete,,,,0.5,0.234375,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,28d52b110b78,30,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.5,0.234375,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,28d52b110b78,30,,mutual_information,0.1578098993297025,bits_per_symbol,exact,complete,,,,0.5,0.234375,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,2e1bffe674f5,30,,quantizer_phase,0.234375,normalized_time,exact,complete,,,,,,,,
+phase_sensitivity_commensurate,phase_sensitivity,90c7606c5000,31,,capacity_bits_per_symbol,0.15780989932970246,bits_per_symbol,blahut_arimoto,complete,,,,0.5,0.2421875,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,90c7606c5000,31,,capacity_residual,8.326672684688674e-17,bits_per_symbol,blahut_arimoto,complete,,,,0.5,0.2421875,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,dc143ed6db4d,31,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.5,0.2421875,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,dc143ed6db4d,31,,mutual_information,0.1578098993297025,bits_per_symbol,exact,complete,,,,0.5,0.2421875,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,eb930ca58a8e,31,,quantizer_phase,0.2421875,normalized_time,exact,complete,,,,,,,,
+phase_sensitivity_commensurate,phase_sensitivity,595bc0089f07,32,,capacity_bits_per_symbol,0.1578098993297024,bits_per_symbol,blahut_arimoto,complete,,,,0.5,0.25,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,595bc0089f07,32,,capacity_residual,0.0,bits_per_symbol,blahut_arimoto,complete,,,,0.5,0.25,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,0405c134991f,32,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.5,0.25,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,0405c134991f,32,,mutual_information,0.15780989932970244,bits_per_symbol,exact,complete,,,,0.5,0.25,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,0aa06f59bf35,32,,quantizer_phase,0.25,normalized_time,exact,complete,,,,,,,,
+phase_sensitivity_commensurate,phase_sensitivity,24596baff2b5,33,,capacity_bits_per_symbol,0.15780989932970246,bits_per_symbol,blahut_arimoto,complete,,,,0.5,0.2578125,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,24596baff2b5,33,,capacity_residual,5.551115123125783e-17,bits_per_symbol,blahut_arimoto,complete,,,,0.5,0.2578125,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,3e3e404f808c,33,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.5,0.2578125,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,3e3e404f808c,33,,mutual_information,0.1578098993297025,bits_per_symbol,exact,complete,,,,0.5,0.2578125,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,e2ff6aef0848,33,,quantizer_phase,0.2578125,normalized_time,exact,complete,,,,,,,,
+phase_sensitivity_commensurate,phase_sensitivity,e029bfb355e2,34,,capacity_bits_per_symbol,0.15780989932970246,bits_per_symbol,blahut_arimoto,complete,,,,0.5,0.265625,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,e029bfb355e2,34,,capacity_residual,2.7755575615628914e-17,bits_per_symbol,blahut_arimoto,complete,,,,0.5,0.265625,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,7cd957037978,34,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.5,0.265625,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,7cd957037978,34,,mutual_information,0.15780989932970246,bits_per_symbol,exact,complete,,,,0.5,0.265625,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,adb528a32d33,34,,quantizer_phase,0.265625,normalized_time,exact,complete,,,,,,,,
+phase_sensitivity_commensurate,phase_sensitivity,f70107684a8f,35,,capacity_bits_per_symbol,0.15780989932970246,bits_per_symbol,blahut_arimoto,complete,,,,0.5,0.2734375,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,f70107684a8f,35,,capacity_residual,5.551115123125783e-17,bits_per_symbol,blahut_arimoto,complete,,,,0.5,0.2734375,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,c57304e39cce,35,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.5,0.2734375,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,c57304e39cce,35,,mutual_information,0.15780989932970246,bits_per_symbol,exact,complete,,,,0.5,0.2734375,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,d7afdeaa3a7a,35,,quantizer_phase,0.2734375,normalized_time,exact,complete,,,,,,,,
+phase_sensitivity_commensurate,phase_sensitivity,83adceaaa19f,36,,capacity_bits_per_symbol,0.1578098993297019,bits_per_symbol,blahut_arimoto,complete,,,,0.5,0.28125,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,83adceaaa19f,36,,capacity_residual,4.718447854656915e-16,bits_per_symbol,blahut_arimoto,complete,,,,0.5,0.28125,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,7c08088cbce2,36,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.5,0.28125,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,7c08088cbce2,36,,mutual_information,0.1578098993297019,bits_per_symbol,exact,complete,,,,0.5,0.28125,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,ab0669c7f581,36,,quantizer_phase,0.28125,normalized_time,exact,complete,,,,,,,,
+phase_sensitivity_commensurate,phase_sensitivity,9cf5c0077bdf,37,,capacity_bits_per_symbol,0.1578098993297025,bits_per_symbol,blahut_arimoto,complete,,,,0.5,0.2890625,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,9cf5c0077bdf,37,,capacity_residual,1.3877787807814457e-16,bits_per_symbol,blahut_arimoto,complete,,,,0.5,0.2890625,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,097128013017,37,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.5,0.2890625,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,097128013017,37,,mutual_information,0.15780989932970246,bits_per_symbol,exact,complete,,,,0.5,0.2890625,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,0d6964469926,37,,quantizer_phase,0.2890625,normalized_time,exact,complete,,,,,,,,
+phase_sensitivity_commensurate,phase_sensitivity,54ece0c1abf4,38,,capacity_bits_per_symbol,0.15780989932970196,bits_per_symbol,blahut_arimoto,complete,,,,0.5,0.296875,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,54ece0c1abf4,38,,capacity_residual,5.551115123125783e-16,bits_per_symbol,blahut_arimoto,complete,,,,0.5,0.296875,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,064d05a428d7,38,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.5,0.296875,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,064d05a428d7,38,,mutual_information,0.157809899329702,bits_per_symbol,exact,complete,,,,0.5,0.296875,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,6aacb82ba6b7,38,,quantizer_phase,0.296875,normalized_time,exact,complete,,,,,,,,
+phase_sensitivity_commensurate,phase_sensitivity,6f6ca7a9a29e,39,,capacity_bits_per_symbol,0.1578098993297014,bits_per_symbol,blahut_arimoto,complete,,,,0.5,0.3046875,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,6f6ca7a9a29e,39,,capacity_residual,9.159339953157541e-16,bits_per_symbol,blahut_arimoto,complete,,,,0.5,0.3046875,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,e3a7e48e88d8,39,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.5,0.3046875,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,e3a7e48e88d8,39,,mutual_information,0.15780989932970138,bits_per_symbol,exact,complete,,,,0.5,0.3046875,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,7583f569b634,39,,quantizer_phase,0.3046875,normalized_time,exact,complete,,,,,,,,
+phase_sensitivity_commensurate,phase_sensitivity,7aaddfe09b15,40,,capacity_bits_per_symbol,0.15780989932970252,bits_per_symbol,blahut_arimoto,complete,,,,0.5,0.3125,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,7aaddfe09b15,40,,capacity_residual,1.942890293094024e-16,bits_per_symbol,blahut_arimoto,complete,,,,0.5,0.3125,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,23be92e26827,40,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.5,0.3125,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,23be92e26827,40,,mutual_information,0.15780989932970252,bits_per_symbol,exact,complete,,,,0.5,0.3125,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,c1a1d6671e41,40,,quantizer_phase,0.3125,normalized_time,exact,complete,,,,,,,,
+phase_sensitivity_commensurate,phase_sensitivity,a1de391dd7bc,41,,capacity_bits_per_symbol,0.157809899329702,bits_per_symbol,blahut_arimoto,complete,,,,0.5,0.3203125,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,a1de391dd7bc,41,,capacity_residual,6.106226635438361e-16,bits_per_symbol,blahut_arimoto,complete,,,,0.5,0.3203125,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,e3a12ba8043d,41,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.5,0.3203125,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,e3a12ba8043d,41,,mutual_information,0.15780989932970196,bits_per_symbol,exact,complete,,,,0.5,0.3203125,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,b3c6bd82ee7d,41,,quantizer_phase,0.3203125,normalized_time,exact,complete,,,,,,,,
+phase_sensitivity_commensurate,phase_sensitivity,7c496dfa3fab,42,,capacity_bits_per_symbol,0.1578098993297019,bits_per_symbol,blahut_arimoto,complete,,,,0.5,0.328125,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,7c496dfa3fab,42,,capacity_residual,6.106226635438361e-16,bits_per_symbol,blahut_arimoto,complete,,,,0.5,0.328125,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,81c5d89c846d,42,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.5,0.328125,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,81c5d89c846d,42,,mutual_information,0.15780989932970188,bits_per_symbol,exact,complete,,,,0.5,0.328125,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,3081c6e86ef5,42,,quantizer_phase,0.328125,normalized_time,exact,complete,,,,,,,,
+phase_sensitivity_commensurate,phase_sensitivity,e7001896b643,43,,capacity_bits_per_symbol,0.1578098993297024,bits_per_symbol,blahut_arimoto,complete,,,,0.5,0.3359375,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,e7001896b643,43,,capacity_residual,3.3306690738754696e-16,bits_per_symbol,blahut_arimoto,complete,,,,0.5,0.3359375,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,8167734ec03b,43,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.5,0.3359375,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,8167734ec03b,43,,mutual_information,0.15780989932970244,bits_per_symbol,exact,complete,,,,0.5,0.3359375,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,f6e3ef2654e8,43,,quantizer_phase,0.3359375,normalized_time,exact,complete,,,,,,,,
+phase_sensitivity_commensurate,phase_sensitivity,f33cd438820f,44,,capacity_bits_per_symbol,0.15780989932970196,bits_per_symbol,blahut_arimoto,complete,,,,0.5,0.34375,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,f33cd438820f,44,,capacity_residual,6.38378239159465e-16,bits_per_symbol,blahut_arimoto,complete,,,,0.5,0.34375,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,3f93b11bfbe1,44,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.5,0.34375,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,3f93b11bfbe1,44,,mutual_information,0.15780989932970196,bits_per_symbol,exact,complete,,,,0.5,0.34375,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,d75c2a9dae72,44,,quantizer_phase,0.34375,normalized_time,exact,complete,,,,,,,,
+phase_sensitivity_commensurate,phase_sensitivity,5d816bed8e0c,45,,capacity_bits_per_symbol,0.15780989932970257,bits_per_symbol,blahut_arimoto,complete,,,,0.5,0.3515625,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,5d816bed8e0c,45,,capacity_residual,4.163336342344337e-16,bits_per_symbol,blahut_arimoto,complete,,,,0.5,0.3515625,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,f7b094214127,45,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.5,0.3515625,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,f7b094214127,45,,mutual_information,0.1578098993297026,bits_per_symbol,exact,complete,,,,0.5,0.3515625,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,e9f9d6422015,45,,quantizer_phase,0.3515625,normalized_time,exact,complete,,,,,,,,
+phase_sensitivity_commensurate,phase_sensitivity,c284e3040aed,46,,capacity_bits_per_symbol,0.15780989932970207,bits_per_symbol,blahut_arimoto,complete,,,,0.5,0.359375,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,c284e3040aed,46,,capacity_residual,6.938893903907228e-16,bits_per_symbol,blahut_arimoto,complete,,,,0.5,0.359375,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,b7c676586b57,46,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.5,0.359375,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,b7c676586b57,46,,mutual_information,0.15780989932970207,bits_per_symbol,exact,complete,,,,0.5,0.359375,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,d063d4b21f4c,46,,quantizer_phase,0.359375,normalized_time,exact,complete,,,,,,,,
+phase_sensitivity_commensurate,phase_sensitivity,4fe9ef1c7868,47,,capacity_bits_per_symbol,0.1578098993297019,bits_per_symbol,blahut_arimoto,complete,,,,0.5,0.3671875,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,4fe9ef1c7868,47,,capacity_residual,6.106226635438361e-16,bits_per_symbol,blahut_arimoto,complete,,,,0.5,0.3671875,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,4af32ea2e7e2,47,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.5,0.3671875,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,4af32ea2e7e2,47,,mutual_information,0.15780989932970194,bits_per_symbol,exact,complete,,,,0.5,0.3671875,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,61e4b92fc741,47,,quantizer_phase,0.3671875,normalized_time,exact,complete,,,,,,,,
+phase_sensitivity_commensurate,phase_sensitivity,c525bbd18242,48,,capacity_bits_per_symbol,0.15780989932970196,bits_per_symbol,blahut_arimoto,complete,,,,0.5,0.375,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,c525bbd18242,48,,capacity_residual,6.661338147750939e-16,bits_per_symbol,blahut_arimoto,complete,,,,0.5,0.375,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,905a848718bd,48,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.5,0.375,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,905a848718bd,48,,mutual_information,0.15780989932970202,bits_per_symbol,exact,complete,,,,0.5,0.375,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,2dcdf0a22514,48,,quantizer_phase,0.375,normalized_time,exact,complete,,,,,,,,
+phase_sensitivity_commensurate,phase_sensitivity,61b4ffb42239,49,,capacity_bits_per_symbol,0.15780989932970252,bits_per_symbol,blahut_arimoto,complete,,,,0.5,0.3828125,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,61b4ffb42239,49,,capacity_residual,3.3306690738754696e-16,bits_per_symbol,blahut_arimoto,complete,,,,0.5,0.3828125,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,1344068989fc,49,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.5,0.3828125,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,1344068989fc,49,,mutual_information,0.15780989932970246,bits_per_symbol,exact,complete,,,,0.5,0.3828125,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,1a54ecdcbda5,49,,quantizer_phase,0.3828125,normalized_time,exact,complete,,,,,,,,
+phase_sensitivity_commensurate,phase_sensitivity,271ecde3d6dd,50,,capacity_bits_per_symbol,0.15780989932970205,bits_per_symbol,blahut_arimoto,complete,,,,0.5,0.390625,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,271ecde3d6dd,50,,capacity_residual,6.38378239159465e-16,bits_per_symbol,blahut_arimoto,complete,,,,0.5,0.390625,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,1ef6795b6f9c,50,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.5,0.390625,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,1ef6795b6f9c,50,,mutual_information,0.157809899329702,bits_per_symbol,exact,complete,,,,0.5,0.390625,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,e89532ec139b,50,,quantizer_phase,0.390625,normalized_time,exact,complete,,,,,,,,
+phase_sensitivity_commensurate,phase_sensitivity,fa95b7ad3d10,51,,capacity_bits_per_symbol,0.1578098993297025,bits_per_symbol,blahut_arimoto,complete,,,,0.5,0.3984375,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,fa95b7ad3d10,51,,capacity_residual,3.0531133177191805e-16,bits_per_symbol,blahut_arimoto,complete,,,,0.5,0.3984375,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,d26c5abdfea4,51,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.5,0.3984375,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,d26c5abdfea4,51,,mutual_information,0.1578098993297025,bits_per_symbol,exact,complete,,,,0.5,0.3984375,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,4092c27ff583,51,,quantizer_phase,0.3984375,normalized_time,exact,complete,,,,,,,,
+phase_sensitivity_commensurate,phase_sensitivity,1026bff2550c,52,,capacity_bits_per_symbol,0.1578098993297025,bits_per_symbol,blahut_arimoto,complete,,,,0.5,0.40625,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,1026bff2550c,52,,capacity_residual,2.7755575615628914e-16,bits_per_symbol,blahut_arimoto,complete,,,,0.5,0.40625,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,c156765e9969,52,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.5,0.40625,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,c156765e9969,52,,mutual_information,0.15780989932970252,bits_per_symbol,exact,complete,,,,0.5,0.40625,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,204aa37454e5,52,,quantizer_phase,0.40625,normalized_time,exact,complete,,,,,,,,
+phase_sensitivity_commensurate,phase_sensitivity,f6fc9d0cabfd,53,,capacity_bits_per_symbol,0.15780989932970255,bits_per_symbol,blahut_arimoto,complete,,,,0.5,0.4140625,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,f6fc9d0cabfd,53,,capacity_residual,3.0531133177191805e-16,bits_per_symbol,blahut_arimoto,complete,,,,0.5,0.4140625,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,6318a9855717,53,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.5,0.4140625,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,6318a9855717,53,,mutual_information,0.15780989932970255,bits_per_symbol,exact,complete,,,,0.5,0.4140625,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,0c25fc108f4a,53,,quantizer_phase,0.4140625,normalized_time,exact,complete,,,,,,,,
+phase_sensitivity_commensurate,phase_sensitivity,e7673d6294cd,54,,capacity_bits_per_symbol,0.15780989932970196,bits_per_symbol,blahut_arimoto,complete,,,,0.5,0.421875,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,e7673d6294cd,54,,capacity_residual,5.551115123125783e-16,bits_per_symbol,blahut_arimoto,complete,,,,0.5,0.421875,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,d19555b2180f,54,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.5,0.421875,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,d19555b2180f,54,,mutual_information,0.15780989932970194,bits_per_symbol,exact,complete,,,,0.5,0.421875,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,c5b0d4d853bb,54,,quantizer_phase,0.421875,normalized_time,exact,complete,,,,,,,,
+phase_sensitivity_commensurate,phase_sensitivity,fc580703c11f,55,,capacity_bits_per_symbol,0.15780989932970246,bits_per_symbol,blahut_arimoto,complete,,,,0.5,0.4296875,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,fc580703c11f,55,,capacity_residual,2.220446049250313e-16,bits_per_symbol,blahut_arimoto,complete,,,,0.5,0.4296875,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,5d7b5417b500,55,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.5,0.4296875,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,5d7b5417b500,55,,mutual_information,0.15780989932970246,bits_per_symbol,exact,complete,,,,0.5,0.4296875,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,3823f3b391dc,55,,quantizer_phase,0.4296875,normalized_time,exact,complete,,,,,,,,
+phase_sensitivity_commensurate,phase_sensitivity,d26317237b57,56,,capacity_bits_per_symbol,0.15780989932970238,bits_per_symbol,blahut_arimoto,complete,,,,0.5,0.4375,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,d26317237b57,56,,capacity_residual,8.326672684688674e-17,bits_per_symbol,blahut_arimoto,complete,,,,0.5,0.4375,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,3a3498729cdc,56,,matrix_row_sum_error,1.1102230246251565e-16,probability,exact,complete,,,,0.5,0.4375,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,3a3498729cdc,56,,mutual_information,0.15780989932970238,bits_per_symbol,exact,complete,,,,0.5,0.4375,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,8d989e1bccba,56,,quantizer_phase,0.4375,normalized_time,exact,complete,,,,,,,,
+phase_sensitivity_commensurate,phase_sensitivity,8be88af13a81,57,,capacity_bits_per_symbol,0.15780989932970246,bits_per_symbol,blahut_arimoto,complete,,,,0.5,0.4453125,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,8be88af13a81,57,,capacity_residual,2.220446049250313e-16,bits_per_symbol,blahut_arimoto,complete,,,,0.5,0.4453125,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,1ba3cc72f552,57,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.5,0.4453125,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,1ba3cc72f552,57,,mutual_information,0.1578098993297025,bits_per_symbol,exact,complete,,,,0.5,0.4453125,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,3d3a7a0a3abc,57,,quantizer_phase,0.4453125,normalized_time,exact,complete,,,,,,,,
+phase_sensitivity_commensurate,phase_sensitivity,eddbf69de67a,58,,capacity_bits_per_symbol,0.157809899329702,bits_per_symbol,blahut_arimoto,complete,,,,0.5,0.453125,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,eddbf69de67a,58,,capacity_residual,5.273559366969494e-16,bits_per_symbol,blahut_arimoto,complete,,,,0.5,0.453125,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,50cf3ab93ee6,58,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.5,0.453125,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,50cf3ab93ee6,58,,mutual_information,0.15780989932970202,bits_per_symbol,exact,complete,,,,0.5,0.453125,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,d795b598ad18,58,,quantizer_phase,0.453125,normalized_time,exact,complete,,,,,,,,
+phase_sensitivity_commensurate,phase_sensitivity,59b055cf3321,59,,capacity_bits_per_symbol,0.15780989932970244,bits_per_symbol,blahut_arimoto,complete,,,,0.5,0.4609375,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,59b055cf3321,59,,capacity_residual,1.3877787807814457e-16,bits_per_symbol,blahut_arimoto,complete,,,,0.5,0.4609375,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,7dd243e86cac,59,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.5,0.4609375,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,7dd243e86cac,59,,mutual_information,0.1578098993297024,bits_per_symbol,exact,complete,,,,0.5,0.4609375,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,35a9bac857aa,59,,quantizer_phase,0.4609375,normalized_time,exact,complete,,,,,,,,
+phase_sensitivity_commensurate,phase_sensitivity,51bd17b6acd4,60,,capacity_bits_per_symbol,0.1578098993297024,bits_per_symbol,blahut_arimoto,complete,,,,0.5,0.46875,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,51bd17b6acd4,60,,capacity_residual,2.7755575615628914e-17,bits_per_symbol,blahut_arimoto,complete,,,,0.5,0.46875,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,0a0cec03c54e,60,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.5,0.46875,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,0a0cec03c54e,60,,mutual_information,0.1578098993297024,bits_per_symbol,exact,complete,,,,0.5,0.46875,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,bb0cdef973c0,60,,quantizer_phase,0.46875,normalized_time,exact,complete,,,,,,,,
+phase_sensitivity_commensurate,phase_sensitivity,3648a2120b08,61,,capacity_bits_per_symbol,0.15780989932970246,bits_per_symbol,blahut_arimoto,complete,,,,0.5,0.4765625,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,3648a2120b08,61,,capacity_residual,8.326672684688674e-17,bits_per_symbol,blahut_arimoto,complete,,,,0.5,0.4765625,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,7710c6594196,61,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.5,0.4765625,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,7710c6594196,61,,mutual_information,0.15780989932970246,bits_per_symbol,exact,complete,,,,0.5,0.4765625,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,2197cdcc989d,61,,quantizer_phase,0.4765625,normalized_time,exact,complete,,,,,,,,
+phase_sensitivity_commensurate,phase_sensitivity,576340b9b1eb,62,,capacity_bits_per_symbol,0.1578098993297025,bits_per_symbol,blahut_arimoto,complete,,,,0.5,0.484375,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,576340b9b1eb,62,,capacity_residual,1.1102230246251565e-16,bits_per_symbol,blahut_arimoto,complete,,,,0.5,0.484375,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,870cdedabb69,62,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.5,0.484375,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,870cdedabb69,62,,mutual_information,0.1578098993297025,bits_per_symbol,exact,complete,,,,0.5,0.484375,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,78209daa3a01,62,,quantizer_phase,0.484375,normalized_time,exact,complete,,,,,,,,
+phase_sensitivity_commensurate,phase_sensitivity,17d2ff5df38d,63,,capacity_bits_per_symbol,0.15780989932970252,bits_per_symbol,blahut_arimoto,complete,,,,0.5,0.4921875,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,17d2ff5df38d,63,,capacity_residual,8.326672684688674e-17,bits_per_symbol,blahut_arimoto,complete,,,,0.5,0.4921875,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,70d609dbcb22,63,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.5,0.4921875,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,70d609dbcb22,63,,mutual_information,0.15780989932970246,bits_per_symbol,exact,complete,,,,0.5,0.4921875,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,e85a302f56c9,63,,quantizer_phase,0.4921875,normalized_time,exact,complete,,,,,,,,
+phase_sensitivity_commensurate,phase_sensitivity,5393d7c053b7,64,,capacity_bits_per_symbol,0.15780989932970252,bits_per_symbol,blahut_arimoto,complete,,,,0.5,0.49230769230769234,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,5393d7c053b7,64,,capacity_residual,8.326672684688674e-17,bits_per_symbol,blahut_arimoto,complete,,,,0.5,0.49230769230769234,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,554d2d096fc0,64,,matrix_row_sum_error,0.0,probability,exact,complete,,,,0.5,0.49230769230769234,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,554d2d096fc0,64,,mutual_information,0.15780989932970255,bits_per_symbol,exact,complete,,,,0.5,0.49230769230769234,gaussian,1.0,"[0.0, 1.0]"
+phase_sensitivity_commensurate,phase_sensitivity,51e34c2706aa,64,,quantizer_phase,0.49230769230769234,normalized_time,exact,complete,,,,,,,,
