@@ -1,3 +1,5 @@
+> **Archive Notice:** This repository is archived. Completed research project consolidated into [blindicide/sci-archive](https://github.com/blindicide/sci-archive) under `chronocline/`.
+
 # Project Chronocline
 
 Project Chronocline is a research-grade Python framework for modelling quantized network timing channels. It studies deliberately selected inter-packet delays observed through random jitter, finite timestamp resolution, batching, and statistical detection constraints. It is a mathematical simulator, not a network traffic tool.
